@@ -1,15 +1,17 @@
 // -----------------------------------------------------------------------------
 // В этом файле общие стили для компонента "кнопка"
-// и подключение дополнительных вариаций
 // -----------------------------------------------------------------------------
 
-$button-primary: #ffffff;
-$button-primary--hover: #ef7f17;
+.button {
+  border: none;
+  border-radius: 20px;
 
-$button-secondary: #ffffff;
-$button-secondary__border: 2px solid #9966ff;
-$button-secondary--hover: #ef7f17;
+  outline: none;
 
-$button-outline: #ffffff;
-$button-outline__border: 2px solid #ffffff;
-$button-outline--hover: #ef7f17;
+  padding: 8px 18px;
+
+  font-size: $font-size-6;
+
+  transition: all 0.15s ease;
+  cursor: pointer;
+}

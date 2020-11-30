@@ -2,9 +2,8 @@
 // В этом файле содержатся дополнительные или общие классы
 // -----------------------------------------------------------------------------
 
-.container {
-  width: 100%;
-  max-width: $container-max-width;
-  margin-left: auto;
-  margin-right: auto;
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
 }

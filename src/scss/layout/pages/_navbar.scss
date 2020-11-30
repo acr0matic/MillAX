@@ -1,0 +1,26 @@
+.navbar {
+  @include flex($align: flex-start);
+
+  font-size: $font-size-4;
+
+  &__item {
+    position: relative;
+    display: flex;
+
+    transition: all 0.15s ease;
+
+    &--hover {
+      color: $text-white;
+      background: #ec821f;
+    }
+
+    &:hover {
+      color: $text-white;
+      background: #ec821f;
+    }
+  }
+
+  &__link {
+    padding: 8px 14px 25px 14px;
+  }
+}

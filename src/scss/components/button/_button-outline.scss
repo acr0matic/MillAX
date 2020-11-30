@@ -1,0 +1,9 @@
+.button-outline {
+  border: $button-outline__border;
+  background: transparent;
+
+  &:hover {
+    background-color: $button-outline--hover;
+    color: $text-white;
+  }
+}

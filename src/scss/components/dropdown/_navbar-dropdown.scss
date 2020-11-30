@@ -1,0 +1,39 @@
+.navbar-dropdown {
+  position: absolute;
+  top: 65px;
+  left: 14px;
+
+  &__list {
+    @include flex();
+  }
+
+  &__item {
+    padding-bottom: 5px;
+
+    color: $text-white;
+    font-size: $font-size-6;
+
+    white-space: nowrap;
+    transition: color 0.15s ease;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        display: inline-block;
+
+        vertical-align: middle;
+
+        width: 1px;
+        height: 30px;
+
+        margin: 0 14px;
+
+        background-color: #9667ff;
+      }
+    }
+  }
+}

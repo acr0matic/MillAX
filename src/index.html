@@ -68,7 +68,67 @@
 
 <body>
   <!-- Шапка -->
-  <header></header>
+  <header id="header" class="fixed-top">
+    <div class="header-top">
+      <div class="container">
+        <div class="header">
+          <div class="header__logo">
+            <img class="header__image" src="img/logo-dark.svg" alt="">
+          </div>
+          <!-- /.header__logo -->
+
+          <nav class="header__nav">
+            <ul class="navbar">
+              <li class="navbar__item">
+                <a href="" class="navbar__link">Главная</a>
+              </li>
+
+              <li class="navbar__item navbar__item--hover">
+                <a href="" class="navbar__link">Коворкинг</a>
+                <div class="navbar__dropdown navbar-dropdown">
+                  <ul class="navbar-dropdown__list">
+                    <li class="navbar-dropdown__item">
+                      <a href="" class="navbar-dropdown__link">Рабочее место в коворкинге</a>
+                    </li>
+                    <li class="navbar-dropdown__item">
+                      <a href="" class="navbar-dropdown__link">Как стать резидентом</a>
+                    </li>
+                    <li class="navbar-dropdown__item">
+                      <a href="" class="navbar-dropdown__link">Прайс для резидентов</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.navbar__dropdown -->
+              </li>
+
+              <li class="navbar__item">
+                <a href="" class="navbar__link">Фрезерный центр</a>
+              </li>
+
+              <li class="navbar__item">
+                <a href="" class="navbar__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__action">
+            <button class="header__button button button-outline">Забронировать место</button>
+            <button class="header__button button button-outline">Отправить STL файл</button>
+            <button class="header__button button button-outline">Вызвать курьера</button>
+          </div>
+          <!-- /.header__action -->
+        </div>
+        <!-- /.header -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.header-top -->
+
+    <div class="header-bottom">
+
+    </div>
+    <!-- /.subheader -->
+  </header>
 
   <!-- Основной контент -->
   <main>
@@ -80,10 +140,9 @@
 
   <!-- Скрипты -->
   <!-- build:js -->
-  <script src="scripts/libraries/bootstrap.js"></script>
   <script src="scripts/libraries/swiper.js"></script>
   <script src="scripts/libraries/lazyload.js"></script>
-  <script src="scripts/libraries/parallax.js"></script>
+  <script src="scripts/libraries/jarallax.js"></script>
 
   <script src="scripts/script.js"></script>
   <!-- endbuild -->

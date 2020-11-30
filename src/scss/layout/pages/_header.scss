@@ -1,0 +1,46 @@
+// -----------------------------------------------------------------------------
+// В этом файле прописываются все стили относящиеся к шапке сайта
+// -----------------------------------------------------------------------------
+
+#header {
+  width: 100%;
+}
+
+.header {
+  @include flex($align: flex-start);
+
+  padding-top: 10px;
+
+  &-top {
+    box-shadow: 0 0 25px rgba(178, 190, 195, 0.25);
+  }
+
+  &-bottom {
+    height: 55px;
+    background-color: $palette-black;
+  }
+
+  &__dropdown {
+  }
+
+  &__logo {
+  }
+
+  &__image {
+  }
+
+  &__nav {
+  }
+
+  &__action {
+    padding-top: 5px;
+  }
+
+  &__button {
+    border: 1px solid #d9d9d9;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}

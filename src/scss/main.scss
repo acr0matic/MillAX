@@ -13,7 +13,7 @@
 @import "vendors/normalize.scss";
 @import "vendors/family.scss";
 @import "vendors/breakpoint.scss";
-@import "vendors/bootstrap.scss";
+@import "vendors/bootstrap-grid.scss";
 @import "vendors/swiper.scss";
 
 // 4. Импорт надстроек библиотек
@@ -24,4 +24,3 @@
 
 // 6. Подключение стилей разметки
 @import "layout/layout.scss";
-
