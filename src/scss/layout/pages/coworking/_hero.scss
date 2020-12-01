@@ -1,0 +1,58 @@
+#coworking-hero {
+  position: relative;
+  height: 650px;
+
+  margin-bottom: 400px;
+
+  background-color: #aaaaaa;
+}
+
+.coworking-hero {
+  &__promo {
+    position: absolute;
+    bottom: -70%;
+    left: 50%;
+
+    width: 760px;
+
+    transform: translate(-50%, -50%);
+
+    background-color: $palette-white;
+    box-shadow: $shadow-primary;
+  }
+
+  &__title {
+    padding: 15px 105px;
+
+    color: $text-white;
+    background-image: linear-gradient(81.1deg, #9966ff 6.15%, #7976ff 100.16%);
+
+    font-size: 36px;
+    line-height: 54px;
+  }
+
+  &__content {
+    position: relative;
+    padding: 30px 60px;
+  }
+
+  &__background {
+    position: absolute;
+    bottom: -389px;
+    left: -392px;
+  }
+
+  &__subtitle {
+    margin-bottom: 25px;
+
+    color: $text-purple;
+    font-size: $font-size-4;
+  }
+
+  &__service {
+    @include flex($align: flex-start);
+  }
+
+  &__list {
+  }
+}
