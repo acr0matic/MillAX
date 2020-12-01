@@ -1,0 +1,18 @@
+#advantages {
+  padding-top: 50px;
+}
+
+.advantage {
+  &__card {
+    height: 100%;
+
+    padding: 40px 35px 25px 35px;
+
+    background-color: $palette-white;
+    box-shadow: $shadow-primary;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+}
