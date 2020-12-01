@@ -1,0 +1,27 @@
+#worth {
+  position: relative;
+
+  padding-top: 135px;
+  padding-bottom: 140px;
+
+  background-color: $palette-purple;
+  background-image: linear-gradient(81.1deg, #9966ff 6.15%, #7976ff 100.16%);
+
+  color: $text-white;
+
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+
+.worth-background {
+  position: relative;
+
+  &__image {
+    position: absolute;
+    top: -155px;
+    right: 0;
+  }
+}
+
+.worth {
+  margin-top: 60px;
+}
