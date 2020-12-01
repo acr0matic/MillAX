@@ -11,3 +11,16 @@
 .col-no-pl {
   padding-left: 0 !important;
 }
+
+.background {
+  position: relative;
+
+  &__image {
+    position: absolute;
+
+    &--main-1 {
+      top: -855px;
+      left: -1311px;
+    }
+  }
+}

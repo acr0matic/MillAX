@@ -3,6 +3,9 @@
 }
 
 .advantage {
+  position: relative;
+  z-index: 2;
+
   &__card {
     height: 100%;
 
