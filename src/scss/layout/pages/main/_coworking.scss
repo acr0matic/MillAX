@@ -1,0 +1,33 @@
+.coworking {
+  margin-top: 60px;
+
+  &__item {
+    position: relative;
+
+    &:hover {
+      .coworking__content {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+    width: 100%;
+    max-width: 460px;
+
+    margin-left: 40px;
+    padding: 30px 20px;
+
+    box-shadow: $shadow-secondary;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.15s ease;
+  }
+}
