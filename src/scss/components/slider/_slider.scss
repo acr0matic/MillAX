@@ -2,3 +2,34 @@
 // В этом файле общие стили для компонента "Слайдер"
 // и подключение дополнительных вариаций
 // -----------------------------------------------------------------------------
+
+.swiper-button {
+  &-prev,
+  &-next {
+    right: 0;
+    left: 0;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    outline: none;
+
+    width: auto;
+    height: auto;
+
+
+    transition: opacity 0.15s ease;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &-prev {
+    content: url("../img/icons/controls/slider-left.svg");
+  }
+
+  &-next {
+    content: url("../img/icons/controls/slider-right.svg");
+  }
+}
