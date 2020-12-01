@@ -1,4 +1,6 @@
 @charset 'UTF-8';
+// 0. Импорт нормализации
+@import "vendors/normalize.scss";
 
 // 1. Подключение базовых функций и переменных
 @import "abstracts/abstracts.scss";
@@ -10,7 +12,6 @@
 @import "base/helpers.scss";
 
 // 3. Импорт библиотек
-@import "vendors/normalize.scss";
 @import "vendors/family.scss";
 @import "vendors/breakpoint.scss";
 @import "vendors/bootstrap-grid.scss";

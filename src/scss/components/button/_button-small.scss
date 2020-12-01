@@ -1,12 +1,12 @@
-.button-outline {
-  background: $button-outline;
+.button-small {
   border: $button-outline__border;
-  color: $text-white;
+  padding: 8px 18px;
+  background: transparent;
+
+  font-size: $font-size-6;
 
   &:hover {
     background-color: $button-outline--hover;
     color: $text-white;
-
-    border-color: $button-outline--hover;
   }
 }

@@ -5,3 +5,35 @@
 
 $list-marker--white: #ffffff;
 $list-marker--orange: #ff7f08;
+
+.list {
+  margin-left: 23px;
+
+  &--light {
+    .list__item {
+      &::before {
+        background-color: $list-marker--white;
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: 15px;
+
+    text-indent: -23px;
+    line-height: 23px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+
+      width: 10px;
+      height: 10px;
+
+      border-radius: 50px;
+      margin-right: 15px;
+
+      background-color: $list-marker--orange;
+    }
+  }
+}

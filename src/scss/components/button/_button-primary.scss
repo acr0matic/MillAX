@@ -1,0 +1,8 @@
+.button-primary {
+  background: $button-primary;
+
+  &:hover {
+    background-color: $button-outline--hover;
+    color: $text-white;
+  }
+}

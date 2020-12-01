@@ -1,0 +1,31 @@
+.hero-promo {
+  position: relative;
+  z-index: 2;
+
+  margin-top: 130px;
+
+  background-color: $palette-white;
+  box-shadow: $shadow-primary;
+
+  &__content {
+    padding: 40px 60px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-size: $font-size-1;
+    line-height: 45px;
+
+    span {
+      color: $text-orange;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+}
