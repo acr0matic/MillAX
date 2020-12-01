@@ -7,7 +7,7 @@ $list-marker--white: #ffffff;
 $list-marker--orange: #ff7f08;
 
 .list {
-  margin-left: 23px;
+  margin-left: 30px;
 
   &--light {
     .list__item {
@@ -20,7 +20,7 @@ $list-marker--orange: #ff7f08;
   &__item {
     margin-bottom: 15px;
 
-    text-indent: -23px;
+    text-indent: -30px;
     line-height: 23px;
 
     &::before {

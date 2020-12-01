@@ -12,16 +12,6 @@
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
 }
 
-.worth-background {
-  position: relative;
-
-  &__image {
-    position: absolute;
-    top: -155px;
-    right: 0;
-  }
-}
-
 .worth {
   margin-top: 60px;
 }
