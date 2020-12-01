@@ -1,3 +1,84 @@
 // -----------------------------------------------------------------------------
 // В этом файле прописываются все стили относящиеся к подвалу сайта
 // -----------------------------------------------------------------------------
+
+#footer {
+  margin-top: 140px;
+
+  padding-top: 60px;
+  padding-bottom: 25px;
+
+  background-color: $palette-purple;
+  background-image: linear-gradient(90deg, #9966ff 0%, #7976ff 100%), #232222;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  color: $text-white;
+}
+
+.footer {
+  display: flex;
+
+  &__media {
+    max-width: 135px;
+    margin-right: 125px;
+
+    color: $text-white;
+
+    text-align: center;
+  }
+
+  &__social {
+    margin-top: 25px;
+    font-size: $font-size-4;
+  }
+
+  &__list {
+    @include flex();
+
+    margin-top: 10px;
+  }
+
+  &__menu {
+    margin-right: 50px;
+
+    color: $text-white;
+    font-weight: $weight-medium;
+    font-size: $font-size-4;
+  }
+
+  &__menu-list {
+    margin-top: 15px;
+
+    font-weight: $weight-light;
+    font-size: $font-size-5;
+  }
+
+  &__menu-item {
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__action {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 170px;
+
+    margin-left: auto;
+    margin-right: 30px;
+
+    color: $text-white;
+    font-weight: $weight-bold;
+  }
+
+  &__interactive {
+    margin-bottom: 12px;
+  }
+}
