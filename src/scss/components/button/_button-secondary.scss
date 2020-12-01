@@ -1,0 +1,19 @@
+.button-secondary {
+  display: block;
+
+  border: $button-secondary__border;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  color: #424242;
+  background: $button-secondary;
+
+  font-weight: $weight-medium;
+
+  &:hover {
+    background-color: $button-outline--hover;
+    color: $text-white;
+
+    border-color: $button-outline--hover;
+  }
+}

@@ -1,0 +1,43 @@
+#included {
+  position: relative;
+}
+
+.included {
+  margin-top: 60px;
+
+  &__card {
+    height: 100%;
+    border-radius: 5px;
+    padding: 40px 35px;
+    background-color: $palette-white;
+
+    box-shadow: $shadow-secondary;
+
+    &:hover {
+      color: $text-white;
+
+      background-image: linear-gradient(81.1deg, #9966FF 6.15%, #7976FF 100.16%);
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+
+    font-size: $font-size-2;
+  }
+
+  &__list {
+
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    max-width: 260px;
+
+    font-size: $font-size-4;
+  }
+
+  &__button {
+    margin: 30px auto 0 auto;
+  }
+}
