@@ -1,0 +1,15 @@
+.excursion-slider {
+  &__prev,
+  &__next {
+  }
+
+  &__prev {
+    right: unset;
+    left: -80px;
+  }
+
+  &__next {
+    right: -80px;
+    left: unset;
+  }
+}

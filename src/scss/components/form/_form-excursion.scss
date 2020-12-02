@@ -1,0 +1,16 @@
+.form-excursion {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: $font-size-1;
+
+    span {
+      color: $text-orange;
+    }
+  }
+
+  &__button {
+    align-self: flex-start;
+  }
+}
