@@ -1,0 +1,21 @@
+#prices {
+  padding-bottom: 130px;
+
+  background-color: #fbfbfb;
+
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+}
+
+.prices {
+  &__button {
+    @include flex();
+
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+      margin-left: 15px;
+    }
+  }
+}

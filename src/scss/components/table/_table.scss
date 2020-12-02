@@ -1,7 +1,38 @@
-// -----------------------------------------------------------------------------
-// В этом файле общие стили для компонента "Таблица"
-// и подключение дополнительных вариаций
-// -----------------------------------------------------------------------------
+.table {
+  width: 100%;
 
-$table__head: #9966ff;
-$table__head--gradien: linear-gradient(90deg, #9966ff 0%, #7976ff 100%), #c4c4c4;
+  border-radius: 5px;
+  overflow: hidden;
+
+  box-shadow: $shadow-primary;
+
+  &__caption {
+    padding: 10px 30px;
+
+    color: $text-white;
+    background-image: $table__head--gradient;
+
+    text-align: left;
+  }
+
+  td {
+    padding: 10px 30px;
+
+    @include last(2) {
+      text-align: right;
+    }
+  }
+
+  &__start {
+    td {
+      padding-top: 40px;
+    }
+  }
+
+
+  &__end {
+    td {
+      padding-bottom: 40px;
+    }
+  }
+}
