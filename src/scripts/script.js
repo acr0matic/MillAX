@@ -5,3 +5,7 @@ jarallax(document.querySelectorAll('.jarallax'), {
 AOS.init({
   once: true,
 });
+
+MicroModal.init({
+  awaitCloseAnimation: true,
+});

@@ -112,10 +112,10 @@
           </nav>
 
           <div class="header__action">
-            <button class="header__button button button-small">Забронировать место</button>
-            <button class="header__button button button-small">Отправить STL файл</button>
-            <button class="header__button button button-small">Вызвать курьера</button>
-          </div>
+            <button data-micromodal-trigger="modal-reservation" class="header__button button button-small">Забронировать место</button>
+            <button data-micromodal-trigger="" class="header__button button button-small">Отправить STL файл</button>
+            <button data-micromodal-trigger="modal-courier" class="header__button button button-small">Вызвать курьера</button>
+         </div>
           <!-- /.header__action -->
         </div>
         <!-- /.header -->
@@ -242,7 +242,7 @@
           </div>
           <!-- /.row -->
 
-          <button class="included__button button button-secondary">Забронировать место</button>
+          <button class="included__button button button-secondary" data-micromodal-trigger="modal-reservation">Забронировать место</button>
         </div>
         <!-- /.row -->
       </div>
@@ -552,6 +552,67 @@
     <!-- /.container -->
   </footer>
 
+  <div class="modal micromodal-slide" id="modal-courier">
+    <div class="modal__overlay" data-micromodal-close>
+      <div class="modal__container">
+        <div class="modal__header">
+          <h2 class="modal__title">
+            Экскурсия по коворкингу
+          </h2>
+          <button class="modal__close" data-micromodal-close></button>
+        </div>
+
+        <div class="modal__content">
+          <form action="" class="form form-excursion">
+            <input class="input input-field mb-3" type="text" placeholder="Ваше имя">
+            <input class="input input-field mb-3" type="tel" placeholder="Номер телефона">
+            <input class="input input-field mb-3" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" min="2020-12-02" placeholder="Желаемая дата посещения">
+            <input class="input input-field mb-3" type="text" onfocus="(this.type='time')" onblur="(this.type='text')" placeholder="Желаемое время посещения">
+            <div class="form__policy">
+              <label class="checkbox">
+                <input type="checkbox">
+                <span class="checkbox__mark border-small-br-tl"></span>
+                <span class="checkbox__label">Я принимаю условия <a href="">пользовательского соглашения </a> и <a href="">политику конфиденциальности</a></span>
+              </label>
+            </div>
+            <button class="form-excursion__button button button-outline">Записаться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide" id="modal-reservation">
+    <div class="modal__overlay" data-micromodal-close>
+      <div class="modal__container">
+        <div class="modal__header">
+          <h2 class="modal__title">
+            Бронь рабочего места
+            в коворкинге
+          </h2>
+          <button class="modal__close" data-micromodal-close></button>
+        </div>
+
+        <div class="modal__content">
+          <form action="" class="form form-excursion">
+            <input class="input input-field mb-3" type="text" placeholder="Ваше имя">
+            <input class="input input-field mb-3" type="tel" placeholder="Номер телефона">
+            <input class="input input-field mb-3" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" min="2020-12-02" placeholder="Дата брони">
+            <div class="form__policy">
+              <label class="checkbox">
+                <input type="checkbox">
+                <span class="checkbox__mark border-small-br-tl"></span>
+                <span class="checkbox__label">Я принимаю условия пользовательского соглашения и политику конфиденциальности</span>
+              </label>
+            </div>
+            <!-- /.policy-wrapper -->
+            <button class="form-excursion__button button button-outline">Записаться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Скрипты -->
   <!-- build:js -->
   <script src="scripts/libraries/swiper.js"></script>
@@ -559,6 +620,7 @@
   <script src="scripts/libraries/jarallax.js"></script>
   <script src="scripts/libraries/fslightbox.js"></script>
   <script src="scripts/libraries/aos.js"></script>
+  <script src="scripts/libraries/micromodal.js"></script>
 
   <script src="scripts/slider.js"></script>
   <script src="scripts/script.js"></script>
