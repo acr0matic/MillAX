@@ -1,0 +1,27 @@
+#statement {
+  padding: 120px 0;
+  background-color: #fbfbfb;
+}
+
+.statement {
+  &__background {
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    &--right {
+      right: 0;
+    }
+  }
+
+  &__item {
+    font-size: $font-size-3;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    font-size: $font-size-1;
+  }
+}
