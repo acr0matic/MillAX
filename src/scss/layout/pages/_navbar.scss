@@ -9,9 +9,20 @@
 
     transition: all 0.15s ease;
 
+    &--dropdown {
+      &:hover {
+        .navbar__dropdown {
+          transform: translateY(0);
+        }
+
+        .header-bottom {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
     &--hover {
-      color: $text-white;
-      background: #ec821f;
     }
 
     &:hover {
@@ -22,5 +33,9 @@
 
   &__link {
     padding: 8px 14px 25px 14px;
+  }
+
+  &__dropdown {
+    transform: translateY(-100px);
   }
 }
