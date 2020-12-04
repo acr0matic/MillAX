@@ -144,9 +144,9 @@
 
       <div class="modal__content">
         <form action="" class="form form-excursion">
-          <input class="input input-field mb-3" type="text" placeholder="Ваше имя">
-          <input class="input input-field mb-3" type="tel" placeholder="Номер телефона">
-          <input class="input input-field mb-3" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" min="2020-12-02" placeholder="Дата брони">
+          <input class="input input-field mb-3" type="text" placeholder="Ваше имя" name="user_name">
+          <input class="input input-field mb-3" type="tel" placeholder="Номер телефона" name="user_phone">
+          <input class="input input-field mb-3" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" min="2020-12-02" placeholder="Дата брони" name="visit_date">
           <div class="form__policy">
             <label class="checkbox">
               <input type="checkbox">
@@ -171,6 +171,7 @@
 <script src="scripts/libraries/micromodal.js"></script>
 <script src="scripts/libraries/handorgel.js"></script>
 <script src="scripts/libraries/jarallax.js"></script>
+<script src="scripts/libraries/imask.js"></script>
 
 <script src="scripts/slider.js"></script>
 <script src="scripts/script.js"></script>

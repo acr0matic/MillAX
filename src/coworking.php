@@ -265,10 +265,10 @@
                   <br>
                   по коворкингу
                 </h2>
-                <input class="input input-field mb-3" type="text" placeholder="Ваше имя">
-                <input class="input input-field mb-3" type="tel" placeholder="Номер телефона">
-                <input class="input input-field mb-3" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" min="2020-12-02" placeholder="Желаемая дата посещения">
-                <input class="input input-field mb-3" type="text" onfocus="(this.type='time')" onblur="(this.type='text')" placeholder="Желаемое время посещения">
+                <input class="input input-field mb-3" type="text" placeholder="Ваше имя" name="user_name">
+                <input class="input input-field mb-3" type="tel" placeholder="Номер телефона" name="user_phone">
+                <input class="input input-field mb-3" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" min="2020-12-02" placeholder="Желаемая дата посещения" name="visit_date">
+                <input class="input input-field mb-3" type="text" onfocus="(this.type='time')" onblur="(this.type='text')" placeholder="Желаемое время посещения" name="visit_time">
 
                 <button class="form-excursion__button button button-secondary">Записаться</button>
               </form>

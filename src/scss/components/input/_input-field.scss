@@ -1,7 +1,15 @@
 .input-field {
   min-height: 44px;
 
+  border: 2px solid transparent;
+
   padding: 10px 15px;
   background-color: $input__background;
   box-shadow: $input__shadow;
+
+  transition: all 0.15s ease;
+
+  &:focus {
+    border: $border-orange;
+  }
 }
