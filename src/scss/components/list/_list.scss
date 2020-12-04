@@ -7,8 +7,6 @@ $list-marker--white: #ffffff;
 $list-marker--orange: #ff7f08;
 
 .list {
-  margin-left: 30px;
-
   &--light {
     .list__item {
       &::before {
@@ -18,19 +16,20 @@ $list-marker--orange: #ff7f08;
   }
 
   &__item {
+    display: flex;
     margin-bottom: 15px;
-
-    text-indent: -30px;
-    line-height: 23px;
 
     &::before {
       content: "";
-      display: inline-block;
+
+      flex-shrink: 0;
 
       width: 10px;
       height: 10px;
 
       border-radius: 50px;
+
+      margin-top: 8px;
       margin-right: 15px;
 
       background-color: $list-marker--orange;

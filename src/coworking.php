@@ -73,16 +73,20 @@
 
   <!-- Основной контент -->
   <main>
-    <section id="coworking-hero" class="jarallax" style="background-image: url('https://acr0matic.dev/millax/img/pictures/coworking-hero/background.jpg');">
+    <section id="become">
+      <div data-jarallax data-speed="0.2" class="jarallax">
+        <img class="jarallax-img" src="img/pictures/become/background.jpg" alt="">
+      </div>
+
       <div class="container">
-        <div class="coworking-hero">
-          <div class="coworking-hero__promo">
-            <h1 class="coworking-hero__title">Станьте частью прогрессивного сообщества зубных техников</h1>
-            <div class="coworking-hero__content">
-              <img class="coworking-hero__background" src="img/pictures/coworking-hero/1.svg" alt="">
-              <h2 class="coworking-hero__subtitle">Что мы предлагаем</h2>
-              <div class="coworking-hero__service">
-                <ul class="coworking-hero__list list">
+        <div class="become">
+          <div class="become__promo">
+            <h1 class="become__title">Станьте частью прогрессивного сообщества зубных техников</h1>
+            <div class="become__content">
+              <img class="become__background" src="img/pictures/become/1.svg" alt="">
+              <h2 class="become__subtitle">Что мы предлагаем</h2>
+              <div class="become__service">
+                <ul class="become__list list">
                   <li class="list__item">
                     Полностью укомплектованное
                     <br>
@@ -101,7 +105,7 @@
                     ЦИФРОДЕНТ</li>
                 </ul>
 
-                <ul class="coworking-hero__list list">
+                <ul class="become__list list">
                   <li class="list__item">
                     Гибкие условия работы с твоей
                     <br>
@@ -115,13 +119,13 @@
                   </li>
                 </ul>
               </div>
-              <!-- /.coworking-hero__service -->
+              <!-- /.become__service -->
             </div>
-            <!-- /.coworking-hero__content -->
+            <!-- /.become__content -->
           </div>
-          <!-- /.coworking-hero__promo -->
+          <!-- /.become__promo -->
         </div>
-        <!-- /.coworking-hero -->
+        <!-- /.become -->
       </div>
       <!-- /.container -->
     </section>
@@ -133,15 +137,18 @@
           <div class="row">
             <div class="col-4" data-aos="fade-up" data-aos-offset="150">
               <div class="included__card">
-                <h3 class="included__title">
-                  Инфраструктура
-                </h3>
+                <div class="included__wrapper">
+                  <h3 class="included__title">
+                    Инфраструктура
+                  </h3>
 
-                <ul class="included__list">
-                  <li class="included__item">- закрепленные рабочие места</li>
-                  <li class="included__item">- оборудованные по самым современным стандартам (станки ЧПУ, печи, сканеры, «грязные» рабочие зоны, компьютеры с предустановленным ПО)</li>
-                  <li class="included__item">зона отдыха, кухня, чай, кофе, вода</li>
-                </ul>
+                  <ul class="included__list">
+                    <li class="included__item">- закрепленные рабочие места</li>
+                    <li class="included__item">- оборудованные по самым современным стандартам (станки ЧПУ, печи, сканеры, «грязные» рабочие зоны, компьютеры с предустановленным ПО)</li>
+                    <li class="included__item">зона отдыха, кухня, чай, кофе, вода</li>
+                  </ul>
+                </div>
+                <!-- /.included__wrapper -->
               </div>
               <!-- /.included__card -->
             </div>
@@ -149,17 +156,20 @@
 
             <div class="col-4" data-aos="fade-up" data-aos-offset="150">
               <div class="included__card">
-                <h3 class="included__title">
-                  Сервис и услуги
-                </h3>
+                <div class="included__wrapper">
+                  <h3 class="included__title">
+                    Сервис и услуги
+                  </h3>
 
-                <ul class="included__list">
-                  <li class="included__item">- услуги по закупке расходных материалов</li>
-                  <li class="included__item">- бухгалтерская и юридическая поддержка</li>
-                  <li class="included__item">- услуги по продвижению и построению индивидуальной траектории развития бизнеса</li>
-                  <li class="included__item">- услуги администратора, курьера, обработчика</li>
-                  <li class="included__item">- ИТ-поддержка</li>
-                </ul>
+                  <ul class="included__list">
+                    <li class="included__item">- услуги по закупке расходных материалов</li>
+                    <li class="included__item">- бухгалтерская и юридическая поддержка</li>
+                    <li class="included__item">- услуги по продвижению и построению индивидуальной траектории развития бизнеса</li>
+                    <li class="included__item">- услуги администратора, курьера, обработчика</li>
+                    <li class="included__item">- ИТ-поддержка</li>
+                  </ul>
+                </div>
+                <!-- /.inculed_wrapper -->
               </div>
               <!-- /.included__card -->
             </div>
@@ -167,15 +177,18 @@
 
             <div class="col-4" data-aos="fade-up" data-aos-offset="150">
               <div class="included__card">
-                <h3 class="included__title">
-                  Ментерство и трекинг
-                </h3>
+                <div class="included__wrapper">
+                  <h3 class="included__title">
+                    Ментерство и трекинг
+                  </h3>
 
-                <ul class="included__list">
-                  <li class="included__item">- индивидуальные консультации</li>
-                  <li class="included__item">- экспертные сессии</li>
-                  <li class="included__item">- индивидуальные и групповые встречи по динамике развития бизнеса</li>
-                </ul>
+                  <ul class="included__list">
+                    <li class="included__item">- индивидуальные консультации</li>
+                    <li class="included__item">- экспертные сессии</li>
+                    <li class="included__item">- индивидуальные и групповые встречи по динамике развития бизнеса</li>
+                  </ul>
+                </div>
+                <!-- /.inculed_wrapper -->
               </div>
               <!-- /.included__card -->
             </div>
@@ -183,7 +196,7 @@
           </div>
           <!-- /.row -->
 
-          <button class="included__button button button-secondary" data-micromodal-trigger="modal-reservation">Забронировать место</button>
+          <button class="mt-4 mx-auto button button-secondary" data-micromodal-trigger="modal-reservation">Забронировать место</button>
         </div>
         <!-- /.row -->
       </div>
@@ -203,8 +216,17 @@
               <div class="statement__item">
                 <h2 class="statement__title">Условия резидентсва</h2>
                 <ul class="statement__list list">
-                  <li class="list__item">Аренда рабочего места 30 000 рублей в месяц</li>
-                  <li class="list__item">Весь объем фрезеровки / печати / прессовки осуществляется силами фрезерного центра</li>
+                  <li class="list__item">
+                    Аренда рабочего места 30 000
+                    <br>
+                    рублей в месяц
+                  </li>
+                  <li class="list__item">
+                    Весь объем фрезеровки / печати /
+                    <br>
+                    прессовки осуществляется силами
+                    <br>
+                    фрезерного центра</li>
                 </ul>
               </div>
               <!-- /.statement__item -->

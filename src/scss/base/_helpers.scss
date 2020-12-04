@@ -12,37 +12,6 @@
   padding-left: 0 !important;
 }
 
-.background {
-  position: relative;
-
-  &__image {
-    position: absolute;
-
-    &--main-1 {
-      top: -855px;
-      left: -1271px;
-    }
-
-    &--main-2 {
-      top: -155px;
-      right: 0;
-    }
-  }
-}
-
 .jarallax {
-  position: relative;
-  z-index: 0;
-
-  &__image {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-  }
+  height: 100%;
 }

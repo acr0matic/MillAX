@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
 
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 
     font-weight: $weight-medium;
 
@@ -21,6 +21,10 @@
 
     &--left {
       justify-content: flex-start;
+    }
+
+    &--small-mb {
+      margin-bottom: 30px;
     }
   }
 

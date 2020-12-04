@@ -1,0 +1,18 @@
+.background {
+  position: relative;
+
+  &__image {
+    position: absolute;
+    pointer-events: none;
+
+    &--main-1 {
+      top: -855px;
+      left: -1271px;
+    }
+
+    &--main-2 {
+      top: -158px;
+      right: 0;
+    }
+  }
+}

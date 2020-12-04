@@ -36,6 +36,26 @@
     @include flex();
 
     margin-top: 10px;
+
+    &--media {
+    }
+  }
+
+  &__icon {
+    circle,
+    path {
+      transition: all 0.15s ease;
+    }
+
+    &:hover {
+      circle {
+        stroke: $hover-orange;
+      }
+
+      path {
+        fill: $hover-orange;
+      }
+    }
   }
 
   &__menu {
@@ -78,5 +98,11 @@
 
   &__interactive {
     margin-bottom: 12px;
+
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

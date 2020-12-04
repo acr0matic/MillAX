@@ -1,7 +1,3 @@
-jarallax(document.querySelectorAll('.jarallax'), {
-  speed: 0.2
-});
-
 AOS.init({
   once: true,
 });
@@ -9,3 +5,7 @@ AOS.init({
 MicroModal.init({
   awaitCloseAnimation: true,
 });
+
+if (window.matchMedia("(max-width: 420px)").matches) {
+  const accordions = Array.from(document.querySelectorAll('.handorgel')).map((selector) => new handorgel(selector));
+}
