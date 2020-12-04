@@ -76,6 +76,40 @@
     <section id="milling">
       <div class="container background">
         <img class="background__image background__image--milling-1" src="img/pictures/background/3.svg" alt="">
+        <div class="milling__background"></div>
+        <div class="milling">
+          <div class="row">
+            <div class="col-6">
+              <h1 class="milling__title">
+                Фрезерный центр
+                <br>
+                MiLLax
+              </h1>
+              <p class="milling__description">
+                В нашем центре вы сможете найти самое передовое
+                <br>
+                оборудование, учитывающее все требования к работе
+                <br>
+                зубного техника: сканеры, программное обеспечение
+                <br>
+                и станки, большой выбор материалов и удобное ПО
+                <br>
+                для решения самого широкого спектра задач.
+              </p>
+
+              <button class="milling__button button button-outline">Посмотреть прайс-лист</button>
+            </div>
+            <!-- /.col-6 -->
+
+            <div class="col-6">
+              <img class="milling__image" src="img/pictures/milling/1.jpg" alt="">
+            </div>
+            <!-- /.col-6 -->
+          </div>
+          <!-- /.row -->
+
+        </div>
+        <!-- /.milling -->
       </div>
       <!-- /.container -->
     </section>

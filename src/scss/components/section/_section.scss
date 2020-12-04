@@ -26,6 +26,11 @@
     &--small-mb {
       margin-bottom: 30px;
     }
+
+    &--large {
+      font-size: $font-size-0;
+      text-align: left;
+    }
   }
 
   &__subtitle {

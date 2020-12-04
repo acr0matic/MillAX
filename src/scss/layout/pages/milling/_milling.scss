@@ -1,0 +1,41 @@
+#milling {
+  overflow: hidden;
+}
+
+.milling {
+  position: relative;
+  padding-top: 160px;
+  padding-bottom: 90px;
+
+  color: $text-white;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    right: 30%;
+    background-image: linear-gradient(81.1deg, #9966ff 6.15%, #7976ff 100.16%);
+    width: 300%;
+    height: 100%;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    font-size: $font-size-0;
+    font-weight: $weight-regular;
+
+    line-height: 60px;
+  }
+
+  &__description {
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    font-weight: $weight-light;
+  }
+
+  &__button {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
