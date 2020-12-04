@@ -107,7 +107,6 @@
             <!-- /.col-6 -->
           </div>
           <!-- /.row -->
-
         </div>
         <!-- /.milling -->
       </div>
@@ -116,7 +115,103 @@
     <!-- /.section -->
 
     <section id="equipment" class="section">
-      <div class="container">
+      <div class="container background">
+        <img class="background__image background__image--milling-2" src="img/pictures/background/4.svg" alt="">
+
+        <h2 class="section__title">Оборудование фрезерного центра</h2>
+
+        <div class="equipment">
+          <div class="row">
+            <div class="col-3">
+              <div class="equipment__item">
+                <div class="equipment__picture">
+                  <img src="img/equipment/1.png" alt="" class="equipment__image">
+                </div>
+                <!-- /.equipment__picture -->
+
+                <div class="equipment__content">
+                  <h3 class="equipment__title">
+                    Фрезерные станки
+                    с чпу imes-icore
+                  </h3>
+
+                  <button class="equipment__button button button-secondary">Подробнее</button>
+                </div>
+                <!-- /.equipment__content -->
+
+                <a href="" class="stretched-link"></a>
+              </div>
+            </div>
+            <!-- /.col-3 -->
+
+            <div class="col-3">
+              <div class="equipment__item">
+                <div class="equipment__picture">
+                  <img src="img/equipment/2.png" alt="" class="equipment__image">
+                </div>
+                <!-- /.equipment__picture -->
+
+                <div class="equipment__content">
+                  <h3 class="equipment__title">
+                    Печи для синтеризации
+                    programmat s1
+                  </h3>
+
+                  <button class="equipment__button button button-secondary">Подробнее</button>
+                </div>
+                <!-- /.equipment__content -->
+
+                <a href="" class="stretched-link"></a>
+              </div>
+            </div>
+            <!-- /.col-3 -->
+
+            <div class="col-3">
+              <div class="equipment__item">
+                <div class="equipment__picture">
+                  <img src="img/equipment/3.png" alt="" class="equipment__image">
+                </div>
+                <!-- /.equipment__picture -->
+
+                <div class="equipment__content">
+                  <h3 class="equipment__title">
+                    3D сканеры medit t310
+                  </h3>
+
+                  <button class="equipment__button button button-secondary">Подробнее</button>
+                </div>
+                <!-- /.equipment__content -->
+
+                <a href="" class="stretched-link"></a>
+              </div>
+            </div>
+            <!-- /.col-3 -->
+
+            <div class="col-3">
+              <div class="equipment__item">
+                <div class="equipment__picture">
+                  <img src="img/equipment/4.png" alt="" class="equipment__image">
+                </div>
+                <!-- /.equipment__picture -->
+
+                <div class="equipment__content">
+                  <h3 class="equipment__title">
+                    3D принтер asiga
+                    max uv
+                  </h3>
+
+                  <button class="equipment__button button button-secondary">Подробнее</button>
+                </div>
+                <!-- /.equipment__content -->
+
+                <a href="" class="stretched-link"></a>
+              </div>
+            </div>
+            <!-- /.col-3 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.equipment -->
 
       </div>
       <!-- /.container -->
