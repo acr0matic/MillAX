@@ -2,7 +2,10 @@
   <div class="container">
     <div class="footer">
       <div class="footer__media">
-        <img src="img/logo-white.svg" alt="" class="footer__logo">
+        <a href="index.php">
+          <img src="img/logo-white.svg" alt="" class="footer__logo">
+        </a>
+
         <div class="footer__social">
           Мы в соц. сетях
           <ul class="footer__list">
@@ -24,7 +27,7 @@
       <!-- /.footer__media -->
 
       <div class="footer__menu">
-        <a href="" class="footer__link">Коворкинг</a>
+        <a href="coworking.php" class="footer__link">Коворкинг</a>
 
         <ul class="footer__menu-list">
           <li class="footer__menu-item">
@@ -51,7 +54,7 @@
       <!-- /.footer__menu -->
 
       <div class="footer__menu">
-        <a href="" class="footer__link">Фрезерный центр</a>
+        <a href="milling" class="footer__link">Фрезерный центр</a>
 
         <ul class="footer__menu-list">
           <li class="footer__menu-item">
@@ -72,7 +75,7 @@
       <!-- /.footer__menu -->
 
       <div class="footer__menu">
-        <a href="" class="footer__link">Контакты</a>
+        <a href="contacts.php" class="footer__link">Контакты</a>
 
         <ul class="footer__menu-list">
           <li class="footer__menu-item">
@@ -96,9 +99,8 @@
       <!-- /.footer__menu -->
 
       <div class="footer__action">
-        <a href="" class="footer__interactive">Забронировать место в коворкинге</a>
-        <a href="" class="footer__interactive">Вызвать курьера</a>
-        <a href="" class="footer__interactive">Отправить STL файл</a>
+        <a data-micromodal-trigger="modal-reservation" class="footer__interactive">Забронировать место в коворкинге</a>
+        <a data-micromodal-trigger="modal-stl" class="footer__interactive">Отправить STL файл</a>
       </div>
       <!-- /.footer__action -->
     </div>

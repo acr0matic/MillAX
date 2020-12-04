@@ -4,7 +4,7 @@
         <div class="header">
           <div class="header__primary d-flex">
             <div class="header__logo mr-4">
-              <a href="index.html">
+              <a href="index.php">
                 <img class="header__image" src="img/logo-dark.svg" alt="">
               </a>
             </div>
@@ -13,11 +13,11 @@
             <nav class="header__nav">
               <ul class="navbar">
                 <li class="navbar__item">
-                  <a href="index.html" class="navbar__link navbar__item--active">Главная</a>
+                  <a href="index.php" class="navbar__link navbar__item--active">Главная</a>
                 </li>
 
                 <li class="navbar__item navbar__item--dropdown">
-                  <a href="coworking.html" class="navbar__link">Коворкинг</a>
+                  <a href="coworking.php" class="navbar__link">Коворкинг</a>
                   <div class="navbar__dropdown navbar-dropdown">
                     <ul class="navbar-dropdown__list">
                       <li class="navbar-dropdown__item">
@@ -35,7 +35,7 @@
                 </li>
 
                 <li class="navbar__item navbar__item--dropdown">
-                  <a href="" class="navbar__link">Фрезерный центр</a>
+                  <a href="milling.php" class="navbar__link">Фрезерный центр</a>
                   <div class="navbar__dropdown navbar-dropdown">
                     <ul class="navbar-dropdown__list">
                       <li class="navbar-dropdown__item">
@@ -59,13 +59,13 @@
           <div class="header__secondary d-flex">
             <div class="header__action mr-3">
               <button data-micromodal-trigger="modal-reservation" class="header__button button button-small mr-4">Забронировать место</button>
-              <button data-micromodal-trigger="" class="header__button button button-small">Отправить STL файл</button>
+              <button data-micromodal-trigger="modal-stl" class="header__button button button-small">Отправить STL файл</button>
             </div>
             <!-- /.header__action -->
 
             <ul class="navbar">
               <li class="navbar__item">
-                <a href="" class="navbar__link">Контакты</a>
+                <a href="contacts.php" class="navbar__link">Контакты</a>
               </li>
             </ul>
           </div>
