@@ -9,20 +9,26 @@
 
     transition: all 0.15s ease;
 
-    &--dropdown {
-      &:hover {
-        .navbar__dropdown {
-          transform: translateY(0);
-        }
+    &--active {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        width: calc(100% - 28px);
 
-        .header-bottom {
-          opacity: 1;
-          visibility: visible;
-        }
+        transform: translateX(-50%);
+        border-bottom: $border-orange;
       }
     }
 
-    &--hover {
+    &--dropdown {
+      &:hover {
+        .navbar__dropdown {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
     }
 
     &:hover {
@@ -36,6 +42,8 @@
   }
 
   &__dropdown {
-    transform: translateY(-120px);
+    position: absolute;
+    top: 59px;
+    left: 15px;
   }
 }
