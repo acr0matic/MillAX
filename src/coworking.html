@@ -73,18 +73,20 @@
       <div class="container">
         <div class="header">
           <div class="header__logo">
-            <img class="header__image" src="img/logo-dark.svg" alt="">
+            <a href="index.html">
+              <img class="header__image" src="img/logo-dark.svg" alt="">
+            </a>
           </div>
           <!-- /.header__logo -->
 
           <nav class="header__nav">
             <ul class="navbar">
               <li class="navbar__item">
-                <a href="" class="navbar__link">Главная</a>
+                <a href="index.html" class="navbar__link">Главная</a>
               </li>
 
-              <li class="navbar__item navbar__item--hover">
-                <a href="" class="navbar__link">Коворкинг</a>
+              <li class="navbar__item navbar__item--dropdown">
+                <a href="coworking.html" class="navbar__link">Коворкинг</a>
                 <div class="navbar__dropdown navbar-dropdown">
                   <ul class="navbar-dropdown__list">
                     <li class="navbar-dropdown__item">
@@ -99,10 +101,34 @@
                   </ul>
                 </div>
                 <!-- /.navbar__dropdown -->
+
+                <div class="header-bottom">
+
+                </div>
+                <!-- /.subheader -->
               </li>
 
-              <li class="navbar__item">
+              <li class="navbar__item navbar__item--dropdown">
                 <a href="" class="navbar__link">Фрезерный центр</a>
+                <div class="navbar__dropdown navbar-dropdown">
+                  <ul class="navbar-dropdown__list">
+                    <li class="navbar-dropdown__item">
+                      <a href="" class="navbar-dropdown__link">Рабочее место в коворкинге</a>
+                    </li>
+                    <li class="navbar-dropdown__item">
+                      <a href="" class="navbar-dropdown__link">Как стать резидентом</a>
+                    </li>
+                    <li class="navbar-dropdown__item">
+                      <a href="" class="navbar-dropdown__link">Прайс для резидентов</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.navbar__dropdown -->
+
+                <div class="header-bottom">
+
+                </div>
+                <!-- /.subheader -->
               </li>
 
               <li class="navbar__item">
@@ -124,15 +150,12 @@
     </div>
     <!-- /.header-top -->
 
-    <div class="header-bottom">
 
-    </div>
-    <!-- /.subheader -->
   </header>
 
   <!-- Основной контент -->
   <main>
-    <section id="coworking-hero" class="jarallax" style="background-image: url('../src/img/pictures/coworking-hero/background.jpg');">
+    <section id="coworking-hero" class="jarallax" style="background-image: url('https://acr0matic.dev/millax/img/pictures/coworking-hero/background.jpg');">
       <div class="container">
         <div class="coworking-hero">
           <div class="coworking-hero__promo">
@@ -304,8 +327,8 @@
                 </h2>
                 <input class="input input-field mb-3" type="text" placeholder="Ваше имя">
                 <input class="input input-field mb-3" type="tel" placeholder="Номер телефона">
-                <input class="input input-field mb-3" type="date" placeholder="Желаемая дата посещения">
-                <input class="input input-field mb-5" type="time" placeholder="Желаемое время посещения">
+                <input class="input input-field mb-3" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" min="2020-12-02" placeholder="Желаемая дата посещения">
+                <input class="input input-field mb-3" type="text" onfocus="(this.type='time')" onblur="(this.type='text')" placeholder="Желаемое время посещения">
 
                 <button class="form-excursion__button button button-secondary">Записаться</button>
               </form>
@@ -501,7 +524,7 @@
 
           <ul class="footer__menu-list">
             <li class="footer__menu-item">
-              <a href="" class="footer__link">Оборудование ФЗ</a>
+              <a href="" class="footer__link">Оборудование ФЦ</a>
             </li>
 
             <li class="footer__menu-item">
@@ -510,7 +533,7 @@
             </li>
 
             <li class="footer__menu-item">
-              <a href="" class="footer__link">Прайс ФЗ</a>
+              <a href="" class="footer__link">Прайс ФЦ</a>
             </li>
           </ul>
           <!-- /.footer__title -->

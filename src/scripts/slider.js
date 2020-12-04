@@ -1,5 +1,5 @@
 var coworkingSlider = new Swiper('.coworking-slider', {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 30,
 
   // Navigation arrows
@@ -7,6 +7,12 @@ var coworkingSlider = new Swiper('.coworking-slider', {
     nextEl: '.coworking-slider__next',
     prevEl: '.coworking-slider__prev',
   },
+
+  breakpoints: {
+    420: {
+      slidesPerView: 2,
+    },
+  }
 })
 
 var excursionSlider = new Swiper('.excursion-slider', {

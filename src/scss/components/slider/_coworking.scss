@@ -1,4 +1,6 @@
 .coworking-slider {
+
+
   &__item {
     width: 100%;
     height: 460px;
@@ -13,6 +15,15 @@
 
   &__prev,
   &__next {
-    position: relative;
+  }
+
+  &__prev {
+    right: unset;
+    left: 0;
+  }
+
+  &__next {
+    right: 0;
+    left: unset;
   }
 }
