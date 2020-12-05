@@ -2,7 +2,6 @@ var coworkingSlider = new Swiper('.coworking-slider', {
   slidesPerView: 1,
   spaceBetween: 30,
 
-  // Navigation arrows
   navigation: {
     nextEl: '.coworking-slider__next',
     prevEl: '.coworking-slider__prev',
@@ -13,15 +12,48 @@ var coworkingSlider = new Swiper('.coworking-slider', {
       slidesPerView: 2,
     },
   }
-})
+});
 
 var excursionSlider = new Swiper('.excursion-slider', {
   slidesPerView: 1,
-  spaceBetween: 15,
 
-  // Navigation arrows
   navigation: {
     nextEl: '.excursion-slider__next',
     prevEl: '.excursion-slider__prev',
   },
-})
+});
+
+var residentThumbSlider = new Swiper('.resident-thumb__slider', {
+  direction: 'vertical',
+  autoHeight: true,
+
+  slideActiveClass: 'resident-thumb--active',
+
+  spaceBetween: 15,
+
+  loop: true,
+  loopedSlides: 3,
+
+  slidesPerView: 3,
+  centeredSlides: true,
+
+  slideToClickedSlide: true,
+
+  navigation: {
+    nextEl: '.resident-slider__next',
+    prevEl: '.resident-slider__prev',
+  },
+});
+
+var residentSlider = new Swiper('.resident-slider', {
+  direction: 'vertical',
+  autoHeight: true,
+
+  loop: true,
+  loopedSlides: 3,
+
+  centeredSlides: true,
+});
+
+residentSlider.controller.control = residentThumbSlider;
+residentThumbSlider.controller.control = residentSlider;

@@ -219,7 +219,177 @@
 
     <section id="resident" class="section">
       <div class="container">
+        <div class="section__heading">
+          <h2 class="section__title">Резиденты-операторы CAD | CAM</h2>
+          <h3 class="section__subtitle">
+            Millax – это дружная команда, которая объединена одной целью
+            <br>
+            – сделать стоматологию комфортной и качественной
+          </h3>
+        </div>
+        <!-- /.section__heading -->
 
+        <div class="resident">
+          <div class="swiper-container resident__slider resident__slider--thumb resident-thumb__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="resident__thumb resident-thumb">
+                  <img src="img/resident/thumb.jpg" alt="" class="resident-thumb__photo">
+                  <div class="resident-thumb__wrapper">
+                    <div class="resident-thumb__name">Имя Фамилия</div>
+                    <div class="resident-thumb__job">Деятельность</div>
+                  </div>
+                  <!-- /.resident-thumb__wrapper -->
+                </div>
+                <!-- /.resident-thumb -->
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="resident__thumb resident-thumb">
+                  <img src="img/resident/thumb.jpg" alt="" class="resident-thumb__photo">
+                  <div class="resident-thumb__wrapper">
+                    <div class="resident-thumb__name">Имя Фамилия</div>
+                    <div class="resident-thumb__job">Деятельность</div>
+                  </div>
+                  <!-- /.resident-thumb__wrapper -->
+                </div>
+                <!-- /.resident-thumb -->
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="resident__thumb resident-thumb">
+                  <img src="img/resident/thumb.jpg" alt="" class="resident-thumb__photo">
+                  <div class="resident-thumb__wrapper">
+                    <div class="resident-thumb__name">Имя Фамилия</div>
+                    <div class="resident-thumb__job">Деятельность</div>
+                  </div>
+                  <!-- /.resident-thumb__wrapper -->
+                </div>
+                <!-- /.resident-thumb -->
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="resident__thumb resident-thumb">
+                  <img src="img/resident/thumb.jpg" alt="" class="resident-thumb__photo">
+                  <div class="resident-thumb__wrapper">
+                    <div class="resident-thumb__name">Имя Фамилия</div>
+                    <div class="resident-thumb__job">Деятельность</div>
+                  </div>
+                  <!-- /.resident-thumb__wrapper -->
+                </div>
+                <!-- /.resident-thumb -->
+              </div>
+              <!-- /.swiper-slide -->
+            </div>
+            <!-- /.swiper-wrapper -->
+          </div>
+          <!-- /.swiper-container -->
+
+          <div class="swiper-container resident__slider resident__slider--main resident-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="resident__item resident-item">
+                  <div class="resident-item__picture">
+                    <img class="resident-item__photo" src="img/resident/full.jpg" alt="">
+                  </div>
+                  <!-- /.resident-item__picture -->
+
+                  <div class="resident-item__content">
+                    <p class="resident-item__description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    </p>
+
+                    <p class="resident-item__description">
+                      Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    </p>
+                  </div>
+                  <!-- /.resident-item__description -->
+                </div>
+                <!-- /.resident__item resident-item -->
+              </div>
+              <!-- /.swiper-slider -->
+
+              <div class="swiper-slide">
+                <div class="resident__item resident-item">
+                  <div class="resident-item__picture">
+                    <img class="resident-item__photo" src="img/resident/full.jpg" alt="">
+                  </div>
+                  <!-- /.resident-item__picture -->
+
+                  <div class="resident-item__content">
+                    <p class="resident-item__description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    </p>
+
+                    <p class="resident-item__description">
+                      Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    </p>
+                  </div>
+                  <!-- /.resident-item__description -->
+                </div>
+                <!-- /.resident__item resident-item -->
+              </div>
+              <!-- /.swiper-slider -->
+
+              <div class="swiper-slide">
+                <div class="resident__item resident-item">
+                  <div class="resident-item__picture">
+                    <img class="resident-item__photo" src="img/resident/full.jpg" alt="">
+                  </div>
+                  <!-- /.resident-item__picture -->
+
+                  <div class="resident-item__content">
+                    <p class="resident-item__description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    </p>
+
+                    <p class="resident-item__description">
+                      Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    </p>
+                  </div>
+                  <!-- /.resident-item__description -->
+                </div>
+                <!-- /.resident__item resident-item -->
+              </div>
+              <!-- /.swiper-slider -->
+
+              <div class="swiper-slide">
+                <div class="resident__item resident-item">
+                  <div class="resident-item__picture">
+                    <img class="resident-item__photo" src="img/resident/full.jpg" alt="">
+                  </div>
+                  <!-- /.resident-item__picture -->
+
+                  <div class="resident-item__content">
+                    <p class="resident-item__description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    </p>
+
+                    <p class="resident-item__description">
+                      Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    </p>
+                  </div>
+                  <!-- /.resident-item__description -->
+                </div>
+                <!-- /.resident__item resident-item -->
+              </div>
+              <!-- /.swiper-slider -->
+            </div>
+            <!-- /.swiper-wrapper -->
+          </div>
+          <!-- /.swiper-container -->
+
+          <div class="swiper-button-prev resident-slider__prev"></div>
+          <div class="swiper-button-next resident-slider__next"></div>
+        </div>
+        <!-- /.resident -->
       </div>
       <!-- /.container -->
     </section>
