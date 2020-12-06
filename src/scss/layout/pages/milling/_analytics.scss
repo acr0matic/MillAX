@@ -1,0 +1,16 @@
+#analytics {
+  padding-bottom: 180px;
+
+  .section__title {
+    margin-bottom: 0;
+  }
+}
+
+.analytics {
+  @include flex();
+  flex-direction: column;
+  padding: 55px;
+
+  background-color: $palette-white;
+  box-shadow: $shadow-primary;
+}

@@ -502,9 +502,20 @@
       <!-- /.container -->
     </section>
 
-    <section id="analytics">
+    <section id="analytics" class="section">
       <div class="container">
+        <div class="analytics">
+          <h2 class="section__title">
+            Сравнительный анализ цен на услуги
+            <br>
+            фрезерного центра в г. Москва
+          </h2>
 
+          <div class="analytics__table">
+            <img src="img/pictures/milling/2.png" alt="" class="analytics__image">
+          </div>
+        </div>
+        <!-- /.analytics -->
       </div>
       <!-- /.container -->
     </section>
