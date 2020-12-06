@@ -258,7 +258,7 @@
       <div class="container">
         <div class="excursion">
           <div class="row">
-            <div class="col-5">
+            <div class="col-5" data-aos="fade-right" data-aos-offset="150">
               <form action="" class="form form-excursion">
                 <h2 class="form-excursion__title mb-5">
                   Приглашаем на <span>экскурсию</span>
@@ -275,7 +275,7 @@
             </div>
             <!-- /.col-5 -->
 
-            <div class="col-5 offset-1">
+            <div class="col-5 offset-1" data-aos="fade-left" data-aos-offset="150">
               <div class="excursion__wrapper">
                 <div class="swiper-container slider excursion-slider">
                   <div class="swiper-wrapper">
@@ -338,7 +338,7 @@
         <div class="prices">
           <div class="row justify-content-center">
             <div class="col-6">
-              <table class="table table-price">
+              <table class="table table-price" data-aos="fade-up" data-aos-offset="150">
                 <caption class="table__caption">Цены для резидентов Millax</caption>
                 <tr class="table__start">
                   <td>Наименование услуги</td>

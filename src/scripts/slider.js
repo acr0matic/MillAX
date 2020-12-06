@@ -24,6 +24,8 @@ const excursionSlider = new Swiper('.excursion-slider', {
 });
 
 const serviceSlider = new Swiper('.service-slider', {
+  speed: 700,
+
   slidesPerView: 1,
 
   navigation: {
@@ -36,6 +38,8 @@ const residentThumbContainer = document.querySelector('.resident-thumb__slider')
 const residentContainer = document.querySelector('.resident-slider');
 
 const residentThumbSlider = new Swiper(residentThumbContainer, {
+  speed: 700,
+
   direction: 'vertical',
   autoHeight: true,
 
@@ -58,6 +62,8 @@ const residentThumbSlider = new Swiper(residentThumbContainer, {
 });
 
 const residentSlider = new Swiper(residentContainer, {
+  speed: 700,
+
   direction: 'vertical',
   autoHeight: true,
 

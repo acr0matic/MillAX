@@ -122,7 +122,7 @@
 
         <div class="equipment">
           <div class="row">
-            <div class="col-3">
+            <div class="col-3" data-aos="fade-up" data-aos-offset="150" data-aos-delay="100">
               <div class="equipment__item">
                 <div class="equipment__picture">
                   <img src="img/equipment/1.png" alt="" class="equipment__image">
@@ -144,7 +144,7 @@
             </div>
             <!-- /.col-3 -->
 
-            <div class="col-3">
+            <div class="col-3" data-aos="fade-up" data-aos-offset="150" data-aos-delay="200">
               <div class="equipment__item">
                 <div class="equipment__picture">
                   <img src="img/equipment/2.png" alt="" class="equipment__image">
@@ -166,7 +166,7 @@
             </div>
             <!-- /.col-3 -->
 
-            <div class="col-3">
+            <div class="col-3" data-aos="fade-up" data-aos-offset="150" data-aos-delay="300">
               <div class="equipment__item">
                 <div class="equipment__picture">
                   <img src="img/equipment/3.png" alt="" class="equipment__image">
@@ -187,7 +187,7 @@
             </div>
             <!-- /.col-3 -->
 
-            <div class="col-3">
+            <div class="col-3" data-aos="fade-up" data-aos-offset="150" data-aos-delay="400">
               <div class="equipment__item">
                 <div class="equipment__picture">
                   <img src="img/equipment/4.png" alt="" class="equipment__image">
@@ -398,7 +398,7 @@
       <div class="container">
         <h2 class="section__title">Цены на услуги фрезерного центра</h2>
         <div class="service">
-          <div class="swiper-container service__slider service-slider">
+          <div class="swiper-container service__slider service-slider" data-aos="fade-up" data-aos-offset="150">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="service__card service-card">
@@ -504,7 +504,7 @@
 
     <section id="analytics" class="section">
       <div class="container">
-        <div class="analytics">
+        <div class="analytics"  data-aos="fade-rightR" data-aos-offset="150">
           <h2 class="section__title">
             Сравнительный анализ цен на услуги
             <br>
