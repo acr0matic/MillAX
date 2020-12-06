@@ -1,0 +1,15 @@
+.service-slider {
+  &__prev,
+  &__next {
+  }
+
+  &__prev {
+    right: unset;
+    left: 60px;
+  }
+
+  &__next {
+    right: 60px;
+    left: unset;
+  }
+}

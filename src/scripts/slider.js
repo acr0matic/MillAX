@@ -57,3 +57,12 @@ var residentSlider = new Swiper('.resident-slider', {
 
 residentSlider.controller.control = residentThumbSlider;
 residentThumbSlider.controller.control = residentSlider;
+
+var serviceSlider = new Swiper('.service-slider', {
+  slidesPerView: 1,
+
+  navigation: {
+    nextEl: '.service-slider__next',
+    prevEl: '.service-slider__prev',
+  },
+});

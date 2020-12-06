@@ -1,5 +1,5 @@
 .button-secondary {
-  display: block;
+  @include flex();
 
   border: $button-secondary__border;
   padding-left: 40px;

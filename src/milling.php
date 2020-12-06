@@ -394,9 +394,110 @@
       <!-- /.container -->
     </section>
 
-    <section id="service">
+    <section id="service" class="section">
       <div class="container">
+        <h2 class="section__title">Цены на услуги фрезерного центра</h2>
+        <div class="service">
+          <div class="swiper-container service__slider service-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="service__card service-card">
+                  <div class="service-card__content">
+                    <h3 class="service-card__title">Название услуги в две строки</h3>
+                    <p class="service-card__description mb-4"><strong>Описание: </strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </p>
+                    <div class="service-card__price mb-4">
+                      <span class="service-card__heading">Цена изготовления</span>
+                      <strong class="service-card__value service-card__value--price">15000р</strong>
+                    </div>
+                    <!-- /.service-card__price -->
 
+                    <div class="service-card__time mb-4">
+                      <span class="service-card__heading">Сроки изготовления</span>
+                      <strong class="service-card__value">3-5 дней</strong>
+                    </div>
+                    <!-- /.service-card__price -->
+                  </div>
+                  <!-- /.service-card__content -->
+
+                  <div class="service-card__picture">
+                    <img src="img/service/1.jpg" alt="" class="service-card__image">
+                  </div>
+                  <!-- /.service-card__picture -->
+                </div>
+                <!-- /.service__card -->
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="service__card service-card">
+                  <div class="service-card__content">
+                    <h3 class="service-card__title">Название услуги в две строки</h3>
+                    <p class="service-card__description mb-4"><strong>Описание: </strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </p>
+                    <div class="service-card__price mb-4">
+                      <span class="service-card__heading">Цена изготовления</span>
+                      <strong class="service-card__value service-card__value--price">15000р</strong>
+                    </div>
+                    <!-- /.service-card__price -->
+
+                    <div class="service-card__time mb-4">
+                      <span class="service-card__heading">Сроки изготовления</span>
+                      <strong class="service-card__value">3-5 дней</strong>
+                    </div>
+                    <!-- /.service-card__price -->
+                  </div>
+                  <!-- /.service-card__content -->
+
+                  <div class="service-card__picture">
+                    <img src="img/service/1.jpg" alt="" class="service-card__image">
+                  </div>
+                  <!-- /.service-card__picture -->
+                </div>
+                <!-- /.service__card -->
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="service__card service-card">
+                  <div class="service-card__content">
+                    <h3 class="service-card__title">Название услуги в две строки</h3>
+                    <p class="service-card__description mb-4"><strong>Описание: </strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </p>
+                    <div class="service-card__price mb-4">
+                      <span class="service-card__heading">Цена изготовления</span>
+                      <strong class="service-card__value service-card__value--price">15000р</strong>
+                    </div>
+                    <!-- /.service-card__price -->
+
+                    <div class="service-card__time mb-4">
+                      <span class="service-card__heading">Сроки изготовления</span>
+                      <strong class="service-card__value">3-5 дней</strong>
+                    </div>
+                    <!-- /.service-card__price -->
+                  </div>
+                  <!-- /.service-card__content -->
+
+                  <div class="service-card__picture">
+                    <img src="img/service/1.jpg" alt="" class="service-card__image">
+                  </div>
+                  <!-- /.service-card__picture -->
+                </div>
+                <!-- /.service__card -->
+              </div>
+              <!-- /.swiper-slide -->
+            </div>
+            <!-- /.swiper-wrapper -->
+
+            <div class="swiper-button-prev service-slider__prev"></div>
+            <div class="swiper-button-next service-slider__next"></div>
+          </div>
+          <!-- /.swiper-container -->
+
+          <button class="service__button button button-secondary">Скачать полный прайс
+            <svg class="button__icon button__icon--white" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.3738 15.4922C12.3914 15.5146 12.4138 15.5327 12.4394 15.5452C12.4649 15.5577 12.493 15.5641 12.5215 15.5641C12.5499 15.5641 12.578 15.5577 12.6036 15.5452C12.6292 15.5327 12.6516 15.5146 12.6691 15.4922L15.2941 12.1711C15.3902 12.0492 15.3035 11.8687 15.1465 11.8687H13.4098V3.9375C13.4098 3.83437 13.3254 3.75 13.2223 3.75H11.816C11.7129 3.75 11.6285 3.83437 11.6285 3.9375V11.8664H9.89648C9.73945 11.8664 9.65273 12.0469 9.74883 12.1688L12.3738 15.4922ZM21.0996 14.6719H19.6934C19.5902 14.6719 19.5059 14.7563 19.5059 14.8594V18.4688H5.53711V14.8594C5.53711 14.7563 5.45273 14.6719 5.34961 14.6719H3.94336C3.84023 14.6719 3.75586 14.7563 3.75586 14.8594V19.5C3.75586 19.9148 4.09102 20.25 4.50586 20.25H20.5371C20.952 20.25 21.2871 19.9148 21.2871 19.5V14.8594C21.2871 14.7563 21.2027 14.6719 21.0996 14.6719Z" fill="#515151" />
+            </svg>
+          </button>
+        </div>
+        <!-- /.service -->
       </div>
       <!-- /.container -->
     </section>
