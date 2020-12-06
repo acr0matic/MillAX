@@ -20,3 +20,21 @@ const phoneMaskOptions = {
 phoneInput.forEach(input => {
   IMask(input, phoneMaskOptions);
 });
+
+const forms = document.querySelectorAll('.form');
+
+forms.forEach(form => {
+  const button = form.querySelector('.button');
+  const checkbox = form.querySelector('input[type=checkbox]');
+
+  if (checkbox) {
+    button.setAttribute('disabled', 'disabled');
+
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked)
+        button.removeAttribute('disabled');
+      else
+        button.setAttribute('disabled', 'disabled');
+    })
+  }
+});

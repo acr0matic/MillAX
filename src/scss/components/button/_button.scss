@@ -19,6 +19,12 @@
     fill: #ffffff;
   }
 
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
   &__icon {
     margin-left: 10px;
 
