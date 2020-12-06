@@ -102,7 +102,10 @@
             <!-- /.col-6 -->
 
             <div class="col-6">
-              <img class="milling__image" src="img/pictures/milling/1.jpg" alt="">
+              <div class="milling__picture">
+                <img class="milling__image lazyload" data-src="img/pictures/milling/1.jpg" src="img/pictures/milling/1-preview.jpg" alt="">
+              </div>
+              <!-- /.milling__picture -->
             </div>
             <!-- /.col-6 -->
           </div>
@@ -504,7 +507,7 @@
 
     <section id="analytics" class="section">
       <div class="container">
-        <div class="analytics"  data-aos="fade-rightR" data-aos-offset="150">
+        <div class="analytics" data-aos="fade-right" data-aos-offset="150">
           <h2 class="section__title">
             Сравнительный анализ цен на услуги
             <br>
@@ -512,7 +515,7 @@
           </h2>
 
           <div class="analytics__table">
-            <img src="img/pictures/milling/2.png" alt="" class="analytics__image">
+            <img class="analytics__image" src="img/pictures/milling/2.png" alt="">
           </div>
         </div>
         <!-- /.analytics -->

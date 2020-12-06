@@ -74,9 +74,7 @@
   <!-- Основной контент -->
   <main>
     <section id="become">
-      <div data-jarallax data-speed="0.2" class="jarallax">
-        <img class="jarallax-img" src="img/pictures/become/background.jpg" alt="">
-      </div>
+      <img class="jarallax-img lazyload" src="img/pictures/become/background.jpg" alt="">
 
       <div class="container">
         <div class="become">
@@ -282,7 +280,7 @@
                     <div class="swiper-slide">
                       <div class="excursion__item">
                         <a data-fslightbox href="img/pictures/slider/excursion/1.jpg">
-                          <img class="excursion-slider__image slider__image" src="img/pictures/slider/excursion/1.jpg" alt="">
+                          <img class="excursion-slider__image slider__image lazyload" data-src="img/pictures/slider/excursion/1.jpg" src="img/pictures/slider/excursion/1-preview.jpg" alt="">
                         </a>
                       </div>
                       <!-- /.excursion__item -->
@@ -292,7 +290,7 @@
                     <div class="swiper-slide">
                       <div class="excursion__item">
                         <a data-fslightbox href="img/pictures/slider/excursion/2.jpg">
-                          <img class="excursion-slider__image slider__image" src="img/pictures/slider/excursion/2.jpg" alt="">
+                          <img class="excursion-slider__image slider__image lazyload" data-src="img/pictures/slider/excursion/1.jpg" src="img/pictures/slider/excursion/1-preview.jpg" alt="">
                         </a>
                       </div>
                       <!-- /.excursion__item -->
@@ -302,7 +300,7 @@
                     <div class="swiper-slide">
                       <div class="excursion__item">
                         <a data-fslightbox href="img/pictures/slider/excursion/2.jpg">
-                          <img class="excursion-slider__image slider__image" src="img/pictures/slider/excursion/2.jpg" alt="">
+                          <img class="excursion-slider__image slider__image lazyload" data-src="img/pictures/slider/excursion/1.jpg" src="img/pictures/slider/excursion/1-preview.jpg" alt="">
                         </a>
                       </div>
                       <!-- /.excursion__item -->

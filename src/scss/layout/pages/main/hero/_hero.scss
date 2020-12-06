@@ -9,6 +9,7 @@
 .hero {
   &__picture {
     position: relative;
+    background-color: $palette-purple;
 
     &::before,
     &::after {

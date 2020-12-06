@@ -81,7 +81,7 @@
           <div class="row justify-content-between">
             <div class="col-12 col-md-5">
               <div class="hero__picture">
-                <img class="hero__image" src="img/pictures/hero/1.jpg" alt="">
+                <img class="hero__image lazyload" src="img/pictures/hero/1-preview.jpg" data-src="img/pictures/hero/1.jpg" alt="">
               </div>
               <!-- /.hero__picture -->
             </div>
@@ -145,7 +145,7 @@
                   <!-- /.col-7 -->
 
                   <div class="col-12 col-md-5 col-no-pl">
-                    <img src="img/pictures/hero/2.jpg" alt="" class="hero-promo__image">
+                    <img src="img/pictures/hero/2-preview.jpg" data-src="img/pictures/hero/2.jpg" alt="" class="hero-promo__image lazyload">
                   </div>
                   <!-- /.col-5 -->
                 </div>
@@ -609,7 +609,7 @@
                     <div class="swiper-slide">
                       <div class="coworking-slider__item">
                         <a data-fslightbox href="img/pictures/slider/coworking/1.jpg">
-                          <img class="coworking-slider__image" src="img/pictures/slider/coworking/1.jpg" alt="">
+                          <img class="coworking-slider__image lazyload" data-src="img/pictures/slider/coworking/1.jpg" src="img/pictures/slider/coworking/1-preview.jpg" alt="">
                         </a>
                       </div>
                     </div>
@@ -617,8 +617,8 @@
 
                     <div class="swiper-slide">
                       <div class="coworking-slider__item">
-                        <a data-fslightbox href="img/pictures/slider/coworking/2.jpg">
-                          <img class="coworking-slider__image" src="img/pictures/slider/coworking/2.jpg" alt="">
+                        <a data-fslightbox href="img/pictures/slider/coworking/1.jpg">
+                          <img class="coworking-slider__image lazyload" data-src="img/pictures/slider/coworking/1.jpg" src="img/pictures/slider/coworking/1-preview.jpg" alt="">
                         </a>
                       </div>
                     </div>
@@ -626,8 +626,8 @@
 
                     <div class="swiper-slide">
                       <div class="coworking-slider__item">
-                        <a data-fslightbox href="img/pictures/slider/coworking/3.jpg">
-                          <img class="coworking-slider__image" src="img/pictures/slider/coworking/3.jpg" alt="">
+                        <a data-fslightbox href="img/pictures/slider/coworking/1.jpg">
+                          <img class="coworking-slider__image lazyload" data-src="img/pictures/slider/coworking/1.jpg" src="img/pictures/slider/coworking/1-preview.jpg" alt="">
                         </a>
                       </div>
                     </div>

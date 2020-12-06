@@ -8,10 +8,6 @@
   left: 0;
 }
 
-.jarallax {
-  height: 100%;
-}
-
 .stretched-link {
   position: absolute;
   z-index: 3;
@@ -19,4 +15,12 @@
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+img {
+  transition: filter 0.3s;
+}
+
+img.lazyload {
+  filter: blur(5px);
 }

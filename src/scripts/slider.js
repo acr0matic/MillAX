@@ -11,7 +11,10 @@ const coworkingSlider = new Swiper('.coworking-slider', {
     420: {
       slidesPerView: 2,
     },
-  }
+  },
+
+  // preloadImages: false,
+  // lazy: true
 });
 
 const excursionSlider = new Swiper('.excursion-slider', {

@@ -170,7 +170,6 @@
 <script src="scripts/libraries/aos.js"></script>
 <script src="scripts/libraries/micromodal.js"></script>
 <script src="scripts/libraries/handorgel.js"></script>
-<script src="scripts/libraries/jarallax.js"></script>
 <script src="scripts/libraries/imask.js"></script>
 
 <script src="scripts/slider.js"></script>
