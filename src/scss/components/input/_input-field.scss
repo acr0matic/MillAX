@@ -1,4 +1,5 @@
 .input-field {
+  width: 100%;
   min-height: 44px;
 
   border: 2px solid transparent;
@@ -6,6 +7,9 @@
   padding: 10px 15px;
   background-color: $input__background;
   box-shadow: $input__shadow;
+
+  resize: none;
+  line-height: 150%;
 
   transition: all 0.15s ease;
 

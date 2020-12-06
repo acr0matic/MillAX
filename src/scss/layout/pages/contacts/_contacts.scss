@@ -1,0 +1,24 @@
+#contacts {
+  margin-top: 55px;
+}
+
+.contacts {
+  &__map {
+    height: 580px;
+
+    background-color: #f6f6f6;
+  }
+
+  &__container {
+    position: relative;
+
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+
+  &__form {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

@@ -1,0 +1,23 @@
+.form-contribute {
+  @include flex($align: flex-start);
+  flex-direction: column;
+
+  max-width: 500px;
+
+  padding: 45px 30px 30px 30px;
+
+  color: $text-white;
+  background: linear-gradient(90deg, #9966ff 0%, #7976ff 100%);
+
+  box-shadow: $shadow-secondary;
+  border-radius: 5px;
+
+  &__title {
+    margin-bottom: 30px;
+
+    color: $text-white;
+
+    font-size: 36px;
+    font-weight: $weight-thin;
+  }
+}
