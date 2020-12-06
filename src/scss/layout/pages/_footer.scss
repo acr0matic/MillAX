@@ -8,15 +8,36 @@
 
   background-color: $palette-purple;
   background-image: linear-gradient(90deg, #9966ff 0%, #7976ff 100%), #232222;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    padding-bottom: 90px;
+  }
 }
 
 .footer-bottom {
   margin-top: 30px;
   color: $text-white;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    text-align: center;
+  }
 }
 
 .footer {
   display: flex;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  &__hide {
+    @include breakpoint($breakpoint-mobile-large) {
+      display: none;
+    }
+  }
 
   &__media {
     max-width: 135px;
@@ -25,6 +46,12 @@
     color: $text-white;
 
     text-align: center;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      margin-top: 25px;
+      margin-right: 0;
+      order: 5;
+    }
   }
 
   &__social {
@@ -64,6 +91,11 @@
     color: $text-white;
     font-weight: $weight-medium;
     font-size: $font-size-4;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
   }
 
   &__menu-list {
@@ -75,6 +107,10 @@
 
   &__menu-item {
     margin-bottom: 10px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      max-width: 250px;
+    }
   }
 
   &__link {
@@ -94,6 +130,18 @@
 
     color: $text-white;
     font-weight: $weight-bold;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      margin-right: 0;
+      margin-left: 0;
+
+      max-width: unset;
+    }
+
+    .button {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 
   &__interactive {

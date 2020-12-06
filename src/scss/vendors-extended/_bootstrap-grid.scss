@@ -1,7 +1,15 @@
 .col-no-pl {
   padding-left: 0 !important;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    padding-left: calc(var(--bs-gutter-x) / 2) !important;
+  }
 }
 
 .col-no-pr {
   padding-right: 0 !important;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    padding-left: calc(var(--bs-gutter-x) / 2) !important;
+  }
 }

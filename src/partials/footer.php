@@ -46,7 +46,7 @@
       <div class="footer__menu">
         <a href="coworking.php" class="footer__link">Коворкинг</a>
 
-        <ul class="footer__menu-list">
+        <ul class="footer__menu-list footer__hide">
           <li class="footer__menu-item">
             <a href="" class="footer__link">Рабочее место в коворкинге</a>
           </li>
@@ -73,7 +73,7 @@
       <div class="footer__menu">
         <a href="milling" class="footer__link">Фрезерный центр</a>
 
-        <ul class="footer__menu-list">
+        <ul class="footer__menu-list footer__hide">
           <li class="footer__menu-item">
             <a href="" class="footer__link">Оборудование ФЦ</a>
           </li>
@@ -116,8 +116,11 @@
       <!-- /.footer__menu -->
 
       <div class="footer__action">
-        <a data-micromodal-trigger="modal-reservation" class="footer__interactive">Забронировать место в коворкинге</a>
-        <a data-micromodal-trigger="modal-stl" class="footer__interactive">Отправить STL файл</a>
+        <a data-micromodal-trigger="modal-reservation" class="footer__interactive footer__hide">Забронировать место в коворкинге</a>
+        <a data-micromodal-trigger="modal-stl" class="footer__interactive footer__hide">Отправить STL файл</a>
+
+        <button data-micromodal-trigger="modal-reservation" class="button__footer button button-outline mb-4 mb-md-0">Забронировать место</button>
+        <button data-micromodal-trigger="modal-stl" class="button__footer button button-outline">Отправить STL файл</button>
       </div>
       <!-- /.footer__action -->
     </div>

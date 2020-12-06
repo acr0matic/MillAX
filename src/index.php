@@ -80,7 +80,7 @@
         <div class="hero">
           <div class="row justify-content-between">
             <div class="col-12 col-md-5">
-              <div class="hero__picture">
+              <div class="hero__picture hero-mobile-hide">
                 <img class="hero__image lazyload" src="img/pictures/hero/1-preview.jpg" data-src="img/pictures/hero/1.jpg" alt="">
               </div>
               <!-- /.hero__picture -->
@@ -101,8 +101,13 @@
                     своим временем на все 100%
                   </h2>
 
+                  <div class="hero__picture hero__picture--mobile">
+                    <img class="hero__image lazyload" src="img/pictures/hero/1-preview.jpg" data-src="img/pictures/hero/1.jpg" alt="">
+                  </div>
+                  <!-- /.hero__picture -->
+
                   <div class="hero__action">
-                    <button data-micromodal-trigger="modal-reservation" class="button button-primary">Рабочее место в коворкинге</button>
+                    <button data-micromodal-trigger="modal-reservation" class="button button-primary mb-4 mb-lg-0">Рабочее место в коворкинге</button>
                     <button class="button button-outline button-outline">Услуги фрезерного центра</button>
                   </div>
                   <!-- /.hero__action -->
@@ -173,7 +178,7 @@
         </h2>
         <div class="advantage">
           <div class="row justify-content-center">
-            <div class="col-12 col-md-4 mb-4" data-aos="fade-up" data-aos-offset="150">
+            <div class="col-12 col-md-4 mb-md-4 mb-3" data-aos="fade-up" data-aos-offset="150">
               <div class="advantage__card">
                 <h3 class="advantage__title">Надежность и качество</h3>
                 <p class="advantage__description">
@@ -190,7 +195,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-12 col-md-4 mb-4" data-aos="fade-up" data-aos-offset="150">
+            <div class="col-12 col-md-4 mb-md-4 mb-3" data-aos="fade-up" data-aos-offset="150">
               <div class="advantage__card">
                 <h3 class="advantage__title">Гарантия</h3>
                 <p class="advantage__description">
@@ -203,7 +208,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-12 col-md-4 mb-4" data-aos="fade-up" data-aos-offset="150">
+            <div class="col-12 col-md-4 mb-md-4 mb-3" data-aos="fade-up" data-aos-offset="150">
               <div class="advantage__card">
                 <h3 class="advantage__title">Оптимальные сроки</h3>
                 <p class="advantage__description">
@@ -216,7 +221,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-12 col-md-4 mb-4" data-aos="fade-up" data-aos-offset="150">
+            <div class="col-12 col-md-4 mb-md-4 mb-3" data-aos="fade-up" data-aos-offset="150">
               <div class="advantage__card">
                 <h3 class="advantage__title">Курьерская служба</h3>
                 <p class="advantage__description">
@@ -233,7 +238,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-12 col-md-4 mb-4" data-aos="fade-up" data-aos-offset="150">
+            <div class="col-12 col-md-4 mb-md-4 mb-3" data-aos="fade-up" data-aos-offset="150">
               <div class="advantage__card">
                 <h3 class="advantage__title">Ценовая политика</h3>
                 <p class="advantage__description">
@@ -285,7 +290,7 @@
                 <li class="list__item">
                   быть внимательными друг
                   <br>
-                  к другу, создавать семейнуюатмосферу
+                  к другу, создавать семейную атмосферу
                 </li>
               </ul>
             </div>

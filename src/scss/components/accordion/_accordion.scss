@@ -6,12 +6,21 @@
 .handorgel {
   margin-bottom: 15px;
 
+  @include breakpoint($breakpoint-mobile-large) {
+    background-color: $palette-white;
+    box-shadow: $shadow-secondary;
+  }
+
   &__header {
     display: block;
     margin: 0;
     border-radius: 5px;
 
     box-shadow: 0 0 14px rgba(178, 190, 196, 0.26);
+
+    @include breakpoint($breakpoint-mobile-large) {
+      box-shadow: none;
+    }
 
     &--active,
     &:hover {
@@ -49,10 +58,18 @@
   &__title {
     font-size: $font-size-5;
     font-weight: $weight-medium;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: $font-size-6;
+    }
   }
 
   &__icon {
     transition: transform 0.15s ease;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      display: none;
+    }
 
     &--opened {
       transform: rotate(45deg);
@@ -72,6 +89,9 @@
     transition: height 0.1s ease 0.1s;
 
     &__text {
+      @include breakpoint($breakpoint-mobile-large) {
+        font-size: $font-size-6;
+      }
     }
 
     &__inner {

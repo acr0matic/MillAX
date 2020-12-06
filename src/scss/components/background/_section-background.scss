@@ -5,6 +5,10 @@
     position: absolute;
     pointer-events: none;
 
+    @include breakpoint($breakpoint-mobile-large) {
+      display: none;
+    }
+
     &--main-1 {
       top: -855px;
       left: -1271px;

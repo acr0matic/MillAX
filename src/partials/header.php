@@ -2,7 +2,7 @@
     <div class="header-top">
       <div class="container">
         <div class="header">
-          <div class="header__primary d-flex">
+          <div class="header__primary d-lg-flex">
             <div class="header__logo mr-4">
               <a href="index.php">
                 <img class="header__image" src="img/logo-dark.svg" alt="">
@@ -56,7 +56,7 @@
           </div>
           <!-- /.header__primary -->
 
-          <div class="header__secondary d-flex">
+          <div class="header__secondary d-lg-flex">
             <div class="header__action mr-3">
               <button data-micromodal-trigger="modal-reservation" class="header__button button button-small mr-4">Забронировать место</button>
               <button data-micromodal-trigger="modal-stl" class="header__button button button-small">Отправить STL файл</button>
