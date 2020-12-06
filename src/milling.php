@@ -237,7 +237,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="resident__thumb resident-thumb">
-                  <img src="img/resident/thumb.jpg" alt="" class="resident-thumb__photo">
+                  <img src="img/pictures/slider/resident/thumb.jpg" alt="" class="resident-thumb__photo">
                   <div class="resident-thumb__wrapper">
                     <div class="resident-thumb__name">Имя Фамилия</div>
                     <div class="resident-thumb__job">Деятельность</div>
@@ -250,7 +250,7 @@
 
               <div class="swiper-slide">
                 <div class="resident__thumb resident-thumb">
-                  <img src="img/resident/thumb.jpg" alt="" class="resident-thumb__photo">
+                  <img src="img/pictures/slider/resident/thumb.jpg" alt="" class="resident-thumb__photo">
                   <div class="resident-thumb__wrapper">
                     <div class="resident-thumb__name">Имя Фамилия</div>
                     <div class="resident-thumb__job">Деятельность</div>
@@ -263,7 +263,7 @@
 
               <div class="swiper-slide">
                 <div class="resident__thumb resident-thumb">
-                  <img src="img/resident/thumb.jpg" alt="" class="resident-thumb__photo">
+                  <img src="img/pictures/slider/resident/thumb.jpg" alt="" class="resident-thumb__photo">
                   <div class="resident-thumb__wrapper">
                     <div class="resident-thumb__name">Имя Фамилия</div>
                     <div class="resident-thumb__job">Деятельность</div>
@@ -276,7 +276,7 @@
 
               <div class="swiper-slide">
                 <div class="resident__thumb resident-thumb">
-                  <img src="img/resident/thumb.jpg" alt="" class="resident-thumb__photo">
+                  <img src="img/pictures/slider/resident/thumb.jpg" alt="" class="resident-thumb__photo">
                   <div class="resident-thumb__wrapper">
                     <div class="resident-thumb__name">Имя Фамилия</div>
                     <div class="resident-thumb__job">Деятельность</div>
@@ -296,7 +296,7 @@
               <div class="swiper-slide">
                 <div class="resident__item resident-item">
                   <div class="resident-item__picture">
-                    <img class="resident-item__photo" src="img/resident/full.jpg" alt="">
+                    <img class="resident-item__photo lazyload" data-src="img/pictures/slider/resident/full.jpg" src="img/pictures/slider/resident/preview.jpg" alt="">
                   </div>
                   <!-- /.resident-item__picture -->
 
@@ -319,7 +319,7 @@
               <div class="swiper-slide">
                 <div class="resident__item resident-item">
                   <div class="resident-item__picture">
-                    <img class="resident-item__photo" src="img/resident/full.jpg" alt="">
+                    <img class="resident-item__photo lazyload" data-src="img/pictures/slider/resident/full.jpg" src="img/pictures/slider/resident/preview.jpg" alt="">
                   </div>
                   <!-- /.resident-item__picture -->
 
@@ -342,7 +342,7 @@
               <div class="swiper-slide">
                 <div class="resident__item resident-item">
                   <div class="resident-item__picture">
-                    <img class="resident-item__photo" src="img/resident/full.jpg" alt="">
+                    <img class="resident-item__photo lazyload" data-src="img/pictures/slider/resident/full.jpg" src="img/pictures/slider/resident/preview.jpg" alt="">
                   </div>
                   <!-- /.resident-item__picture -->
 
@@ -365,7 +365,7 @@
               <div class="swiper-slide">
                 <div class="resident__item resident-item">
                   <div class="resident-item__picture">
-                    <img class="resident-item__photo" src="img/resident/full.jpg" alt="">
+                    <img class="resident-item__photo lazyload" data-src="img/pictures/slider/resident/full.jpg" src="img/pictures/slider/resident/preview.jpg" alt="">
                   </div>
                   <!-- /.resident-item__picture -->
 
