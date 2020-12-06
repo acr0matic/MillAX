@@ -1,4 +1,4 @@
-var coworkingSlider = new Swiper('.coworking-slider', {
+const coworkingSlider = new Swiper('.coworking-slider', {
   slidesPerView: 1,
   spaceBetween: 30,
 
@@ -14,7 +14,7 @@ var coworkingSlider = new Swiper('.coworking-slider', {
   }
 });
 
-var excursionSlider = new Swiper('.excursion-slider', {
+const excursionSlider = new Swiper('.excursion-slider', {
   slidesPerView: 1,
 
   navigation: {
@@ -23,7 +23,19 @@ var excursionSlider = new Swiper('.excursion-slider', {
   },
 });
 
-var residentThumbSlider = new Swiper('.resident-thumb__slider', {
+const serviceSlider = new Swiper('.service-slider', {
+  slidesPerView: 1,
+
+  navigation: {
+    nextEl: '.service-slider__next',
+    prevEl: '.service-slider__prev',
+  },
+});
+
+const residentThumbContainer = document.querySelector('.resident-thumb__slider');
+const residentContainer = document.querySelector('.resident-slider');
+
+const residentThumbSlider = new Swiper(residentThumbContainer, {
   direction: 'vertical',
   autoHeight: true,
 
@@ -45,7 +57,7 @@ var residentThumbSlider = new Swiper('.resident-thumb__slider', {
   },
 });
 
-var residentSlider = new Swiper('.resident-slider', {
+const residentSlider = new Swiper(residentContainer, {
   direction: 'vertical',
   autoHeight: true,
 
@@ -55,14 +67,8 @@ var residentSlider = new Swiper('.resident-slider', {
   centeredSlides: true,
 });
 
-residentSlider.controller.control = residentThumbSlider;
-residentThumbSlider.controller.control = residentSlider;
+if (residentThumbContainer && residentContainer) {
+  residentSlider.controller.control = residentThumbSlider;
+  residentThumbSlider.controller.control = residentSlider;
+}
 
-var serviceSlider = new Swiper('.service-slider', {
-  slidesPerView: 1,
-
-  navigation: {
-    nextEl: '.service-slider__next',
-    prevEl: '.service-slider__prev',
-  },
-});
