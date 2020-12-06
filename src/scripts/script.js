@@ -4,6 +4,8 @@ AOS.init({
 
 MicroModal.init({
   awaitCloseAnimation: true,
+  disableFocus: true,
+  disableScroll: false,
 });
 
 if (window.matchMedia("(max-width: 420px)").matches) {
