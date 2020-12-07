@@ -139,8 +139,14 @@
     }
 
     .button {
+      display: none;
+
       padding-top: 10px;
       padding-bottom: 10px;
+
+      @include breakpoint($breakpoint-mobile-large) {
+        display: block;
+      }
     }
   }
 

@@ -14,15 +14,20 @@
 .hero {
   &__picture {
     position: relative;
-    display: none;
 
-    background-color: $palette-purple;
+    @include breakpoint($breakpoint-mobile-large) {
+      display: none;
+    }
 
     &--mobile {
-      display: block;
+      display: none;
       height: 200px;
 
       margin-bottom: 30px;
+
+      @include breakpoint($breakpoint-mobile-large) {
+        display: block;
+      }
     }
 
     &::before,
