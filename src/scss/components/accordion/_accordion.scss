@@ -38,9 +38,6 @@
       }
     }
 
-    &--open {
-      border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-    }
 
     &__button {
       @include flex();
@@ -59,7 +56,10 @@
     font-size: $font-size-5;
     font-weight: $weight-medium;
 
+    line-height: 150%;
+
     @include breakpoint($breakpoint-mobile-large) {
+      max-width: 95%;
       font-size: $font-size-6;
     }
   }
@@ -71,8 +71,16 @@
       display: none;
     }
 
+    &--mobile {
+      display: none;
+
+      @include breakpoint($breakpoint-mobile-large) {
+        display: block;
+      }
+    }
+
     &--opened {
-      transform: rotate(45deg);
+      transform: rotate(90deg);
     }
   }
 

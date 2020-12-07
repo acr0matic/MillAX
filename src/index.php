@@ -337,9 +337,13 @@
                   <div class="handorgel__header">
                     <div class="handorgel__header__button">
                       <h3 class="handorgel__title">Комфортное место работы</h3>
-                      <div class="faq__action">
+                      <div class="handorgel__indicator">
                         <svg class="handorgel__icon" width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M30.7071 8.7071C31.0976 8.31658 31.0976 7.68341 30.7071 7.29289L24.3431 0.92893C23.9526 0.538406 23.3195 0.538406 22.9289 0.92893C22.5384 1.31945 22.5384 1.95262 22.9289 2.34314L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.7071ZM8.74228e-08 9L30 9L30 7L-8.74228e-08 7L8.74228e-08 9Z" fill="#515151" />
+                        </svg>
+
+                        <svg class="handorgel__icon handorgel__icon--mobile" width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5L0.5 9.33013L0.5 0.669873L8 5Z" fill="#515151" />
                         </svg>
                       </div>
                       <!-- /.faq__header -->
@@ -382,9 +386,13 @@
                   <div class="handorgel__header">
                     <div class="handorgel__header__button">
                       <h3 class="handorgel__title">Развитие своего бизнеса</h3>
-                      <div class="faq__action">
+                      <div class="handorgel__indicator">
                         <svg class="handorgel__icon" width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M30.7071 8.7071C31.0976 8.31658 31.0976 7.68341 30.7071 7.29289L24.3431 0.92893C23.9526 0.538406 23.3195 0.538406 22.9289 0.92893C22.5384 1.31945 22.5384 1.95262 22.9289 2.34314L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.7071ZM8.74228e-08 9L30 9L30 7L-8.74228e-08 7L8.74228e-08 9Z" fill="#515151" />
+                        </svg>
+
+                        <svg class="handorgel__icon handorgel__icon--mobile" width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5L0.5 9.33013L0.5 0.669873L8 5Z" fill="#515151" />
                         </svg>
                       </div>
                       <!-- /.faq__header -->
@@ -427,9 +435,13 @@
                   <div class="handorgel__header">
                     <div class="handorgel__header__button">
                       <h3 class="handorgel__title">Развитие навыков и компетенций</h3>
-                      <div class="faq__action">
+                      <div class="handorgel__indicator">
                         <svg class="handorgel__icon" width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M30.7071 8.7071C31.0976 8.31658 31.0976 7.68341 30.7071 7.29289L24.3431 0.92893C23.9526 0.538406 23.3195 0.538406 22.9289 0.92893C22.5384 1.31945 22.5384 1.95262 22.9289 2.34314L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.7071ZM8.74228e-08 9L30 9L30 7L-8.74228e-08 7L8.74228e-08 9Z" fill="#515151" />
+                        </svg>
+
+                        <svg class="handorgel__icon handorgel__icon--mobile" width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5L0.5 9.33013L0.5 0.669873L8 5Z" fill="#515151" />
                         </svg>
                       </div>
                       <!-- /.faq__header -->
@@ -472,9 +484,13 @@
                   <div class="handorgel__header">
                     <div class="handorgel__header__button">
                       <h3 class="handorgel__title">Сообщество единомышленников (комьюнити, нетворкинг)</h3>
-                      <div class="faq__action">
+                      <div class="handorgel__indicator">
                         <svg class="handorgel__icon" width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M30.7071 8.7071C31.0976 8.31658 31.0976 7.68341 30.7071 7.29289L24.3431 0.92893C23.9526 0.538406 23.3195 0.538406 22.9289 0.92893C22.5384 1.31945 22.5384 1.95262 22.9289 2.34314L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.7071ZM8.74228e-08 9L30 9L30 7L-8.74228e-08 7L8.74228e-08 9Z" fill="#515151" />
+                        </svg>
+
+                        <svg class="handorgel__icon handorgel__icon--mobile" width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5L0.5 9.33013L0.5 0.669873L8 5Z" fill="#515151" />
                         </svg>
                       </div>
                       <!-- /.faq__header -->
@@ -517,9 +533,13 @@
                   <div class="handorgel__header">
                     <div class="handorgel__header__button">
                       <h3 class="handorgel__title">Расширение круга деловых контактов, заказчиков</h3>
-                      <div class="faq__action">
+                      <div class="handorgel__indicator">
                         <svg class="handorgel__icon" width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M30.7071 8.7071C31.0976 8.31658 31.0976 7.68341 30.7071 7.29289L24.3431 0.92893C23.9526 0.538406 23.3195 0.538406 22.9289 0.92893C22.5384 1.31945 22.5384 1.95262 22.9289 2.34314L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.7071ZM8.74228e-08 9L30 9L30 7L-8.74228e-08 7L8.74228e-08 9Z" fill="#515151" />
+                        </svg>
+
+                        <svg class="handorgel__icon handorgel__icon--mobile" width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5L0.5 9.33013L0.5 0.669873L8 5Z" fill="#515151" />
                         </svg>
                       </div>
                       <!-- /.faq__header -->
@@ -555,16 +575,20 @@
                 </div>
                 <!-- /.coworking__content -->
               </div>
-              <!-- /.coworking__item -->
 
+              <!-- /.coworking__item -->
               <div class="coworking__item">
                 <div class="handorgel">
                   <div class="handorgel__header">
                     <div class="handorgel__header__button">
                       <h3 class="handorgel__title">Личное развитие и позитивный взгляд на жизнь</h3>
-                      <div class="faq__action">
+                      <div class="handorgel__indicator">
                         <svg class="handorgel__icon" width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M30.7071 8.7071C31.0976 8.31658 31.0976 7.68341 30.7071 7.29289L24.3431 0.92893C23.9526 0.538406 23.3195 0.538406 22.9289 0.92893C22.5384 1.31945 22.5384 1.95262 22.9289 2.34314L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.7071ZM8.74228e-08 9L30 9L30 7L-8.74228e-08 7L8.74228e-08 9Z" fill="#515151" />
+                        </svg>
+
+                        <svg class="handorgel__icon handorgel__icon--mobile" width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5L0.5 9.33013L0.5 0.669873L8 5Z" fill="#515151" />
                         </svg>
                       </div>
                       <!-- /.faq__header -->
