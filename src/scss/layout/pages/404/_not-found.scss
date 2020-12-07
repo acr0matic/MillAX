@@ -8,6 +8,15 @@
   padding-top: 120px;
   padding-bottom: 80px;
 
+  @include breakpoint($breakpoint-mobile-large) {
+    position: relative;
+
+    flex-direction: column;
+
+    padding-bottom: 220px;
+    margin-bottom: 200px;
+  }
+
   &__container {
     position: relative;
 
@@ -33,6 +42,14 @@
     background-image: linear-gradient(90deg, #9966ff 0%, #7976ff 60.38%);
 
     clip-path: polygon(0 0, 58% 0, 100% 70%, 0% 100%);
+
+    @include breakpoint($breakpoint-mobile-large) {
+      right: -15px;
+      left: -15px;
+
+      width: 110%;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    }
   }
 
   &__wrapper,
@@ -42,16 +59,28 @@
 
   &__wrapper {
     color: $text-white;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+    }
   }
 
   &__error {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
 
     max-width: 500px;
 
     font-weight: $weight-bold;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      align-items: flex-end;
+    }
   }
 
   &__notice {
@@ -59,6 +88,13 @@
     margin-right: 28px;
 
     font-size: 72px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: 64px;
+
+      margin-left: unset;
+      margin-right: 10px;
+    }
   }
 
   &__code {
@@ -68,6 +104,13 @@
     line-height: 280px;
 
     backface-visibility: hidden;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      margin-top: -35px;
+
+      font-size: 144px;
+      line-height: unset;
+    }
   }
 
   &__title {
@@ -75,10 +118,27 @@
     margin-bottom: 30px;
 
     font-weight: $weight-thin;
+    line-height: 150%;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      margin-bottom: 50px;
+      font-size: $font-size-4;
+    }
   }
 
   &__image {
+    width: 100%;
     max-width: 500px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      position: absolute;
+      bottom: -110px;
+      left: 50%;
+
+      max-width: 270px;
+
+      transform: translateX(-50%);
+    }
   }
 
   &__button {
