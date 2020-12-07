@@ -3,20 +3,38 @@
   height: 650px;
 
   margin-bottom: 400px;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    height: 320px;
+    margin-bottom: 590px;
+  }
 }
 
 .become {
+  &-background {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
   &__promo {
     position: absolute;
-    bottom: -70%;
+    top: 70%;
     left: 50%;
 
     width: 760px;
 
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
 
     background-color: $palette-white;
     box-shadow: $shadow-primary;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      top: 80%;
+
+      width: 95%;
+    }
   }
 
   &__title {
@@ -29,17 +47,36 @@
     line-height: 54px;
 
     text-align: center;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      padding: 15px;
+
+      font-size: $font-size-3;
+      line-height: 150%;
+    }
   }
 
   &__content {
     position: relative;
     padding: 30px 60px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      padding: 40px 20px 20px 20px;
+
+      br {
+        display: none;
+      }
+    }
   }
 
   &__background {
     position: absolute;
     bottom: -389px;
     left: -392px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      display: none;
+    }
   }
 
   &__subtitle {
@@ -51,8 +88,15 @@
 
   &__service {
     @include flex($align: flex-start);
+
+    @include breakpoint($breakpoint-mobile-large) {
+      flex-direction: column;
+    }
   }
 
   &__list {
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: $font-size-6;
+    }
   }
 }

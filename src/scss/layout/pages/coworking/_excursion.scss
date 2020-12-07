@@ -1,13 +1,25 @@
 .excursion {
+  &-mobile {
+    &--hide {
+      @include breakpoint($breakpoint-mobile-large) {
+        display: none;
+      }
+    }
+
+    &--show {
+      display: none;
+      @include breakpoint($breakpoint-mobile-large) {
+        display: block;
+      }
+    }
+  }
   &__wrapper {
     position: relative;
   }
 
   &__item {
-
   }
 
   &__image {
-
   }
 }

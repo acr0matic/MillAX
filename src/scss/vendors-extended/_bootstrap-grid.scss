@@ -13,3 +13,10 @@
     padding-left: calc(var(--bs-gutter-x) / 2) !important;
   }
 }
+
+.col-no-px--mobile {
+  @include breakpoint($breakpoint-mobile-large) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -15,6 +15,10 @@
     background-image: $table__head--gradient;
 
     text-align: left;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      padding: 15px 10px;
+    }
   }
 
   td {
@@ -23,11 +27,21 @@
     @include last(2) {
       text-align: right;
     }
+
+    @include breakpoint($breakpoint-mobile-large) {
+      padding: 10px 5px;
+
+      font-size: $font-size-6;
+    }
   }
 
   &__start {
     td {
       padding-top: 40px;
+
+      @include breakpoint($breakpoint-mobile-large) {
+        padding-top: 15px;
+      }
     }
   }
 
