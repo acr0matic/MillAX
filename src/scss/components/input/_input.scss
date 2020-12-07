@@ -11,5 +11,9 @@
   &::placeholder {
     color: $input__placeholder;
     font-size: $font-size-5;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: $font-size-6;
+    }
   }
 }
