@@ -178,4 +178,5 @@
 <script src="scripts/slider.js"></script>
 <script src="scripts/script.js"></script>
 <script src="scripts/common.js"></script>
+<script src="scripts/mobile-menu.js"></script>
 <!-- endbuild -->

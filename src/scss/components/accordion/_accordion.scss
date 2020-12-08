@@ -11,6 +11,39 @@
     box-shadow: $shadow-secondary;
   }
 
+  &--menu {
+    box-shadow: none;
+
+    .handorgel__title {
+      font-weight: $weight-thin;
+      font-size: $font-size-4;
+    }
+
+    .handorgel__header--active,
+    .handorgel__header:hover {
+      background-color: $palette-white;
+      background-image: none;
+
+      color: $text-black;
+    }
+
+    .handorgel__header__button {
+      justify-content: flex-start;
+
+      min-height: unset;
+      padding: 0;
+    }
+
+    .handorgel__indicator {
+      margin-left: 15px;
+    }
+
+    .handorgel__header--active .handorgel__icon path,
+    .handorgel__header:hover .handorgel__icon path {
+      fill: $palette-black;
+    }
+  }
+
   &__header {
     display: block;
     margin: 0;
@@ -37,7 +70,6 @@
         fill: #ffffff;
       }
     }
-
 
     &__button {
       @include flex();
