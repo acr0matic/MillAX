@@ -1,5 +1,9 @@
 #contacts {
   margin-top: 55px;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    margin-top: 70px;
+  }
 }
 
 .contacts {
@@ -7,6 +11,10 @@
     height: 580px;
 
     background-color: #f6f6f6;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      height: 300px;
+    }
   }
 
   &__container {
@@ -14,11 +22,27 @@
 
     margin-top: 60px;
     margin-bottom: 100px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      margin-top: 15px;
+    }
   }
 
   &__form {
     position: absolute;
     bottom: 0;
     left: 0;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      bottom: -600px;
+    }
+  }
+
+  &__info {
+    width: 47%;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      margin-bottom: 600px;
+    }
   }
 }

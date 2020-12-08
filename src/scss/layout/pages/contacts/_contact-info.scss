@@ -2,13 +2,20 @@
   @include flex($align: flex-start);
   flex-wrap: wrap;
 
-  width: 47%;
-
   margin-left: auto;
   margin-right: 60px;
   padding: 60px 40px 30px 40px;
 
   box-shadow: $shadow-secondary;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    width: 100%;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    padding: 15px;
+  }
 
   &__item {
     min-width: 165px;
@@ -22,11 +29,19 @@
 
     font-weight: $weight-light;
     font-size: $font-size-3;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: $font-size-4;
+    }
   }
 
   &__description {
     color: $text-purple;
     font-size: $font-size-3;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: $font-size-5;
+    }
 
     a {
       transition: color 0.15s ease;

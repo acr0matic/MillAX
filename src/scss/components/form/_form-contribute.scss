@@ -12,10 +12,16 @@
   box-shadow: $shadow-secondary;
   border-radius: 5px;
 
+  @include breakpoint($breakpoint-mobile-large) {
+    padding: 45px 10px 30px 10px;
+
+    border-radius: 0;
+
+    background: $palette-purple;
+  }
+
   &__title {
     margin-bottom: 30px;
-
-    color: $text-white;
 
     font-size: 36px;
     font-weight: $weight-thin;
