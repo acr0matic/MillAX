@@ -2,6 +2,12 @@
   position: relative;
   @include flex();
 
+  @include breakpoint($breakpoint-mobile-large) {
+    flex-direction: column-reverse;
+
+    margin-bottom: 60px;
+  }
+
   .offset-1 {
     margin-left: 7%;
   }
@@ -10,17 +16,35 @@
     height: 490px;
     margin: 0;
 
+    @include breakpoint($breakpoint-mobile-large) {
+      height: 250px;
+    }
+
     &--thumb {
       margin-left: 80px;
       padding-left: 15px;
       width: 30%;
 
       height: 430px;
+
+      @include breakpoint($breakpoint-mobile-large) {
+        width: 100%;
+        height: unset;
+
+        margin-left: 0;
+        padding-left: 0;
+        padding-bottom: 30px;
+      }
     }
 
     &--main {
       width: 70%;
       padding-right: 15px;
+
+      @include breakpoint($breakpoint-mobile-large) {
+        width: 100%;
+        padding-right: 0;
+      }
     }
   }
 }

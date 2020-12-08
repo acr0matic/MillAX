@@ -1,4 +1,8 @@
 #service {
+  @include breakpoint($breakpoint-mobile-large) {
+    margin-bottom: 80px;
+  }
+
   .section__title {
     margin-bottom: 45px;
   }

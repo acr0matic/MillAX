@@ -57,5 +57,13 @@
     line-height: 150%;
 
     text-align: center;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: $font-size-5;
+
+      br {
+        display: none;
+      }
+    }
   }
 }

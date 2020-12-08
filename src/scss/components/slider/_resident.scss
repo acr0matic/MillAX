@@ -6,15 +6,32 @@
     left: 0;
 
     margin-top: 0;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      transform: rotate(-90deg);
+    }
   }
 
   &__prev {
     content: url("../img/icons/controls/slider-up.svg");
     top: 120px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      top: unset;
+      bottom: -50px;
+      left: 25%;
+    }
   }
 
   &__next {
     content: url("../img/icons/controls/slider-down.svg");
     bottom: 150px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      right: 25%;
+      bottom: -50px;
+
+      left: unset;
+    }
   }
 }

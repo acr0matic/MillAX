@@ -43,17 +43,15 @@ const residentContainer = document.querySelector('.resident-slider');
 const residentThumbSlider = new Swiper(residentThumbContainer, {
   speed: 700,
 
-  direction: 'vertical',
+  direction: 'horizontal',
   autoHeight: true,
 
   slideActiveClass: 'resident-thumb--active',
 
-  spaceBetween: 15,
-
   loop: true,
   loopedSlides: 3,
 
-  slidesPerView: 3,
+  slidesPerView: 1,
   centeredSlides: true,
 
   slideToClickedSlide: true,
@@ -62,18 +60,35 @@ const residentThumbSlider = new Swiper(residentThumbContainer, {
     nextEl: '.resident-slider__next',
     prevEl: '.resident-slider__prev',
   },
+
+  breakpoints: {
+    425: {
+      spaceBetween: 15,
+
+      slidesPerView: 3,
+      direction: 'vertical',
+    },
+  },
 });
 
 const residentSlider = new Swiper(residentContainer, {
   speed: 700,
 
-  direction: 'vertical',
+  direction: 'horizontal',
   autoHeight: true,
 
   loop: true,
   loopedSlides: 3,
 
   centeredSlides: true,
+  spaceBetween: 15,
+
+  breakpoints: {
+    425: {
+      spaceBetween: 0,
+      direction: 'vertical',
+    },
+  },
 });
 
 if (residentThumbContainer && residentContainer) {

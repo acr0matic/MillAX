@@ -7,6 +7,11 @@
 
   transition: all 0.15s ease;
 
+  @include breakpoint($breakpoint-mobile-large) {
+    justify-content: center;
+    padding: 20px 0 20px 0;
+  }
+
   &:hover {
     opacity: 0.7;
   }
@@ -20,12 +25,21 @@
 
   &__photo {
     max-width: 100%;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      display: none;
+    }
   }
 
   &__wrapper {
     margin-left: 10px;
 
     font-size: $font-size-5;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      margin-left: 0;
+      text-align: center;
+    }
   }
 
   &__name {

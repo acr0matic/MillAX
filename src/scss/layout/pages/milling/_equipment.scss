@@ -2,6 +2,10 @@
   background-color: #fbfbfb;
 
   padding-bottom: 130px;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    padding-bottom: 60px;
+  }
 }
 
 .equipment {
