@@ -11,3 +11,16 @@ headerDropdown.forEach(dropdown => {
       headerBottom.classList.remove('header-bottom--visible');
   })
 });
+
+
+// Добавление пробелов в цену
+const numbers = document.querySelectorAll('.number-space');
+numberSpace(numbers);
+
+function numberSpace(numbers) {
+  if (numbers)
+    numbers.forEach(number => {
+      number.innerHTML = parseInt(number.innerHTML).toLocaleString() + ' ₽';
+    });
+}
+

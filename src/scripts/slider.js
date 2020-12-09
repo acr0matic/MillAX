@@ -67,6 +67,7 @@ const residentThumbSlider = new Swiper(residentThumbContainer, {
     },
 
     1200: {
+      slidesPerView: 3,
       spaceBetween: 15,
       direction: 'vertical',
     },

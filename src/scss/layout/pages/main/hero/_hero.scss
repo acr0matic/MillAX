@@ -19,6 +19,13 @@
   &__picture {
     position: relative;
 
+    max-width: 470px;
+    height: 400px;
+
+    @include breakpoint($breakpoint-laptop) {
+      max-width: unset;
+    }
+
     @include breakpoint($breakpoint-mobile-large) {
       display: none;
     }

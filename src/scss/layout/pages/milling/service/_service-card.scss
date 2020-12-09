@@ -4,7 +4,7 @@
 
   padding: 30px;
 
-  @include breakpoint($breakpoint-tablet) {
+  @include breakpoint($breakpoint-laptop) {
     padding: 15px;
 
     margin-bottom: 120px;
@@ -20,7 +20,7 @@
       width: 40%;
     }
 
-    @include breakpoint($breakpoint-tablet) {
+    @include breakpoint($breakpoint-laptop) {
       display: none;
     }
   }
@@ -36,6 +36,8 @@
     box-sizing: border-box;
 
     max-width: 35%;
+    min-height: 450px;
+
     border-radius: 5px;
 
     margin-right: 40px;
@@ -48,7 +50,7 @@
       max-width: 40%;
     }
 
-    @include breakpoint($breakpoint-tablet) {
+    @include breakpoint($breakpoint-laptop) {
       max-width: 100%;
       margin-right: 0;
 
