@@ -46,7 +46,6 @@ const residentThumbSlider = new Swiper(residentThumbContainer, {
   direction: 'horizontal',
   autoHeight: true,
 
-  slideActiveClass: 'resident-thumb--active',
 
   loop: true,
   loopedSlides: 3,
@@ -62,10 +61,13 @@ const residentThumbSlider = new Swiper(residentThumbContainer, {
   },
 
   breakpoints: {
-    425: {
-      spaceBetween: 15,
-
+    768: {
       slidesPerView: 3,
+      slideActiveClass: 'resident-thumb--active',
+    },
+
+    1200: {
+      spaceBetween: 15,
       direction: 'vertical',
     },
   },
@@ -84,7 +86,7 @@ const residentSlider = new Swiper(residentContainer, {
   spaceBetween: 15,
 
   breakpoints: {
-    425: {
+    1200: {
       spaceBetween: 0,
       direction: 'vertical',
     },

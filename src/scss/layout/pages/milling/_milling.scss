@@ -11,6 +11,8 @@
   overflow: hidden;
 
   @include breakpoint($breakpoint-laptop-large) {
+    padding-top: 80px;
+
     br {
       display: none;
     }
@@ -28,8 +30,8 @@
     width: 300%;
     height: 100%;
 
-    @include breakpoint($breakpoint-mobile-large) {
-      right: 0;
+    @include breakpoint($breakpoint-laptop) {
+      right: -300px;
     }
   }
 
@@ -62,7 +64,7 @@
     padding-left: 30px;
     padding-right: 30px;
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-tablet) {
       margin-left: auto;
       margin-right: auto;
     }
@@ -70,6 +72,10 @@
 
   &__picture {
     height: 416px;
+
+    @include breakpoint($breakpoint-laptop) {
+      height: 300px;
+    }
 
     @include breakpoint($breakpoint-mobile-large) {
       height: 210px;

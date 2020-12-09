@@ -1,7 +1,7 @@
 .service-slider {
   &__prev,
   &__next {
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-tablet) {
       top: unset;
       bottom: 40px;
     }
@@ -15,7 +15,7 @@
       left: 10px;
     }
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-tablet) {
       left: 25%;
     }
   }
@@ -28,7 +28,7 @@
       right: 10px;
     }
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-tablet) {
       right: 25%;
     }
   }
