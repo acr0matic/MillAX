@@ -26,6 +26,11 @@
 
     text-align: center;
 
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size-1;
+      line-height: 30px;
+    }
+
     @include breakpoint($breakpoint-mobile-large) {
       font-size: $font-size-3;
       line-height: 30px;
@@ -58,7 +63,7 @@
 
     text-align: center;
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-laptop) {
       font-size: $font-size-5;
 
       br {

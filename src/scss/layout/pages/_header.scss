@@ -25,11 +25,11 @@
   &-bottom {
     position: absolute;
     z-index: 1;
-    bottom: -55px;
+    bottom: -47px;
     left: 0;
 
     width: 100%;
-    height: 55px;
+    height: 47px;
     background-color: $palette-white;
 
     opacity: 0;
@@ -50,7 +50,7 @@
 
     background-color: $palette-white;
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-tablet) {
       box-shadow: $shadow-secondary;
     }
   }
@@ -59,7 +59,7 @@
   }
 
   &__secondary {
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-tablet) {
       display: none;
     }
   }
@@ -71,13 +71,17 @@
   }
 
   &__nav {
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-tablet) {
       display: none;
     }
   }
 
   &__action {
     padding-top: 5px;
+
+    @include breakpoint($breakpoint-laptop) {
+      display: none;
+    }
   }
 
   &__button {
@@ -91,7 +95,7 @@
   &__mobile {
     display: none;
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-tablet) {
       display: block;
     }
   }

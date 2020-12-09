@@ -1,7 +1,7 @@
 <footer id="footer">
   <div class="container">
     <div class="footer">
-      <div class="footer__media">
+      <div class="footer__media mt-5 mt-lg-0">
         <a href="index.php">
           <img src="img/logo-white.svg" alt="" class="footer__logo">
         </a>
@@ -115,7 +115,7 @@
       </div>
       <!-- /.footer__menu -->
 
-      <div class="footer__action">
+      <div class="footer__action mt-5 mt-sm-5 mt-lg-0">
         <a data-micromodal-trigger="modal-reservation" class="footer__interactive footer__hide">Забронировать место в коворкинге</a>
         <a data-micromodal-trigger="modal-stl" class="footer__interactive footer__hide">Отправить STL файл</a>
 

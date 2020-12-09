@@ -6,7 +6,7 @@
 .handorgel {
   margin-bottom: 15px;
 
-  @include breakpoint($breakpoint-mobile-large) {
+  @include breakpoint($breakpoint-laptop) {
     background-color: $palette-white;
     box-shadow: $shadow-secondary;
   }
@@ -51,7 +51,7 @@
 
     box-shadow: 0 0 14px rgba(178, 190, 196, 0.26);
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-laptop) {
       box-shadow: none;
     }
 
@@ -90,7 +90,7 @@
 
     line-height: 150%;
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-laptop) {
       max-width: 95%;
       font-size: $font-size-6;
     }
@@ -99,14 +99,14 @@
   &__icon {
     transition: transform 0.15s ease;
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-laptop) {
       display: none;
     }
 
     &--mobile {
       display: none;
 
-      @include breakpoint($breakpoint-mobile-large) {
+      @include breakpoint($breakpoint-laptop) {
         display: block;
       }
     }

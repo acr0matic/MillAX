@@ -9,7 +9,7 @@
   background-color: $palette-purple;
   background-image: linear-gradient(90deg, #9966ff 0%, #7976ff 100%), #232222;
 
-  @include breakpoint($breakpoint-mobile-large) {
+  @include breakpoint($breakpoint-laptop) {
     padding-bottom: 90px;
   }
 }
@@ -25,6 +25,11 @@
 
 .footer {
   display: flex;
+
+  @include breakpoint($breakpoint-laptop) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
   @include breakpoint($breakpoint-mobile-large) {
     flex-direction: column;
@@ -47,10 +52,14 @@
 
     text-align: center;
 
+    @include breakpoint($breakpoint-laptop) {
+      order: 4;
+    }
+
     @include breakpoint($breakpoint-mobile-large) {
       margin-top: 25px;
       margin-right: 0;
-      order: 5;
+      order: 6;
     }
   }
 
@@ -92,8 +101,13 @@
     font-weight: $weight-medium;
     font-size: $font-size-4;
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-laptop) {
+      width: 30%;
       margin-right: 0;
+    }
+
+    @include breakpoint($breakpoint-mobile-large) {
+      width: unset;
       margin-bottom: 15px;
     }
   }
@@ -131,7 +145,8 @@
     color: $text-white;
     font-weight: $weight-bold;
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-laptop) {
+      order: 5;
       margin-right: 0;
       margin-left: 0;
 

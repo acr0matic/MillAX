@@ -79,7 +79,7 @@
       <div class="container">
         <div class="hero">
           <div class="row justify-content-between">
-            <div class="col-12 col-md-5">
+            <div class="col-12 col-lg-5">
               <div class="hero__picture hero-mobile-hide">
                 <img class="hero__image lazyload" src="img/pictures/hero/1-preview.jpg" data-src="img/pictures/hero/1.jpg" alt="">
               </div>
@@ -87,7 +87,7 @@
             </div>
             <!-- /.col-5 -->
 
-            <div class="col-12 col-md-6 col-no-pl">
+            <div class="col-12 col-lg-6 col-no-pl">
               <div class="hero__content">
                 <div class="hero__background">
                   <div class="hero__background-first"></div>
@@ -107,7 +107,7 @@
                   <!-- /.hero__picture -->
 
                   <div class="hero__action">
-                    <button data-micromodal-trigger="modal-reservation" class="button button-primary mb-4 mb-lg-0">Рабочее место в коворкинге</button>
+                    <button data-micromodal-trigger="modal-reservation" class="button button-primary mb-4 mb-xl-0">Рабочее место в коворкинге</button>
                     <button class="button button-outline button-outline">Услуги фрезерного центра</button>
                   </div>
                   <!-- /.hero__action -->
@@ -124,7 +124,7 @@
             <div class="col-12">
               <div class="hero__promo hero-promo">
                 <div class="row">
-                  <div class="col-12 col-md-7">
+                  <div class="col-12 col-lg-7">
                     <div class="hero-promo__content">
                       <h2 class="hero-promo__title">Предоставляем полностью <span>укомплектованное пространство</span></h2>
                       <ul class="hero-promo__list list">
@@ -149,7 +149,7 @@
                   </div>
                   <!-- /.col-7 -->
 
-                  <div class="col-12 col-md-5 col-no-pl">
+                  <div class="col-12 col-lg-5 col-no-pl">
                     <img src="img/pictures/hero/2-preview.jpg" data-src="img/pictures/hero/2.jpg" alt="" class="hero-promo__image lazyload">
                   </div>
                   <!-- /.col-5 -->
@@ -178,7 +178,7 @@
         </h2>
         <div class="advantage">
           <div class="row justify-content-center">
-            <div class="col-12 col-md-4 mb-md-4 mb-3" data-aos="fade-up" data-aos-offset="150">
+            <div class="col-12 col-md-6 col-lg-4 mb-md-4 mb-3" data-aos="fade-up" data-aos-offset="150">
               <div class="advantage__card">
                 <h3 class="advantage__title">Надежность и качество</h3>
                 <p class="advantage__description">
@@ -195,7 +195,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-12 col-md-4 mb-md-4 mb-3" data-aos="fade-up" data-aos-offset="150">
+            <div class="col-12 col-md-6 col-lg-4 mb-md-4 mb-3" data-aos="fade-up" data-aos-offset="150">
               <div class="advantage__card">
                 <h3 class="advantage__title">Гарантия</h3>
                 <p class="advantage__description">
@@ -208,7 +208,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-12 col-md-4 mb-md-4 mb-3" data-aos="fade-up" data-aos-offset="150">
+            <div class="col-12 col-md-6 col-lg-4 mb-md-4 mb-3" data-aos="fade-up" data-aos-offset="150">
               <div class="advantage__card">
                 <h3 class="advantage__title">Оптимальные сроки</h3>
                 <p class="advantage__description">
@@ -221,7 +221,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-12 col-md-4 mb-md-4 mb-3" data-aos="fade-up" data-aos-offset="150">
+            <div class="col-12 col-md-6 col-lg-4 mb-md-4 mb-3" data-aos="fade-up" data-aos-offset="150">
               <div class="advantage__card">
                 <h3 class="advantage__title">Курьерская служба</h3>
                 <p class="advantage__description">
@@ -238,7 +238,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-12 col-md-4 mb-md-4 mb-3" data-aos="fade-up" data-aos-offset="150">
+            <div class="col-12 col-lg-4 mb-md-4 mb-3" data-aos="fade-up" data-aos-offset="150">
               <div class="advantage__card">
                 <h3 class="advantage__title">Ценовая политика</h3>
                 <p class="advantage__description">
@@ -267,7 +267,7 @@
 
         <div class="worth">
           <div class="row">
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-6 col-lg-3">
               <ul class="worth__list list list--light">
                 <li class="list__item">
                   не усложнять
@@ -296,7 +296,7 @@
             </div>
             <!-- /.col-3 -->
 
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-6 col-lg-4">
               <ul class="worth__list list list--light">
                 <li class="list__item">
                   взаимоуважение
@@ -331,7 +331,7 @@
 
         <div class="coworking">
           <div class="row">
-            <div class="col-12 col-md-7">
+            <div class="col-12 col-lg-6 col-xl-7">
               <div class="coworking__item">
                 <div class="handorgel">
                   <div class="handorgel__header">

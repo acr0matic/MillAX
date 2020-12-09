@@ -8,7 +8,7 @@ const coworkingSlider = new Swiper('.coworking-slider', {
   },
 
   breakpoints: {
-    420: {
+    991: {
       slidesPerView: 2,
     },
   },

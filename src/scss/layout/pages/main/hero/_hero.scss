@@ -5,7 +5,11 @@
 
   overflow: hidden;
 
-  @include breakpoint($breakpoint-mobile-large) {
+  @include breakpoint($breakpoint-laptop-large) {
+    padding-bottom: 100px;
+  }
+
+  @include breakpoint($breakpoint-laptop) {
     padding-top: 80px;
     padding-bottom: 60px;
   }
@@ -36,7 +40,7 @@
       position: absolute;
       background-color: #9966ff;
 
-      @include breakpoint($breakpoint-mobile-large) {
+      @include breakpoint($breakpoint-laptop) {
         display: none;
       }
     }
@@ -66,6 +70,14 @@
     height: 100%;
 
     object-fit: cover;
+
+    @include breakpoint($breakpoint-laptop) {
+      height: 300px;
+    }
+
+    @include breakpoint($breakpoint-mobile-large) {
+      height: 100%;
+    }
   }
 
   &__content {
@@ -94,12 +106,15 @@
 
     clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
 
-    @include breakpoint($breakpoint-mobile-large) {
-      left: -15px;
-
-      width: 120%;
+    @include breakpoint($breakpoint-laptop) {
+      width: 100%;
       height: 150%;
       clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    }
+
+    @include breakpoint($breakpoint-mobile-large) {
+      left: -15px;
+      width: 110%;
     }
 
     &-first {
@@ -153,6 +168,10 @@
     font-size: $font-size-2;
     font-weight: $weight-light;
 
+    @include breakpoint($breakpoint-laptop-large) {
+      font-size: $font-size-4;
+    }
+
     @include breakpoint($breakpoint-mobile-large) {
       font-size: $font-size-6;
     }
@@ -163,6 +182,10 @@
 
     font-size: $font-size-0;
     font-weight: $weight-light;
+
+    @include breakpoint($breakpoint-laptop-large) {
+      font-size: $font-size-1;
+    }
 
     @include breakpoint($breakpoint-mobile-large) {
       font-size: $font-size-2;
@@ -178,7 +201,7 @@
 
     line-height: 150%;
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-laptop-large) {
       margin-bottom: 10px;
 
       font-size: $font-size-4;
@@ -188,8 +211,9 @@
   &__action {
     @include flex();
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-laptop-large) {
       flex-direction: column;
+      align-items: flex-start;
     }
   }
 }

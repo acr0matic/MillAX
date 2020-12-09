@@ -11,6 +11,10 @@
     right: unset;
     left: 60px;
 
+    @include breakpoint($breakpoint-laptop-large) {
+      left: 10px;
+    }
+
     @include breakpoint($breakpoint-mobile-large) {
       left: 25%;
     }
@@ -19,6 +23,10 @@
   &__next {
     right: 60px;
     left: unset;
+
+    @include breakpoint($breakpoint-laptop-large) {
+      right: 10px;
+    }
 
     @include breakpoint($breakpoint-mobile-large) {
       right: 25%;

@@ -16,6 +16,10 @@
 
     overflow: hidden;
 
+    @include breakpoint($breakpoint-laptop-large) {
+      width: 40%;
+    }
+
     @include breakpoint($breakpoint-mobile-large) {
       display: none;
     }
@@ -39,6 +43,10 @@
 
     background-color: $palette-white;
     box-shadow: $shadow-primary;
+
+    @include breakpoint($breakpoint-laptop-large) {
+      max-width: 40%;
+    }
 
     @include breakpoint($breakpoint-mobile-large) {
       max-width: 100%;

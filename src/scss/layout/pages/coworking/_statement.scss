@@ -26,6 +26,10 @@
   &__item {
     font-size: $font-size-3;
 
+    @include breakpoint($breakpoint-laptop-large) {
+      font-size: $font-size-4;
+    }
+
     @include breakpoint($breakpoint-mobile-large) {
       font-size: $font-size-5;
     }
@@ -35,6 +39,10 @@
     margin-bottom: 30px;
 
     font-size: $font-size-1;
+
+    @include breakpoint($breakpoint-laptop-large) {
+      font-size: $font-size-2;
+    }
 
     @include breakpoint($breakpoint-mobile-large) {
       font-size: $font-size-3;

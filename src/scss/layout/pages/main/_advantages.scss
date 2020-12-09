@@ -19,7 +19,7 @@
     background-color: $palette-white;
     box-shadow: $shadow-secondary;
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-laptop) {
       br {
         display: none;
       }
@@ -29,13 +29,13 @@
   &__title {
     margin-bottom: 10px;
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-laptop) {
       font-size: $font-size-5;
     }
   }
 
   &__description {
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-laptop) {
       font-size: $font-size-6;
     }
   }

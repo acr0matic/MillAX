@@ -8,7 +8,7 @@ MicroModal.init({
   disableScroll: false,
 });
 
-if (window.matchMedia("(max-width: 420px)").matches) {
+if (window.matchMedia("(max-width: 996px)").matches) {
   const accordions = Array.from(document.querySelectorAll('.handorgel')).map((selector) => new handorgel(selector));
 
   accordions.forEach((accordion) => {

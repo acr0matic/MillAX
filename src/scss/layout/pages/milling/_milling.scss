@@ -10,12 +10,14 @@
 
   overflow: hidden;
 
-  @include breakpoint($breakpoint-mobile-large) {
-    padding-top: 100px;
-
+  @include breakpoint($breakpoint-laptop-large) {
     br {
       display: none;
     }
+  }
+
+  @include breakpoint($breakpoint-mobile-large) {
+    padding-top: 100px;
   }
 
   &__background {
