@@ -332,7 +332,7 @@
         <div class="coworking">
           <div class="row">
             <div class="col-12 col-lg-6 col-xl-7">
-              <div class="coworking__item">
+              <div class="coworking__item" data-aos="fade-right" data-aos-offset="150">
                 <div class="handorgel">
                   <div class="handorgel__header">
                     <div class="handorgel__header__button">
@@ -381,7 +381,7 @@
               </div>
               <!-- /.coworking__item -->
 
-              <div class="coworking__item">
+              <div class="coworking__item" data-aos="fade-right" data-aos-offset="150">
                 <div class="handorgel">
                   <div class="handorgel__header">
                     <div class="handorgel__header__button">
@@ -430,7 +430,7 @@
               </div>
               <!-- /.coworking__item -->
 
-              <div class="coworking__item">
+              <div class="coworking__item" data-aos="fade-right" data-aos-offset="150">
                 <div class="handorgel">
                   <div class="handorgel__header">
                     <div class="handorgel__header__button">
@@ -479,7 +479,7 @@
               </div>
               <!-- /.coworking__item -->
 
-              <div class="coworking__item">
+              <div class="coworking__item" data-aos="fade-right" data-aos-offset="150">
                 <div class="handorgel">
                   <div class="handorgel__header">
                     <div class="handorgel__header__button">
@@ -528,7 +528,7 @@
               </div>
               <!-- /.coworking__item -->
 
-              <div class="coworking__item">
+              <div class="coworking__item" data-aos="fade-right" data-aos-offset="150">
                 <div class="handorgel">
                   <div class="handorgel__header">
                     <div class="handorgel__header__button">
@@ -577,7 +577,7 @@
               </div>
 
               <!-- /.coworking__item -->
-              <div class="coworking__item">
+              <div class="coworking__item" data-aos="fade-right" data-aos-offset="150">
                 <div class="handorgel">
                   <div class="handorgel__header">
                     <div class="handorgel__header__button">
