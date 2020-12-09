@@ -1,7 +1,7 @@
 #contacts {
   margin-top: 55px;
 
-  @include breakpoint($breakpoint-mobile-large) {
+  @include breakpoint($breakpoint-laptop) {
     margin-top: 70px;
   }
 }
@@ -12,7 +12,7 @@
 
     background-color: #f6f6f6;
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-laptop) {
       height: 300px;
     }
   }
@@ -23,7 +23,7 @@
     margin-top: 60px;
     margin-bottom: 100px;
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-laptop) {
       margin-top: 15px;
     }
   }
@@ -33,6 +33,15 @@
     bottom: 0;
     left: 0;
 
+    @include breakpoint($breakpoint-laptop) {
+      bottom: -610px;
+      left: 50%;
+
+      width: 100%;
+
+      transform: translateX(-50%);
+    }
+
     @include breakpoint($breakpoint-mobile-large) {
       bottom: -600px;
     }
@@ -40,6 +49,10 @@
 
   &__info {
     width: 47%;
+
+    @include breakpoint($breakpoint-laptop) {
+      margin-bottom: 630px;
+    }
 
     @include breakpoint($breakpoint-mobile-large) {
       margin-bottom: 600px;

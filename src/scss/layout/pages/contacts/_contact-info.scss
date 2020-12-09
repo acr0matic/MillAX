@@ -8,7 +8,11 @@
 
   box-shadow: $shadow-secondary;
 
-  @include breakpoint($breakpoint-mobile-large) {
+  @include breakpoint($breakpoint-laptop-large) {
+    margin-right: 0;
+  }
+
+  @include breakpoint($breakpoint-laptop) {
     width: 100%;
 
     margin-left: 0;
@@ -22,6 +26,11 @@
     max-width: 210px;
 
     margin-bottom: 30px;
+
+    @include breakpoint($breakpoint-laptop) {
+      width: 50%;
+      max-width: 100%;
+    }
   }
 
   &__title {
