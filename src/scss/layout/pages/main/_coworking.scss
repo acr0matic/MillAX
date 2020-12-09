@@ -7,6 +7,7 @@
 
   &__item {
     position: relative;
+    z-index: 100;
 
     &:hover {
       .coworking__content {
@@ -27,6 +28,7 @@
     margin-left: 40px;
     padding: 30px 20px;
 
+    background-color: $palette-white;
     box-shadow: $shadow-secondary;
 
     visibility: hidden;
