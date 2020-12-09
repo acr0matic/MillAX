@@ -18,7 +18,7 @@
       right: 0;
     }
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-laptop) {
       display: none;
     }
   }

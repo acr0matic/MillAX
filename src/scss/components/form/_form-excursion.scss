@@ -27,7 +27,7 @@
     padding-left: 40px;
     padding-right: 40px;
 
-    @include breakpoint($breakpoint-mobile-large) {
+    @include breakpoint($breakpoint-tablet) {
       margin-left: auto;
       margin-right: auto;
     }

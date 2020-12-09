@@ -261,8 +261,8 @@
             по коворкингу
           </h2>
 
-          <div class="row flex-column-reverse flex-lg-row">
-            <div class="col-12 col-lg-5" data-aos="fade-right" data-aos-offset="150">
+          <div class="row flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-5" data-aos="fade-right" data-aos-offset="150">
               <form action="" class="form form-excursion">
                 <h2 class="form-excursion__title excursion-mobile--hide mb-5">
                   Приглашаем на <span>экскурсию</span>
@@ -279,7 +279,7 @@
             </div>
             <!-- /.col-5 -->
 
-            <div class="col-12 col-lg-5 offset-0 offset-lg-1 mb-4 mb-lg-0" data-aos="fade-left" data-aos-offset="150">
+            <div class="col-12 col-md-5 offset-0 offset-md-1 mb-4 mb-lg-0" data-aos="fade-left" data-aos-offset="150">
               <div class="excursion__wrapper">
                 <div class="swiper-container slider excursion-slider">
                   <div class="swiper-wrapper">
