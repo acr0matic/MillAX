@@ -74,7 +74,7 @@
   <!-- Основной контент -->
   <main>
     <section id="become">
-      <img class="jarallax-img lazyload" src="img/pictures/become/background.jpg" alt="">
+      <img class="become-background lazyload" src="img/pictures/become/background.jpg" alt="">
 
       <div class="container">
         <div class="become">
@@ -133,7 +133,7 @@
         <h2 class="section__title">Что входит в стоимость?</h2>
         <div class="included">
           <div class="row">
-            <div class="col-4" data-aos="fade-up" data-aos-offset="150">
+            <div class="col-12 col-lg-4 mb-3 mb-lg-0" data-aos="fade-up" data-aos-offset="150">
               <div class="included__card">
                 <div class="included__wrapper">
                   <h3 class="included__title">
@@ -152,7 +152,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-4" data-aos="fade-up" data-aos-offset="150">
+            <div class="col-12 col-lg-4 mb-3 mb-lg-0" data-aos="fade-up" data-aos-offset="150">
               <div class="included__card">
                 <div class="included__wrapper">
                   <h3 class="included__title">
@@ -173,7 +173,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-4" data-aos="fade-up" data-aos-offset="150">
+            <div class="col-12 col-lg-4 mb-3 mb-lg-0" data-aos="fade-up" data-aos-offset="150">
               <div class="included__card">
                 <div class="included__wrapper">
                   <h3 class="included__title">
@@ -194,7 +194,7 @@
           </div>
           <!-- /.row -->
 
-          <button class="mt-4 mx-auto button button-secondary" data-micromodal-trigger="modal-reservation">Забронировать место</button>
+          <button class="included__button button button-secondary mt-4 mx-auto" data-micromodal-trigger="modal-reservation">Забронировать место</button>
         </div>
         <!-- /.row -->
       </div>
@@ -210,7 +210,7 @@
         <img class="statement__background statement__background--right" src="img/pictures/statement/2.svg" alt="">
         <div class="statement">
           <div class="row justify-content-center">
-            <div class="col-5">
+            <div class="col-12 col-lg-5 mb-4 mb-lg-0">
               <div class="statement__item">
                 <h2 class="statement__title">Условия резидентсва</h2>
                 <ul class="statement__list list">
@@ -231,7 +231,7 @@
             </div>
             <!-- /.col-5 -->
 
-            <div class="col-5">
+            <div class="col-12 col-lg-5">
               <div class="statement__item">
                 <h2 class="statement__title">Кто может стать резидентом</h2>
                 <ul class="statement__list list">
@@ -255,10 +255,16 @@
     <section id="excursion" class="section">
       <div class="container">
         <div class="excursion">
-          <div class="row">
-            <div class="col-5" data-aos="fade-right" data-aos-offset="150">
+          <h2 class="form-excursion__title excursion-mobile--show mb-5">
+            Приглашаем на <span>экскурсию</span>
+            <br>
+            по коворкингу
+          </h2>
+
+          <div class="row flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-5" data-aos="fade-right" data-aos-offset="150">
               <form action="" class="form form-excursion">
-                <h2 class="form-excursion__title mb-5">
+                <h2 class="form-excursion__title excursion-mobile--hide mb-5">
                   Приглашаем на <span>экскурсию</span>
                   <br>
                   по коворкингу
@@ -273,7 +279,7 @@
             </div>
             <!-- /.col-5 -->
 
-            <div class="col-5 offset-1" data-aos="fade-left" data-aos-offset="150">
+            <div class="col-12 col-md-5 offset-0 offset-md-1 mb-4 mb-lg-0" data-aos="fade-left" data-aos-offset="150">
               <div class="excursion__wrapper">
                 <div class="swiper-container slider excursion-slider">
                   <div class="swiper-wrapper">
@@ -335,7 +341,7 @@
 
         <div class="prices">
           <div class="row justify-content-center">
-            <div class="col-6">
+            <div class="col-12 col-lg-6 col-no-px--mobile">
               <table class="table table-price" data-aos="fade-up" data-aos-offset="150">
                 <caption class="table__caption">Цены для резидентов Millax</caption>
                 <tr class="table__start">

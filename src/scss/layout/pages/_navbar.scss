@@ -3,6 +3,10 @@
 
   font-size: $font-size-4;
 
+  @include breakpoint($breakpoint-laptop-large) {
+    font-size: $font-size-5;
+  }
+
   &__item {
     position: relative;
     display: flex;

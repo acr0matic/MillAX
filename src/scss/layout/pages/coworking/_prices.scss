@@ -4,6 +4,11 @@
   background-color: #fbfbfb;
 
   clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+
+  @include breakpoint($breakpoint-mobile-large) {
+    background-color: $palette-white;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
 }
 
 .prices {

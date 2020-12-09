@@ -19,6 +19,13 @@ $list-marker--orange: #ff7f08;
     display: flex;
     margin-bottom: 15px;
 
+    @include breakpoint($breakpoint-laptop) {
+      br {
+        display: none;
+      }
+    }
+
+
     &::before {
       content: "";
 

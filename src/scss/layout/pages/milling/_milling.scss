@@ -10,6 +10,17 @@
 
   overflow: hidden;
 
+  @include breakpoint($breakpoint-laptop-large) {
+    padding-top: 80px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @include breakpoint($breakpoint-mobile-large) {
+    padding-top: 100px;
+  }
 
   &__background {
     position: absolute;
@@ -18,6 +29,10 @@
     background-image: linear-gradient(81.1deg, #9966ff 6.15%, #7976ff 100.16%);
     width: 300%;
     height: 100%;
+
+    @include breakpoint($breakpoint-laptop) {
+      right: -300px;
+    }
   }
 
   &__title {
@@ -27,6 +42,11 @@
     font-weight: $weight-regular;
 
     line-height: 60px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: $font-size-3;
+      line-height: unset;
+    }
   }
 
   &__description {
@@ -34,15 +54,34 @@
 
     font-size: 20px;
     font-weight: $weight-light;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: $font-size-6;
+    }
   }
 
   &__button {
     padding-left: 30px;
     padding-right: 30px;
+
+    @include breakpoint($breakpoint-tablet) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__picture {
     height: 416px;
+
+    @include breakpoint($breakpoint-laptop) {
+      height: 300px;
+    }
+
+    @include breakpoint($breakpoint-mobile-large) {
+      height: 210px;
+
+      margin-bottom: 30px;
+    }
   }
 
   &__image {

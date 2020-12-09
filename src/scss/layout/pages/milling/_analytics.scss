@@ -1,8 +1,12 @@
 #analytics {
   padding-bottom: 180px;
 
+  @include breakpoint($breakpoint-mobile-large) {
+    display: none;
+  }
+
   .section__title {
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
 }
 
@@ -15,6 +19,6 @@
   box-shadow: $shadow-primary;
 
   &__image {
-
+    width: 100%;
   }
 }

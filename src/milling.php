@@ -78,8 +78,8 @@
         <img class="background__image background__image--milling-1" src="img/pictures/background/3.svg" alt="">
         <div class="milling__background"></div>
         <div class="milling">
-          <div class="row">
-            <div class="col-6">
+          <div class="row flex-column-reverse flex-lg-row">
+            <div class="col-12 col-lg-6 d-flex flex-column align-items-start">
               <h1 class="milling__title">
                 Фрезерный центр
                 <br>
@@ -101,7 +101,7 @@
             </div>
             <!-- /.col-6 -->
 
-            <div class="col-6">
+            <div class="col-12 col-lg-6 col-no-px--mobile">
               <div class="milling__picture">
                 <img class="milling__image lazyload" data-src="img/pictures/milling/1.jpg" src="img/pictures/milling/1-preview.jpg" alt="">
               </div>
@@ -115,7 +115,6 @@
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.section -->
 
     <section id="equipment" class="section">
       <div class="container background">
@@ -125,7 +124,7 @@
 
         <div class="equipment">
           <div class="row">
-            <div class="col-3" data-aos="fade-up" data-aos-offset="150" data-aos-delay="100">
+            <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0" data-aos="fade-up" data-aos-offset="150" data-aos-delay="100">
               <div class="equipment__item">
                 <div class="equipment__picture">
                   <img src="img/equipment/1.png" alt="" class="equipment__image">
@@ -147,7 +146,7 @@
             </div>
             <!-- /.col-3 -->
 
-            <div class="col-3" data-aos="fade-up" data-aos-offset="150" data-aos-delay="200">
+            <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0" data-aos="fade-up" data-aos-offset="150" data-aos-delay="200">
               <div class="equipment__item">
                 <div class="equipment__picture">
                   <img src="img/equipment/2.png" alt="" class="equipment__image">
@@ -169,7 +168,7 @@
             </div>
             <!-- /.col-3 -->
 
-            <div class="col-3" data-aos="fade-up" data-aos-offset="150" data-aos-delay="300">
+            <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0" data-aos="fade-up" data-aos-offset="150" data-aos-delay="300">
               <div class="equipment__item">
                 <div class="equipment__picture">
                   <img src="img/equipment/3.png" alt="" class="equipment__image">
@@ -190,7 +189,7 @@
             </div>
             <!-- /.col-3 -->
 
-            <div class="col-3" data-aos="fade-up" data-aos-offset="150" data-aos-delay="400">
+            <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-offset="150" data-aos-delay="400">
               <div class="equipment__item">
                 <div class="equipment__picture">
                   <img src="img/equipment/4.png" alt="" class="equipment__image">
@@ -398,7 +397,7 @@
     </section>
 
     <section id="service" class="section">
-      <div class="container">
+      <div class="container col-no-px--mobile">
         <h2 class="section__title">Цены на услуги фрезерного центра</h2>
         <div class="service">
           <div class="swiper-container service__slider service-slider" data-aos="fade-up" data-aos-offset="150">

@@ -1,6 +1,10 @@
 .section {
   padding-top: 135px;
 
+  @include breakpoint($breakpoint-mobile-large) {
+    padding-top: 90px;
+  }
+
   &__heading {
     @include flex();
     flex-direction: column;
@@ -22,8 +26,24 @@
 
     text-align: center;
 
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size-1;
+      line-height: 30px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size-3;
+      line-height: 30px;
+    }
+
     &--left {
       justify-content: flex-start;
+
+      margin-bottom: 40px;
+
+      @include breakpoint($breakpoint-mobile-large) {
+        justify-content: center;
+      }
     }
 
     &--small-mb {
@@ -42,5 +62,13 @@
     line-height: 150%;
 
     text-align: center;
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size-5;
+
+      br {
+        display: none;
+      }
+    }
   }
 }

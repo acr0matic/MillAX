@@ -7,8 +7,16 @@
   background-color: $palette-white;
   box-shadow: $shadow-primary;
 
+  @include breakpoint($breakpoint-mobile-large) {
+    margin-top: 40px;
+  }
+
   &__content {
     padding: 40px 60px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      padding: 20px 10px;
+    }
   }
 
   &__title {
@@ -16,6 +24,13 @@
 
     font-size: $font-size-1;
     line-height: 45px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      text-align: center;
+
+      font-size: $font-size-3;
+      line-height: 30px;
+    }
 
     span {
       color: $text-orange;
@@ -27,5 +42,9 @@
     height: 100%;
 
     object-fit: cover;
+
+    @include breakpoint($breakpoint-laptop) {
+      height: 300px;
+    }
   }
 }

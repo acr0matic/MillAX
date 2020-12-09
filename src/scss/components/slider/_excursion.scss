@@ -1,15 +1,31 @@
 .excursion-slider {
   &__prev,
   &__next {
+    @include breakpoint($breakpoint-laptop) {
+      top: unset;
+      bottom: -90px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
   }
 
   &__prev {
     right: unset;
     left: -80px;
+
+    @include breakpoint($breakpoint-laptop) {
+      left: 20%;
+    }
   }
 
   &__next {
     right: -80px;
     left: unset;
+
+    @include breakpoint($breakpoint-laptop) {
+      right: 20%;
+    }
   }
 }

@@ -1,6 +1,10 @@
 #included {
   position: relative;
   padding-bottom: 130px;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    padding-bottom: 60px;
+  }
 }
 
 .included {
@@ -53,6 +57,14 @@
     margin-bottom: 25px;
 
     font-size: $font-size-2;
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size-4;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size-5;
+    }
   }
 
   &__list {
@@ -63,9 +75,23 @@
     max-width: 260px;
 
     font-size: $font-size-4;
+
+    @include breakpoint($breakpoint-laptop) {
+      max-width: unset;
+
+      font-size: $font-size-5;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size-6;
+    }
   }
 
   &__button {
-    margin: 30px auto 140px auto;
+    margin: 30px auto 0 auto;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      display: none;
+    }
   }
 }

@@ -5,6 +5,10 @@
     position: absolute;
     pointer-events: none;
 
+    @include breakpoint($breakpoint-laptop) {
+      display: none;
+    }
+
     &--main-1 {
       top: -855px;
       left: -1271px;
@@ -13,11 +17,19 @@
     &--main-2 {
       top: -158px;
       right: 0;
+
+      @include breakpoint($breakpoint-laptop-large) {
+        right: -220px;
+      }
     }
 
     &--milling-1 {
       right: -186px;
       bottom: -365px;
+
+      @include breakpoint($breakpoint-laptop-large) {
+        bottom: -300px;
+      }
     }
 
     &--milling-2 {

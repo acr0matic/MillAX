@@ -2,6 +2,16 @@
   position: relative;
   @include flex();
 
+  @include breakpoint($breakpoint-laptop-large) {
+    flex-direction: column;
+  }
+
+  @include breakpoint($breakpoint-tablet) {
+    flex-direction: column-reverse;
+
+    margin-bottom: 60px;
+  }
+
   .offset-1 {
     margin-left: 7%;
   }
@@ -10,17 +20,46 @@
     height: 490px;
     margin: 0;
 
+    @include breakpoint($breakpoint-tablet) {
+      height: unset;
+    }
+
+    @include breakpoint($breakpoint-mobile-large) {
+      height: 250px;
+    }
+
     &--thumb {
       margin-left: 80px;
       padding-left: 15px;
       width: 30%;
 
       height: 430px;
+
+      @include breakpoint($breakpoint-laptop-large) {
+        width: 100%;
+        height: unset;
+
+        margin-bottom: 30px;
+        padding: 15px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        margin-left: 0;
+        margin-bottom: 0;
+
+        padding-left: 0;
+        padding-bottom: 30px;
+      }
     }
 
     &--main {
       width: 70%;
       padding-right: 15px;
+
+      @include breakpoint($breakpoint-tablet) {
+        width: 100%;
+        padding-right: 0;
+      }
     }
   }
 }

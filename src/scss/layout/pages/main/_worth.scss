@@ -10,4 +10,11 @@
   color: $text-white;
 
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+
+  @include breakpoint($breakpoint-mobile-large) {
+    padding-top: 30px;
+    padding-bottom: 100px;
+
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  }
 }

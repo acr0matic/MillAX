@@ -6,15 +6,46 @@
     left: 0;
 
     margin-top: 0;
+
+    @include breakpoint($breakpoint-laptop-large) {
+      transform: rotate(-90deg);
+    }
   }
 
   &__prev {
     content: url("../img/icons/controls/slider-up.svg");
     top: 120px;
+
+    @include breakpoint($breakpoint-laptop-large) {
+      top: 150px;
+      bottom: unset;
+      left: 50px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      top: unset;
+      bottom: -50px;
+      left: 25%;
+    }
   }
 
   &__next {
     content: url("../img/icons/controls/slider-down.svg");
     bottom: 150px;
+
+    @include breakpoint($breakpoint-laptop-large) {
+      top: 150px;
+      right: 50px;
+
+      left: unset;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      top: unset;
+      right: 25%;
+      bottom: -50px;
+
+      left: unset;
+    }
   }
 }

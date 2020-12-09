@@ -2,6 +2,10 @@
   background-color: #fbfbfb;
 
   padding-bottom: 130px;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    padding-bottom: 60px;
+  }
 }
 
 .equipment {
@@ -23,7 +27,7 @@
 
     &:hover {
       .equipment__picture::after {
-        transform: scale(3, 3) translateX(-25%) translateY(-25%);
+        transform: scale(4, 4) translateX(-25%) translateY(-25%);
       }
 
       .equipment__button {

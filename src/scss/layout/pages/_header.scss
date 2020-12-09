@@ -5,7 +5,8 @@
 #header {
   z-index: $z-index-header;
   width: 100%;
-  height: 63px;
+
+  background-color: $palette-white;
 }
 
 .header {
@@ -16,19 +17,19 @@
   &-top {
     position: relative;
     z-index: 2;
-    background-color: $palette-white;
 
+    background-color: $palette-white;
     box-shadow: 0 0 25px rgba(178, 190, 195, 0.25);
   }
 
   &-bottom {
     position: absolute;
     z-index: 1;
-    bottom: -55px;
+    bottom: -47px;
     left: 0;
 
     width: 100%;
-    height: 55px;
+    height: 47px;
     background-color: $palette-white;
 
     opacity: 0;
@@ -37,10 +38,29 @@
     transition: all 0.15s ease;
     box-shadow: 0 0 25px rgba(178, 190, 195, 0.25);
 
-
     &--visible {
       opacity: 1;
       visibility: visible;
+    }
+  }
+
+  &__container {
+    position: relative;
+    z-index: 2;
+
+    background-color: $palette-white;
+
+    @include breakpoint($breakpoint-tablet) {
+      box-shadow: $shadow-secondary;
+    }
+  }
+
+  &__primary {
+  }
+
+  &__secondary {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
     }
   }
 
@@ -51,10 +71,17 @@
   }
 
   &__nav {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
   }
 
   &__action {
     padding-top: 5px;
+
+    @include breakpoint($breakpoint-laptop) {
+      display: none;
+    }
   }
 
   &__button {
@@ -62,6 +89,14 @@
 
     &:not(:last-child) {
       margin-right: 15px;
+    }
+  }
+
+  &__mobile {
+    display: none;
+
+    @include breakpoint($breakpoint-tablet) {
+      display: block;
     }
   }
 }

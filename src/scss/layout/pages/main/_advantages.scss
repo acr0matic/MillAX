@@ -1,6 +1,10 @@
 #advantages {
   padding-top: 45px;
   padding-bottom: 140px;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    padding-bottom: 30px;
+  }
 }
 
 .advantage {
@@ -13,10 +17,26 @@
     padding: 40px 35px 25px 35px;
 
     background-color: $palette-white;
-    box-shadow: $shadow-primary;
+    box-shadow: $shadow-secondary;
+
+    @include breakpoint($breakpoint-laptop) {
+      br {
+        display: none;
+      }
+    }
   }
 
   &__title {
     margin-bottom: 10px;
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size-5;
+    }
+  }
+
+  &__description {
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size-6;
+    }
   }
 }

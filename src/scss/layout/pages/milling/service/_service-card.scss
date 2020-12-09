@@ -4,11 +4,25 @@
 
   padding: 30px;
 
+  @include breakpoint($breakpoint-tablet) {
+    padding: 15px;
+
+    margin-bottom: 120px;
+  }
+
   &__picture {
     width: 35%;
     border-radius: 5px;
 
     overflow: hidden;
+
+    @include breakpoint($breakpoint-laptop-large) {
+      width: 40%;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
   }
 
   &__image {
@@ -29,6 +43,17 @@
 
     background-color: $palette-white;
     box-shadow: $shadow-primary;
+
+    @include breakpoint($breakpoint-laptop-large) {
+      max-width: 40%;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      max-width: 100%;
+      margin-right: 0;
+
+      box-shadow: $shadow-secondary;
+    }
   }
 
   &__title {
@@ -36,6 +61,10 @@
 
     color: $text-purple;
     font-size: $font-size-2;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: $font-size-4;
+    }
   }
 
   &__description {

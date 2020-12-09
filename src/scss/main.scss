@@ -17,10 +17,10 @@
 @import "vendors/bootstrap-grid.scss";
 @import "vendors/swiper.scss";
 @import "vendors/aos.scss";
+@import "vendors/hamburgers.scss";
 
 // 4. Импорт надстроек библиотек
 @import "vendors-extended/vendor-extend";
-@import "vendors-extended/swiper";
 
 // 5. Подключение стилей компонентов
 @import "components/components.scss";

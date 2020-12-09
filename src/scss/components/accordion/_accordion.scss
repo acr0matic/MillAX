@@ -6,12 +6,54 @@
 .handorgel {
   margin-bottom: 15px;
 
+  @include breakpoint($breakpoint-laptop) {
+    background-color: $palette-white;
+    box-shadow: $shadow-secondary;
+  }
+
+  &--menu {
+    box-shadow: none;
+
+    .handorgel__title {
+      font-weight: $weight-thin;
+      font-size: $font-size-4;
+    }
+
+    .handorgel__header--active,
+    .handorgel__header:hover {
+      background-color: $palette-white;
+      background-image: none;
+
+      color: $text-black;
+    }
+
+    .handorgel__header__button {
+      justify-content: flex-start;
+
+      min-height: unset;
+      padding: 0;
+    }
+
+    .handorgel__indicator {
+      margin-left: 15px;
+    }
+
+    .handorgel__header--active .handorgel__icon path,
+    .handorgel__header:hover .handorgel__icon path {
+      fill: $palette-black;
+    }
+  }
+
   &__header {
     display: block;
     margin: 0;
     border-radius: 5px;
 
     box-shadow: 0 0 14px rgba(178, 190, 196, 0.26);
+
+    @include breakpoint($breakpoint-laptop) {
+      box-shadow: none;
+    }
 
     &--active,
     &:hover {
@@ -27,10 +69,6 @@
       .handorgel__icon path {
         fill: #ffffff;
       }
-    }
-
-    &--open {
-      border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     }
 
     &__button {
@@ -49,13 +87,32 @@
   &__title {
     font-size: $font-size-5;
     font-weight: $weight-medium;
+
+    line-height: 150%;
+
+    @include breakpoint($breakpoint-laptop) {
+      max-width: 95%;
+      font-size: $font-size-6;
+    }
   }
 
   &__icon {
     transition: transform 0.15s ease;
 
+    @include breakpoint($breakpoint-laptop) {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @include breakpoint($breakpoint-laptop) {
+        display: block;
+      }
+    }
+
     &--opened {
-      transform: rotate(45deg);
+      transform: rotate(90deg);
     }
   }
 
@@ -72,6 +129,9 @@
     transition: height 0.1s ease 0.1s;
 
     &__text {
+      @include breakpoint($breakpoint-mobile-large) {
+        font-size: $font-size-6;
+      }
     }
 
     &__inner {

@@ -5,6 +5,16 @@
   &__title {
     font-size: $font-size-1;
 
+    @include breakpoint($breakpoint-laptop-large) {
+      font-size: $font-size-2;
+    }
+
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: $font-size-3;
+
+      text-align: center;
+    }
+
     span {
       color: $text-orange;
     }
@@ -16,5 +26,10 @@
     margin-top: 30px;
     padding-left: 40px;
     padding-right: 40px;
+
+    @include breakpoint($breakpoint-tablet) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
