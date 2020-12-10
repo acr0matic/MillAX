@@ -48,11 +48,7 @@
 
         <ul class="footer__menu-list footer__hide">
           <li class="footer__menu-item">
-            <a href="" class="footer__link">Рабочее место в коворкинге</a>
-          </li>
-
-          <li class="footer__menu-item">
-            <a href="" class="footer__link">
+            <a href="coworking.php#statement" class="footer__link">
               Как стать
               <br>
               резидентом
@@ -60,7 +56,11 @@
           </li>
 
           <li class="footer__menu-item">
-            <a href="" class="footer__link">
+            <a href="coworking.php#excursion" class="footer__link">Рабочее место в коворкинге</a>
+          </li>
+
+          <li class="footer__menu-item">
+            <a href="coworking.php#prices" class="footer__link">
               Прайс
               <br>
               для резидентов</a>
@@ -75,16 +75,15 @@
 
         <ul class="footer__menu-list footer__hide">
           <li class="footer__menu-item">
-            <a href="" class="footer__link">Оборудование ФЦ</a>
+            <a href="milling.php#equipment" class="footer__link">Оборудование ФЦ</a>
           </li>
 
           <li class="footer__menu-item">
-            <a href="" class="footer__link">Резиденты-операторы CAD / CAM
-            </a>
+            <a href="milling.php#resident" class="footer__link">Резиденты-операторы CAD / CAM</a>
           </li>
 
           <li class="footer__menu-item">
-            <a href="" class="footer__link">Прайс ФЦ</a>
+            <a href="milling.php#service" class="footer__link">Прайс ФЦ</a>
           </li>
         </ul>
         <!-- /.footer__title -->

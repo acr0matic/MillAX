@@ -21,13 +21,13 @@
                   <div class="navbar__dropdown navbar-dropdown">
                     <ul class="navbar-dropdown__list">
                       <li class="navbar-dropdown__item">
-                        <a href="" class="navbar-dropdown__link">Рабочее место в коворкинге</a>
+                        <a href="coworking.php#statement" class="navbar-dropdown__link">Как стать резидентом</a>
                       </li>
                       <li class="navbar-dropdown__item">
-                        <a href="" class="navbar-dropdown__link">Как стать резидентом</a>
+                        <a href="coworking.php#excursion" class="navbar-dropdown__link">Рабочее место в коворкинге</a>
                       </li>
                       <li class="navbar-dropdown__item">
-                        <a href="" class="navbar-dropdown__link">Прайс для резидентов</a>
+                        <a href="coworking.php#prices" class="navbar-dropdown__link">Прайс для резидентов</a>
                       </li>
                     </ul>
                   </div>
@@ -39,13 +39,13 @@
                   <div class="navbar__dropdown navbar-dropdown">
                     <ul class="navbar-dropdown__list">
                       <li class="navbar-dropdown__item">
-                        <a href="" class="navbar-dropdown__link">Рабочее место в коворкинге</a>
+                        <a href="milling.php#equipment" class="navbar-dropdown__link">Оборудование ФЦ</a>
                       </li>
                       <li class="navbar-dropdown__item">
-                        <a href="" class="navbar-dropdown__link">Как стать резидентом</a>
+                        <a href="milling.php#resident" class="navbar-dropdown__link">Резиденты-операторы CAD / CAM</a>
                       </li>
                       <li class="navbar-dropdown__item">
-                        <a href="" class="navbar-dropdown__link">Прайс для резидентов</a>
+                        <a href="milling.php#service" class="navbar-dropdown__link">Прайс ФЦ</a>
                       </li>
                     </ul>
                   </div>
@@ -145,7 +145,7 @@
                         <li class="mobile-menu__item mobile-menu__item--small"><a href="milling.php" class="mobile-menu__link">Главная</a></li>
                         <li class="mobile-menu__item mobile-menu__item--small"><a href="milling.php#equipment" class="mobile-menu__link">Оборудование фрезерного центра</a></li>
                         <li class="mobile-menu__item mobile-menu__item--small"><a href="milling.php#resident" class="mobile-menu__link">Резиденты-операторы CAD / CAM</a></li>
-                        <li class="mobile-menu__item mobile-menu__item--small"><a href="milling.php#" class="mobile-menu__link">Прайс фрезерного центра</a></li>
+                        <li class="mobile-menu__item mobile-menu__item--small"><a href="milling.php#service" class="mobile-menu__link">Прайс фрезерного центра</a></li>
                       </ul>
                     </p>
                   </div>
