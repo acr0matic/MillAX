@@ -196,9 +196,7 @@
 
           <button class="included__button button button-secondary mt-4 mx-auto" data-micromodal-trigger="modal-reservation">Забронировать место</button>
         </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.included -->
+        <!-- /.included -->
       </div>
       <!-- /.container -->
     </section>

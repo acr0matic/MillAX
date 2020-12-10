@@ -73,7 +73,7 @@
 
   <!-- Основной контент -->
   <main>
-    <section id="hero" class="" class="section">
+    <section id="hero" class="section">
       <div class="hero__background-second"></div>
 
       <div class="container">
