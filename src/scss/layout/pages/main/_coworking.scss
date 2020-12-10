@@ -7,7 +7,7 @@
 
   &__item {
     position: relative;
-    z-index: 100;
+    z-index: $z-index-second;
 
     &:hover {
       .coworking__content {
