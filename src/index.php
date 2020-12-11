@@ -272,41 +272,50 @@
           <!-- /.worth__picture -->
 
           <div class="worth__wrapper">
-            <div class="worth__item">
-              взаимоуважение
-              внутри коллектива
-            </div>
-            <!-- /.worth__item -->
+            <div class="worth__row">
+              <div class="worth__item" data-aos="fade-right" data-aos-offset="150">
+                Быть креативными
+                и инновационными
+              </div>
+              <!-- /.worth__item -->
 
-            <div class="worth__item">
-              быть креативными
-              и инновационными
+              <div class="worth__item" data-aos="fade-left" data-aos-offset="150">
+                Взаимоуважение
+                внутри коллектива
+              </div>
+              <!-- /.worth__item -->
             </div>
-            <!-- /.worth__item -->
+            <!-- /.worth__row -->
 
-            <div class="worth__item">
-              забота о людях и их развитие
-            </div>
-            <!-- /.worth__item -->
+            <div class="worth__row">
+              <div class="worth__item" data-aos="fade-right" data-aos-offset="150">
+                Быть внимательными друг
+                к другу, создавать семейную атмосферу
+              </div>
+              <!-- /.worth__item -->
 
-            <div class="worth__item">
-              быть внимательными друг
-              к другу, создавать семейную атмосферу
+              <div class="worth__item" data-aos="fade-left" data-aos-offset="150">
+                Забота о людях и их развитие
+              </div>
+              <!-- /.worth__item -->
             </div>
-            <!-- /.worth__item -->
+            <!-- /.worth__row -->
 
-            <div class="worth__item">
-              Открытые и справедливые
-              взаимоотношения со всеми партнерами
-            </div>
-            <!-- /.worth__item -->
+            <div class="worth__row">
+              <div class="worth__item" data-aos="fade-right" data-aos-offset="150">
+                Радоваться каждому дню
+                и каждой мелочи,
+                быть позитивными
+              </div>
+              <!-- /.worth__item -->
 
-            <div class="worth__item">
-              радоваться каждому дню
-              и каждой мелочи,
-              быть позитивными
+              <div class="worth__item" data-aos="fade-left" data-aos-offset="150">
+                Открытые и справедливые
+                взаимоотношения со всеми партнерами
+              </div>
+              <!-- /.worth__item -->
             </div>
-            <!-- /.worth__item -->
+            <!-- /.worth__row -->
           </div>
           <!-- /.worth__wrapper -->
         </div>
