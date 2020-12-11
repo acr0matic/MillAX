@@ -25,7 +25,7 @@
 
     margin: 0 auto;
 
-    @include breakpoint($breakpoint-laptop) {
+    @include breakpoint($breakpoint-laptop-large) {
       width: 450px;
       height: 450px;
     }
@@ -55,7 +55,7 @@
     object-fit: cover;
     transform: translate(-50%, 50%);
 
-    @include breakpoint($breakpoint-laptop) {
+    @include breakpoint($breakpoint-laptop-large) {
       width: 365px;
       height: 365px;
     }
@@ -85,7 +85,7 @@
 
       margin-bottom: 135px;
 
-      @include breakpoint($breakpoint-laptop) {
+      @include breakpoint($breakpoint-laptop-large) {
         margin-bottom: 100px;
 
         width: 85%;
@@ -98,7 +98,7 @@
 
       margin-bottom: 135px;
 
-      @include breakpoint($breakpoint-laptop) {
+      @include breakpoint($breakpoint-laptop-large) {
         margin-bottom: 100px;
       }
     }
@@ -107,7 +107,7 @@
       width: 100%;
       max-width: 910px;
 
-      @include breakpoint($breakpoint-laptop) {
+      @include breakpoint($breakpoint-laptop-large) {
         width: 85%;
       }
     }
@@ -127,7 +127,7 @@
 
     font-size: $font-size-3;
 
-    @include breakpoint($breakpoint-laptop) {
+    @include breakpoint($breakpoint-laptop-large) {
       font-size: $font-size-4;
 
       max-width: 230px;
