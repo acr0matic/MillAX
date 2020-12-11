@@ -204,46 +204,78 @@
     <section id="statement">
       <div class="container background">
 
-        <img class="statement__background" src="img/pictures/statement/1.svg" alt="">
-        <img class="statement__background statement__background--right" src="img/pictures/statement/2.svg" alt="">
+        <img class="statement__background statement__background--rt" src="img/pictures/statement/right.svg" alt="">
+        <img class="statement__background statement__background--lb" src="img/pictures/statement/left.svg" alt="">
         <div class="statement">
-          <div class="row justify-content-center">
-            <div class="col-12 col-lg-5 mb-4 mb-lg-0">
-              <div class="statement__item">
-                <h2 class="statement__title">Условия резидентсва</h2>
-                <ul class="statement__list list">
-                  <li class="list__item">
-                    Аренда рабочего места 30 000
-                    <br>
-                    рублей в месяц
-                  </li>
-                  <li class="list__item">
-                    Весь объем фрезеровки / печати /
-                    <br>
-                    прессовки осуществляется силами
-                    <br>
-                    фрезерного центра</li>
-                </ul>
-              </div>
-              <!-- /.statement__item -->
-            </div>
-            <!-- /.col-5 -->
+          <div class="statement__item">
+            <div class="row align-items-center">
+              <div class="col-6">
+                <h3 class="statement__title">Вы можете стать резидентом, если:</h3>
 
-            <div class="col-12 col-lg-5">
-              <div class="statement__item">
-                <h2 class="statement__title">Кто может стать резидентом</h2>
-                <ul class="statement__list list">
-                  <li class="list__item">Объем работ более 250 единиц в месяц</li>
-                  <li class="list__item">Желание развивать свой бизнес</li>
-                  <li class="list__item">Бережное отношение к оборудованию</li>
-                  <li class="list__item">Позитивный и дружелюбный настрой</li>
-                </ul>
+                <ul class="statement__list list list--unmarked">
+                  <li class="list__item">
+                    - Ваш объем работ более 250 единиц в месяц
+                  </li>
+
+                  <li class="list__item">
+                    - Нацелены на развитиего своего бизнеса
+                  </li>
+
+                  <li class="list__item">
+                    - Бережное относитесь к оборудованию
+                  </li>
+
+                  <li class="list__item">
+                    - Настроены позитивно и дружелюбно
+                  </li>
+
+                  <li class="list__item">
+                    - Имеете амбиции и желание создать собственный бренд
+                  </li>
+
+                  <li class="list__item">
+                    - Стремитесь зарабатывать в десятки раз больше, чем сейчас
+                  </li>
               </div>
-              <!-- /.statement__item -->
+              <!-- /.col-6 -->
+
+              <div class="col-6">
+                <a href="img/pictures/statement/statement-photo.jpg" data-fslightbox="statement-1">
+                  <img class="statement__photo lazyload" data-src="img/pictures/statement/statement-photo.jpg" src="img/pictures/statement/statement-photo.jpg" alt="">
+                </a>
+              </div>
+              <!-- /.col-6 -->
             </div>
-            <!-- /.col-5 -->
+            <!-- /.row -->
           </div>
-          <!-- /.row -->
+          <!-- /.statement__item -->
+
+          <div class="statement__item">
+            <div class="row flex-row-reverse align-items-center">
+              <div class="col-6">
+                <h3 class="statement__title">Условия резиденства:</h3>
+
+                <ul class="statement__list list list--unmarked">
+                  <li class="list__item">
+                    - Аренда рабочего места 30 000 рублей в месяц
+                  </li>
+
+                  <li class="list__item">
+                    - Весь объем фрезеровки / печати / прессовки осуществляется силами фрезерного центра
+                  </li>
+              </div>
+              <!-- /.col-6 -->
+
+              <div class="col-6">
+                <a href="img/pictures/statement/statement-photo.jpg" data-fslightbox="statement-2">
+                  <img class="statement__photo lazyload" data-src="img/pictures/statement/statement-photo.jpg" src="img/pictures/statement/statement-photo-preview.jpg" alt="">
+                </a>
+              </div>
+              <!-- /.col-6 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.statement__item -->
         </div>
         <!-- /.statement -->
       </div>

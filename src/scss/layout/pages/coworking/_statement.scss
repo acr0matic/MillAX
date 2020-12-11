@@ -1,5 +1,5 @@
 #statement {
-  padding: 120px 0;
+  padding: 167px 0;
   background-color: #fbfbfb;
 
   @include breakpoint($breakpoint-mobile-large) {
@@ -10,12 +10,15 @@
 .statement {
   &__background {
     position: absolute;
-    top: 50%;
 
-    transform: translateY(-50%);
+    &--rt {
+      top: -167px;
+      right: -156px;
+    }
 
-    &--right {
-      right: 0;
+    &--lb {
+      bottom: -168px;
+      left: -161px;
     }
 
     @include breakpoint($breakpoint-laptop) {
@@ -24,14 +27,14 @@
   }
 
   &__item {
-    font-size: $font-size-3;
-
-    @include breakpoint($breakpoint-laptop-large) {
-      font-size: $font-size-4;
-    }
+    font-size: $font-size-5;
 
     @include breakpoint($breakpoint-mobile-large) {
       font-size: $font-size-5;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 150px;
     }
   }
 
@@ -49,5 +52,12 @@
 
       text-align: center;
     }
+  }
+
+  &__photo {
+    width: 560px;
+    height: 427px;
+
+    object-fit: cover;
   }
 }

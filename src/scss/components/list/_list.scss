@@ -15,6 +15,14 @@ $list-marker--orange: #ff7f08;
     }
   }
 
+  &--unmarked {
+    .list__item {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
   &__item {
     display: flex;
     margin-bottom: 15px;
@@ -24,7 +32,6 @@ $list-marker--orange: #ff7f08;
         display: none;
       }
     }
-
 
     &::before {
       content: "";
