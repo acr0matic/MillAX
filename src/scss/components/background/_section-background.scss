@@ -14,15 +14,6 @@
       left: -1275px;
     }
 
-    &--main-2 {
-      top: -158px;
-      right: 0;
-
-      @include breakpoint($breakpoint-laptop-large) {
-        right: -220px;
-      }
-    }
-
     &--milling-1 {
       right: -186px;
       bottom: -365px;
