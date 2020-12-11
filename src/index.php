@@ -260,66 +260,55 @@
 
     <section id="worth">
       <div class="container background">
-        <img class="background__image background__image--main-2" src="img/pictures/background/2.svg" alt="">
-        <h2 class="section__title section__title--left">
+        <h2 class="section__title">
           Наши ценности
         </h2>
 
         <div class="worth">
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-3">
-              <ul class="worth__list list list--light">
-                <li class="list__item">
-                  не усложнять
-                </li>
-
-                <li class="list__item">
-                  радоваться каждому дню
-                  <br>
-                  и каждой мелочи,
-                  <br>
-                  быть позитивными
-                </li>
-
-                <li class="list__item">
-                  быть креативными
-                  <br>
-                  и инновационными
-                </li>
-
-                <li class="list__item">
-                  быть внимательными друг
-                  <br>
-                  к другу, создавать семейную атмосферу
-                </li>
-              </ul>
-            </div>
-            <!-- /.col-3 -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-              <ul class="worth__list list list--light">
-                <li class="list__item">
-                  взаимоуважение
-                </li>
-
-                <li class="list__item">
-                  строить открытые и справедливые
-                  <br>
-                  взаимоотношения со всеми
-                  <br>
-                  партнерами
-                </li>
-
-                <li class="list__item">
-                  забота о людях
-                  <br>
-                  и их развитие
-                </li>
-              </ul>
-            </div>
-            <!-- /.col-3 -->
+          <div class="worth__picture">
+            <img src="img/pictures/worth/background.svg" alt="" class="worth__background">
+            <img src="img/pictures/worth/photo.jpg" alt="" class="worth__image">
           </div>
-          <!-- /.row -->
+          <!-- /.worth__picture -->
+
+          <div class="worth__wrapper">
+            <div class="worth__item">
+              взаимоуважение
+              внутри коллектива
+            </div>
+            <!-- /.worth__item -->
+
+            <div class="worth__item">
+              быть креативными
+              и инновационными
+            </div>
+            <!-- /.worth__item -->
+
+            <div class="worth__item">
+              забота о людях и их развитие
+            </div>
+            <!-- /.worth__item -->
+
+            <div class="worth__item">
+              быть внимательными друг
+              к другу, создавать семейную атмосферу
+            </div>
+            <!-- /.worth__item -->
+
+            <div class="worth__item">
+              Открытые и справедливые
+              взаимоотношения со всеми партнерами
+            </div>
+            <!-- /.worth__item -->
+
+            <div class="worth__item">
+              радоваться каждому дню
+              и каждой мелочи,
+              быть позитивными
+            </div>
+            <!-- /.worth__item -->
+          </div>
+          <!-- /.worth__wrapper -->
         </div>
         <!-- /.worth -->
       </div>
