@@ -10,7 +10,7 @@
   padding-right: 0 !important;
 
   @include breakpoint($breakpoint-laptop) {
-    padding-left: calc(var(--bs-gutter-x) / 2) !important;
+    padding-right: calc(var(--bs-gutter-x) / 2) !important;
   }
 }
 
