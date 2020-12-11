@@ -282,6 +282,138 @@
       <!-- /.container -->
     </section>
 
+    <section id="subscription" class="section">
+      <div class="subscription-background"></div>
+
+      <div class="subscription__container container">
+        <div class="section__heading">
+          <h2 class="section__title">Станьте резидентом коворкинга прямо сейчас!</h2>
+          <h3 class="section__subtitle">Приобретите выгодный для вас абонимент</h3>
+        </div>
+        <!-- /.section__heading -->
+
+        <div class="subscription">
+          <div class="row justify-content-center mb-4">
+            <div class="col-4 col-no-pl">
+              <div class="subscription__card">
+                <h3 class="subscription__title">Эконом</h3>
+                <div class="subscription__price"><span class="number-space">60000</span> / 2 месяца</div>
+
+                <ul class="subscription__list list list--unmarked">
+                  <li class="list__item">
+                    Стандартные услуги
+                  </li>
+
+                  <li class="list__item">
+                    Бухгалтерское сопровождение
+                    (общие консультации, подготовка закрывающих документов, выставление счетов, составление
+                    и согласование реестров выполненных работ)
+                  </li>
+                </ul>
+
+                <button class="subscription__button button button-secondary">Купить</button>
+              </div>
+              <!-- /.subscription__card -->
+            </div>
+            <!-- /.col-4 -->
+
+            <div class="col-4 col-no-pr">
+              <div class="subscription__card">
+                <h3 class="subscription__title">Эконом +</h3>
+                <div class="subscription__price"><span class="number-space">90000</span> / 2 месяца</div>
+
+                <ul class="subscription__list list list--unmarked">
+                  <li class="list__item">
+                    Стандартные услуги
+                  </li>
+
+                  <li class="list__item">
+                    Бухгалтерское сопровождение
+                  </li>
+
+                  <li class="list__item">
+                    Услуги обработчика 100 ед. бесплатно
+                  </li>
+                </ul>
+
+                <button class="subscription__button button button-secondary">Купить</button>
+              </div>
+              <!-- /.subscription__card -->
+            </div>
+            <!-- /.col-4 -->
+          </div>
+          <!-- /.row -->
+
+          <div class="row justify-content-center">
+            <div class="col-4 col-no-pl">
+              <div class="subscription__card">
+                <h3 class="subscription__title">Комфорт</h3>
+                <div class="subscription__price"><span class="number-space">180000</span> / 6 месяцов</div>
+
+                <ul class="subscription__list list list--unmarked">
+                  <li class="list__item">
+                    Стандартные услуги
+                  </li>
+
+                  <li class="list__item">
+                    Бухгалтерское сопровождение
+                  </li>
+
+                  <li class="list__item">
+                    Услуги обработчика 100 ед. бесплатно
+                  </li>
+
+                  <li class="list__item">
+                    Курьерские услуги 20 поездок бесплатно
+                  </li>
+                </ul>
+
+                <button class="subscription__button button button-secondary">Купить</button>
+              </div>
+              <!-- /.subscription__card -->
+            </div>
+            <!-- /.col-4 -->
+
+            <div class="col-4 col-no-pr">
+              <div class="subscription__card">
+                <h3 class="subscription__title">Бизнес</h3>
+                <div class="subscription__price"><span class="number-space">360000</span> / 12 месяцов</div>
+
+                <ul class="subscription__list list list--unmarked">
+                  <li class="list__item">
+                    Стандартные услуги
+                  </li>
+
+                  <li class="list__item">
+                    Бухгалтерское сопровождение
+                  </li>
+
+                  <li class="list__item">
+                    Услуги обработчика 30 ед. бесплатно
+                  </li>
+
+                  <li class="list__item">
+                    Курьерские услуги 50 поездок бесплатно
+                  </li>
+
+                  <li class="list__item">
+                    Услуги по продвижению и построению индивидуальной траектории развития бизнеса для техника-оператора CAD/CAM
+                  </li>
+                </ul>
+
+                <button class="subscription__button button button-secondary">Купить</button>
+              </div>
+              <!-- /.subscription__card -->
+            </div>
+            <!-- /.col-4 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.subscription -->
+      </div>
+      <!-- /.container -->
+    </section>
+
     <section id="excursion" class="section">
       <div class="container">
         <div class="excursion">

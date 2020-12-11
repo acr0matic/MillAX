@@ -1,0 +1,64 @@
+#subscription {
+  position: relative;
+
+  margin-bottom: 90px;
+}
+
+.subscription {
+  &-background {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(75.09deg, #9966ff 11.32%, #7976ff 97.19%);
+
+    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 85%);
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    padding: 40px;
+
+    background-color: $palette-white;
+    border-radius: 5px;
+
+    box-shadow: $shadow-primary;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__price {
+    margin-bottom: 30px;
+
+    color: $text-purple;
+
+    font-weight: $weight-bold;
+    font-size: $font-size-2;
+    text-align: center;
+  }
+
+  &__list {
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
