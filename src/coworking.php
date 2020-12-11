@@ -360,7 +360,7 @@
 
         <div class="subscription">
           <div class="row justify-content-center mb-4">
-            <div class="col-4 col-no-pl">
+            <div class="col-4 col-no-pl" data-aos="fade-up" data-aos-offset="150">
               <div class="subscription__card">
                 <h3 class="subscription__title">Эконом</h3>
                 <div class="subscription__price"><span class="number-space">60000</span> / 2 месяца</div>
@@ -383,7 +383,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-4 col-no-pr">
+            <div class="col-4 col-no-pr" data-aos="fade-up" data-aos-offset="150">
               <div class="subscription__card">
                 <h3 class="subscription__title">Эконом +</h3>
                 <div class="subscription__price"><span class="number-space">90000</span> / 2 месяца</div>
@@ -411,7 +411,7 @@
           <!-- /.row -->
 
           <div class="row justify-content-center">
-            <div class="col-4 col-no-pl">
+            <div class="col-4 col-no-pl" data-aos="fade-up" data-aos-offset="150">
               <div class="subscription__card">
                 <h3 class="subscription__title">Комфорт</h3>
                 <div class="subscription__price"><span class="number-space">180000</span> / 6 месяцов</div>
@@ -440,7 +440,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-4 col-no-pr">
+            <div class="col-4 col-no-pr" data-aos="fade-up" data-aos-offset="150">
               <div class="subscription__card">
                 <h3 class="subscription__title">Бизнес</h3>
                 <div class="subscription__price"><span class="number-space">360000</span> / 12 месяцов</div>
