@@ -275,7 +275,7 @@
         <div class="statement">
           <div class="statement__item">
             <div class="row align-items-center">
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <h3 class="statement__title">Вы можете стать резидентом, если:</h3>
 
                 <ul class="statement__list list list--unmarked">
@@ -305,7 +305,7 @@
               </div>
               <!-- /.col-6 -->
 
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <a href="img/pictures/statement/statement-photo.jpg" data-fslightbox="statement-1">
                   <img class="statement__photo lazyload" data-src="img/pictures/statement/statement-photo.jpg" src="img/pictures/statement/statement-photo.jpg" alt="">
                 </a>
@@ -318,7 +318,7 @@
 
           <div class="statement__item">
             <div class="row flex-row-reverse align-items-center">
-              <div class="col-6">
+              <div class="col-12 col-md-6"">
                 <h3 class="statement__title">Условия резиденства:</h3>
 
                 <ul class="statement__list list list--unmarked">
@@ -332,7 +332,7 @@
               </div>
               <!-- /.col-6 -->
 
-              <div class="col-6">
+              <div class="col-12 col-md-6"">
                 <a href="img/pictures/statement/statement-photo.jpg" data-fslightbox="statement-2">
                   <img class="statement__photo lazyload" data-src="img/pictures/statement/statement-photo.jpg" src="img/pictures/statement/statement-photo-preview.jpg" alt="">
                 </a>

@@ -10,6 +10,13 @@
   color: $text-white;
 
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+
+  @include breakpoint($breakpoint-mobile-large) {
+    padding-top: 60px;
+    padding-bottom: 0;
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
 }
 
 .worth {
@@ -28,6 +35,10 @@
     @include breakpoint($breakpoint-laptop-large) {
       width: 450px;
       height: 450px;
+    }
+
+    @include breakpoint($breakpoint-mobile-large) {
+      display: none;
     }
   }
 
@@ -73,11 +84,22 @@
     width: 100%;
 
     transform: translateX(-50%);
+
+    @include breakpoint($breakpoint-mobile-large) {
+      position: static;
+
+      transform: translateX(0);
+    }
   }
 
   &__row {
     display: flex;
     justify-content: space-between;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      flex-direction: column;
+      align-items: center;
+    }
 
     &:nth-child(1) {
       width: 100%;
@@ -90,6 +112,12 @@
 
         width: 85%;
       }
+
+      @include breakpoint($breakpoint-mobile-large) {
+        width: 100%;
+
+        margin-bottom: 0;
+      }
     }
 
     &:nth-child(2) {
@@ -101,6 +129,10 @@
       @include breakpoint($breakpoint-laptop-large) {
         margin-bottom: 100px;
       }
+
+      @include breakpoint($breakpoint-mobile-large) {
+        margin-bottom: 0;
+      }
     }
 
     &:nth-child(3) {
@@ -109,6 +141,10 @@
 
       @include breakpoint($breakpoint-laptop-large) {
         width: 85%;
+      }
+
+      @include breakpoint($breakpoint-mobile-large) {
+        width: 100%;
       }
     }
   }
@@ -122,6 +158,8 @@
 
     padding: 15px;
 
+    border-radius: 5px;
+
     color: $text-black;
     background-color: $palette-white;
 
@@ -131,6 +169,18 @@
       font-size: $font-size-4;
 
       max-width: 230px;
+    }
+
+    @include breakpoint($breakpoint-mobile-large) {
+      justify-content: center;
+
+      width: 100%;
+      max-width: unset;
+
+      margin-bottom: 15px;
+      padding: 25px;
+
+      font-size: $font-size-5;
     }
 
     &::after {
@@ -144,10 +194,18 @@
       border-radius: 50%;
 
       background-color: $palette-white;
+
+      @include breakpoint($breakpoint-mobile-large) {
+        display: none;
+      }
     }
 
     &:nth-child(1) {
       text-align: right;
+
+      @include breakpoint($breakpoint-mobile-large) {
+        text-align: center;
+      }
 
       &::after {
         content: "";
@@ -156,6 +214,10 @@
     }
 
     &:nth-child(2) {
+      @include breakpoint($breakpoint-mobile-large) {
+        text-align: center;
+      }
+
       &::after {
         content: "";
         left: -35px;

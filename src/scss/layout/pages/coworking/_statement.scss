@@ -55,9 +55,13 @@
   }
 
   &__photo {
-    width: 560px;
+    width: 100%;
     height: 427px;
 
     object-fit: cover;
+
+    @include breakpoint($breakpoint-tablet-large) {
+      height: 320px;
+    }
   }
 }
