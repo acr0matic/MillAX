@@ -1,0 +1,94 @@
+.modal-equipment {
+  &__container {
+    width: 100%;
+    max-width: 700px;
+    height: 80vh;
+    max-height: 750px;
+
+    padding: 0;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      display: block;
+    }
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 410px;
+
+    overflow: hidden;
+
+    @include breakpoint($breakpoint-tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+
+      height: 300px;
+    }
+  }
+
+  &__title {
+    max-width: 60%;
+
+    padding-left: 50px;
+
+    font-size: 76px;
+    line-height: 100px;
+
+    @include breakpoint($breakpoint-tablet) {
+      max-width: 100%;
+
+      padding-left: 10px;
+
+      font-size: 36px;
+      line-height: 130%;
+    }
+  }
+
+  &__photo {
+    position: absolute;
+    top: 50%;
+    right: -100px;
+
+    width: 100%;
+    max-width: 425px;
+
+    transform: translateY(-50%);
+
+    pointer-events: none;
+
+    @include breakpoint($breakpoint-tablet) {
+      right: 50%;
+
+      max-width: 260px;
+
+      transform: translate(50%, -50%);
+    }
+  }
+
+  &__main {
+    padding: 50px;
+
+    color: $text-black;
+    background-color: $palette-white;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      padding: 10px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    .list__item {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+}

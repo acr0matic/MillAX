@@ -1,11 +1,11 @@
-AOS.init({
-  once: true,
-});
-
 MicroModal.init({
   awaitCloseAnimation: true,
   disableFocus: true,
   disableScroll: false,
+});
+
+AOS.init({
+  once: true,
 });
 
 if (window.matchMedia("(max-width: 996px)").matches) {

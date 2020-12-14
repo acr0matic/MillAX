@@ -141,7 +141,7 @@
                 </div>
                 <!-- /.equipment__content -->
 
-                <a href="" class="stretched-link"></a>
+                <a data-micromodal-trigger="modal-equipment" class="stretched-link"></a>
               </div>
             </div>
             <!-- /.col-3 -->
@@ -163,7 +163,7 @@
                 </div>
                 <!-- /.equipment__content -->
 
-                <a href="" class="stretched-link"></a>
+                <a data-micromodal-trigger="modal-equipment" class="stretched-link"></a>
               </div>
             </div>
             <!-- /.col-3 -->
@@ -184,7 +184,7 @@
                 </div>
                 <!-- /.equipment__content -->
 
-                <a href="" class="stretched-link"></a>
+                <a data-micromodal-trigger="modal-equipment" class="stretched-link"></a>
               </div>
             </div>
             <!-- /.col-3 -->
@@ -206,7 +206,7 @@
                 </div>
                 <!-- /.equipment__content -->
 
-                <a href="" class="stretched-link"></a>
+                <a data-micromodal-trigger="modal-equipment" class="stretched-link"></a>
               </div>
             </div>
             <!-- /.col-3 -->
@@ -522,6 +522,92 @@
       <!-- /.container -->
     </section>
   </main>
+
+  <div class="modal micromodal-slide modal-equipment" id="modal-equipment">
+    <div class="modal__overlay" data-micromodal-close>
+      <div class="modal__container modal-equipment__container">
+        <div class="modal__header">
+          <button class="modal__close" data-micromodal-close></button>
+        </div>
+
+        <div class="modal__content">
+          <div class="modal-equipment__item">
+            <div class="modal-equipment__header">
+              <h3 class="modal-equipment__title">CORiTEC 250i</h3>
+              <img src="img/pictures/250i.png" alt="" class="modal-equipment__photo">
+            </div>
+            <!-- /.modal-equipment__header -->
+
+            <div class="modal-equipment__main">
+              <p class="modal-equipment__description">
+                Система абсолютного позиционирования, высокое разрешение координатной сетки и динамичные сервомоторы дают 20% прирост скорости обработки и оптимальную точность изготовления таких сложных реставраций, как цельно-дуговые конструкции с винтовой фиксацией.
+                <br>
+                <br>
+                Одновременное фрезерование в 5-ти осях с возможностью работы под углом свыше 30º.в сухом и мокром режимах.
+                <br>
+                <br>
+                Система фиксации в нулевой точке держателя блоков (Zero Point Clamping) обеспечивает быструю смену заготовок одним нажатием кнопки, и дает значительные преимущества при изготовлении работ с винтовой фиксацией.
+              </p>
+
+              <ul class="modal-equipment__list list list--unmarked">
+                <li class="list__item">
+                  <strong class="list__item--strong">Количество осей:</strong>5
+                </li>
+
+                <li class="list__item">
+                  <strong class="list__item--strong">Тип обработки:</strong> Одновременная
+                </li>
+
+                <li class="list__item">
+                  <strong>Обрабатываемый материал:</strong> PMMA / Ti / Кобальт-хром/цветные металлы (CoCr/NFM) / Композиты (Composites) / Стеклокерамика (Glass ceramic)
+                </li>
+
+              </ul>
+            </div>
+            <!-- /.modal-equipment__main -->
+          </div>
+          <!-- /.modal-equipment__item -->
+
+          <div class="modal-equipment__item">
+            <div class="modal-equipment__header">
+              <h3 class="modal-equipment__title">CORiTEC 350i</h3>
+              <img src="img/pictures/350i.png" alt="" class="modal-equipment__photo">
+            </div>
+            <!-- /.modal-equipment__header -->
+
+            <div class="modal-equipment__main">
+              <p class="modal-equipment__description">
+                Система абсолютного позиционирования, высокое разрешение координатной сетки и динамичные сервомоторы дают 20% прирост скорости обработки и оптимальную точность изготовления таких сложных реставраций, как цельно-дуговые конструкции с винтовой фиксацией.
+                <br>
+                <br>
+                Одновременное фрезерование в 5-ти осях с возможностью работы под углом свыше 30º.в сухом и мокром режимах.
+                <br>
+                <br>
+                Система фиксации в нулевой точке держателя блоков (Zero Point Clamping) обеспечивает быструю смену заготовок одним нажатием кнопки, и дает значительные преимущества при изготовлении работ с винтовой фиксацией.
+              </p>
+
+              <ul class="modal-equipment__list list list--unmarked">
+                <li class="list__item">
+                  <strong class="list__item--strong">Количество осей:</strong>5
+                </li>
+
+                <li class="list__item">
+                  <strong class="list__item--strong">Тип обработки:</strong> Одновременная
+                </li>
+
+                <li class="list__item">
+                  <strong>Обрабатываемый материал:</strong> PMMA / Ti / Кобальт-хром/цветные металлы (CoCr/NFM) / Композиты (Composites) / Стеклокерамика (Glass ceramic)
+                </li>
+
+              </ul>
+            </div>
+            <!-- /.modal-equipment__main -->
+          </div>
+          <!-- /.modal-equipment__item -->
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Подвал -->
   <?php include_once 'partials/footer.php' ?>

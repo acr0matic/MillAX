@@ -23,4 +23,3 @@ function numberSpace(numbers) {
       number.innerHTML = parseInt(number.innerHTML).toLocaleString() + ' ₽';
     });
 }
-

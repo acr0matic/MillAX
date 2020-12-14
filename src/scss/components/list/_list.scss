@@ -27,6 +27,12 @@ $list-marker--orange: #ff7f08;
     display: flex;
     margin-bottom: 15px;
 
+    &--strong {
+      &::after {
+        content: "\00a0\00a0";
+      }
+    }
+
     @include breakpoint($breakpoint-laptop) {
       br {
         display: none;
