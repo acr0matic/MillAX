@@ -51,7 +51,6 @@ const residentThumbSlider = new Swiper(residentThumbContainer, {
   loopedSlides: 3,
 
   slidesPerView: 1,
-  centeredSlides: true,
 
   slideToClickedSlide: true,
 
@@ -62,8 +61,14 @@ const residentThumbSlider = new Swiper(residentThumbContainer, {
 
   breakpoints: {
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       slideActiveClass: 'resident-thumb--active',
+    },
+
+    996: {
+      slidesPerView: 3,
+      centeredSlides: true,
+
     },
 
     1200: {
