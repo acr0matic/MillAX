@@ -5,6 +5,15 @@
   &__container {
     width: 100%;
     max-width: 1000px;
+    max-height: 600px;
+
+    overflow-y: auto;
+  }
+
+  &__block {
+    &:not(:last-child) {
+      margin-bottom: 120px;
+    }
   }
 
   &__title {
@@ -18,5 +27,20 @@
   &__button {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  &__color {
+    width: 72px;
+    height: 72px;
+
+    margin-bottom: 10px;
+    border-radius: 50%;
+
+    &--big {
+      width: 136px;
+      height: 136px;
+
+      margin-bottom: 20px;
+    }
   }
 }

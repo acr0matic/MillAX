@@ -4,6 +4,30 @@
 
   cursor: pointer;
 
+  &--color {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .radio__control {
+      margin-right: 0;
+    }
+
+    .radio__label {
+      margin-top: 0;
+      margin-left: 12px;
+
+      font-size: $font-size-3;
+    }
+  }
+
+  &--big {
+    .radio__control {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
   &:hover {
     .radio__control {
     }
@@ -17,6 +41,11 @@
     &:checked + .radio__control {
       background: #ffffff;
     }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
   }
 
   &__input {

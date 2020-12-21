@@ -395,7 +395,7 @@
     <!-- /.modal -->
   </div>
 
-  <div class="modal modal-stl micromodal-slide is-open" id="modal-stl__advanced">
+  <div class="modal modal-stl micromodal-slide" id="modal-stl__advanced">
     <div class="modal__overlay modal-stl__overlay" data-micromodal-close>
       <div class="modal__container modal-stl__container">
         <button class="modal__close" data-micromodal-close></button>
@@ -442,6 +442,479 @@
     </div>
     <!-- /.modal -->
   </div>
+
+  <div class="modal modal-stl micromodal-slide" id="modal-stl__color">
+    <div class="modal__overlay modal-stl__overlay" data-micromodal-close>
+      <div class="modal__container modal-stl__container">
+        <button class="modal__close" data-micromodal-close></button>
+
+        <div class="modal-stl__block">
+          <div class="modal__header">
+            <h2 class="modal__title modal-stl__title">
+              Укажите дизайн промежуточной части
+            </h2>
+          </div>
+          <!-- /.modal__title -->
+
+          <div class="modal__content">
+            <div class="modal-stl__wrapper">
+              <div class="row">
+                <div class="col-4">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--big radio--color">
+                      <div class="modal-stl__color modal-stl__color--big stl-color--primary-1"></div>
+                      <span class="radio__input">
+                        <input type="radio" name="color-main">
+                        <span class="radio__control"></span>
+                      </span>
+                      <span class="radio__label"></span>
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-4 -->
+
+                <div class="col-4">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--big radio--color">
+                      <div class="modal-stl__color modal-stl__color--big stl-color--primary-2"></div>
+                      <span class="radio__input">
+                        <input type="radio" name="color-main">
+                        <span class="radio__control"></span>
+                      </span>
+                      <span class="radio__label"></span>
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-4 -->
+
+                <div class="col-4">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--big radio--color">
+                      <div class="modal-stl__color modal-stl__color--big stl-color--primary-3"></div>
+                      <span class="radio__input">
+                        <input type="radio" name="color-main">
+                        <span class="radio__control"></span>
+                      </span>
+                      <span class="radio__label"></span>
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-4 -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.modal-stl__wrapper -->
+          </div>
+          <!-- /.modal__content -->
+        </div>
+        <!-- /.modal__block -->
+
+        <div class="modal-stl__block">
+          <div class="modal__header">
+            <h2 class="modal__title modal-stl__title">
+              Укажите цвет коронки по шкале VITA
+            </h2>
+          </div>
+          <!-- /.modal__title -->
+
+          <div class="modal__content">
+            <div class="modal-stl__wrapper">
+              <div class="row justify-content-center">
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">A1</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">A2</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">A3</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">A4</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">B1</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">B2</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">B3</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">B4</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">C1</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">C2</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">C3</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">C4</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">D1</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">D2</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">D3</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">D4</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">Bleach 1</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">Bleach 2</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">Bleach 3</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="modal-stl__color stl-color--primary-1"></div>
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">Bleach 4</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-3 mb-3">
+                  <div class="modal-stl__section">
+                    <label class="radio radio--color">
+                      <div class="radio__wrapper">
+                        <span class="radio__input">
+                          <input type="radio" name="color-secondary">
+                          <span class="radio__control"></span>
+                        </span>
+                        <span class="radio__label">Другое_____</span>
+                      </div>
+                      <!-- /.radio__wrapper -->
+                    </label>
+                  </div>
+                  <!-- /.modal-stl__section -->
+                </div>
+                <!-- /.col-3 -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.modal-stl__wrapper -->
+
+            <button data-micromodal-close class="modal-stl__button button button-outline">Подтвердить</button>
+          </div>
+          <!-- /.modal__content -->
+        </div>
+        <!-- /.modal__block -->
+      </div>
+      <!-- /.modal__container -->
+    </div>
+    <!-- /.modal__overlay -->
+  </div>
+  <!-- /.modal -->
 
   <!-- Подвал -->
   <?php include_once 'partials/footer.php' ?>
