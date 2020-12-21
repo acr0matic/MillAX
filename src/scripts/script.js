@@ -28,7 +28,7 @@ if (window.matchMedia("(max-width: 996px)").matches) {
 
 const phoneInput = document.querySelectorAll('[name=user_phone]');
 const phoneMaskOptions = {
-  mask: '+{7}(000)000-00-00'
+  mask: '+{7} (000) 000-00-00'
 };
 
 phoneInput.forEach(input => {

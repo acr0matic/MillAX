@@ -384,7 +384,7 @@
                       </li>
                     </ul>
 
-                    <button class="subscription__button button button-secondary">Купить</button>
+                    <button data-micromodal-trigger="modal-subscribe" class="subscription__button button button-secondary">Купить</button>
                   </div>
                   <!-- /.subscription__card -->
                 </div>
@@ -642,6 +642,37 @@
       <!-- /.container -->
     </section>
   </main>
+
+  <div class="modal micromodal-slide" id="modal-subscribe">
+    <div class="modal__overlay" data-micromodal-close>
+      <div class="modal__container">
+        <div class="modal__header">
+          <h2 class="modal__title">
+            <!-- Динамический текст -->
+          </h2>
+          <p class="mb-3">Оставьте свои контактные данные и мы свяжемся с вами в течение 10 минут</p>
+          <button class="modal__close" data-micromodal-close></button>
+        </div>
+
+        <div class="modal__content">
+          <form action="" class="form form-excursion">
+            <input class="input--hidden subscribe-type" type="text" name="subscribe_type">
+            <input class="input input-field mb-3" type="text" placeholder="Ваше имя" name="user_name">
+            <input class="input input-field mb-3" type="tel" placeholder="Номер телефона" name="user_phone">
+            <div class="form__policy">
+              <label class="checkbox">
+                <input type="checkbox">
+                <span class="checkbox__mark"></span>
+                <span class="checkbox__label">Я принимаю условия <a href="" class="checkbox__policy">пользовательского соглашения </a> и <a href="" class="checkbox__policy">политику конфиденциальности</a></span>
+              </label>
+            </div>
+            <!-- /.policy-wrapper -->
+            <button class="form-excursion__button button button-outline">Записаться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Подвал -->
   <?php include_once 'partials/footer.php' ?>

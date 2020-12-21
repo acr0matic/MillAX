@@ -68,13 +68,15 @@ const residentThumbSlider = new Swiper(residentThumbContainer, {
     996: {
       slidesPerView: 3,
       centeredSlides: true,
-
+      slideActiveClass: 'resident-thumb--active',
     },
 
     1200: {
       slidesPerView: 3,
       spaceBetween: 15,
       direction: 'vertical',
+      centeredSlides: true,
+      slideActiveClass: 'resident-thumb--active',
     },
   },
 });
@@ -93,7 +95,6 @@ const residentSlider = new Swiper(residentContainer, {
 
   breakpoints: {
     1200: {
-      spaceBetween: 0,
       direction: 'vertical',
     },
   },
