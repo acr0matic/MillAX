@@ -1,0 +1,38 @@
+.stl-slider {
+  &__control {
+    position: absolute;
+    bottom: 40px;
+
+    @include flex();
+
+    width: 100%;
+    max-width: 800px;
+  }
+
+  &__button {
+    @include flex();
+
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__prev {
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  &__next {
+    img {
+      margin-left: 10px;
+    }
+  }
+
+  &__slide {
+    margin: 0 auto;
+
+    &--form {
+      max-width: 440px;
+    }
+  }
+}

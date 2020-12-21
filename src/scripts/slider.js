@@ -12,10 +12,18 @@ const coworkingSlider = new Swiper('.coworking-slider', {
       slidesPerView: 2,
     },
   },
-
-  // preloadImages: false,
-  // lazy: true
 });
+
+const stlSlider = new Swiper('.stl__slider', {
+  slidesPerView: 1,
+
+  navigation: {
+    nextEl: '.stl-slider__next',
+    prevEl: '.stl-slider__prev',
+  },
+});
+
+
 
 const excursionSlider = new Swiper('.excursion-slider', {
   slidesPerView: 1,

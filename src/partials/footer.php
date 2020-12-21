@@ -164,6 +164,68 @@
   </div>
 </div>
 
+<div class="modal micromodal-slide is-open" id="modal-stl">
+  <div class="modal__overlay modal-stl__overlay" data-micromodal-close>
+    <button class="modal__close" data-micromodal-close></button>
+
+    <div class="modal__container modal-stl__container">
+      <div class="stl">
+        <div class="swiper-container stl__slider stl-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="stl-slider__slide stl-slider__slide--form">
+                <div class="modal__header">
+                  <h2 class="modal__title">
+                    Укажите Ваши данные
+                  </h2>
+                </div>
+                <!-- /.modal__title -->
+
+                <div class="modal__content">
+                  <form action="" class="form form-excursion">
+                    <input class="input input-field mb-3" type="text" placeholder="Наименование заказчика" name="user_name">
+                    <input class="input input-field mb-3" type="text" placeholder="ФИО пациента" name="patient_name">
+                    <input class="input input-field mb-3" type="tel" placeholder="Контактный номер телефона" name="user_phone">
+                    <div class="form__policy">
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkbox__mark"></span>
+                        <span class="checkbox__label">Я принимаю <a href="" class="checkbox__policy">политику конфиденциальности</a></span>
+                      </label>
+                    </div>
+                    <!-- /.policy-wrapper -->
+                  </form>
+                </div>
+                <!-- /.modal__content -->
+              </div>
+              <!-- /.stl-slider__slide -->
+            </div>
+            <!-- /.swiper-slide -->
+          </div>
+          <!-- /.swiper-wrapper -->
+        </div>
+        <!-- /.swiper-container -->
+      </div>
+      <!-- /.stl -->
+    </div>
+    <!-- /.modal__container -->
+
+    <div class="stl-slider__control">
+      <button class="stl-slider__prev stl-slider__button button button-outline">
+        <img src="img/icons/controls/arrow--left.svg" alt="">
+        Назад
+      </button>
+      <button class="stl-slider__next stl-slider__button button button-outline">
+        Далее
+        <img src="img/icons/controls/arrow--right.svg" alt="">
+      </button>
+    </div>
+    <!-- /.stl-slider__control -->
+  </div>
+  <!-- /.modal__overlay -->
+</div>
+<!-- /.modal -->
+
 <!-- Скрипты -->
 <!-- build:js -->
 <script src="scripts/libraries/swiper.js"></script>

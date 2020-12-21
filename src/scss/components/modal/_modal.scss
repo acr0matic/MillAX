@@ -28,7 +28,7 @@
   overflow-y: auto;
 
   color: $text-white;
-  background-color: #fff;
+  background-color: $palette-purple;
   background-image: linear-gradient(81.1deg, #9966ff 6.15%, #7976ff 100.16%);
 
   @include breakpoint($breakpoint-mobile-large) {
