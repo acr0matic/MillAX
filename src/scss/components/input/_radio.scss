@@ -1,0 +1,50 @@
+.radio {
+  display: flex;
+  align-items: flex-start;
+
+  margin-bottom: 15px;
+
+  cursor: pointer;
+
+  &:hover {
+    .radio__control {
+    }
+  }
+
+  input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+
+    &:checked + .radio__control {
+      background: #ffffff;
+    }
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+  }
+
+  &__control {
+    display: block;
+    width: 17px;
+    height: 17px;
+
+    margin-right: 12px;
+
+    border-radius: 50%;
+    border: $radio__border;
+
+    transition: all 0.15s ease;
+  }
+
+  &__label {
+    margin-top: -3px;
+
+    font-size: $font-size-2;
+    font-weight: $weight-light;
+
+    line-height: 28px;
+  }
+}

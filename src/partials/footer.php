@@ -176,6 +176,30 @@
               <div class="stl-slider__slide stl-slider__slide--form">
                 <div class="modal__header">
                   <h2 class="modal__title">
+                    Укажите тип конструкции
+                  </h2>
+                </div>
+                <!-- /.modal__title -->
+
+                <div class="modal__content">
+                  <label class="radio">
+                    <span class="radio__input">
+                      <input type="radio" name="radio">
+                      <span class="radio__control"></span>
+                    </span>
+                    <span class="radio__label">Анатомическая коронка</span>
+                  </label>
+                </div>
+                <!-- /.modal__content -->
+              </div>
+              <!-- /.stl-slider__slide -->
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div class="swiper-slide">
+              <div class="stl-slider__slide stl-slider__slide--form">
+                <div class="modal__header">
+                  <h2 class="modal__title">
                     Укажите Ваши данные
                   </h2>
                 </div>

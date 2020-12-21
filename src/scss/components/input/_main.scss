@@ -2,6 +2,9 @@ $input__background: #ffffff;
 $input__shadow: 0 0 25px rgba(178, 190, 196, 0.25);
 $input__placeholder: #9d9d9d;
 
+$radio__border: 1px solid #ffffff;
+
 @import "input";
 @import "input-field";
 @import "checkbox";
+@import "radio";
