@@ -914,7 +914,609 @@
     </div>
     <!-- /.modal__overlay -->
   </div>
-  <!-- /.modal -->
+
+  <div class="modal modal-stl micromodal-slide is-open" id="modal-stl__system">
+    <div class="modal__overlay modal-stl__overlay" data-micromodal-close>
+      <div class="modal__container modal-stl__container">
+        <button class="modal__close" data-micromodal-close></button>
+
+        <div class="modal__header">
+          <h2 class="modal__title modal-stl__title">
+            Укажите систему имплантов и размеры
+          </h2>
+        </div>
+        <!-- /.modal__title -->
+
+        <div class="modal__content">
+          <div class="modal-stl__wrapper">
+            <div class="modal-stl__row mb-4">
+              <div class="modal-stl__section mr-5">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">ANKYLOS</span>
+                </label>
+
+                <div class="modal-stl__group mt-3">
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-1">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">C</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-1">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">X</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-1">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">Multi-Unit</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__group -->
+              </div>
+              <!-- /.modal-stl__section -->
+
+              <div class="modal-stl__section">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">Anthogyr Axiom</span>
+                </label>
+
+                <div class="modal-stl__group mt-3">
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-2">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">C</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__group -->
+              </div>
+              <!-- /.modal-stl__section -->
+            </div>
+            <!-- /.modal-stl__row -->
+
+            <div class="modal-stl__row mb-4">
+              <div class="modal-stl__section mr-5">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">ASTRA TECH</span>
+                </label>
+
+                <div class="modal-stl__group mt-3">
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-3">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">3.0</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-3">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">3.5 / 4.0</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-3">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">4.5 / 5.0</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-3">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">Multi-Unit</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__group -->
+              </div>
+              <!-- /.modal-stl__section -->
+            </div>
+            <!-- /.modal-stl__row -->
+
+            <div class="modal-stl__row mb-4">
+              <div class="modal-stl__section mr-5">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">BEGO Semados</span>
+                </label>
+
+                <div class="modal-stl__group mt-3">
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-4">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">3.25 / 3.75</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-4">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">4.5</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-4">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">Multi-Unit</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__group -->
+              </div>
+              <!-- /.modal-stl__section -->
+
+              <div class="modal-stl__section mr-5">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">Dentium / implantium</span>
+                </label>
+
+                <div class="modal-stl__group mt-3">
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-5">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">Multi-Unit</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__group -->
+              </div>
+              <!-- /.modal-stl__section -->
+
+              <div class="modal-stl__section mr-5">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">ICX</span>
+                </label>
+              </div>
+              <!-- /.modal-stl__section -->
+            </div>
+            <!-- /.modal-stl__row -->
+
+            <div class="modal-stl__row mb-4">
+              <div class="modal-stl__section mr-5">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">MegaGen AnyOne</span>
+                </label>
+
+                <div class="modal-stl__group mt-3">
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-6">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">3.0</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__group -->
+              </div>
+              <!-- /.modal-stl__section -->
+
+              <div class="modal-stl__section mr-5">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">MegaGen AnyRidge</span>
+                </label>
+
+                <div class="modal-stl__group mt-3">
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-7">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">3.0</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__group -->
+              </div>
+              <!-- /.modal-stl__section -->
+            </div>
+            <!-- /.modal-stl__row -->
+
+            <div class="modal-stl__row mb-4">
+              <div class="modal-stl__section mr-5">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">MIS SEVEN</span>
+                </label>
+
+                <div class="modal-stl__group mt-3">
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-8">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">NP (3.3)</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-8">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">SP (3.75)</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-8">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">SP (4.2)</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-8">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">WP (5.0 / 6.0)</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__group -->
+              </div>
+              <!-- /.modal-stl__section -->
+
+              <div class="modal-stl__section mr-5">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">NIKO / LOKO</span>
+                </label>
+
+                <div class="modal-stl__group mt-3">
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-9">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">3.5</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-9">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">4.5</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__group -->
+              </div>
+              <!-- /.modal-stl__section -->
+            </div>
+            <!-- /.modal-stl__row -->
+
+            <div class="modal-stl__row mb-4">
+              <div class="modal-stl__section mr-5">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">NobelActive</span>
+                </label>
+
+                <div class="modal-stl__group mt-3">
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-10">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">3.0</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-10">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">NP (3.5)</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-10">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">RP (4.5)</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-10">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">WP (5.5)</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-10">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">Multi-Unit</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__group -->
+              </div>
+              <!-- /.modal-stl__section -->
+            </div>
+            <!-- /.modal-stl__row -->
+
+            <div class="modal-stl__row mb-4">
+              <div class="modal-stl__section mr-5">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">NobelReplace</span>
+                </label>
+
+                <div class="modal-stl__group mt-3">
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-11">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">NP (3.5)</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-11">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">RP (4.3)</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-11">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">WP (5.5)</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-11">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">Multi-Unit</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__group -->
+              </div>
+              <!-- /.modal-stl__section -->
+            </div>
+            <!-- /.modal-stl__row -->
+
+            <div class="modal-stl__row mb-4">
+              <div class="modal-stl__section mr-5">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">Osstem</span>
+                </label>
+
+                <div class="modal-stl__group mt-3">
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-12">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">Mini (3.5)</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-12">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">Regular (4.0 / 4.5 / 5.0)</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-12">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">Multi-Unit</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__group -->
+              </div>
+              <!-- /.modal-stl__section -->
+            </div>
+            <!-- /.modal-stl__row -->
+
+            <div class="modal-stl__row mb-4">
+              <div class="modal-stl__section mr-5">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">Straumann Bone Level</span>
+                </label>
+
+                <div class="modal-stl__group mt-3">
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-13">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">NC (3.3)</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-13">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">RC (4.1 / 4.8)</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__group -->
+              </div>
+              <!-- /.modal-stl__section -->
+
+              <div class="modal-stl__section mr-5">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">Straumann SyncOcta</span>
+                </label>
+
+                <div class="modal-stl__group mt-3">
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-13">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">NN (3.5)</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-13">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">RN (4.8)</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-13">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">WN (6.5)</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__group -->
+              </div>
+              <!-- /.modal-stl__section -->
+            </div>
+            <!-- /.modal-stl__row -->
+
+            <div class="modal-stl__row mb-4">
+              <div class="modal-stl__section mr-5">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">XiVE</span>
+                </label>
+
+                <div class="modal-stl__group mt-3">
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-14">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">3.0</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-14">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">3.4</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-14">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">3.8</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-14">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">4.5</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-14">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">5.5</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-14">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">Multi-Unit</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__group -->
+              </div>
+              <!-- /.modal-stl__section -->
+
+              <div class="modal-stl__section mr-5">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">IRIS Liko-M</span>
+                </label>
+
+                <div class="modal-stl__group mt-3">
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-15">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">3.0</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__group -->
+              </div>
+              <!-- /.modal-stl__section -->
+            </div>
+            <!-- /.modal-stl__row -->
+
+            <div class="modal-stl__row mb-4">
+              <div class="modal-stl__section mr-5">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">Conmet</span>
+                </label>
+
+                <div class="modal-stl__group mt-3">
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-16">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">NP (2.2)</span>
+                  </label>
+
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-16">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">RP (2.7)</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__group -->
+              </div>
+              <!-- /.modal-stl__section -->
+
+              <div class="modal-stl__section mr-5">
+                <label class="radio">
+                  <span class="radio__input">
+                    <input type="radio" name="system">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">Другое_____________</span>
+                </label>
+
+                <div class="modal-stl__group mt-3">
+                  <label class="checkbox checkbox--small ml-4">
+                    <input type="radio" name="group-15">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">Размеры___________</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__group -->
+              </div>
+              <!-- /.modal-stl__section -->
+            </div>
+            <!-- /.modal-stl__row -->
+
+            <button data-micromodal-close class="modal-stl__button button button-outline">Подтвердить</button>
+          </div>
+          <!-- /.modal-stl__wrapper -->
+        </div>
+        <!-- /.modal__container -->
+      </div>
+      <!-- /.modal__overlay -->
+    </div>
+    <!-- /.modal -->
+  </div>
 
   <!-- Подвал -->
   <?php include_once 'partials/footer.php' ?>
