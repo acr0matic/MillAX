@@ -395,6 +395,54 @@
     <!-- /.modal -->
   </div>
 
+  <div class="modal modal-stl micromodal-slide is-open" id="modal-stl__advanced">
+    <div class="modal__overlay modal-stl__overlay" data-micromodal-close>
+      <div class="modal__container modal-stl__container">
+        <button class="modal__close" data-micromodal-close></button>
+
+        <div class="modal__header">
+          <h2 class="modal__title modal-stl__title">
+            Опак и карвинг
+          </h2>
+        </div>
+        <!-- /.modal__title -->
+
+        <div class="modal__content">
+          <div class="modal-stl__wrapper">
+            <div class="row mb-5">
+              <div class="col-3">
+                <div class="modal-stl__section">
+                  <label class="checkbox checkbox--small">
+                    <input type="checkbox">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">Опак</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__section -->
+
+                <div class="modal-stl__section">
+                  <label class="checkbox checkbox--small">
+                    <input type="checkbox">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">Карвинг</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__section -->
+              </div>
+              <!-- /.col-3 -->
+            </div>
+            <!-- /.row -->
+            <button data-micromodal-close class="modal-stl__button button button-outline">Подтвердить</button>
+          </div>
+          <!-- /.modal-stl__wrapper -->
+        </div>
+        <!-- /.modal__container -->
+      </div>
+      <!-- /.modal__overlay -->
+    </div>
+    <!-- /.modal -->
+  </div>
+
   <!-- Подвал -->
   <?php include_once 'partials/footer.php' ?>
 
