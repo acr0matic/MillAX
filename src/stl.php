@@ -149,7 +149,7 @@
                 <div class="modal-stl__section">
                   <label class="radio">
                     <span class="radio__input">
-                      <input type="radio" name="radio">
+                      <input type="radio" name="construction">
                       <span class="radio__control"></span>
                     </span>
                     <span class="radio__label">Анатомическая <br> коронка</span>
@@ -160,7 +160,7 @@
                 <div class="modal-stl__section">
                   <label class="radio">
                     <span class="radio__input">
-                      <input type="radio" name="radio">
+                      <input type="radio" name="construction">
                       <span class="radio__control"></span>
                     </span>
                     <span class="radio__label">Каркас</span>
@@ -171,7 +171,7 @@
                 <div class="modal-stl__section">
                   <label class="radio">
                     <span class="radio__input">
-                      <input type="radio" name="radio">
+                      <input type="radio" name="construction">
                       <span class="radio__control"></span>
                     </span>
                     <span class="radio__label">Абатмент</span>
@@ -182,7 +182,7 @@
                 <div class="modal-stl__section">
                   <label class="radio">
                     <span class="radio__input">
-                      <input type="radio" name="radio">
+                      <input type="radio" name="construction">
                       <span class="radio__control"></span>
                     </span>
                     <span class="radio__label">Рельсовая балка</span>
@@ -196,7 +196,7 @@
                 <div class="modal-stl__section">
                   <label class="radio">
                     <span class="radio__input">
-                      <input type="radio" name="radio">
+                      <input type="radio" name="construction">
                       <span class="radio__control"></span>
                     </span>
                     <span class="radio__label">Анатомическая коронка <br> винтовой фиксации</span>
@@ -207,7 +207,7 @@
                 <div class="modal-stl__section">
                   <label class="radio">
                     <span class="radio__input">
-                      <input type="radio" name="radio">
+                      <input type="radio" name="construction">
                       <span class="radio__control"></span>
                     </span>
                     <span class="radio__label">Каркас винтовой фиксации</span>
@@ -218,7 +218,7 @@
                 <div class="modal-stl__section">
                   <label class="radio">
                     <span class="radio__input">
-                      <input type="radio" name="radio">
+                      <input type="radio" name="construction">
                       <span class="radio__control"></span>
                     </span>
                     <span class="radio__label">Вкладка</span>
@@ -229,7 +229,7 @@
                 <div class="modal-stl__section">
                   <label class="radio">
                     <span class="radio__input">
-                      <input type="radio" name="radio">
+                      <input type="radio" name="construction">
                       <span class="radio__control"></span>
                     </span>
                     <span class="radio__label">Разборная вкладка</span>
@@ -238,6 +238,149 @@
                 <!-- /.modal-stl__section -->
               </div>
               <!-- /.col-6 -->
+            </div>
+            <!-- /.row -->
+
+            <button data-micromodal-close class="modal-stl__button button button-outline">Подтвердить</button>
+          </div>
+          <!-- /.modal-stl__wrapper -->
+        </div>
+        <!-- /.modal__container -->
+      </div>
+      <!-- /.modal__overlay -->
+    </div>
+    <!-- /.modal -->
+  </div>
+
+  <div class="modal modal-stl micromodal-slide" id="modal-stl__material">
+    <div class="modal__overlay modal-stl__overlay" data-micromodal-close>
+      <div class="modal__container modal-stl__container">
+        <button class="modal__close" data-micromodal-close></button>
+
+        <div class="modal__header">
+          <h2 class="modal__title modal-stl__title">
+            Укажите материал изготовления
+          </h2>
+        </div>
+        <!-- /.modal__title -->
+
+        <div class="modal__content">
+          <div class="modal-stl__wrapper">
+            <div class="row mb-5">
+              <div class="col-3">
+                <div class="modal-stl__section">
+                  <label class="radio">
+                    <span class="radio__input">
+                      <input type="radio" name="material">
+                      <span class="radio__control"></span>
+                    </span>
+                    <span class="radio__label">ZrO2</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__section -->
+              </div>
+              <!-- /.col-3 -->
+
+              <div class="col-3">
+                <div class="modal-stl__section">
+                  <label class="radio">
+                    <span class="radio__input">
+                      <input type="radio" name="material">
+                      <span class="radio__control"></span>
+                    </span>
+                    <span class="radio__label">Multilayer 3D</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__section -->
+              </div>
+              <!-- /.col-3 -->
+
+              <div class="col-3">
+                <div class="modal-stl__section">
+                  <label class="radio">
+                    <span class="radio__input">
+                      <input type="radio" name="material">
+                      <span class="radio__control"></span>
+                    </span>
+                    <span class="radio__label">PMMA</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__section -->
+              </div>
+              <!-- /.col-3 -->
+
+              <div class="col-3">
+                <div class="modal-stl__section">
+                  <label class="radio">
+                    <span class="radio__input">
+                      <input type="radio" name="material">
+                      <span class="radio__control"></span>
+                    </span>
+                    <span class="radio__label">Titan</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__section -->
+              </div>
+              <!-- /.col-3 -->
+            </div>
+            <!-- /.row -->
+
+            <div class="row mb-4">
+              <div class="col-3">
+                <div class="modal-stl__section">
+                  <label class="radio">
+                    <span class="radio__input">
+                      <input type="radio" name="material">
+                      <span class="radio__control"></span>
+                    </span>
+                    <span class="radio__label">WAX</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__section -->
+              </div>
+              <!-- /.col-3 -->
+
+              <div class="col-3">
+                <div class="modal-stl__section">
+                  <label class="radio">
+                    <span class="radio__input">
+                      <input type="radio" name="material">
+                      <span class="radio__control"></span>
+                    </span>
+                    <span class="radio__label">Pre-mill (T)</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__section -->
+              </div>
+              <!-- /.col-3 -->
+
+              <div class="col-3">
+                <div class="modal-stl__section">
+                  <label class="radio">
+                    <span class="radio__input">
+                      <input type="radio" name="material">
+                      <span class="radio__control"></span>
+                    </span>
+                    <span class="radio__label">CoCr</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__section -->
+              </div>
+              <!-- /.col-3 -->
+
+              <div class="col-3">
+                <div class="modal-stl__section">
+                  <label class="radio">
+                    <span class="radio__input">
+                      <input type="radio" name="material">
+                      <span class="radio__control"></span>
+                    </span>
+                    <span class="radio__label">Другое_____</span>
+                  </label>
+                </div>
+                <!-- /.modal-stl__section -->
+              </div>
+              <!-- /.col-3 -->
             </div>
             <!-- /.row -->
 
