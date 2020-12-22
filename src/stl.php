@@ -915,7 +915,7 @@
     <!-- /.modal__overlay -->
   </div>
 
-  <div class="modal modal-stl micromodal-slide is-open" id="modal-stl__system">
+  <div class="modal modal-stl micromodal-slide" id="modal-stl__system">
     <div class="modal__overlay modal-stl__overlay" data-micromodal-close>
       <div class="modal__container modal-stl__container">
         <button class="modal__close" data-micromodal-close></button>
@@ -1510,6 +1510,78 @@
             <button data-micromodal-close class="modal-stl__button button button-outline">Подтвердить</button>
           </div>
           <!-- /.modal-stl__wrapper -->
+        </div>
+        <!-- /.modal__container -->
+      </div>
+      <!-- /.modal__overlay -->
+    </div>
+    <!-- /.modal -->
+  </div>
+
+  <div class="modal modal-stl micromodal-slide" id="modal-stl__parameter">
+    <div class="modal__overlay modal-stl__overlay" data-micromodal-close>
+      <div class="modal__container modal-stl__container">
+        <button class="modal__close" data-micromodal-close></button>
+
+        <div class="modal__header">
+          <h2 class="modal__title modal-stl__title">
+            Укажите параметры отступа
+          </h2>
+        </div>
+        <!-- /.modal__title -->
+
+        <div class="modal__content">
+          <div class="modal-stl__wrapper">
+            <label class="modal-stl__input">
+              <div class="row align-items-center mb-4">
+                <div class="col-2">
+                  Глубина:
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-10">
+                  <div class="row">
+                    <div class="col-6">
+                      <input class="input input-field" placeholder="Вестибулярная, мм" type="text">
+                    </div>
+                    <!-- /.col-6 -->
+
+                    <div class="col-6">
+                      <input class="input input-field" placeholder="Небная, мм" type="text">
+                    </div>
+                    <!-- /.col-6 -->
+                  </div>
+                  <!-- /.row -->
+                </div>
+                <!-- /.col-9 -->
+              </div>
+              <!-- /.row -->
+            </label>
+
+            <label class="modal-stl__input">
+              <div class="row align-items-center mb-5">
+                <div class="col-2">
+                  Ширина:
+                </div>
+                <!-- /.col-3 -->
+
+                <div class="col-10">
+                  <div class="row">
+                    <div class="col-6">
+                      <input class="input input-field" placeholder="Ширина, мм" type="text">
+                    </div>
+                    <!-- /.col-6 -->
+                  </div>
+                  <!-- /.row -->
+                </div>
+                <!-- /.col-9 -->
+              </div>
+              <!-- /.row -->
+            </label>
+          </div>
+          <!-- /.modal-stl__wrapper -->
+
+          <button data-micromodal-close class="modal-stl__button button button-outline">Подтвердить</button>
         </div>
         <!-- /.modal__container -->
       </div>
