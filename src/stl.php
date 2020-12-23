@@ -544,37 +544,37 @@
                     <div class="stl-stage__item">
                       <img class="stl-stage__background" src="img/stl/circle.svg" alt="">
                       <div class="stl-stage__control">
-                        <div class="stl-stage__status">
+                        <div data-status="construction" class="stl-stage__status">
                           <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
                           <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
                         </div>
                         <!-- /.stl-stage__status -->
 
-                        <div class="stl-stage__status">
+                        <div data-status="parameter" class="stl-stage__status">
                           <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
                           <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
                         </div>
                         <!-- /.stl-stage__status -->
 
-                        <div class="stl-stage__status">
+                        <div data-status="design" class="stl-stage__status">
                           <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
                           <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
                         </div>
                         <!-- /.stl-stage__status -->
 
-                        <div class="stl-stage__status">
+                        <div data-status="system" class="stl-stage__status">
                           <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
                           <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
                         </div>
                         <!-- /.stl-stage__status -->
 
-                        <div class="stl-stage__status">
+                        <div data-status="material" class="stl-stage__status">
                           <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
                           <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
                         </div>
                         <!-- /.stl-stage__status -->
 
-                        <div class="stl-stage__status">
+                        <div data-status="advanced" class="stl-stage__status">
                           <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
                           <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
                         </div>
@@ -584,7 +584,7 @@
 
                       <div class="stl-stage__action">
                         <div class="stl-stage__row">
-                          <div class="stl-stage__button" data-micromodal-trigger="modal-stl__construction">
+                          <div data-status="construction" class="stl-stage__button" data-micromodal-trigger="modal-stl__construction">
                             <span class="stl-stage__edit">Редактировать
                               <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="#A8A8A8" />
@@ -598,7 +598,7 @@
                         <!-- /.stl-stage__row -->
 
                         <div class="stl-stage__row">
-                          <div class="stl-stage__button" data-micromodal-trigger="modal-stl__parameter">
+                          <div data-status="parameter" class="stl-stage__button" data-micromodal-trigger="modal-stl__parameter">
                             <span class="stl-stage__edit">Редактировать
                               <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="#A8A8A8" />
@@ -609,7 +609,7 @@
                           </div>
                           <!-- /.stl-stage__button -->
 
-                          <div class="stl-stage__button" data-micromodal-trigger="modal-stl__color">
+                          <div data-status="design" class="stl-stage__button" data-micromodal-trigger="modal-stl__design">
                             <span class="stl-stage__edit">Редактировать
                               <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="#A8A8A8" />
@@ -623,7 +623,7 @@
                         <!-- /.stl-stage__row -->
 
                         <div class="stl-stage__row">
-                          <div class="stl-stage__button" data-micromodal-trigger="modal-stl__system">
+                          <div data-status="system" class="stl-stage__button" data-micromodal-trigger="modal-stl__system">
                             <span class="stl-stage__edit">Редактировать
                               <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="#A8A8A8" />
@@ -634,7 +634,7 @@
                           </div>
                           <!-- /.stl-stage__button -->
 
-                          <div class="stl-stage__button" data-micromodal-trigger="modal-stl__material">
+                          <div data-status="material" class="stl-stage__button" data-micromodal-trigger="modal-stl__material">
                             <span class="stl-stage__edit">Редактировать
                               <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="#A8A8A8" />
@@ -648,7 +648,7 @@
                         <!-- /.stl-stage__row -->
 
                         <div class="stl-stage__row">
-                          <div class="stl-stage__button" data-micromodal-trigger="modal-stl__advanced">
+                          <div data-status="advanced" class="stl-stage__button" data-micromodal-trigger="modal-stl__advanced">
                             <span class="stl-stage__edit">Редактировать
                               <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="#A8A8A8" />
@@ -668,7 +668,7 @@
                           Вернуться к карте зубов
                         </button>
 
-                        <button class="stl-slider__button button button-secondary">
+                        <button class="stl-slider__prev stl-slider__button button button-secondary">
                           Сохранить настройки
                         </button>
                       </div>
@@ -722,7 +722,7 @@
     </section>
   </main>
 
-  <div class="modal modal-stl micromodal-slide" id="modal-stl__construction">
+  <div data-status="construction" class="modal modal-stl micromodal-slide" id="modal-stl__construction">
     <div class="modal__overlay modal-stl__overlay" data-micromodal-close>
       <div class="modal__container modal-stl__container">
         <button class="modal__close" data-micromodal-close></button>
@@ -844,7 +844,7 @@
     <!-- /.modal -->
   </div>
 
-  <div class="modal modal-stl micromodal-slide" id="modal-stl__material">
+  <div data-status="material" class="modal modal-stl micromodal-slide" id="modal-stl__material">
     <div class="modal__overlay modal-stl__overlay" data-micromodal-close>
       <div class="modal__container modal-stl__container">
         <button class="modal__close" data-micromodal-close></button>
@@ -987,7 +987,7 @@
     <!-- /.modal -->
   </div>
 
-  <div class="modal modal-stl micromodal-slide" id="modal-stl__advanced">
+  <div data-status="advanced" class="modal modal-stl micromodal-slide" id="modal-stl__advanced">
     <div class="modal__overlay modal-stl__overlay" data-micromodal-close>
       <div class="modal__container modal-stl__container">
         <button class="modal__close" data-micromodal-close></button>
@@ -1035,7 +1035,7 @@
     <!-- /.modal -->
   </div>
 
-  <div class="modal modal-stl micromodal-slide" id="modal-stl__color">
+  <div data-status="design" class="modal modal-stl micromodal-slide" id="modal-stl__design">
     <div class="modal__overlay modal-stl__overlay" data-micromodal-close>
       <div class="modal__container modal-stl__container">
         <button class="modal__close" data-micromodal-close></button>
@@ -1490,7 +1490,7 @@
     <!-- /.modal__overlay -->
   </div>
 
-  <div class="modal modal-stl micromodal-slide" id="modal-stl__system">
+  <div data-status="system" class="modal modal-stl micromodal-slide" id="modal-stl__system">
     <div class="modal__overlay modal-stl__overlay" data-micromodal-close>
       <div class="modal__container modal-stl__container">
         <button class="modal__close" data-micromodal-close></button>
@@ -2093,7 +2093,7 @@
     <!-- /.modal -->
   </div>
 
-  <div class="modal modal-stl micromodal-slide" id="modal-stl__parameter">
+  <div data-status="parameter" class="modal modal-stl micromodal-slide" id="modal-stl__parameter">
     <div class="modal__overlay modal-stl__overlay" data-micromodal-close>
       <div class="modal__container modal-stl__container">
         <button class="modal__close" data-micromodal-close></button>

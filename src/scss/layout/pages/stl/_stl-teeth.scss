@@ -12,6 +12,20 @@
   &__item {
     position: relative;
     cursor: pointer;
+
+    transition: all 0.15s ease;
+
+    svg path {
+      transition: all 0.15s ease;
+    }
+
+    &:hover {
+      color: $text-white;
+
+      svg path {
+        fill: #9966ff;
+      }
+    }
   }
 
   &__row {

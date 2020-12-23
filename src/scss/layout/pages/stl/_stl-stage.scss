@@ -127,22 +127,22 @@
 
     @include from-end(5) {
       top: 120px;
-      left: 540px;
+      left: 312px;
     }
 
     @include from-end(4) {
       top: 120px;
-      left: 312px;
+      left: 540px;
     }
 
     @include from-end(3) {
       top: 290px;
-      left: 540px;
+      left: 312px;
     }
 
     @include from-end(2) {
       top: 290px;
-      left: 312px;
+      left: 540px;
     }
 
     @include last-child {
@@ -156,5 +156,15 @@
     left: 50%;
 
     transform: translate(-50%, -50%);
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.3s ease;
+
+    &--visible {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }
