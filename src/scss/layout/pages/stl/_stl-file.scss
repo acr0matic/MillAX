@@ -1,0 +1,12 @@
+#stl-file {
+  .container {
+    padding: 0;
+  }
+}
+
+.stl-file {
+  &__annotation {
+    padding: 20px 20px 20px 10px;
+    box-shadow: $shadow-secondary;
+  }
+}

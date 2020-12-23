@@ -22,6 +22,8 @@
   }
 
   &--big {
+    align-items: center;
+
     .radio__control {
       width: 30px;
       height: 30px;

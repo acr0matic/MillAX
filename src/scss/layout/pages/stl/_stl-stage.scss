@@ -1,0 +1,160 @@
+.stl-stage {
+  margin-bottom: 85px;
+
+  &__item {
+    position: relative;
+
+    width: 100%;
+    max-width: 900px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 80px;
+
+    @include first-last {
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+
+    font-size: $font-size-2;
+
+    cursor: pointer;
+
+    @include first-child {
+      text-align: right;
+    }
+
+    &:hover {
+      .stl-stage__edit {
+        color: $text-orange;
+
+        path {
+          fill: $text-orange;
+        }
+      }
+    }
+  }
+
+  &__edit {
+    margin-right: auto;
+    margin-bottom: 5px;
+
+    color: #a8a8a8;
+    font-size: $font-size-6;
+
+    transition: all 0.15s ease;
+
+    svg {
+      margin-left: 5px;
+
+      path {
+        transition: all 0.15s ease;
+      }
+    }
+  }
+
+  &__control {
+    position: relative;
+  }
+
+  &__selector {
+    @include flex($justify: center);
+
+    margin-bottom: 60px;
+  }
+
+  &__tab {
+    position: relative;
+    font-size: $font-size-2;
+
+    cursor: pointer;
+
+    &--active {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+
+        width: 100%;
+
+        transform: translateX(-50%);
+        border-bottom: 2px solid #ec821f;
+      }
+    }
+
+    &--disabled {
+      color: #b1b1b1;
+
+      cursor: default;
+    }
+
+    &:not(:last-child) {
+      margin-right: 65px;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -76%);
+  }
+
+  &__status {
+    position: absolute;
+
+    @include first-last() {
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+
+    @include first-child {
+      top: 65px;
+    }
+
+    @include from-end(5) {
+      top: 120px;
+      left: 540px;
+    }
+
+    @include from-end(4) {
+      top: 120px;
+      left: 312px;
+    }
+
+    @include from-end(3) {
+      top: 290px;
+      left: 540px;
+    }
+
+    @include from-end(2) {
+      top: 290px;
+      left: 312px;
+    }
+
+    @include last-child {
+      top: 350px;
+    }
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+}

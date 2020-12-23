@@ -1,12 +1,11 @@
 .stl-slider {
+  padding: 0 15px;
+
   &__control {
-    position: absolute;
-    bottom: 40px;
 
     @include flex();
 
     width: 100%;
-    max-width: 800px;
   }
 
   &__button {
@@ -33,6 +32,15 @@
 
     &--form {
       max-width: 440px;
+    }
+
+    &--map {
+      margin-top: 200px;
+      margin-bottom: 180px;
+    }
+
+    &--stage {
+      margin-top: 160px;
     }
   }
 }

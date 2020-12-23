@@ -1,0 +1,56 @@
+.stl-teeth {
+  margin-top: 35px;
+
+  &__map {
+    @include flex();
+
+    width: 100%;
+
+    filter: drop-shadow(0 0 9px rgba(51, 51, 51, 0.15));
+  }
+
+  &__item {
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__row {
+    position: relative;
+  }
+
+  &__id {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+
+    font-size: 12px;
+    font-weight: $weight-medium;
+
+    transform: translate(-50%, -50%);
+
+    pointer-events: none;
+
+    &--medium {
+      font-size: 18px;
+    }
+
+    &--large {
+      font-size: 24px;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    left: 15px;
+
+    width: 745px;
+
+    &--top {
+      bottom: 40px;
+    }
+
+    &--bottom {
+      top: 30px;
+    }
+  }
+}

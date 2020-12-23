@@ -59,7 +59,7 @@
           <div class="header__secondary d-lg-flex">
             <div class="header__action mr-3">
               <button data-micromodal-trigger="modal-reservation" class="header__button button button-small">Забронировать место</button>
-              <button data-micromodal-trigger="modal-stl" class="header__button button button-small">Отправить STL файл</button>
+              <button onclick="location.href = 'stl.php'" data-micromodal-trigger="modal-stl" class="header__button button button-small">Отправить STL файл</button>
             </div>
             <!-- /.header__action -->
 

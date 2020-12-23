@@ -16,14 +16,15 @@ const coworkingSlider = new Swiper('.coworking-slider', {
 
 const stlSlider = new Swiper('.stl__slider', {
   slidesPerView: 1,
+  spaceBetween: 30,
+
+  // allowTouchMove: false,
+  autoHeight: true,
 
   navigation: {
-    nextEl: '.stl-slider__next',
     prevEl: '.stl-slider__prev',
   },
 });
-
-
 
 const excursionSlider = new Swiper('.excursion-slider', {
   slidesPerView: 1,
