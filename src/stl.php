@@ -542,126 +542,126 @@
                     <!-- /.stl-stage__selector -->
 
                     <div class="stl-stage__item">
-                      <img class="stl-stage__background" src="img/stl/circle.svg" alt="">
-                      <div class="stl-stage__control">
-                        <div data-status="construction" class="stl-stage__status">
-                          <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
-                          <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
-                        </div>
-                        <!-- /.stl-stage__status -->
 
-                        <div data-status="parameter" class="stl-stage__status">
-                          <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
-                          <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
-                        </div>
-                        <!-- /.stl-stage__status -->
+                      <div class="row">
+                        <div class="col-3">
 
-                        <div data-status="design" class="stl-stage__status">
-                          <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
-                          <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
                         </div>
-                        <!-- /.stl-stage__status -->
+                        <!-- /.col-3 -->
 
-                        <div data-status="system" class="stl-stage__status">
-                          <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
-                          <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
-                        </div>
-                        <!-- /.stl-stage__status -->
+                        <div class="col-8 col--relative">
+                          <div class="stl-stage__wrapper">
+                            <img class="stl-stage__background" src="img/stl/circle.svg" alt="">
+                            <div class="stl-stage__control">
+                              <div data-status="construction" class="stl-stage__status">
+                                <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
+                                <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
 
-                        <div data-status="material" class="stl-stage__status">
-                          <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
-                          <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
-                        </div>
-                        <!-- /.stl-stage__status -->
+                                <div data-status="construction" class="stl-stage__button" data-micromodal-trigger="modal-stl__construction">
+                                  <span class="stl-stage__edit">Редактировать
+                                    <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="#A8A8A8" />
+                                    </svg>
+                                  </span>
 
-                        <div data-status="advanced" class="stl-stage__status">
-                          <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
-                          <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
+                                  Тип конструкции
+                                </div>
+                                <!-- /.stl-stage__button -->
+                              </div>
+                              <!-- /.stl-stage__status -->
+
+                              <div data-status="parameter" class="stl-stage__status">
+                                <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
+                                <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
+
+                                <div data-status="parameter" class="stl-stage__button" data-micromodal-trigger="modal-stl__parameter">
+                                  <span class="stl-stage__edit">Редактировать
+                                    <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="#A8A8A8" />
+                                    </svg>
+                                  </span>
+
+                                  Десневая часть
+                                </div>
+                                <!-- /.stl-stage__button -->
+                              </div>
+                              <!-- /.stl-stage__status -->
+
+                              <div data-status="design" class="stl-stage__status">
+                                <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
+                                <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
+
+                                <div data-status="design" class="stl-stage__button" data-micromodal-trigger="modal-stl__design">
+                                  <span class="stl-stage__edit">Редактировать
+                                    <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="#A8A8A8" />
+                                    </svg>
+                                  </span>
+
+                                  Цвет коронки
+                                </div>
+                                <!-- /.stl-stage__button -->
+                              </div>
+                              <!-- /.stl-stage__status -->
+
+                              <div data-status="system" class="stl-stage__status">
+                                <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
+                                <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
+
+                                <div data-status="system" class="stl-stage__button" data-micromodal-trigger="modal-stl__system">
+                                  <span class="stl-stage__edit">Редактировать
+                                    <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="#A8A8A8" />
+                                    </svg>
+                                  </span>
+
+                                  Система имплантов <br> и размеры
+                                </div>
+                                <!-- /.stl-stage__button -->
+                              </div>
+                              <!-- /.stl-stage__status -->
+
+                              <div data-status="material" class="stl-stage__status">
+                                <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
+                                <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
+
+                                <div data-status="material" class="stl-stage__button" data-micromodal-trigger="modal-stl__material">
+                                  <span class="stl-stage__edit">Редактировать
+                                    <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="#A8A8A8" />
+                                    </svg>
+                                  </span>
+
+                                  Материал <br> изготовления
+                                </div>
+                                <!-- /.stl-stage__button --> 
+                              </div>
+                              <!-- /.stl-stage__status -->
+
+                              <div data-status="advanced" class="stl-stage__status">
+                                <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
+                                <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
+
+                                <div data-status="advanced" class="stl-stage__button" data-micromodal-trigger="modal-stl__advanced">
+                                  <span class="stl-stage__edit">Редактировать
+                                    <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="#A8A8A8" />
+                                    </svg>
+                                  </span>
+
+                                  Опак и карвинг
+                                </div>
+                                <!-- /.stl-stage__button -->
+                              </div>
+                              <!-- /.stl-stage__status -->
+                            </div>
+                            <!-- /.stl-stage__control -->
+                          </div>
+                          <!-- /.stl-stage__wrapper -->
                         </div>
-                        <!-- /.stl-stage__status -->
+                        <!-- /.col-8 -->
                       </div>
-                      <!-- /.stl-stage__control -->
-
-                      <div class="stl-stage__action">
-                        <div class="stl-stage__row">
-                          <div data-status="construction" class="stl-stage__button" data-micromodal-trigger="modal-stl__construction">
-                            <span class="stl-stage__edit">Редактировать
-                              <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="#A8A8A8" />
-                              </svg>
-                            </span>
-
-                            Тип конструкции
-                          </div>
-                          <!-- /.stl-stage__button -->
-                        </div>
-                        <!-- /.stl-stage__row -->
-
-                        <div class="stl-stage__row">
-                          <div data-status="parameter" class="stl-stage__button" data-micromodal-trigger="modal-stl__parameter">
-                            <span class="stl-stage__edit">Редактировать
-                              <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="#A8A8A8" />
-                              </svg>
-                            </span>
-
-                            Параметры отступа
-                          </div>
-                          <!-- /.stl-stage__button -->
-
-                          <div data-status="design" class="stl-stage__button" data-micromodal-trigger="modal-stl__design">
-                            <span class="stl-stage__edit">Редактировать
-                              <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="#A8A8A8" />
-                              </svg>
-                            </span>
-
-                            Дизайн промежуточной <br> части и цвет коронки
-                          </div>
-                          <!-- /.stl-stage__button -->
-                        </div>
-                        <!-- /.stl-stage__row -->
-
-                        <div class="stl-stage__row">
-                          <div data-status="system" class="stl-stage__button" data-micromodal-trigger="modal-stl__system">
-                            <span class="stl-stage__edit">Редактировать
-                              <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="#A8A8A8" />
-                              </svg>
-                            </span>
-
-                            Система имплантов <br> и размеры
-                          </div>
-                          <!-- /.stl-stage__button -->
-
-                          <div data-status="material" class="stl-stage__button" data-micromodal-trigger="modal-stl__material">
-                            <span class="stl-stage__edit">Редактировать
-                              <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="#A8A8A8" />
-                              </svg>
-                            </span>
-
-                            Материал изготовления
-                          </div>
-                          <!-- /.stl-stage__button -->
-                        </div>
-                        <!-- /.stl-stage__row -->
-
-                        <div class="stl-stage__row">
-                          <div data-status="advanced" class="stl-stage__button" data-micromodal-trigger="modal-stl__advanced">
-                            <span class="stl-stage__edit">Редактировать
-                              <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="#A8A8A8" />
-                              </svg>
-                            </span>
-
-                            Опак и карвинг
-                          </div>
-                          <!-- /.stl-stage__button -->
-                        </div>
-                        <!-- /.stl-stage__row -->
-                      </div>
-                      <!-- /.stl-stage__action -->
+                      <!-- /.row -->
 
                       <div class="stl-slider__control">
                         <button class="stl-slider__prev stl-slider__button button button-secondary">

@@ -3,19 +3,15 @@
 
   &__item {
     position: relative;
+  }
 
-    width: 100%;
-    max-width: 900px;
-
-    margin-left: auto;
-    margin-right: auto;
+  &__wrapper {
+    height: 480px;
   }
 
   &__row {
     display: flex;
     justify-content: space-between;
-
-    margin-bottom: 80px;
 
     @include first-last {
       justify-content: center;
@@ -23,6 +19,8 @@
   }
 
   &__button {
+    position: absolute;
+
     display: flex;
     flex-direction: column;
 
@@ -30,9 +28,7 @@
 
     cursor: pointer;
 
-    @include first-child {
-      text-align: right;
-    }
+    white-space: nowrap;
 
     &:hover {
       .stl-stage__edit {
@@ -109,7 +105,7 @@
     top: 50%;
     left: 50%;
 
-    transform: translate(-50%, -76%);
+    transform: translate(-50%, -50%);
   }
 
   &__status {
@@ -122,31 +118,65 @@
     }
 
     @include first-child {
-      top: 65px;
+      top: 75px;
+
+      .stl-stage__button {
+        top: -70px;
+        left: -70px;
+      }
     }
 
     @include from-end(5) {
-      top: 120px;
-      left: 312px;
+      top: 140px;
+      left: 235px;
+
+      .stl-stage__button {
+        top: 0;
+        right: 70px;
+
+        text-align: right;
+      }
     }
 
     @include from-end(4) {
-      top: 120px;
-      left: 540px;
+      top: 140px;
+      left: 480px;
+
+      .stl-stage__button {
+        top: 0;
+        left: 70px;
+      }
     }
 
     @include from-end(3) {
       top: 290px;
-      left: 312px;
+      left: 235px;
+
+      .stl-stage__button {
+        top: 0;
+        right: 70px;
+
+        text-align: right;
+      }
     }
 
     @include from-end(2) {
       top: 290px;
-      left: 540px;
+      left: 480px;
+
+      .stl-stage__button {
+        top: 0;
+        left: 70px;
+      }
     }
 
     @include last-child {
-      top: 350px;
+      top: 360px;
+
+      .stl-stage__button {
+        bottom: -70px;
+        left: -70px;
+      }
     }
   }
 
