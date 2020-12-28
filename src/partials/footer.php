@@ -180,5 +180,3 @@
 <script src="scripts/common.js"></script>
 <script src="scripts/mobile-menu.js"></script>
 <!-- endbuild -->
-
-<script src="scripts/stl.js"></script>

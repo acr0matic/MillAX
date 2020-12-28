@@ -2221,6 +2221,10 @@
   <!-- Подвал -->
   <?php include_once 'partials/footer.php' ?>
 
+  <script src="scripts/libraries/popper.js"></script>
+  <script src="scripts/libraries/tippy.js"></script>
+  <script src="scripts/stl.js"></script>
+
 </body>
 
 </html>
