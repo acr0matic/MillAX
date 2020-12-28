@@ -2,10 +2,10 @@
   margin-bottom: 85px;
 
   &__item {
-    position: relative;
   }
 
   &__wrapper {
+    position: relative;
     height: 480px;
   }
 
@@ -64,9 +64,9 @@
   }
 
   &__selector {
-    @include flex($justify: center);
+    @include flex($justify: flex-start);
 
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 
   &__tab {

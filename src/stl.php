@@ -518,6 +518,7 @@
                       </div>
                       <!-- /.stl-file__teeth -->
                     </div>
+                    <!-- /.col-8 -->
                   </div>
                   <!-- /.row -->
                 </div>
@@ -542,14 +543,61 @@
                     <!-- /.stl-stage__selector -->
 
                     <div class="stl-stage__item">
-
                       <div class="row">
-                        <div class="col-3">
+                        <div class="col-3 mr-5">
+                          <div class="stl-stage__info stl-info mb-5">
+                            <div class="stl-info__item mb-3">
+                              <h3 class="stl-info__title">Конструкция</h3>
+                              <div class="stl-info__value">Не определено</div>
+                            </div>
+                            <!-- /.stl-info__item -->
 
+                            <div class="stl-info__item mb-3">
+                              <h3 class="stl-info__title">Система имплантов и размеры</h3>
+                              <div class="stl-info__value">Не определено</div>
+                            </div>
+                            <!-- /.stl-info__item -->
+
+                            <div class="stl-info__item mb-3">
+                              <h3 class="stl-info__title">Материал изготовления</h3>
+                              <div class="stl-info__value">Не определено</div>
+                            </div>
+                            <!-- /.stl-info__item -->
+
+                            <div class="stl-info__item mb-3">
+                              <h3 class="stl-info__title">Цвет коронки</h3>
+                              <div class="stl-info__value">Не определено</div>
+                            </div>
+                            <!-- /.stl-info__item -->
+
+                            <div class="stl-info__item mb-3">
+                              <h3 class="stl-info__title">Десневая часть</h3>
+                              <div class="stl-info__value">Не определено</div>
+                            </div>
+                            <!-- /.stl-info__item -->
+
+                            <div class="stl-info__item">
+                              <h3 class="stl-info__title">Опак и карвинг</h3>
+                              <div class="stl-info__value">Не определено</div>
+                            </div>
+                            <!-- /.stl-info__item -->
+                          </div>
+                          <!-- /.stl-stage__info -->
+
+                          <div class="stl-slider__control">
+                            <button class="stl-slider__prev stl-slider__button button button-secondary mb-3">
+                              Сохранить настройки
+                            </button>
+
+                            <button class="stl-slider__prev stl-slider__button button button-secondary">
+                              Вернуться к карте зубов
+                            </button>
+                          </div>
+                          <!-- /.stl-slider__control -->
                         </div>
                         <!-- /.col-3 -->
 
-                        <div class="col-8 col--relative">
+                        <div class="col-8">
                           <div class="stl-stage__wrapper">
                             <img class="stl-stage__background" src="img/stl/circle.svg" alt="">
                             <div class="stl-stage__control">
@@ -634,7 +682,7 @@
 
                                   Материал <br> изготовления
                                 </div>
-                                <!-- /.stl-stage__button --> 
+                                <!-- /.stl-stage__button -->
                               </div>
                               <!-- /.stl-stage__status -->
 
@@ -662,17 +710,6 @@
                         <!-- /.col-8 -->
                       </div>
                       <!-- /.row -->
-
-                      <div class="stl-slider__control">
-                        <button class="stl-slider__prev stl-slider__button button button-secondary">
-                          Вернуться к карте зубов
-                        </button>
-
-                        <button class="stl-slider__prev stl-slider__button button button-secondary">
-                          Сохранить настройки
-                        </button>
-                      </div>
-                      <!-- /.stl-slider__control -->
                     </div>
                     <!-- /.stl-stage__item -->
                   </div>

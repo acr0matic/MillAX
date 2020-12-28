@@ -1,0 +1,19 @@
+.stl-info {
+  padding: 30px 15px;
+
+  background-color: $palette-white;
+  box-shadow: $shadow-secondary;
+
+  &__title {
+    margin-bottom: 5px;
+    color: $text-gray;
+
+    font-weight: $weight-thin;
+    font-size: $font-size-6;
+  }
+
+  &__value {
+    font-weight: $weight-bold;
+    font-size: $font-size-6;
+  }
+}
