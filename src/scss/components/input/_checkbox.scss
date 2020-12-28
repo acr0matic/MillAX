@@ -5,17 +5,9 @@
   &--small {
     cursor: pointer;
 
-    input {
-      &:checked ~ .checkbox__mark {
-        opacity: 1;
-      }
-    }
-
     .checkbox__mark {
       width: 20px;
       height: 20px;
-
-      opacity: 0.5;
 
       &::after {
         top: 1px;
@@ -25,6 +17,28 @@
 
     .checkbox__label {
       font-size: $font-size-3;
+    }
+  }
+
+  &--gray {
+    input {
+      &:checked ~ .checkbox__mark {
+        opacity: 1;
+      }
+    }
+
+    .checkbox__mark {
+      opacity: 0.5;
+    }
+  }
+
+  &--purple {
+    .checkbox__mark {
+      background-color: #bea5ff;
+
+      &::after {
+        content: url("../img/icons/accept--white.svg");
+      }
     }
   }
 

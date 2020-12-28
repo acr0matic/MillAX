@@ -18,6 +18,14 @@
       transition: all 0.15s ease;
     }
 
+    &--saved {
+      color: $text-white;
+
+      svg path {
+        fill: #ef7f17;
+      }
+    }
+
     &:hover {
       color: $text-white;
 
@@ -29,6 +37,81 @@
 
   &__row {
     position: relative;
+  }
+
+  &__support {
+    position: absolute;
+    left: 30px;
+
+    display: flex;
+
+    &--top {
+      top: -40px;
+
+      .stl-teeth__checkbox {
+        @include first(2) {
+          margin-right: 20px;
+        }
+
+        @include between(4, 6) {
+          margin-left: 10px;
+        }
+
+        @include between(7, 7) {
+          margin-left: 20px;
+        }
+
+        @include middle(15) {
+          margin: 0 45px;
+        }
+
+        @include between(9, 9) {
+          margin-right: 20px;
+        }
+
+        @include between(10, 12) {
+          margin-right: 10px;
+        }
+
+        @include last(2) {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    &--bottom {
+      bottom: -45px;
+
+      .stl-teeth__checkbox {
+        @include first(3) {
+          margin-right: 20px;
+        }
+
+        @include between(5, 6) {
+          margin-left: 15px;
+        }
+
+        @include between(7, 7) {
+          margin-left: 25px;
+        }
+
+        @include middle(15) {
+          margin: 0 25px;
+        }
+
+        @include between(9, 9) {
+          margin-right: 20px;
+        }
+
+        @include between(10, 11) {
+          margin-right: 15px;
+        }
+
+        @include last(3) {
+          margin-left: 20px;
+        }
+      }
+    }
   }
 
   &__id {
@@ -57,6 +140,8 @@
     left: 15px;
 
     width: 745px;
+
+    pointer-events: none;
 
     &--top {
       bottom: 40px;

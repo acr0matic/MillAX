@@ -17,9 +17,10 @@ const coworkingSlider = new Swiper('.coworking-slider', {
 const stlSlider = new Swiper('.stl__slider', {
   slidesPerView: 1,
   spaceBetween: 30,
-
-  allowTouchMove: false,
   autoHeight: true,
+
+  simulateTouch: false,
+  allowTouchMove: false,
 
   navigation: {
     prevEl: '.stl-slider__prev',

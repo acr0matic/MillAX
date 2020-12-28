@@ -78,7 +78,6 @@
         <div class="stl-file">
           <div class="swiper-container stl__slider stl-slider">
             <div class="swiper-wrapper">
-
               <div class="swiper-slide">
                 <div class="stl-slider__slide stl-slider__slide--map">
                   <div class="row mb-5">
@@ -115,6 +114,84 @@
                       <div class="stl-file__teeth stl-teeth">
                         <div class="stl-teeth__row mb-5">
                           <img src="img/stl/bg-top.svg" alt="" class="stl-teeth__background stl-teeth__background--top">
+                          <div class="stl-teeth__support stl-teeth__support--top">
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+                          </div>
+                          <!-- /.stl-teeth__support -->
+
                           <div class="stl-teeth__map">
                             <div class="stl-teeth__item">
                               <div class="stl-teeth__id">
@@ -188,7 +265,7 @@
                             </div>
                             <!-- /.stl-teeth__item -->
 
-                            <div class="stl-teeth__item">
+                            <div class="stl-teeth__item stl-teeth__item--saved">
                               <div class="stl-teeth__id stl-teeth__id--medium">
                                 12
                               </div>
@@ -316,6 +393,84 @@
 
                         <div class="stl-teeth__row">
                           <img src="img/stl/bg-bottom.svg" alt="" class="stl-teeth__background stl-teeth__background--bottom">
+
+                          <div class="stl-teeth__support stl-teeth__support--bottom">
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+
+                            <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
+                              <input type="checkbox">
+                              <span class="checkbox__mark"></span>
+                            </label>
+                          </div>
+                          <!-- /.stl-teeth__support -->
 
                           <div class="stl-teeth__map">
                             <div class="stl-teeth__item">
@@ -1568,19 +1723,19 @@
                 </label>
 
                 <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-1">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">C</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-1">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">X</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-1">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">Multi-Unit</span>
@@ -1600,7 +1755,7 @@
                 </label>
 
                 <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-2">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">C</span>
@@ -1623,25 +1778,25 @@
                 </label>
 
                 <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-3">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">3.0</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-3">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">3.5 / 4.0</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-3">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">4.5 / 5.0</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-3">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">Multi-Unit</span>
@@ -1664,19 +1819,19 @@
                 </label>
 
                 <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-4">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">3.25 / 3.75</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-4">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">4.5</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-4">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">Multi-Unit</span>
@@ -1696,7 +1851,7 @@
                 </label>
 
                 <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-5">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">Multi-Unit</span>
@@ -1730,7 +1885,7 @@
                 </label>
 
                 <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-6">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">3.0</span>
@@ -1750,7 +1905,7 @@
                 </label>
 
                 <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-7">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">3.0</span>
@@ -1773,25 +1928,25 @@
                 </label>
 
                 <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-8">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">NP (3.3)</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-8">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">SP (3.75)</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-8">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">SP (4.2)</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-8">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">WP (5.0 / 6.0)</span>
@@ -1811,13 +1966,13 @@
                 </label>
 
                 <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-9">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">3.5</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-9">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">4.5</span>
@@ -1840,31 +1995,31 @@
                 </label>
 
                 <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-10">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">3.0</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-10">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">NP (3.5)</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-10">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">RP (4.5)</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-10">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">WP (5.5)</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-10">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">Multi-Unit</span>
@@ -1887,25 +2042,25 @@
                 </label>
 
                 <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-11">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">NP (3.5)</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-11">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">RP (4.3)</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-11">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">WP (5.5)</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-11">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">Multi-Unit</span>
@@ -1928,19 +2083,19 @@
                 </label>
 
                 <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-12">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">Mini (3.5)</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-12">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">Regular (4.0 / 4.5 / 5.0)</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-12">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">Multi-Unit</span>
@@ -1963,13 +2118,13 @@
                 </label>
 
                 <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-13">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">NC (3.3)</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-13">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">RC (4.1 / 4.8)</span>
@@ -1989,19 +2144,19 @@
                 </label>
 
                 <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-13">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">NN (3.5)</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-13">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">RN (4.8)</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-13">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">WN (6.5)</span>
@@ -2024,37 +2179,37 @@
                 </label>
 
                 <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-14">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">3.0</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-14">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">3.4</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-14">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">3.8</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-14">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">4.5</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-14">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">5.5</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-14">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">Multi-Unit</span>
@@ -2074,7 +2229,7 @@
                 </label>
 
                 <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-15">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">3.0</span>
@@ -2097,13 +2252,13 @@
                 </label>
 
                 <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-16">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">NP (2.2)</span>
                   </label>
 
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-16">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">RP (2.7)</span>
@@ -2123,7 +2278,7 @@
                 </label>
 
                 <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small ml-4">
+                  <label class="checkbox checkbox--small checkbox--gray ml-4">
                     <input type="radio" name="group-15">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__label">Размеры___________</span>
