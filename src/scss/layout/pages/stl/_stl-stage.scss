@@ -108,6 +108,28 @@
     transform: translate(-50%, -50%);
   }
 
+  &__teeth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+    max-width: 85px;
+
+    transform: translate(-50%, -50%);
+
+    .stl-teeth__id {
+      top: 50%;
+
+      font-size: $font-size-2;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   &__status {
     position: absolute;
 

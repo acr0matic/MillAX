@@ -600,6 +600,22 @@
                         <div class="col-8">
                           <div class="stl-stage__wrapper">
                             <img class="stl-stage__background" src="img/stl/circle.svg" alt="">
+
+                            <div class="stl-stage__teeth">
+                              <div class="stl-teeth__item">
+                                <div class="stl-teeth__id stl-teeth__id stl-teeth__id--medium">
+                                  41
+                                </div>
+                                <!-- /.stl-teeth__id -->
+
+                                <svg width="41" height="59" viewBox="0 0 41 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0.518399 8.28419C0.2728 3.70014 3.97155 0 8.56217 0H32.8057C37.3963 0 41.095 3.70015 40.8494 8.28419C39.9805 24.5028 36.2972 58.8771 20.6839 58.8771C5.07068 58.8771 1.38734 24.5027 0.518399 8.28419Z" fill="white" />
+                                </svg>
+                              </div>
+                              <!-- /.stl-teeth__item -->
+                            </div>
+                            <!-- /.stl-stage__teeth -->
+
                             <div class="stl-stage__control">
                               <div data-status="construction" class="stl-stage__status">
                                 <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
