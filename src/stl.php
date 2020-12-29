@@ -685,10 +685,10 @@
                 <div class="stl-slider__slide stl-slider__slide--stage">
                   <div class="stl-file__stage stl-stage">
                     <div class="stl-stage__selector">
-                      <div class="stl-stage__tab stl-stage__tab--active">1 этап</div>
+                      <div class="stl-stage__tab stl-stage__tab--active" data-stl-stage="first">1 этап</div>
                       <!-- /.stl-stage__tab -->
 
-                      <div class="stl-stage__tab stl-stage__tab--disabled">2 этап</div>
+                      <div class="stl-stage__tab stl-stage__tab--disabled" data-stl-stage="second">2 этап</div>
                       <!-- /.stl-stage__tab -->
                     </div>
                     <!-- /.stl-stage__selector -->

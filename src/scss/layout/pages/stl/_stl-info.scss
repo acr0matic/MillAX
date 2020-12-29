@@ -4,6 +4,12 @@
   background-color: $palette-white;
   box-shadow: $shadow-secondary;
 
+  &--mini {
+    .stl-info__title {
+      margin-bottom: 0;
+    }
+  }
+
   &__title {
     margin-bottom: 5px;
     color: $text-gray;
