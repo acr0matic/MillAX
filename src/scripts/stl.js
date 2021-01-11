@@ -1,5 +1,4 @@
 // ************************************ Объявление модулей
-
 const StageController = function () {
   return {
     Init: function (stages) {
@@ -16,12 +15,42 @@ const StageController = function () {
 
     Set: (index) => stages[index].classList.add('stl-stage__tab--active'),
     Reset: () => stages.forEach(stage => stage.classList.remove('stl-stage__tab--active')),
+    SaveData: (data, type) => {
+
+      // Если ничего не выбрано
+      if (data.length === 0) {
+        teethTempData.stage[currentStage].option[type] = 'Не определено';
+      }
+
+      // Обработчик для чекбоксов
+      if (type === 'advanced') {
+        teethTempData.stage[currentStage].option[type] = [];
+
+        if (data.length === 0)
+          teethTempData.stage[currentStage].option[type] = ['Не определено'];
+      }
+
+      data.forEach(option => {
+        const selected = option.getAttribute('type');
+
+        if (selected === 'radio')
+          teethTempData.stage[currentStage].option[type] = getRadioValue(option);
+
+        if (selected === 'checkbox')
+          teethTempData.stage[currentStage].option[type].push(getCheckboxValue(option));
+
+      });
+    },
+
+    ClearData: (type) => {
+      teethTempData.stage[currentStage].option[type] = 'Не определено';
+    }
   }
 }();
 
 const TeethController = function () {
   return {
-    Init: function (teeths) {
+    Init: (teeths) => {
       teeths.forEach(teeth => {
         // Прописываем айди каждому зубу на основе текста внутри зуба
         teeth.setAttribute('data-teeth-id', teeth.querySelector('.stl-teeth__id').innerHTML.replace(/\s/g, ''));
@@ -41,10 +70,9 @@ const TeethController = function () {
           TeethController.GenerateData();
 
           // Подгружаем сохраненные значения
-          if (teethData[currentTeethId])
-            teethTempData = teethData[currentTeethId];
+          if (teethData[currentTeethId]) teethTempData = teethData[currentTeethId];
 
-          updateInfo();
+          TeethController.UpdateInfo();
 
           // Очищаем блок и добавляем иконку зуба
           teethPreviewContainer.forEach(container => {
@@ -60,7 +88,7 @@ const TeethController = function () {
       });
     },
 
-    GenerateData: function () {
+    GenerateData: () => {
       teethTempData = {};
       teethTempData['isSupport'] = false;
       teethTempData['stage'] = [];
@@ -80,16 +108,36 @@ const TeethController = function () {
       });
     },
 
-    Save: function (teeth) {
+    Save: (teeth) => {
       teethData[currentTeethId] = teethTempData;
       teeth.classList.add('stl-teeth__item--saved')
     },
 
-    Reset: function (teeth) {
+    Reset: (teeth) => {
       delete teethData[currentTeethId];
-      console.log(teethData);
       teeth.classList.remove('stl-teeth__item--saved')
     },
+
+    UpdateInfo: () => {
+      // Обновление таблицы внутри зуба
+      const teethInfoBlock = document.querySelectorAll('.stl-stage__info');
+
+      teethInfoBlock.forEach((block, index) => {
+        const teethInfoItems = block.querySelectorAll('.stl-info__item');
+
+        teethInfoItems.forEach(item => {
+          const dataType = item.getAttribute('data-stl-info');
+          const output = item.querySelector('.stl-info__value');
+
+          const value = teethTempData.stage[index].option[dataType];
+
+          if (value == 'Не определено')
+            output.innerHTML = "Не определено";
+          else
+            output.innerHTML = value;
+        });
+      });
+    }
   }
 }();
 
@@ -140,7 +188,10 @@ const TooltipController = function () {
         const instanceID = tippyInstances[index].reference.getAttribute('data-teeth-id');
         isExist = (instanceID === currentTeethId) ? true : false;
 
-        if (isExist) return;
+        if (isExist) {
+          TooltipController.Update();
+          return;
+        };
       }
 
       tippyInstances.push(tippy(currentTeeth));
@@ -162,7 +213,31 @@ const TooltipController = function () {
     },
 
     Update: function () {
+      let teethID = 0;
+      tippyInstances.forEach(instance => {
+        teethID = instance.reference.getAttribute('data-teeth-id');
+        instance.setContent(InfoTemplate(teethData[teethID]));
+      });
+
       singleton.setInstances(tippyInstances);
+    },
+  }
+}();
+
+const ModalController = function () {
+  return {
+    Save: (modal, optionType) => {
+      const selectedOption = modal.querySelectorAll(`input[name=${optionType}]:checked`);
+
+      StageController.SaveData(selectedOption, optionType);
+      UpdateCircle(optionType).Check();
+      TeethController.UpdateInfo();
+    },
+
+    Reset: (optionType) => {
+      StageController.ClearData(optionType);
+      UpdateCircle(optionType).Uncheck();
+      TeethController.UpdateInfo();
     },
   }
 }();
@@ -193,66 +268,83 @@ TeethController.Init(teeths);
 StageController.Init(stages);
 
 
-
-/*******************************************************************/
+// ************************************ Обработка стадий и модальных окон
 
 const stlModals = document.querySelectorAll('.modal-stl');
 const optionCircle = document.querySelectorAll('.stl-stage__control')
 const optionButtons = document.querySelectorAll('.stl-stage__button');
 
-optionButtons.forEach(button => {
-  const statusType = button.getAttribute('data-status');
-  const status = document.querySelector('[data-status=' + statusType);
-  const statusIcon = status.querySelector('.stl-stage__checkmark');
+const UpdateCircle = function (type) {
+  let optionButton = optionCircle[currentStage].querySelector(`.stl-stage__button[data-status=${type}`);
+  const checkmark = optionButton.parentNode.querySelector('.stl-stage__checkmark');
 
-  stlModals.forEach(modal => {
-    if (statusType === modal.getAttribute('data-status')) {
-      const accept = modal.querySelector('.modal-stl__button');
+  return {
+    Check: function () {
+      checkmark.classList.add('stl-stage__checkmark--visible');
+    },
 
-      accept.addEventListener('click', () => {
-        const selectedOption = modal.querySelectorAll(`input[name=${statusType}]:checked`);
+    Uncheck: function () {
+      checkmark.classList.remove('stl-stage__checkmark--visible');
+    }
+  }
+};
 
-        // Если ничего не выбрано
-        if (selectedOption.length === 0) {
-          teethTempData.stage[currentStage].option[statusType] = 'Не определено';
-        }
+optionCircle.forEach(circle => {
+  const optionButtons = circle.querySelectorAll('.stl-stage__button')
 
-        // Обработчик для чекбоксов
-        if (statusType === 'advanced') {
-          teethTempData.stage[currentStage].option[statusType] = [];
+  optionButtons.forEach(button => {
+    const optionType = button.getAttribute('data-status');
 
-          if (selectedOption.length === 0) {
-            teethTempData.stage[currentStage].option[statusType] = ['Не определено'];
-            updateInfo();
-          }
-        }
+    stlModals.forEach(modal => {
+      if (optionType === modal.getAttribute('data-status')) {
+        const accept = modal.querySelector('[data-stl-action="accept"]');
+        const reset = modal.querySelector('[data-stl-action="default"]');
 
-        selectedOption.forEach(option => {
-          const selected = option.getAttribute('type');
-
-          if (selected === 'radio')
-            teethTempData.stage[currentStage].option[statusType] = getRadioValue(option);
-
-          if (selected === 'checkbox')
-            teethTempData.stage[currentStage].option[statusType].push(getCheckboxValue(option));
-
-          updateInfo();
+        accept.addEventListener('click', () => {
+          ModalController.Save(modal, optionType)
         });
 
-        // Галочки при сохранении настройки
-        statusIcon.classList.add('stl-stage__checkmark--visible');
-      })
-    }
+        reset.addEventListener('click', () => {
+          ModalController.Reset(optionType)
+        });
+      }
+    });
   });
 });
 
-function resetSelect(option) {
-  option.forEach(input => {
-    input.checked = false;
+
+// ************************************ Прочее
+
+// Валидация нажатия одного чекбокса и радиобатона в модальном окне "система"
+const systemModal = document.getElementById('modal-stl__system');
+const systemModalSection = systemModal.querySelectorAll('.modal-stl__section');
+
+systemModalSection.forEach(section => {
+  const mainRadio = section.querySelector('.radio input');
+  const group = section.querySelectorAll('.modal-stl__group .checkbox input');
+
+  mainRadio.addEventListener('change', () => {
+    systemChecker(section);
+  });
+
+  group.forEach(item => {
+    item.addEventListener('click', () => {
+      mainRadio.checked = true;
+    })
+  });
+});
+
+function systemChecker(current) {
+  systemModalSection.forEach(section => {
+    const group = section.querySelectorAll('.modal-stl__group .checkbox input');
+
+    if (section !== current) {
+      group.forEach(item => {
+        item.checked = false;
+      });
+    }
   });
 }
-
-const teethInfoBlock = document.querySelectorAll('.stl-stage__info');
 
 function getRadioValue(radio) {
   let parent = radio.closest('.radio')
@@ -262,42 +354,6 @@ function getRadioValue(radio) {
 function getCheckboxValue(checkbox) {
   let parent = checkbox.closest('.checkbox')
   return parent.querySelector('.checkbox__label').innerHTML;
-}
-
-
-function updateInfo() {
-
-  // Обновление элементов круга
-  optionButtons.forEach(button => {
-    const statusType = button.getAttribute('data-status');
-    const status = document.querySelector('[data-status=' + statusType);
-    const statusIcon = status.querySelector('.stl-stage__checkmark');
-
-    const value = teethTempData.stage[currentStage].option[statusType];
-
-    if (value !== 'Не определено')
-      statusIcon.classList.add('stl-stage__checkmark--visible');
-    else
-      statusIcon.classList.remove('stl-stage__checkmark--visible');
-  });
-
-  // Обновление таблицы внутри зуба
-  teethInfoBlock.forEach((block, index) => {
-    const teethInfoItems = block.querySelectorAll('.stl-info__item');
-
-    teethInfoItems.forEach(item => {
-      const dataType = item.getAttribute('data-stl-info');
-      const output = item.querySelector('.stl-info__value');
-
-      const value = teethTempData.stage[index].option[dataType];
-
-      if (value !== 'Не определено')
-        output.innerHTML = value;
-      else
-        output.innerHTML = "Не определено";
-    });
-  });
-
 }
 
 function InfoTemplate(data) {
@@ -388,34 +444,3 @@ function InfoTemplate(data) {
 }
 
 /*******************************************************************/
-
-// Валидация нажатия одного чекбокса и радиобатона в модальном окне "система"
-const systemModal = document.getElementById('modal-stl__system');
-const systemModalSection = systemModal.querySelectorAll('.modal-stl__section');
-
-systemModalSection.forEach(section => {
-  const mainRadio = section.querySelector('.radio input');
-  const group = section.querySelectorAll('.modal-stl__group .checkbox input');
-
-  mainRadio.addEventListener('change', () => {
-    systemChecker(section);
-  });
-
-  group.forEach(item => {
-    item.addEventListener('click', () => {
-      mainRadio.checked = true;
-    })
-  });
-});
-
-function systemChecker(current) {
-  systemModalSection.forEach(section => {
-    const group = section.querySelectorAll('.modal-stl__group .checkbox input');
-
-    if (section !== current) {
-      group.forEach(item => {
-        item.checked = false;
-      });
-    }
-  });
-}

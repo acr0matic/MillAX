@@ -937,6 +937,10 @@
                                     Сохранить настройки
                                   </button>
 
+                                  <button data-stl-action="reset" class="stl-slider__prev stl-slider__button button button-secondary mb-3">
+                                    Сбросить параметры
+                                  </button>
+
                                   <button class="stl-slider__prev stl-slider__button button button-secondary">
                                     Вернуться к карте зубов
                                   </button>
@@ -1240,7 +1244,8 @@
             </div>
             <!-- /.row -->
 
-            <button data-micromodal-close class="modal-stl__button button button-outline">Подтвердить</button>
+            <button data-micromodal-close data-stl-action="accept" class="modal-stl__button button button-outline mr-3">Подтвердить</button>
+            <button data-micromodal-close data-stl-action="default" class="modal-stl__button button button-outline">Сбросить</button>
           </div>
           <!-- /.modal-stl__wrapper -->
         </div>
@@ -1383,7 +1388,8 @@
             </div>
             <!-- /.row -->
 
-            <button data-micromodal-close class="modal-stl__button button button-outline">Подтвердить</button>
+            <button data-micromodal-close data-stl-action="accept" class="modal-stl__button button button-outline mr-3">Подтвердить</button>
+            <button data-micromodal-close data-stl-action="default" class="modal-stl__button button button-outline">Сбросить</button>
           </div>
           <!-- /.modal-stl__wrapper -->
         </div>
@@ -1431,7 +1437,8 @@
               <!-- /.col-3 -->
             </div>
             <!-- /.row -->
-            <button data-micromodal-close class="modal-stl__button button button-outline">Подтвердить</button>
+            <button data-micromodal-close data-stl-action="accept" class="modal-stl__button button button-outline mr-3">Подтвердить</button>
+            <button data-micromodal-close data-stl-action="default" class="modal-stl__button button button-outline">Сбросить</button>
           </div>
           <!-- /.modal-stl__wrapper -->
         </div>
@@ -1838,7 +1845,8 @@
           </div>
           <!-- /.modal-stl__wrapper -->
 
-          <button data-micromodal-close class="modal-stl__button button button-outline">Подтвердить</button>
+          <button data-micromodal-close data-stl-action="accept" class="modal-stl__button button button-outline mr-3">Подтвердить</button>
+          <button data-micromodal-close data-stl-action="default" class="modal-stl__button button button-outline">Сбросить</button>
         </div>
         <!-- /.modal__content -->
       </div>
@@ -2439,7 +2447,8 @@
             </div>
             <!-- /.modal-stl__row -->
 
-            <button data-micromodal-close class="modal-stl__button button button-outline">Подтвердить</button>
+            <button data-micromodal-close data-stl-action="accept" class="modal-stl__button button button-outline mr-3">Подтвердить</button>
+            <button data-micromodal-close data-stl-action="default" class="modal-stl__button button button-outline">Сбросить</button>
           </div>
           <!-- /.modal-stl__wrapper -->
         </div>
@@ -2497,7 +2506,8 @@
           </div>
           <!-- /.modal-stl__wrapper -->
 
-          <button data-micromodal-close class="modal-stl__button button button-outline">Подтвердить</button>
+          <button data-micromodal-close data-stl-action="accept" class="modal-stl__button button button-outline mr-3">Подтвердить</button>
+          <button data-micromodal-close data-stl-action="default" class="modal-stl__button button button-outline">Сбросить</button>
         </div>
         <!-- /.modal__content -->
       </div>
