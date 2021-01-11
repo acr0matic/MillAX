@@ -27,6 +27,16 @@ const stlSlider = new Swiper('.stl__slider', {
   },
 });
 
+
+const stlStageSlider = new Swiper('.stl-stage__slider', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoHeight: true,
+
+  simulateTouch: false,
+  allowTouchMove: false,
+});
+
 const excursionSlider = new Swiper('.excursion-slider', {
   slidesPerView: 1,
 

@@ -10,6 +10,10 @@
     }
   }
 
+  &__heading {
+    font-size: $font-size-3;
+  }
+
   &__title {
     margin-bottom: 5px;
     color: $text-gray;
