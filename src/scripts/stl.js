@@ -73,6 +73,7 @@ const TeethController = function () {
           if (teethData[currentTeethId]) teethTempData = teethData[currentTeethId];
 
           TeethController.UpdateInfo();
+          UpdateCircle().Update();
 
           // Очищаем блок и добавляем иконку зуба
           teethPreviewContainer.forEach(container => {
@@ -120,7 +121,7 @@ const TeethController = function () {
 
     UpdateInfo: () => {
       // Обновление таблицы внутри зуба
-      const teethInfoBlock = document.querySelectorAll('.stl-stage__info');
+      const teethInfoBlock = document.querySelectorAll('.stl-slider__slide--stage .stl-stage__info');
 
       teethInfoBlock.forEach((block, index) => {
         const teethInfoItems = block.querySelectorAll('.stl-info__item');
@@ -128,7 +129,6 @@ const TeethController = function () {
         teethInfoItems.forEach(item => {
           const dataType = item.getAttribute('data-stl-info');
           const output = item.querySelector('.stl-info__value');
-
           const value = teethTempData.stage[index].option[dataType];
 
           if (value == 'Не определено')
@@ -282,16 +282,37 @@ const optionCircle = document.querySelectorAll('.stl-stage__control')
 const optionButtons = document.querySelectorAll('.stl-stage__button');
 
 const UpdateCircle = function (type) {
-  let optionButton = optionCircle[currentStage].querySelector(`.stl-stage__button[data-status=${type}`);
-  const checkmark = optionButton.parentNode.querySelector('.stl-stage__checkmark');
+  let optionButton, checkmark;
+  if (type) {
+    optionButton = optionCircle[currentStage].querySelector(`.stl-stage__button[data-status=${type}`);
+    checkmark = optionButton.parentNode.querySelector('.stl-stage__checkmark');
+  }
 
   return {
-    Check: function () {
+    Check: () => {
       checkmark.classList.add('stl-stage__checkmark--visible');
     },
 
-    Uncheck: function () {
+    Uncheck: () => {
       checkmark.classList.remove('stl-stage__checkmark--visible');
+    },
+
+    Update: () => {
+      optionCircle.forEach((circle, index) => {
+        const optionButtons = circle.querySelectorAll('.stl-stage__button')
+
+        optionButtons.forEach(button => {
+          const optionType = button.getAttribute('data-status');
+          const statusIcon = button.parentNode.querySelector('.stl-stage__checkmark');
+
+          const value = teethTempData.stage[index].option[optionType];
+
+          if (value !== 'Не определено')
+            statusIcon.classList.add('stl-stage__checkmark--visible');
+          else
+            statusIcon.classList.remove('stl-stage__checkmark--visible');
+        });
+      });
     }
   }
 };
@@ -449,3 +470,30 @@ function InfoTemplate(data) {
 <!-- /.stl-stage__info -->
 `
 }
+
+
+// const bridgeData = {};
+// const teethMaps = document.querySelectorAll('.stl-teeth__row');
+// const topTeethMap = teethMaps[0];
+
+// const teethCheckboxes = topTeethMap.querySelectorAll('.stl-teeth__checkbox input');
+// const teethMap = topTeethMap.querySelectorAll('.stl-teeth__item');
+
+// teethCheckboxes.forEach((checkbox, index) => {
+//   checkbox.addEventListener('change', () => {
+//     console.log(teethMap[index].classList.add('stl-teeth__item--saved') + ' ' + teethMap[index + 1].classList.add('stl-teeth__item--saved'));
+//   });
+// });
+
+// optionButtons.forEach(button => {
+//   button.addEventListener('click', () => {
+//     stlModals.forEach(modal => {
+//       const selectedOption = modal.querySelectorAll(`input:checked`);
+
+//       selectedOption.forEach(selected => {
+//         selected.checked = false;
+//       });
+//     });
+//   });
+// });
+
