@@ -1143,7 +1143,7 @@
             Укажите тип конструкции
           </h2>
         </div>
-        <!-- /.modal__title -->
+        <!-- /.modal__header -->
 
         <div class="modal__content">
           <div class="modal-stl__wrapper">
@@ -1249,12 +1249,13 @@
           </div>
           <!-- /.modal-stl__wrapper -->
         </div>
-        <!-- /.modal__container -->
+        <!-- /.modal__content -->
       </div>
-      <!-- /.modal__overlay -->
+      <!-- /.modal__container -->
     </div>
-    <!-- /.modal -->
+    <!-- /.modal__overlay -->
   </div>
+  <!-- /.modal -->
 
   <div data-status="material" class="modal modal-stl micromodal-slide" id="modal-stl__material">
     <div class="modal__overlay modal-stl__overlay" data-micromodal-close>
@@ -1266,7 +1267,7 @@
             Укажите материал изготовления
           </h2>
         </div>
-        <!-- /.modal__title -->
+        <!-- /.modal__header -->
 
         <div class="modal__content">
           <div class="modal-stl__wrapper">
@@ -1393,12 +1394,13 @@
           </div>
           <!-- /.modal-stl__wrapper -->
         </div>
-        <!-- /.modal__container -->
+        <!-- /.modal__content -->
       </div>
-      <!-- /.modal__overlay -->
+      <!-- /.modal__container -->
     </div>
-    <!-- /.modal -->
+    <!-- /.modal__overlay -->
   </div>
+  <!-- /.modal -->
 
   <div data-status="advanced" class="modal modal-stl micromodal-slide" id="modal-stl__advanced">
     <div class="modal__overlay modal-stl__overlay" data-micromodal-close>
@@ -1410,44 +1412,43 @@
             Опак и карвинг
           </h2>
         </div>
-        <!-- /.modal__title -->
+        <!-- /.modal__header -->
 
         <div class="modal__content">
-          <div class="modal-stl__wrapper">
-            <div class="row mb-5">
-              <div class="col-3">
-                <div class="modal-stl__section">
-                  <label class="checkbox checkbox--small">
-                    <input type="checkbox" name="advanced">
-                    <span class="checkbox__mark"></span>
-                    <span class="checkbox__label">Опак</span>
-                  </label>
-                </div>
-                <!-- /.modal-stl__section -->
-
-                <div class="modal-stl__section">
-                  <label class="checkbox checkbox--small">
-                    <input type="checkbox" name="advanced">
-                    <span class="checkbox__mark"></span>
-                    <span class="checkbox__label">Карвинг</span>
-                  </label>
-                </div>
-                <!-- /.modal-stl__section -->
+          <div class="row mb-5">
+            <div class="col-3">
+              <div class="modal-stl__section">
+                <label class="checkbox checkbox--small">
+                  <input type="checkbox" name="advanced">
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__label">Опак</span>
+                </label>
               </div>
-              <!-- /.col-3 -->
+              <!-- /.modal-stl__section -->
+
+              <div class="modal-stl__section">
+                <label class="checkbox checkbox--small">
+                  <input type="checkbox" name="advanced">
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__label">Карвинг</span>
+                </label>
+              </div>
+              <!-- /.modal-stl__section -->
             </div>
-            <!-- /.row -->
-            <button data-micromodal-close data-stl-action="accept" class="modal-stl__button button button-outline mr-3">Подтвердить</button>
-            <button data-micromodal-close data-stl-action="default" class="modal-stl__button button button-outline">Сбросить</button>
+            <!-- /.col-3 -->
           </div>
-          <!-- /.modal-stl__wrapper -->
+          <!-- /.row -->
+
+          <button data-micromodal-close data-stl-action="accept" class="modal-stl__button button button-outline mr-3">Подтвердить</button>
+          <button data-micromodal-close data-stl-action="default" class="modal-stl__button button button-outline">Сбросить</button>
         </div>
-        <!-- /.modal__container -->
+        <!-- /.modal__content -->
       </div>
-      <!-- /.modal__overlay -->
+      <!-- /.modal__container -->
     </div>
-    <!-- /.modal -->
+    <!-- /.modal__overlay -->
   </div>
+  <!-- /.modal -->
 
   <div data-status="color" class="modal modal-stl micromodal-slide" id="modal-stl__color">
     <div class="modal__overlay modal-stl__overlay" data-micromodal-close>
@@ -1854,6 +1855,7 @@
     </div>
     <!-- /.modal__overlay -->
   </div>
+  <!-- /.modal -->
 
   <div data-status="system" class="modal modal-stl micromodal-slide" id="modal-stl__system">
     <div class="modal__overlay modal-stl__overlay" data-micromodal-close>
@@ -1865,7 +1867,7 @@
             Укажите систему имплантов и размеры
           </h2>
         </div>
-        <!-- /.modal__title -->
+        <!-- /.modal__header -->
 
         <div class="modal__content">
           <div class="modal-stl__wrapper">
@@ -2446,18 +2448,19 @@
               <!-- /.modal-stl__section -->
             </div>
             <!-- /.modal-stl__row -->
-
-            <button data-micromodal-close data-stl-action="accept" class="modal-stl__button button button-outline mr-3">Подтвердить</button>
-            <button data-micromodal-close data-stl-action="default" class="modal-stl__button button button-outline">Сбросить</button>
           </div>
           <!-- /.modal-stl__wrapper -->
+
+          <button data-micromodal-close data-stl-action="accept" class="modal-stl__button button button-outline mr-3">Подтвердить</button>
+          <button data-micromodal-close data-stl-action="default" class="modal-stl__button button button-outline">Сбросить</button>
         </div>
-        <!-- /.modal__container -->
+        <!-- /.modal__content -->
       </div>
-      <!-- /.modal__overlay -->
+      <!-- /.modal__container -->
     </div>
-    <!-- /.modal -->
+    <!-- /.modal__overlay -->
   </div>
+  <!-- /.modal -->
 
   <div data-status="parameter" class="modal modal-stl micromodal-slide" id="modal-stl__parameter">
     <div class="modal__overlay modal-stl__overlay" data-micromodal-close>

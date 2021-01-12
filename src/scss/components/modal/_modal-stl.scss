@@ -1,13 +1,23 @@
 .modal-stl {
+  .checkbox__label,
+  .radio__label {
+    white-space: nowrap;
+  }
+
   &__overlay {
   }
 
   &__container {
     width: 100%;
     max-width: 1000px;
-    max-height: 600px;
+  }
 
+  &__wrapper {
+    max-height: 350px;
+    overflow-x: hidden;
     overflow-y: auto;
+
+    margin-bottom: 30px;
   }
 
   &__block {
