@@ -144,11 +144,18 @@ const TeethController = function () {
 const MainController = function () {
   const saveButton = document.querySelectorAll('[data-stl-action="save"]');
   const resetButton = document.querySelectorAll('[data-stl-action="reset"]');
+  const sendButton = document.querySelector('[data-stl-action="send"]');
+  const backButton = document.querySelector('[data-stl-action="back"]');
 
   return {
     Init: function () {
       saveButton.forEach(button => button.addEventListener('click', () => this.Save(currentTeeth)));
       resetButton.forEach(button => button.addEventListener('click', () => this.Reset(currentTeeth)));
+      sendButton.addEventListener('click', () => stlSlider.slideTo(0));
+      backButton.addEventListener('click', () => stlSlider.slideTo(1));
+
+      // Вызов алерта перед закрытием страницы
+      // window.onbeforeunload = () => '';
     },
 
     Save: function () {
@@ -442,17 +449,3 @@ function InfoTemplate(data) {
 <!-- /.stl-stage__info -->
 `
 }
-
-/*******************************************************************/
-
-// window.onbeforeunload = () => 'Вы уверены? Данные не будут сохранены.';
-const sendButton = document.querySelector('[data-stl-action="send"]');
-sendButton.addEventListener('click', () => {
-  stlSlider.slideTo(0);
-});
-
-const backButton = document.querySelector('[data-stl-action="back"]');
-backButton.addEventListener('click', () => {
-  stlSlider.slideTo(1);
-});
-
