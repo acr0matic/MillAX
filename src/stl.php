@@ -79,6 +79,42 @@
           <div class="swiper-container stl__slider stl-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
+                <div class="stl-slider__slide stl-slider__slide--form">
+                  <form action="" class="form form-excursion">
+                    <h2 class="form-excursion__title excursion-mobile--hide mb-5">
+                      Укажите Ваши данные
+                    </h2>
+                    <input class="input input-field mb-3" type="text" placeholder="Наименование заказчика" name="user_name">
+                    <input class="input input-field mb-3" type="text" placeholder="ФИО пациента" name="user_name">
+                    <input class="input input-field mb-3" type="tel" placeholder="Контактный номер телефона" name="user_phone">
+
+                    <div class="form__policy">
+                      <label class="checkbox checkbox--white">
+                        <input type="checkbox">
+                        <span class="checkbox__mark"></span>
+                        <span class="checkbox__label">Я принимаю <a href="" class="checkbox__policy">политику конфиденциальности</a></span>
+                      </label>
+                    </div>
+
+                    <div class="row mt-5">
+                      <div class="col-6">
+                        <button type="button" data-stl-action="mail" class="button button-secondary">Отправить</button>
+                      </div>
+                      <!-- /.col-6 -->
+
+                      <div class="col-6">
+                        <button type="button" data-stl-action="back" class="button button-secondary ml-auto">Вернуться</button>
+                      </div>
+                      <!-- /.col-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </form>
+                </div>
+                <!-- /.stl-slider__slide -->
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
                 <div class="stl-slider__slide stl-slider__slide--map">
                   <div class="row mb-5">
                     <div class="col-9 offset-4">
@@ -114,6 +150,7 @@
                       <div class="stl-file__teeth stl-teeth">
                         <div class="stl-teeth__row mb-5">
                           <img src="img/stl/bg-top.svg" alt="" class="stl-teeth__background stl-teeth__background--top">
+                          <span class="stl-teeth__help stl-teeth__help--top">Мостовидная опора</span>
                           <div class="stl-teeth__support stl-teeth__support--top">
                             <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
                               <input type="checkbox">
@@ -393,7 +430,7 @@
 
                         <div class="stl-teeth__row">
                           <img src="img/stl/bg-bottom.svg" alt="" class="stl-teeth__background stl-teeth__background--bottom">
-
+                          <span class="stl-teeth__help stl-teeth__help--bottom">Мостовидная опора</span>
                           <div class="stl-teeth__support stl-teeth__support--bottom">
                             <label class="stl-teeth__checkbox checkbox checkbox--purple checkbox--small">
                               <input type="checkbox">
@@ -676,6 +713,13 @@
                     <!-- /.col-8 -->
                   </div>
                   <!-- /.row -->
+
+                  <div class="col-12 mt-5 pt-5">
+                    <button data-stl-action="send" class="stl-slider__prev stl-slider__button button button-secondary ml-auto">
+                      Отправить данные
+                    </button>
+                  </div>
+                  <!-- /.col-2 -->
                 </div>
                 <!-- /.stl-slider__slide -->
               </div>
@@ -1088,36 +1132,6 @@
                     <!-- /.swiper-container -->
                   </div>
                   <!-- /.stl-file__stage -->
-                </div>
-                <!-- /.stl-slider__slide -->
-              </div>
-              <!-- /.swiper-slide -->
-
-              <div class="swiper-slide">
-                <div class="stl-slider__slide stl-slider__slide--form">
-                  <div class="modal__header">
-                    <h2 class="modal__title">
-                      Укажите Ваши данные
-                    </h2>
-                  </div>
-                  <!-- /.modal__title -->
-
-                  <div class="modal__content">
-                    <form action="" class="form form-excursion">
-                      <input class="input input-field mb-3" type="text" placeholder="Наименование заказчика" name="user_name">
-                      <input class="input input-field mb-3" type="text" placeholder="ФИО пациента" name="patient_name">
-                      <input class="input input-field mb-3" type="tel" placeholder="Контактный номер телефона" name="user_phone">
-                      <div class="form__policy">
-                        <!-- <label class="checkbox">
-                          <input type="checkbox">
-                          <span class="checkbox__mark"></span>
-                          <span class="checkbox__label">Я принимаю <a href="" class="checkbox__policy">политику конфиденциальности</a></span>
-                        </label> -->
-                      </div>
-                      <!-- /.policy-wrapper -->
-                    </form>
-                  </div>
-                  <!-- /.modal__content -->
                 </div>
                 <!-- /.stl-slider__slide -->
               </div>

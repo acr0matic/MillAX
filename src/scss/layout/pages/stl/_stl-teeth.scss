@@ -1,5 +1,19 @@
 .stl-teeth {
-  margin-top: 35px;
+  margin-top: 65px;
+
+  &__help {
+    position: absolute;
+
+    &--top {
+      top: -70px;
+      left: 14px;
+    }
+
+    &--bottom {
+      bottom: -75px;
+      left: 14px;
+    }
+  }
 
   &__map {
     @include flex();

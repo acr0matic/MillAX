@@ -18,6 +18,7 @@ const stlSlider = new Swiper('.stl__slider', {
   slidesPerView: 1,
   spaceBetween: 30,
   autoHeight: true,
+  initialSlide: 1,
 
   simulateTouch: false,
   allowTouchMove: false,

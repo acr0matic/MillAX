@@ -446,3 +446,13 @@ function InfoTemplate(data) {
 /*******************************************************************/
 
 // window.onbeforeunload = () => 'Вы уверены? Данные не будут сохранены.';
+const sendButton = document.querySelector('[data-stl-action="send"]');
+sendButton.addEventListener('click', () => {
+  stlSlider.slideTo(0);
+});
+
+const backButton = document.querySelector('[data-stl-action="back"]');
+backButton.addEventListener('click', () => {
+  stlSlider.slideTo(1);
+});
+

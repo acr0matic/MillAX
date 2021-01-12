@@ -42,6 +42,17 @@
     }
   }
 
+  &--white {
+    .checkbox__mark {
+      background-color: $palette-white;
+      box-shadow: $shadow-secondary;
+
+      &::after {
+        content: url("../img/icons/accept--black.svg");
+      }
+    }
+  }
+
   input {
     display: none;
 
