@@ -110,7 +110,7 @@
                     </div>
                     <!-- /.col-5 -->
 
-                    <div id="summary" class="col-6 offset-1">
+                    <div id="summary" class="col-6 offset-1 stl-file__summary">
                       <!-- ДИНАМИЧЕСКИЙ КОНТЕНТ -->
                     </div>
                     <!-- /.col-7 -->

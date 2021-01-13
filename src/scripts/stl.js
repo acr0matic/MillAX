@@ -197,11 +197,16 @@ const MainController = function () {
 
     Save: function () {
       const data = TeethController.GetInfo();
+      let count = 0;
+
       data.forEach(item => {
         if (item !== "Не определено") {
           TeethController.Save(currentTeeth);
           TooltipController.Add();
         }
+
+        else
+          if (++count === 12) currentTeeth.classList.remove('stl-teeth__item--saved')
       });
     },
 
@@ -605,7 +610,6 @@ function summaryTemplate(data) {
   let template = '';
   for (const key in data) {
     const teeth = (key, data[key]);
-    console.log(teeth.stage[0].option.material);
 
     template += `
     <div class="stl-info stl-info--large">
