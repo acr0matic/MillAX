@@ -79,6 +79,49 @@
           <div class="swiper-container stl__slider stl-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
+                <div class="stl-slider__slide stl-slider__slide--form">
+                  <div class="row">
+                    <div class="col-5">
+                      <form action="" class="form form-excursion">
+                        <h2 class="form-excursion__title excursion-mobile--hide mb-5">
+                          Укажите Ваши данные
+                        </h2>
+                        <input class="input input-field mb-3" type="text" placeholder="Наименование заказчика" name="user_name">
+                        <input class="input input-field mb-3" type="text" placeholder="ФИО пациента" name="user_name">
+                        <input class="input input-field mb-3" type="tel" placeholder="Контактный номер телефона" name="user_phone">
+
+                        <div class="form__policy">
+                          <label class="checkbox checkbox--white">
+                            <input type="checkbox">
+                            <span class="checkbox__mark"></span>
+                            <span class="checkbox__label">Я принимаю <a href="" class="checkbox__policy">политику конфиденциальности</a></span>
+                          </label>
+                        </div>
+
+                        <div class="row mt-4">
+                          <div class="col-9">
+                            <button type="button" data-stl-action="mail" class="button button-secondary mb-3">Подтвердить и отправить</button>
+                            <button type="button" data-stl-action="back" class="button button-secondary">Вернуться к редактированию</button>
+                          </div>
+                          <!-- /.col-6 -->
+                        </div>
+                        <!-- /.row -->
+                      </form>
+                    </div>
+                    <!-- /.col-5 -->
+
+                    <div id="summary" class="col-6 offset-1">
+                      <!-- ДИНАМИЧЕСКИЙ КОНТЕНТ -->
+                    </div>
+                    <!-- /.col-7 -->
+                  </div>
+                  <!-- /.row -->
+                </div>
+                <!-- /.stl-slider__slide -->
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
                 <div class="stl-slider__slide stl-slider__slide--map">
                   <div class="row mb-5">
                     <div class="col-9 offset-4">
@@ -688,131 +731,6 @@
                     </button>
                   </div>
                   <!-- /.col-2 -->
-                </div>
-                <!-- /.stl-slider__slide -->
-              </div>
-              <!-- /.swiper-slide -->
-
-              <div class="swiper-slide">
-                <div class="stl-slider__slide stl-slider__slide--form">
-                  <div class="row">
-                    <div class="col-5">
-                      <form action="" class="form form-excursion">
-                        <h2 class="form-excursion__title excursion-mobile--hide mb-5">
-                          Укажите Ваши данные
-                        </h2>
-                        <input class="input input-field mb-3" type="text" placeholder="Наименование заказчика" name="user_name">
-                        <input class="input input-field mb-3" type="text" placeholder="ФИО пациента" name="user_name">
-                        <input class="input input-field mb-3" type="tel" placeholder="Контактный номер телефона" name="user_phone">
-
-                        <div class="form__policy">
-                          <label class="checkbox checkbox--white">
-                            <input type="checkbox">
-                            <span class="checkbox__mark"></span>
-                            <span class="checkbox__label">Я принимаю <a href="" class="checkbox__policy">политику конфиденциальности</a></span>
-                          </label>
-                        </div>
-
-                        <div class="row mt-4">
-                          <div class="col-9">
-                            <button type="button" data-stl-action="mail" class="button button-secondary mb-3">Подтвердить и отправить</button>
-                            <button type="button" data-stl-action="back" class="button button-secondary">Вернуться к редактированию</button>
-                          </div>
-                          <!-- /.col-6 -->
-                        </div>
-                        <!-- /.row -->
-                      </form>
-                    </div>
-                    <!-- /.col-5 -->
-
-                    <div class="col-6 offset-1">
-                      <div class="stl-info stl-info--large">
-                        <h2 class="stl-info__header mb-5">Номер зуба <span class="stl-info__teeth">32</span></h2>
-                        <div class="row">
-                          <div class="col-6">
-                            <h2 class="stl-info__heading mb-4">Этап 1</h2>
-                            <div data-stl-info="construction" class="stl-info__item mb-4">
-                              <h3 class="stl-info__title">Конструкция</h3>
-                              <div class="stl-info__value">Не определено</div>
-                            </div>
-                            <!-- /.stl-info__item -->
-
-                            <div data-stl-info="system" class="stl-info__item mb-4">
-                              <h3 class="stl-info__title">Система имплантов и размеры</h3>
-                              <div class="stl-info__value">Не определено</div>
-                            </div>
-                            <!-- /.stl-info__item -->
-
-                            <div data-stl-info="material" class="stl-info__item mb-4">
-                              <h3 class="stl-info__title">Материал изготовления</h3>
-                              <div class="stl-info__value">Не определено</div>
-                            </div>
-                            <!-- /.stl-info__item -->
-
-                            <div data-stl-info="color" class="stl-info__item mb-4">
-                              <h3 class="stl-info__title">Цвет коронки</h3>
-                              <div class="stl-info__value">Не определено</div>
-                            </div>
-                            <!-- /.stl-info__item -->
-
-                            <div data-stl-info="parameter" class="stl-info__item mb-4">
-                              <h3 class="stl-info__title">Десневая часть</h3>
-                              <div class="stl-info__value">Не определено</div>
-                            </div>
-                            <!-- /.stl-info__item -->
-
-                            <div data-stl-info="advanced" class="stl-info__item">
-                              <h3 class="stl-info__title">Опак и карвинг</h3>
-                              <div class="stl-info__value">Не определено</div>
-                            </div>
-                            <!-- /.stl-info__item -->
-                          </div>
-
-                          <div class="col-6">
-                            <h2 class="stl-info__heading mb-4">Этап 2</h2>
-                            <div data-stl-info="construction" class="stl-info__item mb-4">
-                              <h3 class="stl-info__title">Конструкция</h3>
-                              <div class="stl-info__value">Не определено</div>
-                            </div>
-                            <!-- /.stl-info__item -->
-
-                            <div data-stl-info="system" class="stl-info__item mb-4">
-                              <h3 class="stl-info__title">Система имплантов и размеры</h3>
-                              <div class="stl-info__value">Не определено</div>
-                            </div>
-                            <!-- /.stl-info__item -->
-
-                            <div data-stl-info="material" class="stl-info__item mb-4">
-                              <h3 class="stl-info__title">Материал изготовления</h3>
-                              <div class="stl-info__value">Не определено</div>
-                            </div>
-                            <!-- /.stl-info__item -->
-
-                            <div data-stl-info="color" class="stl-info__item mb-4">
-                              <h3 class="stl-info__title">Цвет коронки</h3>
-                              <div class="stl-info__value">Не определено</div>
-                            </div>
-                            <!-- /.stl-info__item -->
-
-                            <div data-stl-info="parameter" class="stl-info__item mb-4">
-                              <h3 class="stl-info__title">Десневая часть</h3>
-                              <div class="stl-info__value">Не определено</div>
-                            </div>
-                            <!-- /.stl-info__item -->
-
-                            <div data-stl-info="advanced" class="stl-info__item">
-                              <h3 class="stl-info__title">Опак и карвинг</h3>
-                              <div class="stl-info__value">Не определено</div>
-                            </div>
-                            <!-- /.stl-info__item -->
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /.stl-stage__info -->
-                    </div>
-                    <!-- /.col-7 -->
-                  </div>
-                  <!-- /.row -->
                 </div>
                 <!-- /.stl-slider__slide -->
               </div>

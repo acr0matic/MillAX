@@ -166,11 +166,28 @@ const MainController = function () {
   const backButton = document.querySelector('[data-stl-action="back"]');
   const screenshotButton = document.querySelector('[data-stl-action="screenshot"]');
 
+  const summaryTable = document.getElementById('summary');
+
   return {
     Init: function () {
-      saveButton.forEach(button => button.addEventListener('click', () => this.Save(currentTeeth)));
-      resetButton.forEach(button => button.addEventListener('click', () => this.Reset(currentTeeth)));
-      sendButton.addEventListener('click', () => stlSlider.slideTo(0));
+      saveButton.forEach(button => button.addEventListener('click', () => {
+        this.Save(currentTeeth);
+        this.CheckData();
+      }));
+
+      resetButton.forEach(button => button.addEventListener('click', () => {
+        this.Reset(currentTeeth);
+        this.CheckData();
+      }));
+
+      this.CheckData();
+      sendButton.addEventListener('click', () => {
+        summaryTable.innerHTML = summaryTemplate(teethData);
+
+        stlSlider.slideTo(0);
+      });
+
+
       backButton.addEventListener('click', () => stlSlider.slideTo(1));
       screenshotButton.addEventListener('click', () => this.Screenshot());
 
@@ -186,7 +203,6 @@ const MainController = function () {
           TooltipController.Add();
         }
       });
-
     },
 
     Reset: function () {
@@ -206,6 +222,13 @@ const MainController = function () {
       }));
 
       targetDiv.style.backgroundColor = "#ffffff";
+    },
+
+    CheckData: () => {
+      if (Object.keys(teethData).length === 0)
+        sendButton.setAttribute('disabled', 'disabled');
+      else
+        sendButton.removeAttribute('disabled');
     }
   }
 }();
@@ -576,4 +599,100 @@ function setBridge(map, index, set) {
     map[index].classList.remove('stl-teeth__item--support');
     map[index + 1].classList.remove('stl-teeth__item--support');
   }
+}
+
+function summaryTemplate(data) {
+  let template = '';
+  for (const key in data) {
+    const teeth = (key, data[key]);
+    console.log(teeth.stage[0].option.material);
+
+    template += `
+    <div class="stl-info stl-info--large">
+    <h2 class="stl-info__header mb-5">Номер зуба <span class="stl-info__teeth">${key}</span></h2>
+    <div class="row">
+      <div class="col-6">
+        <h2 class="stl-info__heading mb-4">Этап 1</h2>
+        <div data-stl-info="construction" class="stl-info__item mb-4">
+          <h3 class="stl-info__title">Конструкция</h3>
+          <div class="stl-info__value">${teeth.stage[0].option.construction}</div>
+        </div>
+        <!-- /.stl-info__item -->
+
+        <div data-stl-info="system" class="stl-info__item mb-4">
+          <h3 class="stl-info__title">Система имплантов и размеры</h3>
+          <div class="stl-info__value">${teeth.stage[0].option.system}</div>
+        </div>
+        <!-- /.stl-info__item -->
+
+        <div data-stl-info="material" class="stl-info__item mb-4">
+          <h3 class="stl-info__title">Материал изготовления</h3>
+          <div class="stl-info__value">${teeth.stage[0].option.material}</div>
+        </div>
+        <!-- /.stl-info__item -->
+
+        <div data-stl-info="color" class="stl-info__item mb-4">
+          <h3 class="stl-info__title">Цвет коронки</h3>
+          <div class="stl-info__value">${teeth.stage[0].option.color}</div>
+        </div>
+        <!-- /.stl-info__item -->
+
+        <div data-stl-info="parameter" class="stl-info__item mb-4">
+          <h3 class="stl-info__title">Десневая часть</h3>
+          <div class="stl-info__value">${teeth.stage[0].option.parameter}</div>
+        </div>
+        <!-- /.stl-info__item -->
+
+        <div data-stl-info="advanced" class="stl-info__item">
+          <h3 class="stl-info__title">Опак и карвинг</h3>
+          <div class="stl-info__value">${teeth.stage[0].option.advanced}</div>
+        </div>
+        <!-- /.stl-info__item -->
+      </div>
+
+      <div class="col-6">
+        <h2 class="stl-info__heading mb-4">Этап 2</h2>
+        <div data-stl-info="construction" class="stl-info__item mb-4">
+          <h3 class="stl-info__title">Конструкция</h3>
+          <div class="stl-info__value">${teeth.stage[1].option.construction}</div>
+        </div>
+        <!-- /.stl-info__item -->
+
+        <div data-stl-info="system" class="stl-info__item mb-4">
+          <h3 class="stl-info__title">Система имплантов и размеры</h3>
+          <div class="stl-info__value">${teeth.stage[1].option.system}</div>
+        </div>
+        <!-- /.stl-info__item -->
+
+        <div data-stl-info="material" class="stl-info__item mb-4">
+          <h3 class="stl-info__title">Материал изготовления</h3>
+          <div class="stl-info__value">${teeth.stage[1].option.material}</div>
+        </div>
+        <!-- /.stl-info__item -->
+
+        <div data-stl-info="color" class="stl-info__item mb-4">
+          <h3 class="stl-info__title">Цвет коронки</h3>
+          <div class="stl-info__value">${teeth.stage[1].option.color}</div>
+        </div>
+        <!-- /.stl-info__item -->
+
+        <div data-stl-info="parameter" class="stl-info__item mb-4">
+          <h3 class="stl-info__title">Десневая часть</h3>
+          <div class="stl-info__value">${teeth.stage[1].option.parameter}</div>
+        </div>
+        <!-- /.stl-info__item -->
+
+        <div data-stl-info="advanced" class="stl-info__item">
+          <h3 class="stl-info__title">Опак и карвинг</h3>
+          <div class="stl-info__value">${teeth.stage[1].option.advanced}</div>
+        </div>
+        <!-- /.stl-info__item -->
+      </div>
+    </div>
+    </div>
+    <!-- /.stl-stage__info -->
+    `
+  }
+
+  return template;
 }
