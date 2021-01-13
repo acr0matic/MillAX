@@ -29,10 +29,13 @@
     margin: 0 auto;
 
     &--form {
-      max-width: 440px;
-
       margin-top: 200px;
       margin-bottom: 100px;
+
+      button {
+        justify-content: center;
+        width: 100%;
+      }
     }
 
     &--map {
