@@ -146,8 +146,8 @@
                     </div>
                     <!-- /.col-3 -->
 
-                    <div class="col-8 offset-1 col-no-pl">
-                      <div class="stl-file__teeth stl-teeth">
+                    <div id="teethMap" class="col-8 offset-1 col-no-pl">
+                      <div class="stl-file__teeth stl-teeth pl-1">
                         <div class="stl-teeth__row mb-5">
                           <img src="img/stl/bg-top.svg" alt="" class="stl-teeth__background stl-teeth__background--top">
                           <span class="stl-teeth__help stl-teeth__help--top">Мостовидная опора</span>
@@ -715,6 +715,10 @@
                   <!-- /.row -->
 
                   <div class="col-12 mt-5 pt-5">
+                    <button data-stl-action="screenshot" class="stl-slider__button button button-secondary ml-auto mb-3">
+                      Скриншот
+                    </button>
+
                     <button data-stl-action="send" class="stl-slider__prev stl-slider__button button button-secondary ml-auto">
                       Отправить данные
                     </button>
@@ -2539,6 +2543,7 @@
 
   <script src="scripts/libraries/popper.js"></script>
   <script src="scripts/libraries/tippy.js"></script>
+  <script src="scripts/libraries/html2canvas.js"></script>
   <script src="scripts/stl.js"></script>
 
 </body>

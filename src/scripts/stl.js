@@ -497,3 +497,14 @@ function InfoTemplate(data) {
 //   });
 // });
 
+const screenshotButton = document.querySelector('[data-stl-action="screenshot"]');
+const targetDiv = document.getElementById('teethMap');
+screenshotButton.addEventListener('click', () => {
+  targetDiv.style.backgroundColor = "#f1f1f1";
+
+  html2canvas(targetDiv).then(canvas => canvas.toBlob(blob => {
+    window.open(URL.createObjectURL(blob));
+  }));
+
+  targetDiv.style.backgroundColor = "#ffffff";
+});
