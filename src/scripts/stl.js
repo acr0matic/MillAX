@@ -23,7 +23,7 @@ const StageController = function () {
       }
 
       // Обработчик для чекбоксов
-      if (type === 'advanced') {
+      if (type === 'advanced' || type === 'system') {
         teethTempData.stage[currentStage].option[type] = [];
 
         if (data.length === 0)
@@ -33,7 +33,10 @@ const StageController = function () {
       data.forEach(option => {
         const selected = option.getAttribute('type');
 
-        if (selected === 'radio')
+        if (selected === 'radio' && type === 'system')
+          teethTempData.stage[currentStage].option[type].push(getRadioValue(option));
+
+        else if (selected === 'radio')
           teethTempData.stage[currentStage].option[type] = getRadioValue(option);
 
         if (selected === 'checkbox')
@@ -133,10 +136,25 @@ const TeethController = function () {
 
           if (value == 'Не определено')
             output.innerHTML = "Не определено";
+
           else
             output.innerHTML = value;
         });
       });
+    },
+
+    GetInfo: () => {
+      const teethInfoBlock = document.querySelectorAll('.stl-slider__slide--stage .stl-stage__info');
+      const data = []
+
+      teethInfoBlock.forEach(block => {
+        let items = block.querySelectorAll('.stl-info__item .stl-info__value')
+        items.forEach(item => {
+          data.push(item.innerHTML);
+        });
+      });
+
+      return data;
     }
   }
 }();
@@ -161,8 +179,14 @@ const MainController = function () {
     },
 
     Save: function () {
-      TeethController.Save(currentTeeth);
-      TooltipController.Add();
+      const data = TeethController.GetInfo();
+      data.forEach(item => {
+        if (item !== "Не определено") {
+          TeethController.Save(currentTeeth);
+          TooltipController.Add();
+        }
+      });
+
     },
 
     Reset: function () {
@@ -261,9 +285,14 @@ const ModalController = function () {
     },
 
     Save: (modal, optionType) => {
-      const selectedOption = modal.querySelectorAll(`input[name=${optionType}]:checked`);
+      let options;
 
-      StageController.SaveData(selectedOption, optionType);
+      if (optionType === 'system')
+        options = modal.querySelectorAll(`input[name=${optionType}]:checked, input[name=system-size]:checked`);
+      else
+        options = modal.querySelectorAll(`input[name=${optionType}]:checked`);
+
+      StageController.SaveData(options, optionType);
       UpdateCircle(optionType).Check();
       TeethController.UpdateInfo();
     },
@@ -402,8 +431,19 @@ function systemChecker(current) {
 }
 
 function getRadioValue(radio) {
-  let parent = radio.closest('.radio')
-  return parent.querySelector('.radio__label').innerHTML;
+  let parent, result;
+
+  if (radio.getAttribute('name') === 'system-size') {
+    parent = radio.closest('.checkbox');
+    result = parent.querySelector('.checkbox__label').innerHTML;
+  }
+
+  else {
+    parent = radio.closest('.radio');
+    result = parent.querySelector('.radio__label').innerHTML;
+  }
+
+  return result;
 }
 
 function getCheckboxValue(checkbox) {
