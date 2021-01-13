@@ -146,6 +146,7 @@ const MainController = function () {
   const resetButton = document.querySelectorAll('[data-stl-action="reset"]');
   const sendButton = document.querySelector('[data-stl-action="send"]');
   const backButton = document.querySelector('[data-stl-action="back"]');
+  const screenshotButton = document.querySelector('[data-stl-action="screenshot"]');
 
   return {
     Init: function () {
@@ -153,6 +154,7 @@ const MainController = function () {
       resetButton.forEach(button => button.addEventListener('click', () => this.Reset(currentTeeth)));
       sendButton.addEventListener('click', () => stlSlider.slideTo(0));
       backButton.addEventListener('click', () => stlSlider.slideTo(1));
+      screenshotButton.addEventListener('click', () => this.Screenshot());
 
       // Вызов алерта перед закрытием страницы
       // window.onbeforeunload = () => '';
@@ -170,6 +172,17 @@ const MainController = function () {
 
     Update: function () {
     },
+
+    Screenshot: () => {
+      const targetDiv = document.getElementById('teethMap');
+      targetDiv.style.backgroundColor = "#f1f1f1";
+
+      html2canvas(targetDiv).then(canvas => canvas.toBlob(blob => {
+        window.open(URL.createObjectURL(blob));
+      }));
+
+      targetDiv.style.backgroundColor = "#ffffff";
+    }
   }
 }();
 
@@ -233,6 +246,20 @@ const TooltipController = function () {
 
 const ModalController = function () {
   return {
+    Init: () => {
+      const optionButtons = document.querySelectorAll('.stl-stage__button');
+
+      optionButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          stlModals.forEach(modal => {
+            const selectedOption = modal.querySelectorAll(`input:checked`);
+
+            selectedOption.forEach(selected => selected.checked = false);
+          });
+        });
+      });
+    },
+
     Save: (modal, optionType) => {
       const selectedOption = modal.querySelectorAll(`input[name=${optionType}]:checked`);
 
@@ -273,7 +300,7 @@ let
 MainController.Init();
 TeethController.Init(teeths);
 StageController.Init(stages);
-
+ModalController.Init();
 
 // ************************************ Обработка стадий и модальных окон
 
@@ -471,40 +498,42 @@ function InfoTemplate(data) {
 `
 }
 
+const teethMaps = document.querySelectorAll('.stl-teeth__row');
+teethMaps.forEach(map => {
+  const teethCheckboxes = map.querySelectorAll('.stl-teeth__checkbox input');
+  const teethMap = map.querySelectorAll('.stl-teeth__item');
 
-// const bridgeData = {};
-// const teethMaps = document.querySelectorAll('.stl-teeth__row');
-// const topTeethMap = teethMaps[0];
+  teethCheckboxes.forEach((checkbox, index) => {
+    checkbox.addEventListener('change', () => {
 
-// const teethCheckboxes = topTeethMap.querySelectorAll('.stl-teeth__checkbox input');
-// const teethMap = topTeethMap.querySelectorAll('.stl-teeth__item');
+      if (checkbox.checked) setBridge(teethMap, index, true);
+      else {
+        if
+          ((teethCheckboxes[index - 1] && teethCheckboxes[index - 1].checked) &&
+          (teethCheckboxes[index - 1] && teethCheckboxes[index + 1].checked)) return;
 
-// teethCheckboxes.forEach((checkbox, index) => {
-//   checkbox.addEventListener('change', () => {
-//     console.log(teethMap[index].classList.add('stl-teeth__item--saved') + ' ' + teethMap[index + 1].classList.add('stl-teeth__item--saved'));
-//   });
-// });
+        else if (teethCheckboxes[index - 1] && teethCheckboxes[index - 1].checked) {
+          teethMap[index + 1].classList.remove('stl-teeth__item--support');
+        }
 
-// optionButtons.forEach(button => {
-//   button.addEventListener('click', () => {
-//     stlModals.forEach(modal => {
-//       const selectedOption = modal.querySelectorAll(`input:checked`);
+        else if (teethCheckboxes[index + 1] && teethCheckboxes[index + 1].checked) {
+          teethMap[index].classList.remove('stl-teeth__item--support');
+        }
 
-//       selectedOption.forEach(selected => {
-//         selected.checked = false;
-//       });
-//     });
-//   });
-// });
-
-const screenshotButton = document.querySelector('[data-stl-action="screenshot"]');
-const targetDiv = document.getElementById('teethMap');
-screenshotButton.addEventListener('click', () => {
-  targetDiv.style.backgroundColor = "#f1f1f1";
-
-  html2canvas(targetDiv).then(canvas => canvas.toBlob(blob => {
-    window.open(URL.createObjectURL(blob));
-  }));
-
-  targetDiv.style.backgroundColor = "#ffffff";
+        else setBridge(teethMap, index);
+      }
+    });
+  });
 });
+
+function setBridge(map, index, set) {
+  if (set) {
+    map[index].classList.add('stl-teeth__item--support');
+    map[index + 1].classList.add('stl-teeth__item--support');
+  }
+
+  else {
+    map[index].classList.remove('stl-teeth__item--support');
+    map[index + 1].classList.remove('stl-teeth__item--support');
+  }
+}

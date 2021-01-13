@@ -24,13 +24,19 @@
 
   &__item {
     position: relative;
-    cursor: pointer;
+    z-index: 1;
 
     transition: all 0.15s ease;
     filter: drop-shadow(0 0 9px rgba(51, 51, 51, 0.15));
+    cursor: pointer;
 
-    svg path {
-      transition: all 0.15s ease;
+    svg {
+      position: relative;
+      z-index: 1;
+
+      path {
+        transition: all 0.15s ease;
+      }
     }
 
     &--saved {
@@ -38,6 +44,14 @@
 
       svg path {
         fill: #ef7f17;
+      }
+    }
+
+    &--support {
+      color: $text-white;
+
+      svg path {
+        fill: #f0aa69;
       }
     }
 
@@ -131,6 +145,7 @@
 
   &__id {
     position: absolute;
+    z-index: 2;
     top: 45%;
     left: 50%;
 
