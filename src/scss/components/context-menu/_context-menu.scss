@@ -1,8 +1,18 @@
 .context-menu {
-  position: fixed;
+  position: absolute;
   z-index: $z-index-overlay;
   top: 50%;
   left: 50%;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 0.15s ease;
+
+  &--visible {
+    visibility: visible;
+    opacity: 1;
+  }
 
   &__container {
     @include flex($align: stretch);
@@ -27,15 +37,15 @@
       &::before {
         content: "";
         position: absolute;
-        top: -15px;
+        top: -10px;
         left: 50%;
 
         display: block;
         width: 0;
 
-        border: 15px solid transparent;
+        border: 10px solid transparent;
         border-top: 0;
-        border-bottom: 15px solid #333333;
+        border-bottom: 10px solid #333333;
 
         transform: translateX(-50%);
       }
@@ -98,6 +108,14 @@
 
     .stl-teeth__id {
       font-size: $font-size-5;
+
+      &--medium {
+        font-size: $font-size-3;
+      }
+
+      &--large {
+        font-size: $font-size-2;
+      }
     }
 
     svg {

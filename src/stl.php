@@ -2545,7 +2545,7 @@
   </div>
   <!-- /.modal -->
 
-  <div class="context-menu">
+  <div id="contextMenu" class="context-menu">
     <div class="context-menu__container">
       <div class="context-menu__wrapper context-menu__wrapper--arrow mr-2">
         <div class="context-menu__item">Копировать</div>
