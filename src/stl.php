@@ -2545,6 +2545,36 @@
   </div>
   <!-- /.modal -->
 
+  <div class="context-menu">
+    <div class="context-menu__container">
+      <div class="context-menu__wrapper context-menu__wrapper--arrow mr-2">
+        <div class="context-menu__item">Копировать</div>
+        <div class="context-menu__item context-menu__item--disabled">Вставить</div>
+      </div>
+      <!-- /.context-menu__wrapper -->
+
+      <div class="context-menu__wrapper context-menu__wrapper--hidden">
+        <div class="context-menu__teeth">
+          <div class="stl-teeth__item">
+            <div class="stl-teeth__id">
+              18
+            </div>
+            <!-- /.stl-teeth__id -->
+
+            <svg width="35" height="25" viewBox="0 0 35 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.1662 0C25.6364 0 34.6336 1.69755 34.6336 13.9719C34.6336 17.8946 33.9131 24.5586 28.3424 23.8286C23.1894 24.8391 19.9145 22.8016 17.1662 22.8016C14.4179 22.8016 12.9499 25.1787 5.99003 23.8286C1.88766 24.3662 0 17.7407 0 13.9719C0 1.61721 8.87513 0 17.1662 0Z" fill="white" />
+            </svg>
+          </div>
+          <!-- /.stl-teeth__item -->
+        </div>
+        <!-- /.context-menu__teeth -->
+      </div>
+      <!-- /.context-menu__wrapper -->
+    </div>
+    <!-- /.context-menu__container -->
+  </div>
+  <!-- /.context-menu -->
+
   <!-- Подвал -->
   <?php include_once 'partials/footer.php' ?>
 

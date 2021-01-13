@@ -89,6 +89,12 @@ const TeethController = function () {
 
           stlSlider.slideNext();
         });
+
+        teeth.addEventListener('contextmenu', (e) => {
+          e.preventDefault();
+          
+          console.log('test');
+        });
       });
     },
 
