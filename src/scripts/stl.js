@@ -209,7 +209,7 @@ const MainController = function () {
       data.forEach(item => {
         if (item !== "Не определено") {
           TeethController.Save(currentTeeth);
-          TooltipController.Add();
+          TooltipController.Add(currentTeethId);
         }
 
         else
@@ -261,11 +261,13 @@ const TooltipController = function () {
   };
 
   return {
-    Add: function () {
+    Add: function (teethId, target) {
+
       // Проверка на существование тултипа
       for (let index = 0; index < tippyInstances.length; index++) {
         const instanceID = tippyInstances[index].reference.getAttribute('data-teeth-id');
-        isExist = (instanceID === currentTeethId) ? true : false;
+
+        isExist = (instanceID === teethId) ? true : false;
 
         if (isExist) {
           TooltipController.Update();
@@ -273,9 +275,11 @@ const TooltipController = function () {
         };
       }
 
-      tippyInstances.push(tippy(currentTeeth));
-      TooltipController.Update();
+      if (!target) tippyInstances.push(tippy(currentTeeth));
+      else tippyInstances.push(tippy(target));
 
+
+      TooltipController.Update();
       let instance = tippyInstances[tippyInstances.indexOf(currentTeeth._tippy)].reference;
       instance.addEventListener('mouseover', listener(instance));
     },
@@ -453,13 +457,17 @@ const ContextController = function () {
       const ID = currentTarget.getAttribute('data-teeth-id');
 
       setTeeth(currentTarget);
-      copiedTeeth = teethData[ID];
+      copiedTeeth = JSON.parse(JSON.stringify(teethData[ID]));
     },
 
     Paste: () => {
       const ID = currentTarget.getAttribute('data-teeth-id');
       currentTarget.classList.add('stl-teeth__item--saved');
-      teethData[ID] = copiedTeeth;
+
+      teethData[ID] = JSON.parse(JSON.stringify(copiedTeeth));
+
+      TooltipController.Add(ID, currentTarget);
+      TooltipController.Update();
     }
   }
 }();
