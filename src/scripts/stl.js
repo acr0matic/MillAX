@@ -82,6 +82,7 @@ const TeethController = function () {
           teethPreviewContainer.forEach(container => {
             const clonedTeeth = teeth.cloneNode(true);
             clonedTeeth.classList.remove('stl-teeth__item--saved');
+            clonedTeeth.classList.remove('stl-teeth__item--support');
 
             container.innerHTML = '';
             container.append(clonedTeeth);
@@ -141,8 +142,10 @@ const TeethController = function () {
           const output = item.querySelector('.stl-info__value');
           const value = teethTempData.stage[index].option[dataType];
 
-          if (value == 'Не определено')
+          if (value == 'Не определено') {
             output.innerHTML = "Не определено";
+            TooltipController.Remove();
+          }
 
           else
             output.innerHTML = value;
@@ -297,6 +300,7 @@ const TooltipController = function () {
 
     Update: function () {
       let teethID = 0;
+
       tippyInstances.forEach(instance => {
         teethID = instance.reference.getAttribute('data-teeth-id');
         instance.setContent(InfoTemplate(teethData[teethID]));
@@ -340,6 +344,7 @@ const ModalController = function () {
       StageController.ClearData(optionType);
       UpdateCircle(optionType).Uncheck();
       TeethController.UpdateInfo();
+      TooltipController.Update();
     },
   }
 }();
