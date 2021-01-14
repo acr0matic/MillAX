@@ -92,6 +92,8 @@ const TeethController = function () {
 
         teeth.addEventListener('contextmenu', (e) => {
           e.preventDefault();
+          ContextController.SetTarget(e);
+          ContextController.Check();
           ContextController.Show(e);
         });
       });
@@ -339,28 +341,44 @@ const ModalController = function () {
 }();
 
 const ContextController = function () {
-  const contextMenu = document.getElementById('contextMenu');;
+  let target = null;
+  let currentTarget = null;
+  let canCopy, canPaste;
+
+  const contextMenu = document.getElementById('contextMenu');
   const contextTeeth = contextMenu.querySelector('.context-menu__teeth');
+  const copyButton = contextMenu.querySelector('[data-context-action=copy]')
+  const pasteButton = contextMenu.querySelector('[data-context-action=paste]')
 
   const toggleMenu = (param) => {
-    if (param === 'show')
+    if (param === 'show') {
       contextMenu.classList.add('context-menu--visible');
-    else
-      contextMenu.classList.remove('context-menu--visible');
+      if (contextTeeth.innerHTML != '') showTeeth();
+    }
+
+    else contextMenu.classList.remove('context-menu--visible');
   };
 
-  const setPosition = ({ top, left }) => {
-    contextMenu.style.left = `${left - 60}px`;
-    contextMenu.style.top = `${top + 30}px`;
-    toggleMenu("show");
+  const setPosition = (e) => {
+    let element = e.target.getBoundingClientRect();
+
+    let offsetX = element.left + ((element.width - 10) / 2);
+    let offsetY = element.bottom + window.scrollY - 10;
+
+    contextMenu.style.left = `${offsetX - 60}px`;
+    contextMenu.style.top = `${offsetY + 30}px`;
   }
 
-  const getTeeth = (e) => {
-    const clonedTeeth = e.currentTarget.cloneNode(true);
+  const setTeeth = (target) => {
+    const clonedTeeth = target.cloneNode(true);
     clonedTeeth.classList.remove('stl-teeth__item--saved');
 
     contextTeeth.innerHTML = '';
     contextTeeth.append(clonedTeeth);
+  }
+
+  const showTeeth = () => {
+    contextTeeth.parentNode.classList.remove('context-menu__wrapper--hidden');
   }
 
   return {
@@ -374,22 +392,56 @@ const ContextController = function () {
           ContextController.Hide();
         }
       });
+
+      copyButton.addEventListener('click', () => {
+        if (canCopy) {
+          ContextController.Copy();
+          ContextController.Hide();
+        }
+
+        else return;
+      });
+
+      pasteButton.addEventListener('click', () => {
+        if (canPaste) {
+          ContextController.Paste();
+          ContextController.Hide();
+        }
+
+        else return;
+      });
+    },
+
+    SetTarget: (e) => target = e,
+
+    Check: () => {
+      currentTarget = target.currentTarget;
+      const ID = target.currentTarget.getAttribute('data-teeth-id');
+      const teeth = teethData[ID];
+
+      if (teeth) {
+        canCopy = true;
+        copyButton.classList.remove('context-menu__item--disabled');
+      }
+
+      else {
+        canCopy = false;
+        copyButton.classList.add('context-menu__item--disabled');
+      }
+
+      if (Object.keys(copiedTeeth).length !== 0) {
+        canPaste = true;
+        pasteButton.classList.remove('context-menu__item--disabled');
+      }
+
+      else {
+        canPaste = false;
+        pasteButton.classList.add('context-menu__item--disabled');
+      };
     },
 
     Show: (e) => {
-      let element = e.target.getBoundingClientRect();
-
-      let offsetX = element.left + ((element.width - 10) / 2);
-      let offsetY = element.bottom + window.scrollY - 10;
-
-      const origin = {
-        left: offsetX,
-        top: offsetY
-      };
-
-      setPosition(origin);
-
-      getTeeth(e);
+      setPosition(e);
       toggleMenu("show");
     },
 
@@ -398,11 +450,16 @@ const ContextController = function () {
     },
 
     Copy: () => {
+      const ID = currentTarget.getAttribute('data-teeth-id');
 
+      setTeeth(currentTarget);
+      copiedTeeth = teethData[ID];
     },
 
     Paste: () => {
-
+      const ID = currentTarget.getAttribute('data-teeth-id');
+      currentTarget.classList.add('stl-teeth__item--saved');
+      teethData[ID] = copiedTeeth;
     }
   }
 }();
@@ -411,6 +468,7 @@ const ContextController = function () {
 
 const teethData = {};
 let teethTempData = {};
+let copiedTeeth = {};
 
 const
   teeths = document.querySelectorAll('.stl-teeth__map .stl-teeth__item'),

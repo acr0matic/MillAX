@@ -20,6 +20,7 @@
 
   &__wrapper {
     position: relative;
+    max-height: 87px;
 
     padding: 15px 20px;
 
@@ -29,8 +30,7 @@
     background-color: #333333;
 
     &--hidden {
-      // visibility: hidden;
-      // opacity: 0;
+      display: none;
     }
 
     &--arrow {
@@ -109,12 +109,9 @@
     .stl-teeth__id {
       font-size: $font-size-5;
 
-      &--medium {
-        font-size: $font-size-3;
-      }
-
+      &--medium,
       &--large {
-        font-size: $font-size-2;
+        font-size: $font-size-3;
       }
     }
 
