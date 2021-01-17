@@ -315,7 +315,7 @@ const TooltipController = function () {
 const ModalController = function () {
   return {
     Init: () => {
-      const optionButtons = document.querySelectorAll('.stl-stage__button');
+      const optionButtons = document.querySelectorAll('.stl-stage__button, .stl-stage__status');
 
       optionButtons.forEach(button => {
         button.addEventListener('click', () => {

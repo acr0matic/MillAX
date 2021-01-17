@@ -830,7 +830,7 @@
                                   <!-- /.stl-stage__teeth -->
 
                                   <div class="stl-stage__control">
-                                    <div data-status="construction" class="stl-stage__status">
+                                    <div data-status="construction" class="stl-stage__status" data-micromodal-trigger="modal-stl__construction">
                                       <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
                                       <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
 
@@ -847,7 +847,7 @@
                                     </div>
                                     <!-- /.stl-stage__status -->
 
-                                    <div data-status="parameter" class="stl-stage__status">
+                                    <div data-status="parameter" class="stl-stage__status" data-micromodal-trigger="modal-stl__parameter">
                                       <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
                                       <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
 
@@ -864,7 +864,7 @@
                                     </div>
                                     <!-- /.stl-stage__status -->
 
-                                    <div data-status="color" class="stl-stage__status">
+                                    <div data-status="color" class="stl-stage__status" data-micromodal-trigger="modal-stl__color">
                                       <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
                                       <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
 
@@ -881,7 +881,7 @@
                                     </div>
                                     <!-- /.stl-stage__status -->
 
-                                    <div data-status="system" class="stl-stage__status">
+                                    <div data-status="system" class="stl-stage__status" data-micromodal-trigger="modal-stl__system">
                                       <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
                                       <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
 
@@ -898,7 +898,7 @@
                                     </div>
                                     <!-- /.stl-stage__status -->
 
-                                    <div data-status="material" class="stl-stage__status">
+                                    <div data-status="material" class="stl-stage__status" data-micromodal-trigger="modal-stl__material">
                                       <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
                                       <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
 
@@ -915,7 +915,7 @@
                                     </div>
                                     <!-- /.stl-stage__status -->
 
-                                    <div data-status="advanced" class="stl-stage__status">
+                                    <div data-status="advanced" class="stl-stage__status" data-micromodal-trigger="modal-stl__advanced">
                                       <img class="stl-stage__circle" src="img/stl/mini-circle.svg" alt="">
                                       <img class="stl-stage__checkmark" src="img/stl/checkmark.svg" alt="">
 

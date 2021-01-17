@@ -133,6 +133,7 @@
 
   &__status {
     position: absolute;
+    cursor: pointer;
 
     @include first-last() {
       left: 50%;
