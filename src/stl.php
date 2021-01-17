@@ -2557,7 +2557,7 @@
         </div>
 
         <div data-context-action="mark--empty" class="context-menu__item">
-          Пометить как <span class="context-menu__span context-menu__span--red">отсутсвующий</span>
+          Пометить как <span class="context-menu__span context-menu__span--red">отсутствующий</span>
         </div>
       </div>
       <!-- /.context-menu__wrapper -->
