@@ -105,6 +105,11 @@
     color: #f6cd46;
     transition: color 0.15s ease;
 
+    &--black {
+      color: $text-black;
+      text-decoration: underline;
+    }
+
     &:hover {
       text-decoration: underline;
     }

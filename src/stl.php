@@ -78,48 +78,7 @@
         <div class="stl-file">
           <div class="swiper-container stl__slider stl-slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="stl-slider__slide stl-slider__slide--form">
-                  <div class="row">
-                    <div class="col-5">
-                      <form action="" class="form form-excursion">
-                        <h2 class="form-excursion__title excursion-mobile--hide mb-5">
-                          Укажите Ваши данные
-                        </h2>
-                        <input class="input input-field mb-3" type="text" placeholder="Наименование заказчика" name="user_name">
-                        <input class="input input-field mb-3" type="text" placeholder="ФИО пациента" name="user_name">
-                        <input class="input input-field mb-3" type="tel" placeholder="Контактный номер телефона" name="user_phone">
 
-                        <div class="form__policy">
-                          <label class="checkbox checkbox--white">
-                            <input type="checkbox">
-                            <span class="checkbox__mark"></span>
-                            <span class="checkbox__label">Я принимаю <a href="" class="checkbox__policy">политику конфиденциальности</a></span>
-                          </label>
-                        </div>
-
-                        <div class="row mt-4">
-                          <div class="col-9">
-                            <button type="button" data-stl-action="mail" class="button button-secondary mb-3">Подтвердить и отправить</button>
-                            <button type="button" data-stl-action="back" class="button button-secondary">Вернуться к редактированию</button>
-                          </div>
-                          <!-- /.col-6 -->
-                        </div>
-                        <!-- /.row -->
-                      </form>
-                    </div>
-                    <!-- /.col-5 -->
-
-                    <div id="summary" class="col-6 offset-1 stl-file__summary">
-                      <!-- ДИНАМИЧЕСКИЙ КОНТЕНТ -->
-                    </div>
-                    <!-- /.col-7 -->
-                  </div>
-                  <!-- /.row -->
-                </div>
-                <!-- /.stl-slider__slide -->
-              </div>
-              <!-- /.swiper-slide -->
 
               <div class="swiper-slide">
                 <div class="stl-slider__slide stl-slider__slide--map">
@@ -735,6 +694,154 @@
                 <!-- /.stl-slider__slide -->
               </div>
               <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="stl-slider__slide stl-slider__slide--form">
+                  <div class="row justify-content-center">
+                    <div class="col-11 col-no-px">
+                      <div id="summary" class="stl-file__summary stl-summary">
+                        <div class="stl-summary__wrapper">
+                          <table class="stl-summary__table stl-table">
+                            <thead class="stl-table__header">
+                              <tr>
+                                <th>Номер <br> зуба</th>
+                                <th>Конструкция</th>
+                                <th>Система импланта <br> и размеры</th>
+                                <th>Материал <br> изготовления</th>
+                                <th>Цвет <br> коронки</th>
+                                <th>Десневая <br> часть</th>
+                                <th>Опак <br> и карвинг</th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+                              <tr>
+                                <td class="stl-table__id" rowspan="2">33</td>
+
+                                <td class="stl-table__stage stl-table__stage--first">Абатмент</td>
+                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
+                                <td>Multilayer 3D</td>
+                                <td>А4</td>
+                                <td>Есть</td>
+                                <td>Есть / нет</td>
+                              </tr>
+
+                              <tr>
+                                <td class="stl-table__stage stl-table__stage--second">Абатмент</td>
+                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
+                                <td>Multilayer 3D</td>
+                                <td>А4</td>
+                                <td>Есть</td>
+                                <td>Есть / нет</td>
+                              </tr>
+
+                              <tr class="stl-table__row stl-table__row--color">
+                                <td class="stl-table__id" rowspan="2">33</td>
+
+                                <td class="stl-table__stage stl-table__stage--first">Абатмент</td>
+                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
+                                <td>Multilayer 3D</td>
+                                <td>А4</td>
+                                <td>Есть</td>
+                                <td>Есть / нет</td>
+                              </tr>
+
+                              <tr class="stl-table__row stl-table__row--color">
+                                <td class="stl-table__stage stl-table__stage--second">Абатмент</td>
+                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
+                                <td>Multilayer 3D</td>
+                                <td>А4</td>
+                                <td>Есть</td>
+                                <td>Есть / нет</td>
+                              </tr>
+
+                              <tr>
+                                <td class="stl-table__id" rowspan="2">33</td>
+
+                                <td class="stl-table__stage stl-table__stage--first">Абатмент</td>
+                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
+                                <td>Multilayer 3D</td>
+                                <td>А4</td>
+                                <td>Есть</td>
+                                <td>Есть / нет</td>
+                              </tr>
+
+                              <tr>
+                                <td class="stl-table__stage stl-table__stage--second">Абатмент</td>
+                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
+                                <td>Multilayer 3D</td>
+                                <td>А4</td>
+                                <td>Есть</td>
+                                <td>Есть / нет</td>
+                              </tr>
+
+                              <tr class="stl-table__row stl-table__row--color">
+                                <td class="stl-table__id" rowspan="2">33</td>
+
+                                <td class="stl-table__stage stl-table__stage--first">Абатмент</td>
+                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
+                                <td>Multilayer 3D</td>
+                                <td>А4</td>
+                                <td>Есть</td>
+                                <td>Есть / нет</td>
+                              </tr>
+
+                              <tr class="stl-table__row stl-table__row--color">
+                                <td class="stl-table__stage stl-table__stage--second">Абатмент</td>
+                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
+                                <td>Multilayer 3D</td>
+                                <td>А4</td>
+                                <td>Есть</td>
+                                <td>Есть / нет</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.stl-table__wrapper -->
+                        <button type="button" data-stl-action="back" class="stl-summary__button button button-secondary mt-5">Вернуться к редактированию</button>
+                      </div>
+                      <!-- /.stl-file__summary stl-summary -->
+                    </div>
+                    <!-- /.col-7 -->
+                  </div>
+                  <!-- /.row -->
+
+                  <div class="row justify-content-center">
+                    <div class="col-6">
+                      <form action="" class="form form-excursion">
+                        <h2 class="form-excursion__title excursion-mobile--hide mb-5">
+                          Укажите Ваши данные
+                        </h2>
+                        <input class="input input-field mb-3" type="text" placeholder="Наименование заказчика" name="user_name">
+                        <input class="input input-field mb-3" type="text" placeholder="ФИО пациента" name="user_name">
+                        <input class="input input-field mb-3" type="tel" placeholder="Контактный номер телефона" name="user_phone">
+                        <textarea class="input input-field mb-4" name="user_message" cols="20" rows="5" placeholder="Введите дополнительную ифнормацию (если требуется)"></textarea>
+
+                        <div class="form__policy">
+                          <label class="checkbox checkbox--purple">
+                            <input type="checkbox">
+                            <span class="checkbox__mark"></span>
+                            <span class="checkbox__label">Я принимаю <a href="" class="checkbox__policy checkbox__policy--black">политику конфиденциальности</a></span>
+                          </label>
+                        </div>
+
+                        <div class="row mt-4">
+                          <div class="col-7">
+                            <button type="button" data-stl-action="mail" class="button button-secondary mb-3">Подтвердить и отправить</button>
+                          </div>
+                          <!-- /.col-6 -->
+                        </div>
+                        <!-- /.row -->
+                      </form>
+                    </div>
+                    <!-- /.col-5 -->
+                  </div>
+                  <!-- /.row -->
+                </div>
+                <!-- /.stl-slider__slide -->
+              </div>
+              <!-- /.swiper-slide -->
+
 
               <div class="swiper-slide">
                 <div class="stl-slider__slide stl-slider__slide--stage">
