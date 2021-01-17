@@ -126,7 +126,8 @@ const TeethController = function () {
     },
 
     Reset: (teeth) => {
-      delete teethData[currentTeethId];
+      const ID = teeth.getAttribute('data-teeth-id');
+      delete teethData[ID];
       teeth.classList.remove('stl-teeth__item--saved')
     },
 
@@ -144,7 +145,7 @@ const TeethController = function () {
 
           if (value == 'Не определено') {
             output.innerHTML = "Не определено";
-            TooltipController.Remove();
+            TooltipController.Remove(currentTeeth);
           }
 
           else
@@ -222,7 +223,7 @@ const MainController = function () {
 
     Reset: function () {
       TeethController.Reset(currentTeeth);
-      TooltipController.Remove();
+      TooltipController.Remove(currentTeeth);
     },
 
     Update: function () {
@@ -287,8 +288,8 @@ const TooltipController = function () {
       instance.addEventListener('mouseover', listener(instance));
     },
 
-    Remove: function () {
-      let index = tippyInstances.indexOf(currentTeeth._tippy);
+    Remove: function (teeth) {
+      let index = tippyInstances.indexOf(teeth._tippy);
       if (index > -1) {
         let instance = tippyInstances[tippyInstances.indexOf(currentTeeth._tippy)].reference;
         instance.removeEventListener('mouseover', listener(instance));
@@ -358,6 +359,10 @@ const ContextController = function () {
   const contextTeeth = contextMenu.querySelector('.context-menu__teeth');
   const copyButton = contextMenu.querySelector('[data-context-action=copy]')
   const pasteButton = contextMenu.querySelector('[data-context-action=paste]')
+  const clearButton = contextMenu.querySelector('[data-context-action=clear]')
+
+  const markHealthyButton = contextMenu.querySelector('[data-context-action=mark--heath]')
+  const markEmptyButton = contextMenu.querySelector('[data-context-action=mark--empty]')
 
   const toggleMenu = (param) => {
     if (param === 'show') {
@@ -419,6 +424,21 @@ const ContextController = function () {
 
         else return;
       });
+
+      markHealthyButton.addEventListener('click', () => {
+        ContextController.SetState('healthy')
+        ContextController.Hide();
+      });
+
+      markEmptyButton.addEventListener('click', () => {
+        ContextController.SetState('empty')
+        ContextController.Hide();
+      });
+
+      clearButton.addEventListener('click', () => {
+        ContextController.Clear();
+        ContextController.Hide();
+      });
     },
 
     SetTarget: (e) => target = e,
@@ -473,6 +493,25 @@ const ContextController = function () {
 
       TooltipController.Add(ID, currentTarget);
       TooltipController.Update();
+    },
+
+    SetState: (state) => {
+      if (state === 'healthy') {
+        currentTarget.classList.remove('stl-teeth__item--empty')
+        currentTarget.classList.add('stl-teeth__item--healthy');
+      }
+      else if (state === 'empty') {
+        currentTarget.classList.remove('stl-teeth__item--healthy')
+        currentTarget.classList.add('stl-teeth__item--empty');
+      }
+    },
+
+    Clear: () => {
+      currentTarget.classList.remove('stl-teeth__item--healthy');
+      currentTarget.classList.remove('stl-teeth__item--empty');
+
+      TeethController.Reset(currentTarget);
+      TooltipController.Remove(currentTarget);
     }
   }
 }();

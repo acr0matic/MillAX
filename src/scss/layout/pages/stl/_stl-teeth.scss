@@ -55,6 +55,22 @@
       }
     }
 
+    &--healthy {
+      color: inherit !important;
+
+      svg path {
+        fill: #78e1db !important;
+      }
+    }
+
+    &--empty {
+      color: inherit !important;
+
+      svg path {
+        fill: #ff5656 !important;
+      }
+    }
+
     &:hover {
       color: $text-white;
 
