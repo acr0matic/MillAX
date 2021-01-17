@@ -2550,6 +2550,15 @@
       <div class="context-menu__wrapper context-menu__wrapper--arrow mr-2">
         <div data-context-action="copy" class="context-menu__item context-menu__item--disabled">Копировать</div>
         <div data-context-action="paste" class="context-menu__item context-menu__item--disabled">Вставить</div>
+        <div data-context-action="clear" class="context-menu__item context-menu__item--disabled">Очистить</div>
+
+        <div data-context-action="mark--heath" class="context-menu__item">
+          Пометить как <span class="context-menu__span context-menu__span--blue">здоровый</span>
+        </div>
+
+        <div data-context-action="mark--empty" class="context-menu__item">
+          Пометить как <span class="context-menu__span context-menu__span--red">отсутсвующий</span>
+        </div>
       </div>
       <!-- /.context-menu__wrapper -->
 

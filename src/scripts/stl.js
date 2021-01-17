@@ -371,10 +371,10 @@ const ContextController = function () {
   const setPosition = (e) => {
     let element = e.target.getBoundingClientRect();
 
-    let offsetX = element.left + ((element.width - 10) / 2);
-    let offsetY = element.bottom + window.scrollY - 10;
+    let offsetX = element.left + ((element.width) / 2);
+    let offsetY = element.bottom + window.scrollY;
 
-    contextMenu.style.left = `${offsetX - 60}px`;
+    contextMenu.style.left = `${offsetX - 80}px`;
     contextMenu.style.top = `${offsetY + 30}px`;
   }
 

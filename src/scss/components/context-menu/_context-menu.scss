@@ -15,12 +15,13 @@
   }
 
   &__container {
-    @include flex($align: stretch);
+    @include flex($align: flex-start);
   }
 
   &__wrapper {
     position: relative;
-    max-height: 87px;
+
+    max-width: 160px;
 
     padding: 15px 20px;
 
@@ -86,9 +87,19 @@
     }
   }
 
+  &__span {
+    &--blue {
+      color: #78e1db;
+    }
+
+    &--red {
+      color: #ff5656;
+    }
+  }
+
   &__teeth {
-    width: 55px;
-    height: 100%;
+    width: 50px;
+    height: 55px;
     color: $text-black;
 
     .stl-teeth__item {
