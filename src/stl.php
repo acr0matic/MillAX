@@ -78,7 +78,152 @@
         <div class="stl-file">
           <div class="swiper-container stl__slider stl-slider">
             <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="stl-slider__slide stl-slider__slide--form">
+                  <div class="row justify-content-center">
+                    <div class="col-11 col-no-px">
+                      <div id="summary" class="stl-file__summary stl-summary">
+                        <div class="stl-summary__wrapper">
+                          <table class="stl-summary__table stl-table">
+                            <thead class="stl-table__header">
+                              <tr>
+                                <th>Номер <br> зуба</th>
+                                <th>Конструкция</th>
+                                <th>Система импланта <br> и размеры</th>
+                                <th>Материал <br> изготовления</th>
+                                <th>Цвет <br> коронки</th>
+                                <th>Десневая <br> часть</th>
+                                <th>Опак <br> и карвинг</th>
+                              </tr>
+                            </thead>
 
+                            <tbody>
+                              <tr>
+                                <td class="stl-table__id" rowspan="2">33</td>
+
+                                <td class="stl-table__stage stl-table__stage--first">Абатмент</td>
+                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
+                                <td>Multilayer 3D</td>
+                                <td>А4</td>
+                                <td>Есть</td>
+                                <td>Есть / нет</td>
+                              </tr>
+
+                              <tr>
+                                <td class="stl-table__stage stl-table__stage--second">Абатмент</td>
+                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
+                                <td>Multilayer 3D</td>
+                                <td>А4</td>
+                                <td>Есть</td>
+                                <td>Есть / нет</td>
+                              </tr>
+
+                              <tr class="stl-table__row stl-table__row--color">
+                                <td class="stl-table__id" rowspan="2">33</td>
+
+                                <td class="stl-table__stage stl-table__stage--first">Абатмент</td>
+                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
+                                <td>Multilayer 3D</td>
+                                <td>А4</td>
+                                <td>Есть</td>
+                                <td>Есть / нет</td>
+                              </tr>
+
+                              <tr class="stl-table__row stl-table__row--color">
+                                <td class="stl-table__stage stl-table__stage--second">Абатмент</td>
+                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
+                                <td>Multilayer 3D</td>
+                                <td>А4</td>
+                                <td>Есть</td>
+                                <td>Есть / нет</td>
+                              </tr>
+
+                              <tr>
+                                <td class="stl-table__id" rowspan="2">33</td>
+
+                                <td class="stl-table__stage stl-table__stage--first">Абатмент</td>
+                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
+                                <td>Multilayer 3D</td>
+                                <td>А4</td>
+                                <td>Есть</td>
+                                <td>Есть / нет</td>
+                              </tr>
+
+                              <tr>
+                                <td class="stl-table__stage stl-table__stage--second">Абатмент</td>
+                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
+                                <td>Multilayer 3D</td>
+                                <td>А4</td>
+                                <td>Есть</td>
+                                <td>Есть / нет</td>
+                              </tr>
+
+                              <tr class="stl-table__row stl-table__row--color">
+                                <td class="stl-table__id" rowspan="2">33</td>
+
+                                <td class="stl-table__stage stl-table__stage--first">Абатмент</td>
+                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
+                                <td>Multilayer 3D</td>
+                                <td>А4</td>
+                                <td>Есть</td>
+                                <td>Есть / нет</td>
+                              </tr>
+
+                              <tr class="stl-table__row stl-table__row--color">
+                                <td class="stl-table__stage stl-table__stage--second">Абатмент</td>
+                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
+                                <td>Multilayer 3D</td>
+                                <td>А4</td>
+                                <td>Есть</td>
+                                <td>Есть / нет</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.stl-table__wrapper -->
+                        <button type="button" data-stl-action="back" class="stl-summary__button button button-secondary mt-5">Вернуться к редактированию</button>
+                      </div>
+                      <!-- /.stl-file__summary stl-summary -->
+                    </div>
+                    <!-- /.col-7 -->
+                  </div>
+                  <!-- /.row -->
+
+                  <div class="row justify-content-center">
+                    <div class="col-6">
+                      <form action="" class="form form-excursion">
+                        <h2 class="form-excursion__title excursion-mobile--hide mb-5">
+                          Укажите Ваши данные
+                        </h2>
+                        <input class="input input-field mb-3" type="text" placeholder="Наименование заказчика" name="user_name">
+                        <input class="input input-field mb-3" type="text" placeholder="ФИО пациента" name="user_name">
+                        <input class="input input-field mb-3" type="tel" placeholder="Контактный номер телефона" name="user_phone">
+                        <textarea class="input input-field mb-4" name="user_message" cols="20" rows="5" placeholder="Введите дополнительную ифнормацию (если требуется)"></textarea>
+
+                        <div class="form__policy">
+                          <label class="checkbox checkbox--purple">
+                            <input type="checkbox">
+                            <span class="checkbox__mark"></span>
+                            <span class="checkbox__label">Я принимаю <a href="" class="checkbox__policy checkbox__policy--black">политику конфиденциальности</a></span>
+                          </label>
+                        </div>
+
+                        <div class="row mt-4">
+                          <div class="col-7">
+                            <button type="button" data-stl-action="mail" class="button button-secondary mb-3">Подтвердить и отправить</button>
+                          </div>
+                          <!-- /.col-6 -->
+                        </div>
+                        <!-- /.row -->
+                      </form>
+                    </div>
+                    <!-- /.col-5 -->
+                  </div>
+                  <!-- /.row -->
+                </div>
+                <!-- /.stl-slider__slide -->
+              </div>
+              <!-- /.swiper-slide -->
 
               <div class="swiper-slide">
                 <div class="stl-slider__slide stl-slider__slide--map">
@@ -694,154 +839,6 @@
                 <!-- /.stl-slider__slide -->
               </div>
               <!-- /.swiper-slide -->
-
-              <div class="swiper-slide">
-                <div class="stl-slider__slide stl-slider__slide--form">
-                  <div class="row justify-content-center">
-                    <div class="col-11 col-no-px">
-                      <div id="summary" class="stl-file__summary stl-summary">
-                        <div class="stl-summary__wrapper">
-                          <table class="stl-summary__table stl-table">
-                            <thead class="stl-table__header">
-                              <tr>
-                                <th>Номер <br> зуба</th>
-                                <th>Конструкция</th>
-                                <th>Система импланта <br> и размеры</th>
-                                <th>Материал <br> изготовления</th>
-                                <th>Цвет <br> коронки</th>
-                                <th>Десневая <br> часть</th>
-                                <th>Опак <br> и карвинг</th>
-                              </tr>
-                            </thead>
-
-                            <tbody>
-                              <tr>
-                                <td class="stl-table__id" rowspan="2">33</td>
-
-                                <td class="stl-table__stage stl-table__stage--first">Абатмент</td>
-                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
-                                <td>Multilayer 3D</td>
-                                <td>А4</td>
-                                <td>Есть</td>
-                                <td>Есть / нет</td>
-                              </tr>
-
-                              <tr>
-                                <td class="stl-table__stage stl-table__stage--second">Абатмент</td>
-                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
-                                <td>Multilayer 3D</td>
-                                <td>А4</td>
-                                <td>Есть</td>
-                                <td>Есть / нет</td>
-                              </tr>
-
-                              <tr class="stl-table__row stl-table__row--color">
-                                <td class="stl-table__id" rowspan="2">33</td>
-
-                                <td class="stl-table__stage stl-table__stage--first">Абатмент</td>
-                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
-                                <td>Multilayer 3D</td>
-                                <td>А4</td>
-                                <td>Есть</td>
-                                <td>Есть / нет</td>
-                              </tr>
-
-                              <tr class="stl-table__row stl-table__row--color">
-                                <td class="stl-table__stage stl-table__stage--second">Абатмент</td>
-                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
-                                <td>Multilayer 3D</td>
-                                <td>А4</td>
-                                <td>Есть</td>
-                                <td>Есть / нет</td>
-                              </tr>
-
-                              <tr>
-                                <td class="stl-table__id" rowspan="2">33</td>
-
-                                <td class="stl-table__stage stl-table__stage--first">Абатмент</td>
-                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
-                                <td>Multilayer 3D</td>
-                                <td>А4</td>
-                                <td>Есть</td>
-                                <td>Есть / нет</td>
-                              </tr>
-
-                              <tr>
-                                <td class="stl-table__stage stl-table__stage--second">Абатмент</td>
-                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
-                                <td>Multilayer 3D</td>
-                                <td>А4</td>
-                                <td>Есть</td>
-                                <td>Есть / нет</td>
-                              </tr>
-
-                              <tr class="stl-table__row stl-table__row--color">
-                                <td class="stl-table__id" rowspan="2">33</td>
-
-                                <td class="stl-table__stage stl-table__stage--first">Абатмент</td>
-                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
-                                <td>Multilayer 3D</td>
-                                <td>А4</td>
-                                <td>Есть</td>
-                                <td>Есть / нет</td>
-                              </tr>
-
-                              <tr class="stl-table__row stl-table__row--color">
-                                <td class="stl-table__stage stl-table__stage--second">Абатмент</td>
-                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
-                                <td>Multilayer 3D</td>
-                                <td>А4</td>
-                                <td>Есть</td>
-                                <td>Есть / нет</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <!-- /.stl-table__wrapper -->
-                        <button type="button" data-stl-action="back" class="stl-summary__button button button-secondary mt-5">Вернуться к редактированию</button>
-                      </div>
-                      <!-- /.stl-file__summary stl-summary -->
-                    </div>
-                    <!-- /.col-7 -->
-                  </div>
-                  <!-- /.row -->
-
-                  <div class="row justify-content-center">
-                    <div class="col-6">
-                      <form action="" class="form form-excursion">
-                        <h2 class="form-excursion__title excursion-mobile--hide mb-5">
-                          Укажите Ваши данные
-                        </h2>
-                        <input class="input input-field mb-3" type="text" placeholder="Наименование заказчика" name="user_name">
-                        <input class="input input-field mb-3" type="text" placeholder="ФИО пациента" name="user_name">
-                        <input class="input input-field mb-3" type="tel" placeholder="Контактный номер телефона" name="user_phone">
-                        <textarea class="input input-field mb-4" name="user_message" cols="20" rows="5" placeholder="Введите дополнительную ифнормацию (если требуется)"></textarea>
-
-                        <div class="form__policy">
-                          <label class="checkbox checkbox--purple">
-                            <input type="checkbox">
-                            <span class="checkbox__mark"></span>
-                            <span class="checkbox__label">Я принимаю <a href="" class="checkbox__policy checkbox__policy--black">политику конфиденциальности</a></span>
-                          </label>
-                        </div>
-
-                        <div class="row mt-4">
-                          <div class="col-7">
-                            <button type="button" data-stl-action="mail" class="button button-secondary mb-3">Подтвердить и отправить</button>
-                          </div>
-                          <!-- /.col-6 -->
-                        </div>
-                        <!-- /.row -->
-                      </form>
-                    </div>
-                    <!-- /.col-5 -->
-                  </div>
-                  <!-- /.row -->
-                </div>
-                <!-- /.stl-slider__slide -->
-              </div>
-              <!-- /.swiper-slide -->
-
 
               <div class="swiper-slide">
                 <div class="stl-slider__slide stl-slider__slide--stage">
@@ -1512,7 +1509,7 @@
                       <input type="radio" name="material">
                       <span class="radio__control"></span>
                     </span>
-                    <span class="radio__label">Другое_____</span>
+                    <span class="radio__label">Другое</span>
                   </label>
                 </div>
                 <!-- /.modal-stl__section -->
@@ -1600,7 +1597,7 @@
               <div class="col-3 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--A1"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
@@ -1618,7 +1615,7 @@
               <div class="col-3 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--A2"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
@@ -1636,7 +1633,7 @@
               <div class="col-3 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--A3"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
@@ -1654,13 +1651,13 @@
               <div class="col-3 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--A35"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
                         <span class="radio__control"></span>
                       </span>
-                      <span class="radio__label">A4</span>
+                      <span class="radio__label">A3.5</span>
                     </div>
                     <!-- /.radio__wrapper -->
                   </label>
@@ -1672,7 +1669,7 @@
               <div class="col-3 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--B1"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
@@ -1690,7 +1687,7 @@
               <div class="col-3 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--B2"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
@@ -1708,7 +1705,7 @@
               <div class="col-3 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--B3"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
@@ -1726,7 +1723,7 @@
               <div class="col-3 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--B4"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
@@ -1744,7 +1741,7 @@
               <div class="col-3 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--C1"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
@@ -1762,7 +1759,7 @@
               <div class="col-3 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--C2"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
@@ -1780,7 +1777,7 @@
               <div class="col-3 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--C3"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
@@ -1798,7 +1795,7 @@
               <div class="col-3 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--C4"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
@@ -1813,28 +1810,10 @@
               </div>
               <!-- /.col-3 -->
 
-              <div class="col-3 mb-3">
+              <div class="col-4 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
-                    <div class="radio__wrapper">
-                      <span class="radio__input">
-                        <input type="radio" name="color">
-                        <span class="radio__control"></span>
-                      </span>
-                      <span class="radio__label">D1</span>
-                    </div>
-                    <!-- /.radio__wrapper -->
-                  </label>
-                </div>
-                <!-- /.modal-stl__section -->
-              </div>
-              <!-- /.col-3 -->
-
-              <div class="col-3 mb-3">
-                <div class="modal-stl__section">
-                  <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--D2"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
@@ -1849,10 +1828,10 @@
               </div>
               <!-- /.col-3 -->
 
-              <div class="col-3 mb-3">
+              <div class="col-4 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--D3"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
@@ -1867,10 +1846,10 @@
               </div>
               <!-- /.col-3 -->
 
-              <div class="col-3 mb-3">
+              <div class="col-4 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--D4"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
@@ -1888,7 +1867,7 @@
               <div class="col-3 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--bleach-1"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
@@ -1906,7 +1885,7 @@
               <div class="col-3 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--bleach-2"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
@@ -1924,7 +1903,7 @@
               <div class="col-3 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--bleach-3"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
@@ -1942,30 +1921,13 @@
               <div class="col-3 mb-3">
                 <div class="modal-stl__section">
                   <label class="radio radio--color">
-                    <div class="modal-stl__color stl-color--primary-1"></div>
+                    <div class="modal-stl__color stl-color--bleach-4"></div>
                     <div class="radio__wrapper">
                       <span class="radio__input">
                         <input type="radio" name="color">
                         <span class="radio__control"></span>
                       </span>
                       <span class="radio__label">Bleach 4</span>
-                    </div>
-                    <!-- /.radio__wrapper -->
-                  </label>
-                </div>
-                <!-- /.modal-stl__section -->
-              </div>
-              <!-- /.col-3 -->
-
-              <div class="col-3 mb-3">
-                <div class="modal-stl__section">
-                  <label class="radio radio--color">
-                    <div class="radio__wrapper">
-                      <span class="radio__input">
-                        <input type="radio" name="color">
-                        <span class="radio__control"></span>
-                      </span>
-                      <span class="radio__label">Другое_____</span>
                     </div>
                     <!-- /.radio__wrapper -->
                   </label>
@@ -2565,17 +2527,8 @@
                     <input type="radio" name="system">
                     <span class="radio__control"></span>
                   </span>
-                  <span class="radio__label">Другое_____________</span>
+                  <span class="radio__label">Другое</span>
                 </label>
-
-                <div class="modal-stl__group mt-3">
-                  <label class="checkbox checkbox--small checkbox--gray ml-4">
-                    <input type="radio" name="system-size">
-                    <span class="checkbox__mark"></span>
-                    <span class="checkbox__label">Размеры___________</span>
-                  </label>
-                </div>
-                <!-- /.modal-stl__group -->
               </div>
               <!-- /.modal-stl__section -->
             </div>
