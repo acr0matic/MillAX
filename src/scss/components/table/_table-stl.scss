@@ -1,6 +1,5 @@
 .stl-table {
   width: 100%;
-
   line-height: 20px;
   border-collapse: collapse;
 
@@ -11,6 +10,7 @@
   }
 
   td {
+    max-width: 120px;
     padding: 20px 10px 20px 10px;
     font-weight: $weight-bold;
   }
@@ -22,7 +22,6 @@
     th {
       padding-top: 15px;
       padding-left: 10px;
-
       font-weight: $weight-thin;
 
       &:nth-child(1) {
@@ -39,7 +38,6 @@
       position: absolute;
       top: 20px;
       left: -60px;
-
       font-weight: $weight-thin;
     }
 

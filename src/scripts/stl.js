@@ -150,9 +150,7 @@ const TeethController = function () {
           if (value == 'Не определено') {
             output.innerHTML = "Не определено";
             TooltipController.Remove(currentTeeth);
-          }
-
-          else
+          } else
             output.innerHTML = value;
         });
       });
@@ -218,9 +216,7 @@ const MainController = function () {
         if (item !== "Не определено") {
           TeethController.Save(currentTeeth);
           TooltipController.Add(currentTeethId);
-        }
-
-        else
+        } else
           if (++count === 12) currentTeeth.classList.remove('stl-teeth__item--saved')
       });
     },
@@ -230,8 +226,7 @@ const MainController = function () {
       TooltipController.Remove(currentTeeth);
     },
 
-    Update: function () {
-    },
+    Update: function () { },
 
     Screenshot: () => {
       const targetDiv = document.getElementById('teethMap');
@@ -372,9 +367,7 @@ const ContextController = function () {
     if (param === 'show') {
       contextMenu.classList.add('context-menu--visible');
       if (contextTeeth.innerHTML != '') showTeeth();
-    }
-
-    else contextMenu.classList.remove('context-menu--visible');
+    } else contextMenu.classList.remove('context-menu--visible');
   };
 
   const setPosition = (e) => {
@@ -415,18 +408,14 @@ const ContextController = function () {
         if (canCopy) {
           ContextController.Copy();
           ContextController.Hide();
-        }
-
-        else return;
+        } else return;
       });
 
       pasteButton.addEventListener('click', () => {
         if (canPaste) {
           ContextController.Paste();
           ContextController.Hide();
-        }
-
-        else return;
+        } else return;
       });
 
       markHealthyButton.addEventListener('click', () => {
@@ -461,9 +450,7 @@ const ContextController = function () {
       if (teeth) {
         canCopy = true;
         copyButton.classList.remove('context-menu__item--disabled');
-      }
-
-      else {
+      } else {
         canCopy = false;
         copyButton.classList.add('context-menu__item--disabled');
       }
@@ -471,9 +458,7 @@ const ContextController = function () {
       if (Object.keys(copiedTeeth).length !== 0) {
         canPaste = true;
         pasteButton.classList.remove('context-menu__item--disabled');
-      }
-
-      else {
+      } else {
         canPaste = false;
         pasteButton.classList.add('context-menu__item--disabled');
       }
@@ -482,9 +467,7 @@ const ContextController = function () {
         canMark = true;
         markHealthyButton.classList.remove('context-menu__item--disabled');
         markEmptyButton.classList.remove('context-menu__item--disabled');
-      }
-
-      else {
+      } else {
         canMark = false;
         markHealthyButton.classList.add('context-menu__item--disabled');
         markEmptyButton.classList.add('context-menu__item--disabled');
@@ -521,8 +504,7 @@ const ContextController = function () {
       if (state === 'healthy') {
         currentTarget.classList.remove('stl-teeth__item--empty')
         currentTarget.classList.add('stl-teeth__item--healthy');
-      }
-      else if (state === 'empty') {
+      } else if (state === 'empty') {
         currentTarget.classList.remove('stl-teeth__item--healthy')
         currentTarget.classList.add('stl-teeth__item--empty');
       }
@@ -671,9 +653,7 @@ function getRadioValue(radio) {
   if (radio.getAttribute('name') === 'system-size') {
     parent = radio.closest('.checkbox');
     result = parent.querySelector('.checkbox__label').innerHTML;
-  }
-
-  else {
+  } else {
     parent = radio.closest('.radio');
     result = parent.querySelector('.radio__label').innerHTML;
   }
@@ -770,7 +750,7 @@ function InfoTemplate(data) {
   </div>
 </div>
 <!-- /.stl-stage__info -->
-`
+`;
 }
 
 const teethMaps = document.querySelectorAll('.stl-teeth__row');
@@ -783,19 +763,14 @@ teethMaps.forEach(map => {
 
       if (checkbox.checked) setBridge(teethMap, index, true);
       else {
-        if
-          ((teethCheckboxes[index - 1] && teethCheckboxes[index - 1].checked) &&
+        if ((teethCheckboxes[index - 1] && teethCheckboxes[index - 1].checked) &&
           (teethCheckboxes[index - 1] && teethCheckboxes[index + 1].checked)) return;
 
         else if (teethCheckboxes[index - 1] && teethCheckboxes[index - 1].checked) {
           teethMap[index + 1].classList.remove('stl-teeth__item--support');
-        }
-
-        else if (teethCheckboxes[index + 1] && teethCheckboxes[index + 1].checked) {
+        } else if (teethCheckboxes[index + 1] && teethCheckboxes[index + 1].checked) {
           teethMap[index].classList.remove('stl-teeth__item--support');
-        }
-
-        else setBridge(teethMap, index);
+        } else setBridge(teethMap, index);
       }
     });
   });
@@ -805,9 +780,7 @@ function setBridge(map, index, set) {
   if (set) {
     map[index].classList.add('stl-teeth__item--support');
     map[index + 1].classList.add('stl-teeth__item--support');
-  }
-
-  else {
+  } else {
     map[index].classList.remove('stl-teeth__item--support');
     map[index + 1].classList.remove('stl-teeth__item--support');
   }
@@ -815,93 +788,34 @@ function setBridge(map, index, set) {
 
 function summaryTemplate(data) {
   let template = '';
+  let count = 1;
+  let classTemplate;
+
   for (const key in data) {
     const teeth = (key, data[key]);
 
+    if (count++ % 2 === 0) classTemplate = 'class="stl-table__row stl-table__row--color"';
+    else classTemplate = '';
+
     template += `
-    <div class="stl-info stl-info--large">
-    <h2 class="stl-info__header mb-5">Номер зуба <span class="stl-info__teeth">${key}</span></h2>
-    <div class="row">
-      <div class="col-6">
-        <h2 class="stl-info__heading mb-4">Этап 1</h2>
-        <div data-stl-info="construction" class="stl-info__item mb-4">
-          <h3 class="stl-info__title">Конструкция</h3>
-          <div class="stl-info__value">${teeth.stage[0].option.construction}</div>
-        </div>
-        <!-- /.stl-info__item -->
+      <tr ${classTemplate}>
+        <td class="stl-table__id" rowspan="2">${key}</td>
+        <td class="stl-table__stage stl-table__stage--first">${teeth.stage[0].option.construction}</td>
+        <td>${teeth.stage[0].option.system}</td>
+        <td>${teeth.stage[0].option.material}</td>
+        <td>${teeth.stage[0].option.color}</td>
+        <td>${teeth.stage[0].option.parameter}</td>
+        <td>${teeth.stage[0].option.advanced}</td>
+      </tr>
 
-        <div data-stl-info="system" class="stl-info__item mb-4">
-          <h3 class="stl-info__title">Система имплантов и размеры</h3>
-          <div class="stl-info__value">${teeth.stage[0].option.system}</div>
-        </div>
-        <!-- /.stl-info__item -->
-
-        <div data-stl-info="material" class="stl-info__item mb-4">
-          <h3 class="stl-info__title">Материал изготовления</h3>
-          <div class="stl-info__value">${teeth.stage[0].option.material}</div>
-        </div>
-        <!-- /.stl-info__item -->
-
-        <div data-stl-info="color" class="stl-info__item mb-4">
-          <h3 class="stl-info__title">Цвет коронки</h3>
-          <div class="stl-info__value">${teeth.stage[0].option.color}</div>
-        </div>
-        <!-- /.stl-info__item -->
-
-        <div data-stl-info="parameter" class="stl-info__item mb-4">
-          <h3 class="stl-info__title">Десневая часть</h3>
-          <div class="stl-info__value">${teeth.stage[0].option.parameter}</div>
-        </div>
-        <!-- /.stl-info__item -->
-
-        <div data-stl-info="advanced" class="stl-info__item">
-          <h3 class="stl-info__title">Опак и карвинг</h3>
-          <div class="stl-info__value">${teeth.stage[0].option.advanced}</div>
-        </div>
-        <!-- /.stl-info__item -->
-      </div>
-
-      <div class="col-6">
-        <h2 class="stl-info__heading mb-4">Этап 2</h2>
-        <div data-stl-info="construction" class="stl-info__item mb-4">
-          <h3 class="stl-info__title">Конструкция</h3>
-          <div class="stl-info__value">${teeth.stage[1].option.construction}</div>
-        </div>
-        <!-- /.stl-info__item -->
-
-        <div data-stl-info="system" class="stl-info__item mb-4">
-          <h3 class="stl-info__title">Система имплантов и размеры</h3>
-          <div class="stl-info__value">${teeth.stage[1].option.system}</div>
-        </div>
-        <!-- /.stl-info__item -->
-
-        <div data-stl-info="material" class="stl-info__item mb-4">
-          <h3 class="stl-info__title">Материал изготовления</h3>
-          <div class="stl-info__value">${teeth.stage[1].option.material}</div>
-        </div>
-        <!-- /.stl-info__item -->
-
-        <div data-stl-info="color" class="stl-info__item mb-4">
-          <h3 class="stl-info__title">Цвет коронки</h3>
-          <div class="stl-info__value">${teeth.stage[1].option.color}</div>
-        </div>
-        <!-- /.stl-info__item -->
-
-        <div data-stl-info="parameter" class="stl-info__item mb-4">
-          <h3 class="stl-info__title">Десневая часть</h3>
-          <div class="stl-info__value">${teeth.stage[1].option.parameter}</div>
-        </div>
-        <!-- /.stl-info__item -->
-
-        <div data-stl-info="advanced" class="stl-info__item">
-          <h3 class="stl-info__title">Опак и карвинг</h3>
-          <div class="stl-info__value">${teeth.stage[1].option.advanced}</div>
-        </div>
-        <!-- /.stl-info__item -->
-      </div>
-    </div>
-    </div>
-    <!-- /.stl-stage__info -->
+      <tr ${classTemplate}>
+        <td class="stl-table__stage stl-table__stage--second">${teeth.stage[1].option.construction}</td>
+        <td>${teeth.stage[1].option.system}</td>
+        <td>${teeth.stage[1].option.material}</td>
+        <td>${teeth.stage[1].option.color}</td>
+        <td>${teeth.stage[1].option.parameter}</td>
+        <td>${teeth.stage[1].option.advanced}</td>
+      </tr>
     `
   }
 

@@ -82,7 +82,7 @@
                 <div class="stl-slider__slide stl-slider__slide--form">
                   <div class="row justify-content-center">
                     <div class="col-11 col-no-px">
-                      <div id="summary" class="stl-file__summary stl-summary">
+                      <div class="stl-file__summary stl-summary">
                         <div class="stl-summary__wrapper">
                           <table class="stl-summary__table stl-table">
                             <thead class="stl-table__header">
@@ -97,86 +97,8 @@
                               </tr>
                             </thead>
 
-                            <tbody>
-                              <tr>
-                                <td class="stl-table__id" rowspan="2">33</td>
+                            <tbody id="summary">
 
-                                <td class="stl-table__stage stl-table__stage--first">Абатмент</td>
-                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
-                                <td>Multilayer 3D</td>
-                                <td>А4</td>
-                                <td>Есть</td>
-                                <td>Есть / нет</td>
-                              </tr>
-
-                              <tr>
-                                <td class="stl-table__stage stl-table__stage--second">Абатмент</td>
-                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
-                                <td>Multilayer 3D</td>
-                                <td>А4</td>
-                                <td>Есть</td>
-                                <td>Есть / нет</td>
-                              </tr>
-
-                              <tr class="stl-table__row stl-table__row--color">
-                                <td class="stl-table__id" rowspan="2">33</td>
-
-                                <td class="stl-table__stage stl-table__stage--first">Абатмент</td>
-                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
-                                <td>Multilayer 3D</td>
-                                <td>А4</td>
-                                <td>Есть</td>
-                                <td>Есть / нет</td>
-                              </tr>
-
-                              <tr class="stl-table__row stl-table__row--color">
-                                <td class="stl-table__stage stl-table__stage--second">Абатмент</td>
-                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
-                                <td>Multilayer 3D</td>
-                                <td>А4</td>
-                                <td>Есть</td>
-                                <td>Есть / нет</td>
-                              </tr>
-
-                              <tr>
-                                <td class="stl-table__id" rowspan="2">33</td>
-
-                                <td class="stl-table__stage stl-table__stage--first">Абатмент</td>
-                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
-                                <td>Multilayer 3D</td>
-                                <td>А4</td>
-                                <td>Есть</td>
-                                <td>Есть / нет</td>
-                              </tr>
-
-                              <tr>
-                                <td class="stl-table__stage stl-table__stage--second">Абатмент</td>
-                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
-                                <td>Multilayer 3D</td>
-                                <td>А4</td>
-                                <td>Есть</td>
-                                <td>Есть / нет</td>
-                              </tr>
-
-                              <tr class="stl-table__row stl-table__row--color">
-                                <td class="stl-table__id" rowspan="2">33</td>
-
-                                <td class="stl-table__stage stl-table__stage--first">Абатмент</td>
-                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
-                                <td>Multilayer 3D</td>
-                                <td>А4</td>
-                                <td>Есть</td>
-                                <td>Есть / нет</td>
-                              </tr>
-
-                              <tr class="stl-table__row stl-table__row--color">
-                                <td class="stl-table__stage stl-table__stage--second">Абатмент</td>
-                                <td>Osstem: <br> Regular (4.0 / 4.5 / 5.0)</td>
-                                <td>Multilayer 3D</td>
-                                <td>А4</td>
-                                <td>Есть</td>
-                                <td>Есть / нет</td>
-                              </tr>
                             </tbody>
                           </table>
                         </div>
