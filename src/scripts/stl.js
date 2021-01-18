@@ -59,36 +59,40 @@ const TeethController = function () {
         teeth.setAttribute('data-teeth-id', teeth.querySelector('.stl-teeth__id').innerHTML.replace(/\s/g, ''));
         teeth.addEventListener('click', () => {
 
-          // Получаем текущий зуб и его айди
-          currentTeeth = teeth;
-          currentTeethId = currentTeeth.getAttribute('data-teeth-id');
+          // Проверка, что зуб не помечен как здоровый или отсутствующий
+          const marked = (teeth.classList.contains('stl-teeth__item--healthy') || teeth.classList.contains('stl-teeth__item--empty')) ? true : false;
+          if (!marked) {
+            // Получаем текущий зуб и его айди
+            currentTeeth = teeth;
+            currentTeethId = currentTeeth.getAttribute('data-teeth-id');
 
-          currentStage = 0;
-          stlStageSlider.slideTo(currentStage);
+            currentStage = 0;
+            stlStageSlider.slideTo(currentStage);
 
-          StageController.Reset();
-          StageController.Set(0);
+            StageController.Reset();
+            StageController.Set(0);
 
-          // Очистка временного объекта и генерация нового
-          TeethController.GenerateData();
+            // Очистка временного объекта и генерация нового
+            TeethController.GenerateData();
 
-          // Подгружаем сохраненные значения
-          if (teethData[currentTeethId]) teethTempData = teethData[currentTeethId];
+            // Подгружаем сохраненные значения
+            if (teethData[currentTeethId]) teethTempData = teethData[currentTeethId];
 
-          TeethController.UpdateInfo();
-          UpdateCircle().Update();
+            TeethController.UpdateInfo();
+            UpdateCircle().Update();
 
-          // Очищаем блок и добавляем иконку зуба
-          teethPreviewContainer.forEach(container => {
-            const clonedTeeth = teeth.cloneNode(true);
-            clonedTeeth.classList.remove('stl-teeth__item--saved');
-            clonedTeeth.classList.remove('stl-teeth__item--support');
+            // Очищаем блок и добавляем иконку зуба
+            teethPreviewContainer.forEach(container => {
+              const clonedTeeth = teeth.cloneNode(true);
+              clonedTeeth.classList.remove('stl-teeth__item--saved');
+              clonedTeeth.classList.remove('stl-teeth__item--support');
 
-            container.innerHTML = '';
-            container.append(clonedTeeth);
-          });
+              container.innerHTML = '';
+              container.append(clonedTeeth);
+            });
 
-          stlSlider.slideNext();
+            stlSlider.slideNext();
+          }
         });
 
         teeth.addEventListener('contextmenu', (e) => {
@@ -353,7 +357,7 @@ const ModalController = function () {
 const ContextController = function () {
   let target = null;
   let currentTarget = null;
-  let canCopy, canPaste;
+  let canCopy, canPaste, canMark;
 
   const contextMenu = document.getElementById('contextMenu');
   const contextTeeth = contextMenu.querySelector('.context-menu__teeth');
@@ -426,13 +430,17 @@ const ContextController = function () {
       });
 
       markHealthyButton.addEventListener('click', () => {
-        ContextController.SetState('healthy')
-        ContextController.Hide();
+        if (canMark) {
+          ContextController.SetState('healthy');
+          ContextController.Hide();
+        }
       });
 
       markEmptyButton.addEventListener('click', () => {
-        ContextController.SetState('empty')
-        ContextController.Hide();
+        if (canMark) {
+          ContextController.SetState('empty');
+          ContextController.Hide();
+        }
       });
 
       clearButton.addEventListener('click', () => {
@@ -447,6 +455,8 @@ const ContextController = function () {
       currentTarget = target.currentTarget;
       const ID = target.currentTarget.getAttribute('data-teeth-id');
       const teeth = teethData[ID];
+
+      const marked = (currentTarget.classList.contains('stl-teeth__item--saved')) ? true : false;
 
       if (teeth) {
         canCopy = true;
@@ -466,7 +476,19 @@ const ContextController = function () {
       else {
         canPaste = false;
         pasteButton.classList.add('context-menu__item--disabled');
-      };
+      }
+
+      if (!marked) {
+        canMark = true;
+        markHealthyButton.classList.remove('context-menu__item--disabled');
+        markEmptyButton.classList.remove('context-menu__item--disabled');
+      }
+
+      else {
+        canMark = false;
+        markHealthyButton.classList.add('context-menu__item--disabled');
+        markEmptyButton.classList.add('context-menu__item--disabled');
+      }
     },
 
     Show: (e) => {
