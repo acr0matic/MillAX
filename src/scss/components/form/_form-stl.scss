@@ -1,0 +1,54 @@
+.stl-form {
+  &__message {
+    padding: 10px 0;
+
+    font-size: $font-size-4;
+    border-radius: 5px;
+    text-align: center;
+
+    margin-bottom: -60px;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.15s ease;
+
+    &--success {
+      color: $text-white;
+      background-color: $palette-purple;
+    }
+
+    &--error {
+      color: $text-white;
+      background-color: #f18a8a;
+    }
+
+    &--visible {
+      visibility: visible;
+      opacity: 1;
+
+      margin-bottom: 20px;
+    }
+  }
+
+  &__submit {
+    position: relative;
+  }
+
+  &__preloader {
+    position: absolute;
+    top: 10px;
+    right: -45px;
+
+    visibility: hidden;
+    opacity: 0;
+
+    &--visible {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    img {
+      width: 32px;
+    }
+  }
+}

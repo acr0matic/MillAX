@@ -202,10 +202,6 @@ const MainController = function () {
 
 
       backButton.addEventListener('click', () => stlSlider.slideTo(1));
-      screenshotButton.addEventListener('click', () => this.Screenshot());
-
-      // Вызов алерта перед закрытием страницы
-      // window.onbeforeunload = () => '';
     },
 
     Save: function () {
@@ -228,16 +224,17 @@ const MainController = function () {
 
     Update: function () { },
 
-    Screenshot: () => {
-      const targetDiv = document.getElementById('teethMap');
-      targetDiv.style.backgroundColor = "#f1f1f1";
+    // Screenshot: () => {
+    //   const targetDiv = document.getElementById('teethMap');
+    //   targetDiv.style.backgroundColor = "#f1f1f1";
 
-      html2canvas(targetDiv).then(canvas => canvas.toBlob(blob => {
-        window.open(URL.createObjectURL(blob));
-      }));
+    //   html2canvas(targetDiv).then(canvas => canvas.toBlob(blob => {
+    //     window.open(URL.createObjectURL(blob));
+    //     teethScreenshot =
+    //   }));
 
-      targetDiv.style.backgroundColor = "#ffffff";
-    },
+    //   targetDiv.style.backgroundColor = "#ffffff";
+    // },
 
     CheckData: () => {
       if (Object.keys(teethData).length === 0)
@@ -525,6 +522,7 @@ const ContextController = function () {
 const teethData = {};
 let teethTempData = {};
 let copiedTeeth = {};
+let teethScreenshot;
 
 const
   teeths = document.querySelectorAll('.stl-teeth__map .stl-teeth__item'),
