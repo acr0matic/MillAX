@@ -1,6 +1,11 @@
 #stl-file {
   .container {
     padding: 0;
+
+    @include breakpoint($breakpoint-tablet-large) {
+      padding-right: calc(var(--bs-gutter-x) / 2);
+      padding-left: calc(var(--bs-gutter-x) / 2);
+    }
   }
 }
 

@@ -1,16 +1,21 @@
-// Вызов алерта перед закрытием страницы
-// window.onbeforeunload = () => '';
+const stlDesktop = document.getElementById('stl-desktop');
+const stlMobile = document.getElementById('stl-mobile');
 
-// window.onload = function () {
-//   document.body.classList.add('loaded_hiding');
-//   window.setTimeout(function () {
-//     document.body.classList.add('loaded');
-//     document.body.classList.remove('loaded_hiding');
-//   }, 500);
-// }
+// Показывать на телефоне "Версия только для ПК"
+if (window.matchMedia("(max-width: 1200px)").matches) {
+  stlDesktop.style.display = 'none';
+  stlMobile.style.display = 'block';
+}
+
+// Прелоадер
+const preloader = document.getElementById('preloader');
+document.addEventListener("DOMContentLoaded", function () {
+  window.setTimeout(function () {
+    preloader.classList.add('preloader--hide');
+  }, 1000);
+});
 
 // Форма обратной связи
-
 const FormContoller = function () {
   const form = document.getElementById('stl-form');
   const mailMessage = document.getElementById('stlMailMessage');
