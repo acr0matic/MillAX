@@ -1,0 +1,52 @@
+.stl-info {
+  padding: 30px 15px;
+
+  background-color: $palette-white;
+  box-shadow: $shadow-secondary;
+
+  &--mini {
+    .stl-info__title {
+      margin-bottom: 0;
+    }
+  }
+
+  &--large {
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__heading {
+    font-size: $font-size-3;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+
+    font-size: $font-size-2;
+    font-weight: $weight-thin;
+  }
+
+  &__teeth {
+    margin-left: 15px;
+
+    color: $text-purple;
+
+    font-size: $font-size-1;
+    font-weight: $weight-bold;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    color: $text-gray;
+
+    font-weight: $weight-thin;
+    font-size: $font-size-6;
+  }
+
+  &__value {
+    font-weight: $weight-bold;
+    font-size: $font-size-6;
+  }
+}

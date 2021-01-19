@@ -1,0 +1,134 @@
+.context-menu {
+  position: absolute;
+  z-index: $z-index-overlay;
+  top: 50%;
+  left: 50%;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 0.15s ease;
+
+  &--visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__container {
+    @include flex($align: flex-start);
+  }
+
+  &__wrapper {
+    position: relative;
+
+    max-width: 160px;
+
+    padding: 15px 20px;
+
+    border-radius: 5px;
+
+    color: $text-white;
+    background-color: #333333;
+
+    &--hidden {
+      display: none;
+    }
+
+    &--arrow {
+      &::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 50%;
+
+        display: block;
+        width: 0;
+
+        border: 10px solid transparent;
+        border-top: 0;
+        border-bottom: 10px solid #333333;
+
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: $text-orange;
+    }
+
+    &--disabled {
+      color: #808080;
+      cursor: default;
+
+      &:hover {
+        color: #808080;
+      }
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 10px;
+
+      &::after {
+        content: "";
+        display: block;
+
+        width: 100%;
+        height: 1px;
+
+        margin-top: 10px;
+
+        background-color: #575757;
+      }
+    }
+  }
+
+  &__span {
+    &--blue {
+      color: #78e1db;
+    }
+
+    &--red {
+      color: #ff5656;
+    }
+  }
+
+  &__teeth {
+    width: 50px;
+    height: 55px;
+    color: $text-black;
+
+    .stl-teeth__item {
+      width: 100%;
+      height: 100%;
+
+      cursor: default;
+
+      &:hover {
+        color: $text-black;
+
+        svg path {
+          fill: #ffffff;
+        }
+      }
+    }
+
+    .stl-teeth__id {
+      font-size: $font-size-5;
+
+      &--medium,
+      &--large {
+        font-size: $font-size-3;
+      }
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

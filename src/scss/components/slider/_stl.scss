@@ -1,0 +1,50 @@
+.stl-slider {
+  padding: 0 15px;
+
+  &__control {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button {
+    @include flex($justify: center);
+
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__prev {
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  &__next {
+    img {
+      margin-left: 10px;
+    }
+  }
+
+  &__slide {
+    margin: 0 auto;
+
+    &--form {
+      margin-top: 120px;
+      margin-bottom: 100px;
+
+      button {
+        justify-content: center;
+        width: 100%;
+      }
+    }
+
+    &--map {
+      margin-top: 200px;
+      margin-bottom: 100px;
+    }
+
+    &--stage {
+      margin-top: 160px;
+    }
+  }
+}

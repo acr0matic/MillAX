@@ -1,0 +1,15 @@
+.tippy-box[data-theme~="millax"] {
+  z-index: 5;
+  padding: 0;
+
+  background-color: $palette-white;
+  color: $text-black;
+
+  .tippy-content {
+    padding: 0;
+  }
+
+  .tippy-arrow {
+    color: $palette-purple;
+  }
+}

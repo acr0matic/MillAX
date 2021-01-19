@@ -1,0 +1,73 @@
+.stl-table {
+  width: 100%;
+  line-height: 20px;
+  border-collapse: collapse;
+
+  th,
+  td {
+    font-size: $font-size-6;
+    vertical-align: top;
+  }
+
+  td {
+    max-width: 120px;
+    padding: 20px 10px 20px 10px;
+    font-weight: $weight-bold;
+  }
+
+  &__header {
+    color: $text-gray;
+    text-align: left;
+
+    th {
+      padding-top: 15px;
+      padding-left: 10px;
+      font-weight: $weight-thin;
+
+      &:nth-child(1) {
+        width: 170px;
+        padding-left: 30px;
+      }
+    }
+  }
+
+  &__stage {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 20px;
+      left: -60px;
+      font-weight: $weight-thin;
+    }
+
+    &--first {
+      &::before {
+        content: "1 Этап";
+      }
+    }
+
+    &--second {
+      &::before {
+        content: "2 Этап";
+      }
+    }
+  }
+
+  &__row {
+    &--color {
+      background-color: #f1f1f1;
+    }
+  }
+
+  &__id {
+    color: $text-gray;
+    font-size: 28px !important;
+    vertical-align: middle !important;
+
+    @include first-child() {
+      padding-left: 30px;
+      padding-top: 0;
+    }
+  }
+}

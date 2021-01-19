@@ -1,0 +1,17 @@
+#stl-file {
+  .container {
+    padding: 0;
+
+    @include breakpoint($breakpoint-tablet-large) {
+      padding-right: calc(var(--bs-gutter-x) / 2);
+      padding-left: calc(var(--bs-gutter-x) / 2);
+    }
+  }
+}
+
+.stl-file {
+  &__annotation {
+    padding: 20px 20px 20px 10px;
+    box-shadow: $shadow-secondary;
+  }
+}

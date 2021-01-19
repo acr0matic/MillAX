@@ -14,9 +14,18 @@
   }
 }
 
+.col-no-px {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .col-no-px--mobile {
   @include breakpoint($breakpoint-mobile-large) {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.col--relative {
+  position: relative;
 }

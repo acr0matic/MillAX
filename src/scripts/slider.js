@@ -12,9 +12,30 @@ const coworkingSlider = new Swiper('.coworking-slider', {
       slidesPerView: 2,
     },
   },
+});
 
-  // preloadImages: false,
-  // lazy: true
+const stlSlider = new Swiper('.stl__slider', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoHeight: true,
+  initialSlide: 1,
+
+  simulateTouch: false,
+  allowTouchMove: false,
+
+  navigation: {
+    prevEl: '.stl-slider__prev',
+  },
+});
+
+
+const stlStageSlider = new Swiper('.stl-stage__slider', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoHeight: true,
+
+  simulateTouch: false,
+  allowTouchMove: false,
 });
 
 const excursionSlider = new Swiper('.excursion-slider', {

@@ -1,0 +1,74 @@
+.modal-stl {
+  .checkbox__label,
+  .radio__label {
+    white-space: nowrap;
+  }
+
+  &__overlay {
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  &__wrapper {
+    max-height: 350px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    margin-bottom: 30px;
+  }
+
+  &__block {
+    &:not(:last-child) {
+      margin-bottom: 120px;
+    }
+  }
+
+  &__group {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: 100px;
+  }
+
+  &__section {
+    margin-bottom: 30px;
+
+    p {
+      font-size: $font-size-6;
+    }
+  }
+
+  &__input {
+    font-size: $font-size-2;
+    font-weight: $weight-bold;
+  }
+
+  &__button {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__color {
+    width: 72px;
+    height: 72px;
+
+    margin-bottom: 10px;
+    border-radius: 50%;
+
+    &--big {
+      width: 136px;
+      height: 136px;
+
+      margin-bottom: 20px;
+    }
+  }
+}

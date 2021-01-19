@@ -116,10 +116,10 @@
 
       <div class="footer__action mt-5 mt-sm-5 mt-lg-0">
         <a data-micromodal-trigger="modal-reservation" class="footer__interactive footer__hide">Забронировать место в коворкинге</a>
-        <a data-micromodal-trigger="modal-stl" class="footer__interactive footer__hide">Отправить STL файл</a>
+        <a onclick="location.href = 'stl.php'" class="footer__interactive footer__hide">Отправить STL файл</a>
 
         <button data-micromodal-trigger="modal-reservation" class="button__footer button button-outline mb-4 mb-md-0">Забронировать место</button>
-        <button data-micromodal-trigger="modal-stl" class="button__footer button button-outline">Отправить STL файл</button>
+        <button onclick="location.href = 'stl.php'" class="button__footer button button-outline">Отправить STL файл</button>
       </div>
       <!-- /.footer__action -->
     </div>

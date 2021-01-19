@@ -29,7 +29,10 @@ const paths = {
   scripts: {
     src: './src/scripts/*.js',
     libraries: './src/scripts/libraries/*.js',
+    stl: './src/scripts/stl/*.js',
+    stlLibraries: './src/scripts/stl/libraries/*.js',
     dist: './dist/js/',
+    distStl: './dist/js/stl/',
     watch: './src/scripts/**/*.js',
     out: 'script.js',
     minify: 'script.min.js',
@@ -82,4 +85,4 @@ requireDir('./gulp_tasks/');
 
 gulp.task('build',
   gulp.series('clean',
-    gulp.series(['html', 'scss', 'autoprefix', 'minify_css', 'scripts', 'images', 'favicons', 'move'])));
+    gulp.series(['html', 'scss', 'autoprefix', 'minify_css', 'scripts', 'stl-scripts', 'images', 'favicons', 'move'])));

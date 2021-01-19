@@ -1,0 +1,12 @@
+.stl-summary {
+  margin-bottom: 150px;
+
+  &__wrapper {
+    box-shadow: $shadow-primary;
+    border-radius: 5px;
+  }
+
+  &__button {
+    max-width: 330px;
+  }
+}
