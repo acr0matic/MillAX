@@ -5,6 +5,8 @@ $phone = $_POST['user_phone'];
 $message = $_POST['user_message'];
 $screenshot = $_POST['screenshot'];
 
+$file = $_FILES['stl-file'];
+
 $teethData = json_decode(trim($_POST['teethData']), true);
 $content =
   "ФИО заказчика: "       . $name .
@@ -15,4 +17,4 @@ $content =
 
 $aExtraInfo = getimagesize($_FILES['screenshot']['tmp_name']);
 $screenshotURL = "data:" . $aExtraInfo["mime"] . ";base64," . base64_encode(file_get_contents($_FILES['screenshot']['tmp_name']));
-echo json_encode($content);
+echo json_encode($file);

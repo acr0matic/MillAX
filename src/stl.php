@@ -766,6 +766,11 @@
                         <input class="input input-field mb-3" type="email" placeholder="Адрес электронной почты (не обязательно)" name="user_email">
                         <textarea class="input input-field mb-4" name="user_message" cols="20" rows="5" placeholder="Введите дополнительную ифнормацию (если требуется)"></textarea>
 
+                        <label class="mb-4">
+                          Прикрепите STL-файл: <br>
+                          <input class="mt-2" type="file" name="stl-file">
+                        </label>
+
                         <div class="form__policy">
                           <label class="checkbox checkbox--purple">
                             <input type="checkbox">

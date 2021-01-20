@@ -24,6 +24,7 @@ const FormContoller = function () {
 
   const allFields = form.querySelectorAll('input, textarea');
   const fields = form.querySelectorAll('[require]');
+  const fileInput = form.querySelector('[type="file"]');
 
   let formData, screenshot;
 
@@ -36,13 +37,17 @@ const FormContoller = function () {
         });
       });
 
+      fileInput.addEventListener('click', () => {
+        mailMessage.classList.remove('stl-form__message--visible');
+      });
+
       form.onsubmit = async (e) => {
         e.preventDefault();
 
         mailPreloader.classList.add('stl-form__preloader--visible')
         formData = new FormData(form);
 
-        if (!FormContoller.ValidateFields()) {
+        if (FormContoller.ValidateFields()) {
           const targetDiv = document.getElementById('teethMap');
           targetDiv.style.backgroundColor = "#f1f1f1";
 
@@ -59,7 +64,7 @@ const FormContoller = function () {
     },
 
     ValidateFields: () => {
-      let isEmpty = false;
+      let isEmpty, noFile, isValide;
 
       fields.forEach(field => {
         if (!field.value) {
@@ -68,12 +73,24 @@ const FormContoller = function () {
         }
       });
 
-      if (isEmpty) {
+      noFile = fileInput.value ? false : true;
+
+      if (isEmpty && noFile) {
+        mailPreloader.classList.remove('stl-form__preloader--visible')
+        FormContoller.SetMessage('error', 'Есть незаполненные поля, не выбран STL-файл');
+      }
+
+      else if (isEmpty) {
         mailPreloader.classList.remove('stl-form__preloader--visible')
         FormContoller.SetMessage('error', 'Есть незаполненные поля');
       }
 
-      return isEmpty;
+      else if (noFile) {
+        mailPreloader.classList.remove('stl-form__preloader--visible')
+        FormContoller.SetMessage('error', 'Не выбран STL-файл');
+      }
+
+      return !isEmpty && !noFile;
     },
 
     SendMail: async (action) => {
@@ -87,6 +104,7 @@ const FormContoller = function () {
 
       mailPreloader.classList.remove('stl-form__preloader--visible')
       let result = await response.json();
+      console.log("PHP", result)
     },
 
     AddData: (name, data) => {
