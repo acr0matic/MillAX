@@ -70,6 +70,9 @@
   }
 
   &__description {
+    max-height: 170px;
+    overflow-y: auto;
+
     font-size: $font-size-6;
   }
 
