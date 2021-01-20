@@ -22,7 +22,7 @@ const FormContoller = function () {
   const mailPreloader = document.getElementById('stlFormPreloader');
   const mailAction = form.getAttribute('action');
 
-  const allFields = form.querySelectorAll('input');
+  const allFields = form.querySelectorAll('input, textarea');
   const fields = form.querySelectorAll('[require]');
 
   let formData, screenshot;

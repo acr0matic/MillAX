@@ -19,7 +19,7 @@ const StageController = function () {
 
       // Если ничего не выбрано
       if (data.length === 0) {
-        teethTempData.stage[currentStage].option[type] = 'Не определено';
+        teethTempData.stage[currentStage].option[type] = '-';
       }
 
       // Обработчик для чекбоксов
@@ -27,7 +27,7 @@ const StageController = function () {
         teethTempData.stage[currentStage].option[type] = [];
 
         if (data.length === 0)
-          teethTempData.stage[currentStage].option[type] = ['Не определено'];
+          teethTempData.stage[currentStage].option[type] = ['-'];
       }
 
       data.forEach(option => {
@@ -46,7 +46,7 @@ const StageController = function () {
     },
 
     ClearData: (type) => {
-      teethTempData.stage[currentStage].option[type] = 'Не определено';
+      teethTempData.stage[currentStage].option[type] = '-';
     }
   }
 }();
@@ -113,12 +113,12 @@ const TeethController = function () {
         teethTempData.stage.push({
           ['name']: stage.getAttribute('data-stl-stage'),
           ['option']: {
-            ['material']: 'Не определено',
-            ['construction']: 'Не определено',
-            ['system']: 'Не определено',
-            ['color']: 'Не определено',
-            ['parameter']: 'Не определено',
-            ['advanced']: 'Не определено',
+            ['material']: '-',
+            ['construction']: '-',
+            ['system']: '-',
+            ['color']: '-',
+            ['parameter']: '-',
+            ['advanced']: '-',
           },
         });
       });
@@ -147,8 +147,8 @@ const TeethController = function () {
           const output = item.querySelector('.stl-info__value');
           const value = teethTempData.stage[index].option[dataType];
 
-          if (value == 'Не определено') {
-            output.innerHTML = "Не определено";
+          if (value == '-') {
+            output.innerHTML = "-";
             TooltipController.Remove(currentTeeth);
           } else
             output.innerHTML = value;
@@ -177,7 +177,6 @@ const MainController = function () {
   const resetButton = document.querySelectorAll('[data-stl-action="reset"]');
   const sendButton = document.querySelector('[data-stl-action="send"]');
   const backButton = document.querySelector('[data-stl-action="back"]');
-  const screenshotButton = document.querySelector('[data-stl-action="screenshot"]');
 
   const summaryTable = document.getElementById('summary');
 
@@ -196,10 +195,12 @@ const MainController = function () {
       this.CheckData();
       sendButton.addEventListener('click', () => {
         summaryTable.innerHTML = summaryTemplate(teethData);
-
         stlSlider.slideTo(0);
-      });
 
+        window.setTimeout(function () {
+          window.scrollTo(0, 0);
+        }, 50);
+      });
 
       backButton.addEventListener('click', () => stlSlider.slideTo(1));
     },
@@ -209,7 +210,7 @@ const MainController = function () {
       let count = 0;
 
       data.forEach(item => {
-        if (item !== "Не определено") {
+        if (item !== "-") {
           TeethController.Save(currentTeeth);
           TooltipController.Add(currentTeethId);
         } else
@@ -578,7 +579,7 @@ const UpdateCircle = function (type) {
 
           const value = teethTempData.stage[index].option[optionType];
 
-          if (value !== 'Не определено')
+          if (value !== '-')
             statusIcon.classList.add('stl-stage__checkmark--visible');
           else
             statusIcon.classList.remove('stl-stage__checkmark--visible');
