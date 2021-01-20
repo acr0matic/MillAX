@@ -32,9 +32,7 @@ const phoneMaskOptions = {
   mask: '+{7} (000) 000-00-00'
 };
 
-phoneInput.forEach(input => {
-  IMask(input, phoneMaskOptions);
-});
+phoneInput.forEach(input => IMask(input, phoneMaskOptions));
 
 const forms = document.querySelectorAll('.form');
 
