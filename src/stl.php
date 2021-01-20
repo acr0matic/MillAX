@@ -108,6 +108,92 @@
           <div class="swiper-container stl__slider stl-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
+                <div class="stl-slider__slide stl-slider__slide--form">
+                  <div class="row justify-content-center">
+                    <div class="col-11 col-no-px">
+                      <div class="stl-file__summary stl-summary">
+                        <div class="stl-summary__wrapper">
+                          <table class="stl-summary__table stl-table">
+                            <thead class="stl-table__header">
+                              <tr>
+                                <th>Номер <br> зуба</th>
+                                <th>Конструкция</th>
+                                <th>Система импланта <br> и размеры</th>
+                                <th>Материал <br> изготовления</th>
+                                <th>Цвет <br> коронки</th>
+                                <th>Десневая <br> часть</th>
+                                <th>Опак <br> и карвинг</th>
+                              </tr>
+                            </thead>
+
+                            <tbody id="summary">
+
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.stl-table__wrapper -->
+                        <button type="button" data-stl-action="back" class="stl-summary__button button button-secondary mt-5">Вернуться к редактированию</button>
+                      </div>
+                      <!-- /.stl-file__summary stl-summary -->
+                    </div>
+                    <!-- /.col-7 -->
+                  </div>
+                  <!-- /.row -->
+
+                  <div class="row justify-content-center">
+                    <div class="col-6">
+                      <form id="stl-form" action="php/mail.php" enctype="multipart/form-data" class="form form-excursion">
+                        <h2 class="form-excursion__title excursion-mobile--hide mb-5">
+                          Укажите Ваши данные
+                        </h2>
+                        <input class="input input-field mb-3" type="text" require placeholder="Наименование заказчика" name="user_name">
+                        <input class="input input-field mb-3" type="text" placeholder="ФИО пациента (не обязательно)" name="patient_name">
+                        <input class="input input-field mb-3" type="tel" require placeholder="Контактный номер телефона" name="user_phone">
+                        <input class="input input-field mb-3" type="email" placeholder="Адрес электронной почты (не обязательно)" name="user_email">
+                        <textarea class="input input-field mb-4" name="user_message" cols="20" rows="5" placeholder="Введите дополнительную ифнормацию (если требуется)"></textarea>
+
+                        <label class="mb-4">
+                          Прикрепите STL-файл: <br>
+                          <input class="mt-2" type="file" name="stl-file">
+                        </label>
+
+                        <div class="form__policy">
+                          <label class="checkbox checkbox--purple">
+                            <input type="checkbox">
+                            <span class="checkbox__mark"></span>
+                            <span class="checkbox__label">Я принимаю <a href="" class="checkbox__policy checkbox__policy--black">политику конфиденциальности</a></span>
+                          </label>
+                        </div>
+
+                        <div class="row mt-4">
+                          <div class="col-12">
+                            <div id="stlMailMessage" class="stl-form__message stl-form__message--send">Письмо было отправлено!</div>
+                          </div>
+                          <!-- /.col-12 -->
+
+                          <div class="col-7">
+                            <div class="stl-form__submit">
+                              <button type="submit" data-stl-action="mail" class="button button-secondary mb-3">Подтвердить и отправить</button>
+                              <div id="stlFormPreloader" class="stl-form__preloader">
+                                <img src="img/stl/preloader.svg" alt="">
+                              </div>
+                            </div>
+                            <!-- /.stl-form__submit -->
+                          </div>
+                          <!-- /.col-6 -->
+                        </div>
+                        <!-- /.row -->
+                      </form>
+                    </div>
+                    <!-- /.col-5 -->
+                  </div>
+                  <!-- /.row -->
+                </div>
+                <!-- /.stl-slider__slide -->
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
                 <div class="stl-slider__slide stl-slider__slide--map">
                   <div class="row mb-5">
                     <div class="col-9 offset-4">
@@ -716,92 +802,6 @@
                     </button>
                   </div>
                   <!-- /.col-2 -->
-                </div>
-                <!-- /.stl-slider__slide -->
-              </div>
-              <!-- /.swiper-slide -->
-
-              <div class="swiper-slide">
-                <div class="stl-slider__slide stl-slider__slide--form">
-                  <div class="row justify-content-center">
-                    <div class="col-11 col-no-px">
-                      <div class="stl-file__summary stl-summary">
-                        <div class="stl-summary__wrapper">
-                          <table class="stl-summary__table stl-table">
-                            <thead class="stl-table__header">
-                              <tr>
-                                <th>Номер <br> зуба</th>
-                                <th>Конструкция</th>
-                                <th>Система импланта <br> и размеры</th>
-                                <th>Материал <br> изготовления</th>
-                                <th>Цвет <br> коронки</th>
-                                <th>Десневая <br> часть</th>
-                                <th>Опак <br> и карвинг</th>
-                              </tr>
-                            </thead>
-
-                            <tbody id="summary">
-
-                            </tbody>
-                          </table>
-                        </div>
-                        <!-- /.stl-table__wrapper -->
-                        <button type="button" data-stl-action="back" class="stl-summary__button button button-secondary mt-5">Вернуться к редактированию</button>
-                      </div>
-                      <!-- /.stl-file__summary stl-summary -->
-                    </div>
-                    <!-- /.col-7 -->
-                  </div>
-                  <!-- /.row -->
-
-                  <div class="row justify-content-center">
-                    <div class="col-6">
-                      <form id="stl-form" action="php/mail.php" enctype="multipart/form-data" class="form form-excursion">
-                        <h2 class="form-excursion__title excursion-mobile--hide mb-5">
-                          Укажите Ваши данные
-                        </h2>
-                        <input class="input input-field mb-3" type="text" require placeholder="Наименование заказчика" name="user_name">
-                        <input class="input input-field mb-3" type="text" placeholder="ФИО пациента (не обязательно)" name="patient_name">
-                        <input class="input input-field mb-3" type="tel" require placeholder="Контактный номер телефона" name="user_phone">
-                        <input class="input input-field mb-3" type="email" placeholder="Адрес электронной почты (не обязательно)" name="user_email">
-                        <textarea class="input input-field mb-4" name="user_message" cols="20" rows="5" placeholder="Введите дополнительную ифнормацию (если требуется)"></textarea>
-
-                        <label class="mb-4">
-                          Прикрепите STL-файл: <br>
-                          <input class="mt-2" type="file" name="stl-file">
-                        </label>
-
-                        <div class="form__policy">
-                          <label class="checkbox checkbox--purple">
-                            <input type="checkbox">
-                            <span class="checkbox__mark"></span>
-                            <span class="checkbox__label">Я принимаю <a href="" class="checkbox__policy checkbox__policy--black">политику конфиденциальности</a></span>
-                          </label>
-                        </div>
-
-                        <div class="row mt-4">
-                          <div class="col-12">
-                            <div id="stlMailMessage" class="stl-form__message stl-form__message--send">Письмо было отправлено!</div>
-                          </div>
-                          <!-- /.col-12 -->
-
-                          <div class="col-7">
-                            <div class="stl-form__submit">
-                              <button type="submit" data-stl-action="mail" class="button button-secondary mb-3">Подтвердить и отправить</button>
-                              <div id="stlFormPreloader" class="stl-form__preloader">
-                                <img src="img/stl/preloader.svg" alt="">
-                              </div>
-                            </div>
-                            <!-- /.stl-form__submit -->
-                          </div>
-                          <!-- /.col-6 -->
-                        </div>
-                        <!-- /.row -->
-                      </form>
-                    </div>
-                    <!-- /.col-5 -->
-                  </div>
-                  <!-- /.row -->
                 </div>
                 <!-- /.stl-slider__slide -->
               </div>

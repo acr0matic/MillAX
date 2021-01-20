@@ -12,6 +12,7 @@ task('html', () => src(paths.html.src)
     htmlReplace({
       css: paths.html.css,
       js: paths.html.js,
+      js_stl: paths.html.js_stl,
     }),
   )
   .pipe(debug({

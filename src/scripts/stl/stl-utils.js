@@ -99,12 +99,12 @@ const FormContoller = function () {
         body: formData,
       });
 
-      FormContoller.SetMessage('success', 'Письмо успешно отправлено!');
+      let result = await response.json();
+
+      FormContoller.SetMessage('success', 'Письмо успешно отправлено! Номер заявки: #' + result);
       FormContoller.ResetFields();
 
       mailPreloader.classList.remove('stl-form__preloader--visible')
-      let result = await response.json();
-      console.log("PHP", result)
     },
 
     AddData: (name, data) => {

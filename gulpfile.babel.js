@@ -15,6 +15,7 @@ const paths = {
     watch: './src/**/*.{html,php}',
     css: 'css/style.min.css',
     js: 'js/script.min.js',
+    js_stl: 'js/stl/script.min.js',
   },
 
   styles: {

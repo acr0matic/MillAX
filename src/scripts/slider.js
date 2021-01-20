@@ -1,6 +1,7 @@
 const coworkingSlider = new Swiper('.coworking-slider', {
   slidesPerView: 1,
   spaceBetween: 30,
+  loop: true,
 
   navigation: {
     nextEl: '.coworking-slider__next',
