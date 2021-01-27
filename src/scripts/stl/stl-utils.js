@@ -26,10 +26,22 @@ const FormContoller = function () {
   const fields = form.querySelectorAll('[require]');
   const fileInput = form.querySelector('[type="file"]');
 
-  let formData, screenshot;
+  let formData, screenshot, dropzone;
 
   return {
     Init: () => {
+      Dropzone.autoDiscover = false;
+
+      dropzone = new Dropzone('#dropzone', {
+        url: form.getAttribute("action"),
+        addRemoveLinks: true,
+        dictDefaultMessage: "Чтобы прикрепить файлы, перетяните их в это окно",
+        dictCancelUpload: 'Отменить',
+        dictRemoveFile: 'Удалить',
+        uploadMultiple: true,
+        paramName: 'stl-file',
+      });
+
       fields.forEach(field => {
         field.addEventListener('click', () => {
           field.classList.remove('input-field--error');
@@ -37,7 +49,7 @@ const FormContoller = function () {
         });
       });
 
-      fileInput.addEventListener('click', () => {
+      dropzone.element.addEventListener('click', () => {
         mailMessage.classList.remove('stl-form__message--visible');
       });
 
@@ -46,6 +58,8 @@ const FormContoller = function () {
 
         mailPreloader.classList.add('stl-form__preloader--visible')
         formData = new FormData(form);
+
+        dropzone.files.forEach(file => formData.append('stl-file[]', file));
 
         if (FormContoller.ValidateFields()) {
           const targetDiv = document.getElementById('teethMap');
@@ -64,7 +78,7 @@ const FormContoller = function () {
     },
 
     ValidateFields: () => {
-      let isEmpty, noFile, isValide;
+      let isEmpty, noFile;
 
       fields.forEach(field => {
         if (!field.value) {
@@ -73,7 +87,7 @@ const FormContoller = function () {
         }
       });
 
-      noFile = fileInput.value ? false : true;
+      noFile = dropzone.files.length !== 0 ? false : true;
 
       if (isEmpty && noFile) {
         mailPreloader.classList.remove('stl-form__preloader--visible')
@@ -134,6 +148,7 @@ const FormContoller = function () {
     },
 
     ResetFields: () => {
+      dropzone.removeAllFiles();
       allFields.forEach(field => {
         field.value = "";
       });

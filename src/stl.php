@@ -150,12 +150,13 @@
                         <input class="input input-field mb-3" type="text" placeholder="ФИО пациента (не обязательно)" name="patient_name">
                         <input class="input input-field mb-3" type="tel" require placeholder="Контактный номер телефона" name="user_phone">
                         <input class="input input-field mb-3" type="email" placeholder="Адрес электронной почты (не обязательно)" name="user_email">
-                        <textarea class="input input-field mb-4" name="user_message" cols="20" rows="5" placeholder="Введите дополнительную ифнормацию (если требуется)"></textarea>
+                        <textarea class="input input-field mb-3" name="user_message" cols="20" rows="5" placeholder="Введите дополнительную ифнормацию (если требуется)"></textarea>
 
-                        <label class="mb-4">
-                          Прикрепите STL-файл: <br>
-                          <input class="mt-2" type="file" name="stl-file">
-                        </label>
+                        <div class="mb-4">
+                          <div id="dropzone" class="dropzone">
+
+                          </div>
+                        </div>
 
                         <div class="form__policy">
                           <label class="checkbox checkbox--purple">
@@ -2839,6 +2840,7 @@
   <script src="scripts/stl/libraries/popper.js"></script>
   <script src="scripts/stl/libraries/tippy.js"></script>
   <script src="scripts/stl/libraries/html2canvas.js"></script>
+  <script src="scripts/stl/libraries/dropzone.js"></script>
 
   <script src="scripts/stl/stl.js"></script>
   <script src="scripts/stl/stl-utils.js"></script>

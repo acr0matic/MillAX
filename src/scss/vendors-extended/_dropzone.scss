@@ -1,0 +1,33 @@
+.dropzone {
+  min-height: 250px;
+  max-height: 250px;
+
+  border: none;
+  border-radius: 5px;
+
+  overflow-y: auto;
+
+  box-shadow: $shadow-secondary;
+}
+
+.dropzone .dz-message {
+  margin: 6em 0;
+}
+
+.dropzone .dz-preview .dz-remove {
+  margin-top: 15px;
+}
+
+.dropzone .dz-preview .dz-image {
+  border-radius: 5px;
+  width: 135px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.dropzone .dz-preview.dz-file-preview .dz-image {
+  border-radius: 5px;
+}
