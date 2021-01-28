@@ -1,24 +1,75 @@
 #analytics {
   padding-bottom: 180px;
 
-  @include breakpoint($breakpoint-mobile-large) {
+  @include breakpoint($breakpoint-tablet-large) {
     display: none;
   }
 
   .section__title {
-    margin-bottom: 15px;
+    align-self: center;
+    margin-bottom: 45px;
   }
 }
 
 .analytics {
-  @include flex();
+  @include flex($align: flex-start);
   flex-direction: column;
-  padding: 55px;
+  padding: 55px 20px;
 
   background-color: $palette-white;
   box-shadow: $shadow-primary;
 
   &__image {
     width: 100%;
+  }
+
+  &__content {
+    display: flex;
+
+    width: 100%;
+
+    margin-top: 25px;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: $font-size-6;
+
+    &:first-child {
+      margin-left: 90px;
+    }
+
+    &:nth-child(1) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 45px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 40px;
+    }
+
+    &:nth-child(4) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(5) {
+      margin-right: 40px;
+    }
+  }
+
+  &__description {
+    color: $text-gray;
+
+    margin-top: 20px;
+    margin-left: 80px;
+
+    font-size: 12px;
+  }
+
+  &__annotation {
+    margin-left: 73px;
   }
 }

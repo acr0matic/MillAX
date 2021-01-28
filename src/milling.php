@@ -514,8 +514,46 @@
           </h2>
 
           <div class="analytics__table">
-            <img class="analytics__image" src="img/pictures/milling/2.png" alt="">
+            <img class="analytics__image" src="img/pictures/milling/2.svg" alt="">
           </div>
+
+          <div class="analytics__content">
+            <p class="analytics__title">
+              Фрезерование <br> титанового абатмента <br> из Pre-milled заготовки <br> (с клиническим <br> винтом)*
+            </p>
+
+            <p class="analytics__title">
+              Фрезерование <br> рельсовой титановой <br> балки на 4-х опорах <br> (с 2-мя комплектами <br> винтов)*
+            </p>
+
+            <p class="analytics__title">
+              Фрезерование каркаса <br> из CoCr с уровня <br> имплантата или <br> мультиюнита <br> (с 2-мя винтами)*
+            </p>
+
+            <p class="analytics__title">
+              Фрезерование <br> временной <br> коронки из <br> PMMA*
+            </p>
+
+            <p class="analytics__title">
+              Фрезерование <br> каркаса из <br> диоксида циркония, <br> до 3 единиц <br> мостом*
+            </p>
+
+            <p class="analytics__title">
+              Фрезерование <br> анатомической <br> коронки из <br> Multilayer3D / <br> Multilayer3D PRO, <br> до 3 единиц <br> мостом*
+            </p>
+          </div>
+          <!-- /.analytics__content -->
+
+          <div class="analytics__annotation">
+            <img class="analytics__image" src="img/pictures/milling/3.svg" alt="">
+          </div>
+
+          <p class="analytics__description">
+            *
+            Анализ рыночных цен проводился по выборочным позициям на основе открытых данных ведущих <br> зуботехнических лабораторий и фрезерных центров Москвы:
+            Ортос (Ортос фрезерный центр Москва), Артикон <br> (Артикон Москва фрезерный центр), Зуботехническая лаборатория Цифродент (фрезерный центр cad cam)
+          </p>
+
         </div>
         <!-- /.analytics -->
       </div>
