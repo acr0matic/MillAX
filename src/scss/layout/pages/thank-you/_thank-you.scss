@@ -1,0 +1,142 @@
+#thank-you {
+  position: relative;
+}
+
+.thank-you {
+  @include flex();
+
+  padding-top: 190px;
+  padding-bottom: 200px;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    position: relative;
+
+    flex-direction: column;
+
+    padding-bottom: 220px;
+    margin-bottom: 200px;
+  }
+
+  &__container {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      display: block;
+      background-color: $palette-purple;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 100%;
+
+    background-image: linear-gradient(90deg, #9966ff 0%, #7976ff 60.38%);
+
+    clip-path: polygon(0 0, 58% 0, 100% 68.5%, 0% 100%);
+
+    @include breakpoint($breakpoint-mobile-large) {
+      right: -15px;
+      left: -15px;
+
+      width: 110%;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    }
+  }
+
+  &__wrapper,
+  &__image {
+    position: relative;
+  }
+
+  &__wrapper {
+    color: $text-white;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+    }
+  }
+
+  &__error {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    max-width: 500px;
+
+    font-weight: $weight-bold;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      align-items: flex-end;
+    }
+  }
+
+  &__code {
+    font-size: 72px;
+    margin-bottom: 15px;
+
+    backface-visibility: hidden;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: 54px;
+      line-height: unset;
+    }
+  }
+
+  &__title {
+    max-width: 540px;
+    margin-bottom: 30px;
+
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: $weight-thin;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      margin-bottom: 50px;
+      font-size: $font-size-4;
+      line-height: 24px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+
+    width: 100%;
+    max-width: 700px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      position: absolute;
+      bottom: -100px;
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+
+    @include breakpoint($breakpoint-mobile-medium) {
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+  }
+
+  &__button {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

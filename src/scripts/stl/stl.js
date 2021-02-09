@@ -268,7 +268,7 @@ const TooltipController = function () {
       for (let index = 0; index < tippyInstances.length; index++) {
         const instanceID = tippyInstances[index].reference.getAttribute('data-teeth-id');
 
-        isExist = (instanceID === teethId) ? true : false;
+        let isExist = (instanceID === teethId) ? true : false;
 
         if (isExist) {
           TooltipController.Update();
