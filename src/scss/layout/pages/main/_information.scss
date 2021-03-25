@@ -1,0 +1,81 @@
+#information-milling-1 {
+  padding-bottom: 135px;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    padding-bottom: 90px;
+  }
+}
+
+#information-milling-2 {
+  background: linear-gradient(77.11deg, #9966ff 11.66%, #7976ff 100.15%),
+    linear-gradient(0deg, #fbfbfb, #fbfbfb);
+
+  padding-bottom: 135px;
+  color: $text-white;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    padding-bottom: 90px;
+  }
+}
+
+.information {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 90px;
+    }
+
+    @include even() {
+      .row {
+        flex-direction: row-reverse;
+      }
+    }
+
+    .row {
+      @include breakpoint($breakpoint-tablet) {
+        flex-direction: column;
+      }
+    }
+  }
+  &__title {
+    margin-bottom: 15px;
+    font-size: $font-size-2 + 4;
+    line-height: 42px;
+
+    @include breakpoint($breakpoint-laptop-large) {
+      font-size: $font-size-2;
+      line-height: 32px;
+    }
+
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: $font-size-3;
+      line-height: 28px;
+    }
+  }
+
+  &__description {
+    font-size: $font-size-4;
+
+    @include breakpoint($breakpoint-laptop-large) {
+      font-size: $font-size-5;
+    }
+
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: $font-size-6;
+    }
+  }
+
+  &__picture {
+    height: 350px;
+
+    @include breakpoint($breakpoint-tablet-large) {
+      height: 280px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+}

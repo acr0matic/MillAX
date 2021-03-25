@@ -323,6 +323,89 @@
       </div>
     </section>
 
+    <section id="information" class="section">
+      <div class="container">
+        <div class="information">
+          <div class="information__item">
+            <div class="row">
+              <div class="col-12 col-md-6 mb-4 mb-md-0">
+                <div class="information__picture">
+                  <img src="img/pictures/information/image.jpg" alt="" class="information__image">
+                </div>
+                <!-- /.information__picture -->
+              </div>
+              <!-- /.col-6 -->
+
+              <div class="col-12 col-md-6">
+                <div class="information__content">
+                  <h3 class="information__title">Аренда рабочего места зубного техника в лаборатории MILLax</h3>
+                  <p class="information__description">
+                    Зубным техникам cad / cam для работы необходимы программное обеспечение и высокоточное оборудование. Спецтехника стоит дорого, а значит, приобрести ее в личное пользование могут далеко не все. Поэтому для ведущих индивидуальную деятельность специалистов аренда рабочего места зубного техника в MILLax становится лучшим способом получить доступ к необходимой материальной базе.
+                  </p>
+                </div>
+                <!-- /.information__content -->
+              </div>
+              <!-- /.col-6 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.information__item -->
+
+          <div class="information__item">
+            <div class="row">
+              <div class="col-12 col-md-6 mb-4 mb-md-0">
+                <div class="information__picture">
+                  <img src="img/pictures/information/image.jpg" alt="" class="information__image">
+                </div>
+                <!-- /.information__picture -->
+              </div>
+              <!-- /.col-6 -->
+
+              <div class="col-12 col-md-6">
+                <div class="information__content">
+                  <h3 class="information__title">Аренда рабочего места зубного техника в лаборатории MILLax</h3>
+                  <p class="information__description">
+                    Зубным техникам cad / cam для работы необходимы программное обеспечение и высокоточное оборудование. Спецтехника стоит дорого, а значит, приобрести ее в личное пользование могут далеко не все. Поэтому для ведущих индивидуальную деятельность специалистов аренда рабочего места зубного техника в MILLax становится лучшим способом получить доступ к необходимой материальной базе.
+                  </p>
+                </div>
+                <!-- /.information__content -->
+              </div>
+              <!-- /.col-6 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.information__item -->
+
+          <div class="information__item">
+            <div class="row">
+              <div class="col-12 col-md-6 mb-4 mb-md-0">
+                <div class="information__picture">
+                  <img src="img/pictures/information/image.jpg" alt="" class="information__image">
+                </div>
+                <!-- /.information__picture -->
+              </div>
+              <!-- /.col-6 -->
+
+              <div class="col-12 col-md-6">
+                <div class="information__content">
+                  <h3 class="information__title">Аренда рабочего места зубного техника в лаборатории MILLax</h3>
+                  <p class="information__description">
+                    Зубным техникам cad / cam для работы необходимы программное обеспечение и высокоточное оборудование. Спецтехника стоит дорого, а значит, приобрести ее в личное пользование могут далеко не все. Поэтому для ведущих индивидуальную деятельность специалистов аренда рабочего места зубного техника в MILLax становится лучшим способом получить доступ к необходимой материальной базе.
+                  </p>
+                </div>
+                <!-- /.information__content -->
+              </div>
+              <!-- /.col-6 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.information__item -->
+        </div>
+        <!-- /.information -->
+      </div>
+      <!-- /.container -->
+    </section>
+
     <section id="coworking" class="section">
       <div class="container">
         <h2 class="section__title">Что мне дал коворкинг</h2>
