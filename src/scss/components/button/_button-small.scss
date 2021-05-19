@@ -6,6 +6,7 @@
   font-size: $font-size-6;
 
   &:hover {
+    border-color: $button-outline--hover;
     background-color: $button-outline--hover;
     color: $text-white;
   }
