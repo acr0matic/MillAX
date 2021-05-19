@@ -1,7 +1,7 @@
 #hero {
   position: relative;
   padding-top: 165px;
-  padding-bottom: 245px;
+  padding-bottom: 185px;
 
   overflow: hidden;
 
@@ -12,6 +12,13 @@
   @include breakpoint($breakpoint-laptop) {
     padding-top: 80px;
     padding-bottom: 60px;
+  }
+
+
+  .container {
+    @include breakpoint($breakpoint-tablet) {
+      padding: 0;
+    }
   }
 }
 
@@ -95,7 +102,7 @@
     color: $text-white;
 
     @include breakpoint($breakpoint-mobile-large) {
-      padding: 10px 0 50px 0;
+      padding: 10px 10px 50px 10px;
     }
   }
 
@@ -106,7 +113,7 @@
     left: 0;
 
     width: 100vw;
-    height: 1000px;
+    height: 1030px;
 
     background-color: $palette-purple;
     background-image: linear-gradient(81.1deg, #9966ff 6.15%, #7976ff 100.16%);
@@ -172,23 +179,22 @@
     display: block;
     margin-bottom: 10px;
 
-    font-size: $font-size-2;
+    font-size: 28px;
     font-weight: $weight-light;
+    line-height: 125%;
 
     @include breakpoint($breakpoint-laptop-large) {
-      font-size: $font-size-4;
-    }
-
-    @include breakpoint($breakpoint-mobile-large) {
-      font-size: $font-size-6;
+      font-size: $font-size-2;
     }
   }
 
   &__title {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 
-    font-size: $font-size-0;
-    font-weight: $weight-light;
+    font-size: 38px;
+    font-weight: $weight-regular;
+
+    line-height: 125%;
 
     @include breakpoint($breakpoint-laptop-large) {
       font-size: $font-size-1;
@@ -201,7 +207,7 @@
   }
 
   &__subtitle {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
     font-size: $font-size-3;
     font-weight: $weight-light;
@@ -216,11 +222,23 @@
   }
 
   &__action {
-    @include flex();
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
     @include breakpoint($breakpoint-laptop-large) {
       flex-direction: column;
       align-items: flex-start;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      align-items: center;
+    }
+
+    span {
+      margin-bottom: 12px;
+      font-size: 20px;
+      font-weight: $weight-bold;
     }
   }
 }

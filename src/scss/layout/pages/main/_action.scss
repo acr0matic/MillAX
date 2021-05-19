@@ -1,0 +1,28 @@
+#action {
+  padding-top: 110px;
+  padding-bottom: 80px;
+  background-color: #fbfbfb;
+}
+
+.action {
+  text-align: center;
+
+  &__text {
+    margin-bottom: 35px;
+    font-size: 22px;
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: 18px;
+    }
+  }
+
+  &__link {
+    color: $text-purple;
+    font-size: 24px;
+    font-weight: $weight-regular;
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: 18px;
+    }
+  }
+}

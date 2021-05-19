@@ -10,8 +10,12 @@
     }
 
     &--main-1 {
-      top: -1012px;
-      left: -1275px;
+      top: -864px;
+      left: -123px;
+
+      @include breakpoint($breakpoint-laptop-large) {
+        left: -215px;
+      }
     }
 
     &--milling-1 {

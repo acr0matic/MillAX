@@ -1,5 +1,4 @@
 #coworking {
-  padding-bottom: 130px;
 }
 
 .coworking {
@@ -41,8 +40,8 @@
     position: relative;
     margin-top: 140px;
 
-    @include breakpoint($breakpoint-mobile-large) {
-      margin-top: 70px;
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 70px;
     }
   }
 }

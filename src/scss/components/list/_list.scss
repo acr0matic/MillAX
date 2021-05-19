@@ -7,6 +7,11 @@ $list-marker--white: #ffffff;
 $list-marker--orange: #ff7f08;
 
 .list {
+  li {
+    font-size: 18px;
+    line-height: 150%;
+  }
+
   &--light {
     .list__item {
       &::before {

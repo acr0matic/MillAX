@@ -2,13 +2,13 @@
   position: relative;
   z-index: 2;
 
-  margin-top: 130px;
+  margin-top: 80px;
 
   background-color: $palette-white;
   box-shadow: $shadow-primary;
 
   @include breakpoint($breakpoint-mobile-large) {
-    margin-top: 40px;
+    margin-top: 80px;
   }
 
   &__content {
@@ -20,7 +20,7 @@
   }
 
   &__title {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     font-size: $font-size-1;
     line-height: 45px;
@@ -46,5 +46,13 @@
     @include breakpoint($breakpoint-laptop) {
       height: 300px;
     }
+  }
+
+  &__info {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 18px;
+
+    line-height: 125%;
   }
 }
