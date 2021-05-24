@@ -4,7 +4,7 @@
 // -----------------------------------------------------------------------------
 
 .handorgel {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   @include breakpoint($breakpoint-laptop) {
     background-color: $palette-white;
@@ -13,6 +13,10 @@
 
   &--menu {
     box-shadow: none;
+
+    .handorgel__header {
+      box-shadow: none;
+    }
 
     .handorgel__title {
       font-weight: $weight-thin;

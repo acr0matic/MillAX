@@ -10,6 +10,10 @@ $list-marker--orange: #ff7f08;
   li {
     font-size: 18px;
     line-height: 150%;
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: 16px;
+    }
   }
 
   &--light {
@@ -58,6 +62,10 @@ $list-marker--orange: #ff7f08;
       margin-right: 15px;
 
       background-color: $list-marker--orange;
+
+      @include breakpoint($breakpoint-tablet) {
+        margin-top: 5px;
+      }
     }
   }
 }

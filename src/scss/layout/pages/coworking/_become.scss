@@ -5,16 +5,8 @@
   margin-bottom: 400px;
 
   @include breakpoint($breakpoint-tablet) {
-    height: 320px;
-    margin-bottom: 430px;
-  }
-
-  @include breakpoint(max-width 550px) {
-    margin-bottom: 470px;
-  }
-
-  @include breakpoint($breakpoint-mobile-large) {
-    margin-bottom: 560px;
+    height: initial;
+    margin-bottom: 0;
   }
 }
 
@@ -24,11 +16,15 @@
     height: 100%;
 
     object-fit: cover;
+
+    @include breakpoint($breakpoint-tablet) {
+      height: 300px;
+    }
   }
 
   &__promo {
     position: absolute;
-    top: 70%;
+    top: 55%;
     left: 50%;
 
     width: 760px;
@@ -42,6 +38,13 @@
       top: 80%;
 
       width: 95%;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      position: relative;
+      top: -30px;
+
+      width: 100%;
     }
   }
 
@@ -82,6 +85,8 @@
     bottom: -389px;
     left: -392px;
 
+    pointer-events: none;
+
     @include breakpoint($breakpoint-tablet) {
       display: none;
     }
@@ -91,12 +96,11 @@
     margin-bottom: 25px;
 
     color: $text-purple;
-    font-size: $font-size-4;
+    font-size: $font-size-2;
+    font-weight: $weight-regular;
   }
 
   &__service {
-    @include flex($align: flex-start);
-
     @include breakpoint($breakpoint-tablet) {
       flex-direction: column;
     }
@@ -105,6 +109,16 @@
   &__list {
     @include breakpoint($breakpoint-tablet) {
       font-size: $font-size-6;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin-top: 30px;
+
+    @include breakpoint($breakpoint-tablet) {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

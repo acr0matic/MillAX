@@ -14,7 +14,6 @@
     padding-bottom: 60px;
   }
 
-
   .container {
     @include breakpoint($breakpoint-tablet) {
       padding: 0;
@@ -41,7 +40,7 @@
       display: none;
       height: 200px;
 
-      margin-bottom: 30px;
+      margin-bottom: 45px;
 
       @include breakpoint($breakpoint-mobile-large) {
         display: block;
@@ -236,9 +235,13 @@
     }
 
     span {
-      margin-bottom: 12px;
+      margin-bottom: 35px;
       font-size: 20px;
       font-weight: $weight-bold;
+
+      @include breakpoint($breakpoint-tablet) {
+        margin-bottom: 45px;
+      }
     }
   }
 }

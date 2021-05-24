@@ -1,6 +1,6 @@
 .mobile-menu {
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  z-index: 15;
   top: 55px;
   left: 0;
 
@@ -9,6 +9,7 @@
 
   transition: all 0.5s ease;
 
+  box-shadow: 0 10px 25px rgba(178, 190, 195, 0.25);
 
   &--open {
     transform: translateY(0);
@@ -25,7 +26,6 @@
     max-height: 560px;
 
     padding: 30px 15px 60px 30px;
-    box-shadow: $shadow-primary;
   }
 
   &__nav {

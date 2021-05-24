@@ -7,6 +7,10 @@
   width: 100%;
 
   background-color: $palette-white;
+
+  @include breakpoint($breakpoint-laptop-large) {
+    box-shadow: 0 0 25px rgba(178, 190, 195, 0.25);
+  }
 }
 
 .header {
@@ -20,6 +24,10 @@
 
     background-color: $palette-white;
     box-shadow: 0 0 25px rgba(178, 190, 195, 0.25);
+
+    @include breakpoint($breakpoint-laptop-large) {
+      box-shadow: none;
+    }
   }
 
   &-bottom {
@@ -50,8 +58,8 @@
 
     background-color: $palette-white;
 
-    @include breakpoint($breakpoint-tablet) {
-      box-shadow: $shadow-secondary;
+    @include breakpoint($breakpoint-laptop-large) {
+      box-shadow: none;
     }
   }
 
@@ -59,8 +67,8 @@
   }
 
   &__secondary {
-    @include breakpoint($breakpoint-tablet) {
-      display: none;
+    @include breakpoint($breakpoint-laptop-large) {
+      display: none !important;
     }
   }
 
@@ -71,7 +79,7 @@
   }
 
   &__nav {
-    @include breakpoint($breakpoint-tablet) {
+    @include breakpoint($breakpoint-laptop-large) {
       display: none;
     }
   }
@@ -79,7 +87,7 @@
   &__action {
     padding-top: 5px;
 
-    @include breakpoint($breakpoint-laptop) {
+    @include breakpoint($breakpoint-laptop-large) {
       display: none;
     }
   }
@@ -95,7 +103,7 @@
   &__mobile {
     display: none;
 
-    @include breakpoint($breakpoint-tablet) {
+    @include breakpoint($breakpoint-laptop-large) {
       display: block;
     }
   }

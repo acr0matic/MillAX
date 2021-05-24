@@ -1,26 +1,17 @@
 #statement {
-  padding: 167px 0;
-  background-color: #fbfbfb;
+  margin-top: 120px;
+  padding: 57px 0;
+  background-color: $palette-purple;
 
-  @include breakpoint($breakpoint-mobile-large) {
-    padding: 60px 0;
+  @include breakpoint($breakpoint-tablet) {
+    margin-top: 65px;
   }
 }
 
 .statement {
+  color: $text-white;
+
   &__background {
-    position: absolute;
-
-    &--rt {
-      top: -167px;
-      right: -156px;
-    }
-
-    &--lb {
-      bottom: -168px;
-      left: -161px;
-    }
-
     @include breakpoint($breakpoint-laptop) {
       display: none;
     }
@@ -49,8 +40,6 @@
 
     @include breakpoint($breakpoint-mobile-large) {
       font-size: $font-size-3;
-
-      text-align: center;
     }
   }
 

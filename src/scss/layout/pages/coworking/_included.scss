@@ -2,7 +2,7 @@
   position: relative;
   padding-bottom: 130px;
 
-  @include breakpoint($breakpoint-mobile-large) {
+  @include breakpoint($breakpoint-tablet) {
     padding-bottom: 60px;
   }
 }

@@ -63,7 +63,12 @@
             <a href="coworking.php#prices" class="footer__link">
               Прайс
               <br>
-              для резидентов</a>
+              для резидентов
+            </a>
+          </li>
+
+          <li class="footer__menu-item">
+            <a href="statement.php" class="footer__link">Условия</a>
           </li>
         </ul>
         <!-- /.footer__title -->
@@ -180,3 +185,7 @@
 <script src="scripts/common.js"></script>
 <script src="scripts/mobile-menu.js"></script>
 <!-- endbuild -->
+
+</body>
+
+</html>

@@ -1,73 +1,3 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-  <!-- Базовые мета-теги для поисковиков -->
-  <title>Заголовок</title>
-
-  <!-- Иконки для страницы -->
-  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-
-  <!-- Метатаги которые выводят информацию о странице в поисковой запрос -->
-  <meta name="description" content="описание не длиннее 155 символов" />
-  <meta name="keywords" content="мета-теги, шаблон, html, css, acr0matic" />
-
-  <!-- Метатаги для ссылок в социальных сетях -->
-  <meta property="og:locale" content="ru_RU" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="" />
-  <meta property="og:description" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:site_name" content="" />
-
-  <!-- Контролирует поведение поисковых систем при индексации страницы -->
-  <meta name="robots" content="index,follow,noodp" />
-
-  <!-- Покраска адресной строки в мобильных Chrome, Firefox OS и Opera -->
-  <meta name="theme-color" content="#4285f4" />
-
-  <!-- Для Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#4285f4" />
-
-  <!-- Для iOS Safari -->
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-  <!-- Верификация Яндекс.Вебмастер  -->
-  <meta name="yandex-verification" content="" />
-
-  <!-- Yandex.Metrika counter -->
-
-  <!-- /Yandex.Metrika counter -->
-
-  <!-- Стили -->
-  <!-- build:css -->
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- endbuild -->
-</head>
-
-<body>
-
   <!-- Шапка -->
   <?php include_once 'partials/header.php' ?>
 
@@ -180,7 +110,7 @@
     <section id="advantages">
       <div class="container background">
         <img class="background__image background__image--main-1" src="img/pictures/background/1.svg" alt="">
-        <h2 class="section__title section__title--small-mb">
+        <h2 class="section__title">
           Зачем мне это?
         </h2>
 
@@ -216,73 +146,41 @@
     <section id="action">
       <div class="container">
         <div class="action">
-          <h2 class="section__title section__title--small-mb">
-            Остались сомнения и вопросы?
-          </h2>
+          <div class="row flex-column-reverse flex-lg-row">
+            <div class="col-12 col-lg-6">
+              <div class="action__picture">
+                <img src="img/pictures/action/picture.jpg" alt="" class="action__image">
+              </div>
+              <!-- /.action__picture -->
+            </div>
+            <!-- /.col-6 -->
 
-          <p class="action__text">
-            Задайте ваши вопросы.
-            <br>
-            Приезжайте в гости, поговорите с нашими резидентами.
-            <br>
-            Будем рады все показать и рассказать.
-          </p>
+            <div class="col-12 col-lg-6">
+              <div class="action__content">
+                <h2 class="action__title section__title section__title--small-mb">
+                  Остались сомнения <br> и вопросы?
+                </h2>
 
-          <a href="tel:" class="action__link">Звоните сейчас! <br> +7 (111) 111 111</a>
+                <p class="action__text">
+                  Задайте ваши вопросы.
+                  <br>
+                  Приезжайте в гости, поговорите с нашими резидентами.
+                  <br>
+                  Будем рады все показать и рассказать.
+                </p>
+
+                <div class="action__link">
+                  Звоните сейчас! <br>
+                  <a href="">+7 (111) 111 111</a>
+                </div>
+              </div>
+              <!-- /.action__content -->
+            </div>
+            <!-- /.col-6 -->
+          </div>
+          <!-- /.row -->
         </div>
         <!-- /.action -->
-      </div>
-      <!-- /.container -->
-    </section>
-
-    <section id="coworking">
-      <div class="container">
-        <div class="coworking">
-          <div class="coworking__slider">
-            <div class="row">
-              <div class="col-12 col-md-10 offset-md-1">
-                <div class="swiper-container coworking-slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="coworking-slider__item">
-                        <a data-fslightbox href="img/pictures/slider/coworking/1.jpg">
-                          <img class="coworking-slider__image lazyload" data-src="img/pictures/slider/coworking/1.jpg" src="img/pictures/slider/coworking/1-preview.jpg" alt="">
-                        </a>
-                      </div>
-                    </div>
-                    <!-- /.swiper-slide -->
-
-                    <div class="swiper-slide">
-                      <div class="coworking-slider__item">
-                        <a data-fslightbox href="img/pictures/slider/coworking/1.jpg">
-                          <img class="coworking-slider__image lazyload" data-src="img/pictures/slider/coworking/1.jpg" src="img/pictures/slider/coworking/1-preview.jpg" alt="">
-                        </a>
-                      </div>
-                    </div>
-                    <!-- /.swiper-slide -->
-
-                    <div class="swiper-slide">
-                      <div class="coworking-slider__item">
-                        <a data-fslightbox href="img/pictures/slider/coworking/1.jpg">
-                          <img class="coworking-slider__image lazyload" data-src="img/pictures/slider/coworking/1.jpg" src="img/pictures/slider/coworking/1-preview.jpg" alt="">
-                        </a>
-                      </div>
-                    </div>
-                    <!-- /.swiper-slide -->
-                  </div>
-                  <!-- /.swiper-wrapper -->
-                </div>
-                <!-- /.swiper-container -->
-              </div>
-              <!-- /.col-10 -->
-              <div class="swiper-button-prev coworking-slider__prev"></div>
-              <div class="swiper-button-next coworking-slider__next"></div>
-            </div>
-            <!-- /.row -->
-          </div>
-          <!-- /.coworking__slider -->
-        </div>
-        <!-- /.coworking -->
       </div>
       <!-- /.container -->
     </section>
@@ -370,12 +268,60 @@
       <!-- /.container -->
     </section>
 
+    <section id="coworking">
+      <div class="container">
+        <div class="coworking">
+          <div class="coworking__slider">
+            <div class="row">
+              <div class="col-12 col-md-10 offset-md-1">
+                <div class="swiper-container coworking-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="coworking-slider__item">
+                        <a data-fslightbox href="img/pictures/slider/coworking/1.jpg">
+                          <img class="coworking-slider__image lazyload" data-src="img/pictures/slider/coworking/1.jpg" src="img/pictures/slider/coworking/1-preview.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <!-- /.swiper-slide -->
+
+                    <div class="swiper-slide">
+                      <div class="coworking-slider__item">
+                        <a data-fslightbox href="img/pictures/slider/coworking/1.jpg">
+                          <img class="coworking-slider__image lazyload" data-src="img/pictures/slider/coworking/1.jpg" src="img/pictures/slider/coworking/1-preview.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <!-- /.swiper-slide -->
+
+                    <div class="swiper-slide">
+                      <div class="coworking-slider__item">
+                        <a data-fslightbox href="img/pictures/slider/coworking/1.jpg">
+                          <img class="coworking-slider__image lazyload" data-src="img/pictures/slider/coworking/1.jpg" src="img/pictures/slider/coworking/1-preview.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <!-- /.swiper-slide -->
+                  </div>
+                  <!-- /.swiper-wrapper -->
+                </div>
+                <!-- /.swiper-container -->
+              </div>
+              <!-- /.col-10 -->
+              <div class="swiper-button-prev coworking-slider__prev"></div>
+              <div class="swiper-button-next coworking-slider__next"></div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.coworking__slider -->
+        </div>
+        <!-- /.coworking -->
+      </div>
+      <!-- /.container -->
+    </section>
+
     <section class="section"></section>
   </main>
 
   <!-- Подвал -->
   <?php include_once 'partials/footer.php' ?>
-
-</body>
-
-</html>

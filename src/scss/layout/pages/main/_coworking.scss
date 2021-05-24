@@ -38,10 +38,5 @@
 
   &__slider {
     position: relative;
-    margin-top: 140px;
-
-    @include breakpoint($breakpoint-tablet) {
-      margin-bottom: 70px;
-    }
   }
 }

@@ -24,7 +24,24 @@ if (window.matchMedia("(max-width: 996px)").matches) {
       });
     }
   });
+}
 
+if (window.matchMedia("(max-width: 1200px)").matches) {
+  const accordions = Array.from(document.querySelectorAll('.handorgel--menu')).map((selector) => new handorgel(selector));
+
+  accordions.forEach((accordion) => {
+    if (accordion.element) {
+      const icon = accordion.element.querySelector('.handorgel__icon--mobile');
+
+      accordion.on('fold:open', () => {
+        icon.classList.toggle('handorgel__icon--opened');
+      });
+
+      accordion.on('fold:close', () => {
+        icon.classList.toggle('handorgel__icon--opened');
+      });
+    }
+  });
 }
 
 const phoneInput = document.querySelectorAll('[name=user_phone]');
